@@ -1,0 +1,36 @@
+Hi Jordan,
+
+Here are all of the details for accessing the Expert TA system as an instructor.  This will take you to your setup, where the PHYS150-01 Fall 2017 class is already created, and Seamus class is in your class list as well.  I am sharing some tips to get you started, but I'm happy to do an online orientation at anytime.  See below:
+
+Global login page: https://login.theexpertta.com/Login.aspx
+
+Your username: 918particle@gmail.com
+Your password: eta1234jh
+
+After logging in, you can change your password at the top right using MY ACCOUNT tab.
+
+Tip 1: Set your Grade Preferences
+
+In the top menu you will see "Instructor" which takes you to "Grade Preferences". Click there to setup your general settings for homework using the Instructor Default template.  You can create new templates as well, and I have already put a second in into the list called Assigned Tutorial (associated with the Intro to Expert TA tutorial assignment).  Any new assignments will draw from your Instructor Default preferences, unless you choose to intentionally use a new one (or create a custom one on the spot).
+
+Tip 2: Create or Edit an Assignment (also allows you to browse our library of problems)
+
+Choose "Create Class Assignment" from the drop down menu under the "Class Menu" window. Most of the fields and dates related to the assignments are self-explanatory (End Date is for late work credit only - if you support late work).  The book name will display Expert TA Introductory Physics.  This gives you access to all our University Physics physics problems and our proprietary Expert TA independently-authored content.  Below the book are the chapters and sections.  You can check the box next to "expand all sections" to see all of the questions for a given chapter at once, and scrolling should feel like you are browsing questions from the back of the book.
+
+*You might scroll down on the browser page before opening up the Chapters to make sure the list goes downward on the page fold for maximum browser view.
+
+Tip 3: Take your Assignments
+
+Select "Take Assignment" after choosing an assignment from your own class list. This will put you in student mode without a separate login being necessary.  I recommend taking the Intro to Expert TA tutorial first, so you have familiarity with the basic grading mode students will experience.  While taking an assignment as an Instructor, you have an Admin link after each problem / problem part where you can reset your attempts (great when working something out in front of the class).
+
+*A short video showing some key instructor features within the system: http://www.screencast.com/t/6SIKQkUer9Ii
+
+*You can copy an assignment from Seamus class into your own class easily with two simple clicks.  That's really straightforward, but let me know if you'd like more info on how to do that.
+
+Thanks again. We are looking forward to working with you and your students soon.
+
+Regards,
+
+Robby White
+Expert TA
+405-826-2619
