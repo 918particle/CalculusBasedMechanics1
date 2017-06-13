@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 JUN 2017 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 JUN 2017 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -260,28 +260,45 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 12.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 12.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 16.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/it' will be
+(Font)              scaled to size 10.0pt on input line 16.
+LaTeX Font Info:    Try loading font information for TS1+FiraSans-OsF on input 
+line 18.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fira/TS1FiraSans-OsF.fd
+File: TS1FiraSans-OsF.fd 2015/05/23 (autoinst) Font definitions for TS1/FiraSan
+s-OsF.
+)
+LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 18.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 17.
-[1
+(Font)              scaled to size 10.0pt on input line 21.
+ [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
 (./syllabus.aux) ) 
 Here is how much of TeX's memory you used:
- 2144 strings out of 493014
- 33326 string characters out of 6133351
- 84306 words of memory out of 5000000
- 5695 multiletter control sequences out of 15000+600000
- 18806 words of font info for 29 fonts, out of 8000000 for 9000
+ 2211 strings out of 493014
+ 35195 string characters out of 6133351
+ 89306 words of memory out of 5000000
+ 5754 multiletter control sequences out of 15000+600000
+ 23718 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,6n,34p,603b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,6n,34p,603b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/fira/fir_
-mxpi7y.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/fira/FiraSans
--Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/fira/FiraSans-
-Book.pfb>
-Output written on syllabus.pdf (1 page, 192152 bytes).
+tg6zf6.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/fira/fir_mxpi7y.
+enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/fira/FiraSans-BoldIta
+lic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/fira/FiraSans-Bo
+ok.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/fira/FiraSans-Boo
+kItalic.pfb>
+Output written on syllabus.pdf (2 pages, 372517 bytes).
 PDF statistics:
- 17 PDF objects out of 1000 (max. 8388607)
- 11 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
