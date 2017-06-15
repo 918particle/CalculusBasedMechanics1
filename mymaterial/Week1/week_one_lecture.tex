@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usetheme{metropolis}
 \usepackage{graphicx}
+\usepackage{subfig}
 \title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Week 1}
 \date{September 6th - September 8th, 2017}
 \author{Jordan Hanson}
@@ -31,11 +32,11 @@ from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature}
 \item \alert{Function} approximation
 \item \alert{Unit analysis}
 \end{itemize}
-\item Coordinate systems and vectors
+\item Coordinates and vectors
 \begin{itemize}
-\item \alert{Cartesian} (rectangular) coordinates
-\item \alert{Vector} addition and subtraction
-\item \alert{Time} and relativity
+\item \alert{Scalars} and \alert{vectors}
+\item \alert{Cartesian} (rectangular) coordinates, displacement
+\item \alert{Vector} addition, subtraction, and multiplication
 \end{itemize}
 \item Some concepts from single-variable calculus
 \begin{itemize}
@@ -240,9 +241,224 @@ Neptune & 30.1 \\
 \end{figure}
 \end{frame}
 
+\section{Coordinates and Vectors}
+
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+Physics requires \alert{mathematical objects} to build equations that capture the behavior of nature.  Two examples of such objects are \alert{scalar} and \alert{vector} quantities.  Each type of object obeys similar but different rules.
+\begin{enumerate}
+\item Scalar quantities
+\begin{itemize}
+\item mass: $m_1+(m_2+m_3) = (m_1+m_2)+m_3$
+\item speed: $v_1(v_2+v_3) = v_1v_2+v_1v_3$
+\item charge: $q_1 \left(\frac{1}{q_1}\right) = 1$, $q_1(0) = 0$
+\end{itemize}
+\item Vector quantities
+\begin{itemize}
+\item velocity: $\vec{v}_1 + (\vec{v}_2+\vec{v}_3) = (\vec{v}_1 + \vec{v}_2)+\vec{v}_3$
+\item tension: $\vec{t}_1 \cdot (\vec{t}_2 + \vec{t}_3) = \vec{t}_1 \cdot \vec{t}_2 + \vec{t}_1 \cdot \vec{t}_3$
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+A vector may be expressed as \textit{a list of scalars}: $\vec{v} = (4,2)$ (a vector with two \textit{components}), $\vec{u} = (3,4,5)$ (three \textit{components}).  Now, we know how to add and subtract scalars.  How do we add and subtract vectors? \\
+\vspace{0.5cm}
+What is\\
+$(1,3,8)+$\\ $(0,2,1)$? \\
+Answer: $(1,5,9)$ \\
+\vspace{0.5cm}
+In other words, when adding vectors, we add them component by component.
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+How do we subtract vectors? In the same fashion:\\
+\vspace{0.5cm}
+What is\\
+$(1,3,8)-$\\ $(0,2,1)$? \\
+Answer: $(1,1,7)$ \\
+\vspace{0.5cm}
+In other words, when subtracting vectors, we subtract them component by component.
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+How do we multiply vectors? In the same fashion, \textit{for one kind of multiplication}:\\
+\vspace{0.5cm}
+What is\\
+$(1,3,8)\cdot (0,2,1)$? \\
+Answer: $1\cdot 0 + 3 \cdot 2 + 8 \cdot 1 = 14$ \\
+\vspace{0.5cm}
+\textit{This kind of multiplication is known as the dot-product}.  There is also the \textit{cross-product}, which we will save for later.
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Coordinates (Chapters 2.1-2.3)}
+\small
+The components of a vector may describe quantities in a \alert{coordinate system}, such as \textit{Cartesian coordinates} - after Ren\'e Descartes.  Vectors in the 3D Cartesian coordinate system (x,y,z) may be written in the following notation:
+\\
+\vspace{0.2cm}
+$\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
+\\
+\begin{itemize}
+\item a: The amount in the +x-direction, $\hat{i}$: a vector of length 1, in the +x-direction
+\item b: The amount in the +y-direction, $\hat{j}$: a vector of length 1, in the +y-direction
+\item c: The amount in the +z-direction, $\hat{k}$: a vector of length 1, in the +z-direction
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+\begin{figure}
+\centering
+\subfloat[\label{fig:twovectors_a}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
+\subfloat[\label{fig:twovectors_b}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors2.pdf}}
+\caption{\label{fig:twovectors} (a) Two vectors in a two-dimensional Cartesian coordinate system: $\vec{u} = 0.5\hat{i}+1.0\hat{j}$ and $\vec{v} = 2.0\hat{i}+1.0\hat{j}$.  (b) What is $\vec{u}+\vec{v}$?  Adding components: $\vec{u}+\vec{v} = 2.5\hat{i}+2.0\hat{j}$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+\begin{figure}
+\centering
+\subfloat[\label{fig:twovectors_c}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
+\subfloat[\label{fig:twovectors_d}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors3.pdf}}
+\caption{\label{fig:twovectors2} (a) Two vectors in a two-dimensional Cartesian coordinate system: $\vec{u} = 0.5\hat{i}+1.0\hat{j}$ and $\vec{v} = 2.0\hat{i}+1.0\hat{j}$.  (b) What is $\vec{u}-\vec{v}$?  Subtracting components: $\vec{u}-\vec{v} = 1.5\hat{i}+0.0\hat{j}$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+\begin{figure}
+\centering
+\subfloat[\label{fig:twovectors_e}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
+\subfloat[\label{fig:twovectors_f}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors4.pdf}}
+\caption{\label{fig:twovectors3} (a) Two vectors in a two-dimensional Cartesian coordinate system: $\vec{u} = 0.5\hat{i}+1.0\hat{j}$ and $\vec{v} = 2.0\hat{i}+1.0\hat{j}$.  (b) To compute $\vec{w}-\vec{v}$, arrange the vectors to get a sense of the result, $\vec{u}$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+\small
+\begin{minipage}[b]{0.45\linewidth}
+$\vec{p} = 4\hat{i}+2\hat{j}$.  $\vec{q} = -4\hat{i}+2\hat{j}$.  \\
+Compute $\vec{p} \cdot \vec{q}$.
+\vspace{0.2cm}
+\begin{itemize}
+\item A: 12
+\item B: -12
+\item C: 4
+\item D: 8
+\end{itemize}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+$\vec{p} = -1\hat{i}+6\hat{j}$.  $\vec{q} = 3\hat{i}+0.5\hat{j}$.  \\
+Compute $\vec{p} \cdot \vec{q}$.
+\vspace{0.2cm}
+\begin{itemize}
+\item A: -1
+\item B: 1
+\item C: 0
+\item D: 3
+\end{itemize}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+Why was the last answer zero?  Look at it graphically:
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors5.pdf}
+\caption{\label{fig:twovectors4} Two vectors $\vec{p}$ and $\vec{q}$ are \textit{orthogonal} if $\vec{p} \cdot \vec{q} = 0$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+What if the vectors are parallel? Look at it graphically:
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors6.pdf}
+\caption{\label{fig:twovectors5} Two vectors $\vec{p}$ and $\vec{q}$ are \textit{parallel} if $\vec{p} \cdot \vec{q}$ is maximal.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.3)}
+The \textit{length} or \textit{norm} of a vector $\vec{v} = a\hat{i}+b\hat{j}$ is $|\vec{v}| = \sqrt{a^2+b^2}$.\\
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors7.pdf}
+\caption{\label{fig:twovectors6} Computing the norm of a vector $\vec{p}$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.3)}
+Notice that $\sqrt{\vec{p}\cdot\vec{p}} = |\vec{p}|$.\\
+Let $\theta_p$ be the angle between $\vec{p}$ and the x-axis.  \\
+$p_{x} = \vec{p} \cdot \hat{i} = |\vec{p}| \cos(\theta_{p})$. \\
+$p_{y} = \vec{p} \cdot \hat{j} = |\vec{p}| \sin(\theta_{p})$.\\
+\vspace{0.5cm}
+\textit{Theorem:} The dot product of two vectors $\vec{p}$ and $\vec{q}$ is $|u||v|\cos(\theta)$, if $\theta$ is the angle between them.\\
+\vspace{0.5cm}
+\textit{Proof}: $\vec{p}\cdot\vec{q} = p_{x}q_{x} + p_{y}q_{y} = |p||q|\cos\theta_p\cos\theta_q+|p||q|\sin\theta_q\sin\theta_q$ \\
+$=|p||q|(\cos\theta_p\cos\theta_q+\sin\theta_p\sin\theta_q) = |p||q|\cos(\theta_p-\theta_q)$ \\
+$=|p||q|\cos\theta$. \\
+\vspace{0.1cm}
+$\boxed{\vec{p}\cdot\vec{q}=|p||q|\cos\theta}$
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.3)}
+\small
+\begin{minipage}[b]{0.45\linewidth}
+An object moves at 2 m/s at $\theta = 60^{\circ}$ with respect to the x-axis.  What is the velocity of the object?
+\vspace{0.2cm}
+\begin{itemize}
+\item A: $(1\hat{i}$ + $1\hat{j})$  m/s
+\item B: $(\sqrt{3}\hat{i}$ + $1\hat{j})$  m/s
+\item C: $(\sqrt{3}\hat{i}$ + $\sqrt{3}\hat{j})$  m/s
+\item D: $(1\hat{i}$ + $\sqrt{3}\hat{j})$  m/s
+\end{itemize}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+What is the dot product of this velocity with another velocity: 5 m/s along the x-axis?
+\vspace{0.7cm}
+\begin{itemize}
+\item A: 1 (m/s)$^2$
+\item B: 5 (m/s)$^2$
+\item C: 10 (m/s)$^2$
+\item D: 5 (m/s)
+\end{itemize}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+Is it possible to multiply vectors and scalars?  Of course: $a_1\vec{p} = a_1p_x\hat{i}+a_1p_y\hat{j}$.\\
+\vspace{0.2cm}
+Also, multiplication properties still hold.  For example: $(a_1+a_2)\vec{p} = a_1\vec{p}+a_2\vec{p}$. \\
+\vspace{0.2cm}
+\small
+A spacecraft moves at 400 m/s, at an angle of 30 degrees with respect to the x-axis.  If it fires two thrusters that boost the x-component and y-component of the velocity by 25\% and 50\%, respectively, what is the final velocity?
+\begin{itemize}
+\item A: $(433\hat{i}+300\hat{j})$ m/s
+\item B: $(300\hat{i}+433\hat{j})$ m/s
+\item C: 400 m/s
+\item D: $(400\hat{i}+433\hat{j})$ m/s
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Dislacement (Chapters 2.1-2.3)}
+We define the \textit{position} of an object as a vector locating it in a given coordinate system.  The scalar \textit{distance} is the norm of the position vector, that is, the distance to to the origin. \\
+\vspace{0.5cm}
+Now we can introduce the concept of \alert{dislacement}: a vector describing a movement of an object.
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.3)}
+\begin{figure}
+\centering
+\includegraphics[width=0.52\textwidth]{figures/Vectors4.pdf}
+\caption{\label{fig:displacement} Suppose an object moves from position $\vec{v}$ to $\vec{w}$.  In this case, the \alert{displacement} is $\vec{u}$. \textbf{Thus, the final position is the initial position, plus the displacement.}}
+\end{figure}
+\end{frame}
+
 \section{Answers}
 
 \begin{frame}{Answers}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
 \begin{itemize}
 \item Mass of ants: 0.1 kg
 \item Mass of baby whale: 5 tonnes
@@ -251,8 +467,19 @@ Neptune & 30.1 \\
 \item Height of surfer is 1.0 meter, -1.0 meter
 \item Value of investment is $4/3 P$
 \item The glacier is retreating at 100 meters per millenium
-\item Ice has a density of 917 kg/m$^3$
 \end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item Ice has a density of 917 kg/m$^3$
+\item -12
+\item 0
+\item $(1\hat{i}$ + $\sqrt{3}\hat{j})$  m/s
+\item 10 (m/s)$^2$
+\item $(433\hat{i}+300\hat{j})$ m/s
+\end{itemize}
+\end{column}
+\end{columns}
 \end{frame}
 
 \end{document}
