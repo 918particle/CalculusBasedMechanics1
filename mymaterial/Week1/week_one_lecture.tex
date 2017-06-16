@@ -561,7 +561,7 @@ f'(t) = \dot{f} = \frac{df}{dt} \equiv \lim_{h \to 0} \frac{f(t+h) - f(t)}{h}
 ''The change in y over the change in x at h.''
 \end{frame}
 
-\begin{frame}{Review of Calculus - Skill 1: Taking Derivatives}
+\begin{frame}{Review of Calculus - Skill 2: Taking Derivatives}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{enumerate}
@@ -571,6 +571,7 @@ f'(t) = \dot{f} = \frac{df}{dt} \equiv \lim_{h \to 0} \frac{f(t+h) - f(t)}{h}
 \item $f(t) = \sin(t)$
 \item $f(t) = \cos(t)$
 \item $f(t) = \tan(t)$
+\item $f(t) = a$
 \end{enumerate}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -581,12 +582,13 @@ f'(t) = \dot{f} = \frac{df}{dt} \equiv \lim_{h \to 0} \frac{f(t+h) - f(t)}{h}
 \item $f' = \cos(t)$
 \item $f' = -\sin(t)$
 \item $f' = \sec^2(x)$
+\item $f' = 0$
 \end{enumerate}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Review of Calculus - Skill 1: Derivative Properties}
+\begin{frame}{Review of Calculus - Skill 2: Derivative Properties}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{enumerate}
@@ -607,6 +609,105 @@ f'(t) = \dot{f} = \frac{df}{dt} \equiv \lim_{h \to 0} \frac{f(t+h) - f(t)}{h}
 \end{enumerate}
 \end{column}
 \end{columns}
+\end{frame}
+
+\begin{frame}{Review of Calculus - Skill 3: Anti-derivatives and integrals}
+An \textit{anti-derivative} just reverses the action of the derivative.  Also called an indefinite integral.  For example:
+\begin{align}
+x(t) &= at^{n} \\
+x' &= nat^{n-1} \label{eq:derivative} \\
+\int nat^{n-1} dt &= at^{n} + C \label{eq:antiderivative}
+\end{align}
+In Eq. \ref{eq:antiderivative}, the $\int$ symbol represents integration (a big $S$ for ''summation'').  There is a constant $C$ because, technically, if we take the derivative of Eq. \ref{eq:antiderivative}, the result is Eq. \ref{eq:derivative} (derivative of a constant $C$ is zero). 
+\end{frame}
+
+\begin{frame}{Review of Calculus - Skill 3: Anti-derivatives and integrals}
+An integral is the difference in the value of the anti-derivative evaluated at two points:
+\begin{equation}
+\int_{c}^{d} nat^{n-1} dt = a(d)^n - a(c)^n
+\end{equation}
+''Raise the power by one, and divide the whole thing by that number.'' - Just like derivatives, there are many simple cases to memorize.
+\begin{equation}
+\int_{a}^{b} \cos(t) dt = \sin(b) - \sin(a)
+\end{equation}
+\end{frame}
+
+\begin{frame}{Review of Calculus - Skill 3:  Anti-derivatives and integrals}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\item $f(t) = t^n$
+\item $f(t) = \exp(t)$
+\item $f(t) = 1/t$
+\item $f(t) = \sin(t)$
+\item $f(t) = \cos(t)$
+\item $f(t) = a$
+\item ...
+\end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\item $\int f(t) dt = (n+1)^{-1}t^{n+1} + C$
+\item $\int f(t) dt = \exp(t) + C$
+\item $\int f(t) dt = \ln(t) + C$
+\item $\int \sin(t) dt = -\cos(t) + C$
+\item $\int \cos(t) dt = \sin(t) + C$
+\item $\int f(t) = at + C$
+\item ...
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{A Few Calculus Problems}
+\small
+\begin{minipage}[b]{0.45\linewidth}
+Let $x(t) = 5t^2-2t+7$ in the $\hat{x}$-direction, where $x$ is in meters and $t$ is in seconds.  What is the velocity (take the derivative) at $t=1$ second?
+\vspace{0.2cm}
+\begin{itemize}
+\item A: 8 m/s in the $\hat{y}$-direction
+\item B: 6 m/s in the $\hat{x}$-direction
+\item C: 8 m/s in the $\hat{x}$-direction
+\item D: 6 m/s in the $\hat{y}$-direction
+\end{itemize}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+Let $v(t) = 2t+2$ in the $\hat{x}$-direction.  What is the position versus time (take the integral)?
+\vspace{0.7cm}
+\begin{itemize}
+\item A: $t^2+2t + C$
+\item B: $t^2 +2t$
+\item C: $t+2 + C$
+\item D: $t^3 2t^2 + C$
+\end{itemize}
+\end{minipage}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Week 1 Summary}
+\textbf{Chapters 1, 2.1-2.3, 3.1}.
+\begin{enumerate}
+\item Methods of approximation
+\begin{itemize}
+\item \alert{Estimating} the correct order of magnitude
+\item \alert{Function} approximation
+\item \alert{Unit analysis}
+\end{itemize}
+\item Coordinates and vectors
+\begin{itemize}
+\item \alert{Scalars} and \alert{vectors}
+\item \alert{Cartesian} (rectangular) coordinates, displacement
+\item \alert{Vector} addition, subtraction, and multiplication
+\end{itemize}
+\item Review of Calculus Techniques
+\begin{itemize}
+\item Limits
+\item Differentiation
+\item Integration
+\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \section{Answers}
@@ -634,6 +735,8 @@ f'(t) = \dot{f} = \frac{df}{dt} \equiv \lim_{h \to 0} \frac{f(t+h) - f(t)}{h}
 \item $(433\hat{i}+300\hat{j})$ m/s
 \item $\pi$ km, 14 seconds, $0$ km
 \item $(100\hat{i} + 100\hat{j})$ m, 14 m/s
+\item 8 m/s in the $\hat{x}$-direction
+\item $t^2+2t + C$
 \end{itemize}
 \end{column}
 \end{columns}
