@@ -38,7 +38,7 @@ from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature}
 \item \alert{Cartesian} (rectangular) coordinates, displacement
 \item \alert{Vector} addition, subtraction, and multiplication
 \end{itemize}
-\item Some concepts from single-variable calculus
+\item Review of Calculus Techniques
 \begin{itemize}
 \item Limits
 \item Differentiation
@@ -454,6 +454,161 @@ Now we can introduce the concept of \alert{dislacement}: a vector describing a m
 \end{figure}
 \end{frame}
 
+\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.3)}
+It follows that the \textit{displacement} is zero if the initial and final positions are the same, but the \textit{distance travelled} is not.\\
+\vspace{0.2cm}
+\small
+Suppose a jet fighter travelling at 800 km per hour banks such that it flies in a circle of radius 0.5 km.  How long does it take to complete the circle?  What is the distance traveled, and what is the displacement?
+\begin{itemize}
+\item A: $2\pi$ km, 28 seconds, $2\pi$ km
+\item B: $\pi$ km, 14 seconds, $\pi$ km
+\item C: $\pi$ km, 28 seconds, $\pi$ km
+\item D: $\pi$ km, 14 seconds, $0$ km
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusion of Chapter 2}
+For a list of helpful equations and mathematical definitions, see pp. 95-96 of the the text.
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Average Velocity  (Chapter 3.1)}
+\alert{Average velocity} is the ratio of the \alert{displacement} to the elapsed time.\\
+\begin{equation}
+\boxed{\vec{v}_{\rm avg} = \frac{\Delta \vec{x}}{\Delta t}}
+\end{equation}
+The \textit{average speed} is the norm of the average velocity:
+\begin{equation}
+\boxed{v_{\rm avg} = \frac{|\Delta \vec{x}|}{\Delta t}}
+\end{equation}
+If the motion is in one dimension, then the average speed is
+\begin{equation}
+v_{\rm avg} = \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 3.1)}
+\begin{figure}
+\centering
+\includegraphics[width=0.52\textwidth]{figures/AveVelocity.pdf}
+\caption{\label{fig:avevel} A Formula-1 driver keeps his car on the track by following a path approximated by the position vectors $u$, $v$, $u$, and $v$.  The dashed arrow represents the total displacement.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 3.1)}
+If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m, what is the total displacement?  If the elapsed time is 10 seconds, what is the average velocity? \\
+\vspace{0.2cm}
+\begin{itemize}
+\item A: $(50\hat{i} + 50\hat{j})$ m, 14 m/s
+\item B: $(80\hat{i} + 100\hat{j})$ m, 10 m/s
+\item C: $(100\hat{i} + 100\hat{j})$ m, 14 m/s
+\item D: $(50\hat{i} + 150\hat{j})$ m, 10 m/s
+\end{itemize}
+\end{frame}
+
+\section{Review of Calculus Techniques}
+
+\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
+Taking a limit has a variety of uses in physics.  Consider the following example:\\
+\vspace{0.5cm}
+\small
+The weight of an object sitting on the Earth's surface is given by the following equation, which we will encounter later in physics: \\
+\begin{equation}
+w = G \frac{m M}{r^2}
+\end{equation}
+\begin{itemize}
+\item w: weight
+\item G: a constant of nature
+\item m: the object's mass
+\item M: the mass of the Earth
+\item r: the distance between the center of the Earth and the object
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
+The weight of an object sitting on the Earth's surface is given by the following equation, which we will encounter later in physics: \\
+\begin{equation}
+w = G \frac{m M}{r^2}
+\end{equation}
+Let $R$ be the radius of the Earth, $r_0$ be the object's height above the Earth's surface, and $\epsilon = r_0/R \ll 1$.  Also, let $g = GM/R^2$.  Rearranging the equation for weight:\\
+\begin{equation}
+w = mg (1+\epsilon)^{-2}
+\end{equation}
+Since $\epsilon \ll 1$, take the limit:
+\begin{equation}
+\lim_{\epsilon \to 0} w = \lim_{\epsilon \to 0} mg (1+\epsilon)^{-2} = mg
+\end{equation}
+\end{frame}
+
+\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
+Thus, for practical calculations where the object is not far from the Earth's surface, the weight is $w = mg$, or the mass times some measurable constant, $g$. \\
+\vspace{0.5cm}
+Often in other branches of physics, we often encounter the \textit{sinc function}:\\
+\begin{equation}
+s(t) = \frac{sin(t)}{t}
+\end{equation}
+What is $\lim_{t \to 0} s(t)$?  It looks like 0/0, but that is not definited mathematically.
+\end{frame}
+
+\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
+We can use \alert{L'H\^{o}pital's Rule}: take the \textit{derivative} of the numerator and the denominator, then take the limit: \\
+\begin{equation}
+\lim_{t\to 0} s(t)  = \lim_{t\to 0} \left| \frac{\frac{d}{dt}\sin(t)}{\frac{d}{dt}t}\right| = \lim_{t\to 0} \cos(t) = 1
+\end{equation} \\
+This approach is valid for cases like $0/0$ or $\infty/\infty$.  But what is the \alert{derivative}?  How do we know that the derivative of $\sin(t)$ is $\cos(t)$, and the derivative of $t$ is one? The definition of the derivative:
+\begin{equation}
+f'(t) = \dot{f} = \frac{df}{dt} \equiv \lim_{h \to 0} \frac{f(t+h) - f(t)}{h}
+\end{equation}
+''The change in y over the change in x at h.''
+\end{frame}
+
+\begin{frame}{Review of Calculus - Skill 1: Taking Derivatives}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\item $f(t) = t^n$
+\item $f(t) = \exp(t)$
+\item $f(t) = \ln(t)$
+\item $f(t) = \sin(t)$
+\item $f(t) = \cos(t)$
+\item $f(t) = \tan(t)$
+\end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\item $f' = nt^{n-1}$
+\item $f' = \exp(t)$
+\item $f' = 1/t$
+\item $f' = \cos(t)$
+\item $f' = -\sin(t)$
+\item $f' = \sec^2(x)$
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Review of Calculus - Skill 1: Derivative Properties}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\item $g(t) = af(t)$
+\item $g(t) = a(t) + b(t)$
+\item $g(t) = a(t)b(t)$
+\item $g(t) = a(t)/b(t)$
+\item $g(t) = a(b(t))$
+\end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\item $g' = af'$
+\item $g' = a'+b'$
+\item $g' = ab'+a'b$
+\item $g' = \frac{ba'-ab'}{b^2}$
+\item $g' = a'(b)b'$
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
 \section{Answers}
 
 \begin{frame}{Answers}
@@ -477,6 +632,8 @@ Now we can introduce the concept of \alert{dislacement}: a vector describing a m
 \item $(1\hat{i}$ + $\sqrt{3}\hat{j})$  m/s
 \item 10 (m/s)$^2$
 \item $(433\hat{i}+300\hat{j})$ m/s
+\item $\pi$ km, 14 seconds, $0$ km
+\item $(100\hat{i} + 100\hat{j})$ m, 14 m/s
 \end{itemize}
 \end{column}
 \end{columns}
