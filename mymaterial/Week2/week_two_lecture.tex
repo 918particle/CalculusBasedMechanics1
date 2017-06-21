@@ -73,9 +73,10 @@ Estimate the surface area of a person.
 \item The case of constant acceleration
 \begin{itemize}
 \item Deriving an \textit{an equation of motion} for constant acceleration
-\item \textbf{Measuring acceleration of gravity: \textit{g}}
-\end{itemize}
 \item Derivation and use of \alert{common equations of motion}
+\item \textbf{Lab Activity: Measuring acceleration of gravity: \textit{g}}
+\end{itemize}
+\item Further exercises with vectors and graphs
 \end{enumerate}
 \end{frame}
 
@@ -196,24 +197,61 @@ Equation \ref{eq:threemain7} provides a way to obtain the velocity of an acceler
 \end{frame}
 
 \begin{frame}{Displacement, and instantaneous velocity and acceleration}
-A particle moves along the x-axis according to $x(t) = (10t-2t^2)\hat{i} \quad (m)$.  What is the instantaneous velocity
+A particle moves along the x-axis according to $x(t) = (10t-2t^2)\hat{i}$ m.  What is the instantaneous velocity
 at $t=2$ seconds and $t=3$ seconds? What is the average of these two numbers?
 \begin{itemize}
-\item A:
-\item B:
-\item C:
-\item D:
+\item A: 2 m/s, -2 m/s, 2 m/s
+\item B: 2 m/s, 4 m/s, 3 m/s
+\item C: 10 m/s, 8 m/s, 9 m/s
+\item D: 2 m/s, -2 m/s, 0 m/s
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Displacement, and instantaneous velocity and acceleration}
-\small
-On February 15, 2013, a superbolide meteor (brighter than the Sun) entered Earth’s atmosphere over Chelyabinsk, Russia, and exploded at an altitude of 23.5 km. Eyewitnesses could feel the intense heat from the fireball, and the blast wave from the explosion blew out windows in buildings. The blast wave took approximately 2 minutes 30 seconds to reach ground level.  What was the average velocity of the blast wave?  Compare this with the speed of sound, which is 343 m/s at sea level.
+Let $x(t) = (10t-2t^2)\hat{i}$ m, from prior exercise.  What is the displacement between $t=2$ seconds and $t=3$ seconds?
 \begin{itemize}
-\item A: 
-\item B: 
-\item C: 
-\item D: 
+\item A: 0 m
+\item B: 10 m
+\item C: -4 m
+\item D: 3 m
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+Notice in the previous two problems: the \textit{instantaneous velocity} is not the \textit{average velocity}.  The average velocity between two and three seconds was 0 m/s, but the instantaneous velocity was not zero at either point.  However, the \textit{displacement} was 0 m in this time interval.  The \textit{average velocity} must be \\
+\begin{equation}
+\boxed{\bar{v} = \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}}} \label{eq:avevel}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+\small
+On February 15, 2013, a meteor entered Earth’s atmosphere over Chelyabinsk, Russia, and exploded at an altitude of 23.5 km.  Eyewitnesses could feel the intense heat from the fireball, and the blast wave from the explosion blew out windows in buildings. The blast wave took approximately 2 minutes 30 seconds to reach ground level.  What was the average velocity of the blast wave?  Compare this with the speed of sound, which is 343 m/s at sea level.
+\begin{itemize}
+\item A: 35 m/s (10\% speed of sound)
+\item B: 100 m/s (30\% speed of sound)
+\item C: 150 m/s (40\% speed of sound)
+\item D: 350 m/s (100\% speed of sound)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+Notice that if we take the limit $t_{\rm f} \to t_{\rm i}$, or $\Delta t = t_{\rm f} - t_{\rm i} \to 0$, \\
+\begin{align}
+\lim_{\Delta t \to 0} \bar{v} &= \lim_{\Delta t \to 0} \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}} \\
+\lim_{\Delta t \to 0} \frac{x_{\rm f} - x_{\rm i}}{\Delta t} &= \frac{dx}{dt} = v(t)
+\end{align}
+The limit of the average velocity as the time interval approaches zero is the instantaneous velocity.  What about acceleration?
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+A particle moves along the x-axis according to $x(t) = (10t-2t^2)\hat{i}$ m.  What is the instantaneous acceleration
+at $t=2$ seconds and $t=3$ seconds? What is the average of these two numbers?
+\begin{itemize}
+\item A: 2 m/s$^2$, 2 m/s$^2$, 2 m/s$^2$
+\item B: -4 m/s, -4 m/s, -4 m/s
+\item C: -4 m/s$^2$, -4 m/s$^2$, -4 m/s$^2$
+\item D: 0 m/s$^2$, 0 m/s$^2$, 0 m/s$^2$
 \end{itemize}
 \end{frame}
 
@@ -227,6 +265,10 @@ On February 15, 2013, a superbolide meteor (brighter than the Sun) entered Earth
 \item 2 m$^2$
 \item $f'(t) = AB\cos(Bt) + 2Ct$
 \item $f'(t) = \frac{4}{3t+2}+\frac{12t-3}{(3t+2)^2}$
+\item 2 m/s, -2 m/s, 0 m/s
+\item 0 m
+\item 150 m/s (40\% speed of sound)
+\item -4 m/s$^2$, -4 m/s$^2$, -4 m/s$^2$
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
