@@ -10,6 +10,8 @@
 \begin{document}
 \maketitle
 
+\section{Week 1 Review}
+
 \begin{frame}{Week 1 Review}
 \begin{enumerate}
 \item Methods of approximation
@@ -32,6 +34,8 @@
 \end{itemize}
 \end{enumerate}
 \end{frame}
+
+\section{Week 1 Review Problems}
 
 \begin{frame}{Week 1 Review Problems}
 \small
@@ -57,6 +61,8 @@ Estimate the surface area of a person.
 \end{minipage}
 \end{frame}
 
+\section{Week 2 Summary}
+
 \begin{frame}{Week 2 Summary}
 \begin{enumerate}
 \item Displacement, and instantaneous velocity and acceleration
@@ -73,12 +79,14 @@ Estimate the surface area of a person.
 \end{enumerate}
 \end{frame}
 
+\section{Displacement, and instantaneous velocity and acceleration}
+
 \begin{frame}{Displacement, and instantaneous velocity and acceleration}
 \begin{figure}
 \centering
 \subfloat[\label{fig:twovectors_a}]{\includegraphics[width=0.45\textwidth]{figures/Vectors4.pdf}}
 \subfloat[\label{fig:twovectors_b}]{\includegraphics[width=0.45\textwidth]{figures/Vectors1.pdf}}
-\caption{\label{fig:displacement} (Left): The displacement vector is $\vec{u}$.  (Right) Treat displacement for a small change in time, $dt$, and call it $dv$.}
+\caption{\label{fig:displacement} (Left): The displacement vector is $\vec{u}$.  (Right) Treat displacement for a small change in time, $dt$, and call it $d\vec{x}$.}
 \end{figure}
 \end{frame}
 
@@ -109,7 +117,7 @@ Let $f(t) = (4t-1)/(3t+2)$.  \\ Compute $f'$. \\
 \begin{frame}{Displacement, and instantaneous velocity and acceleration}
 Definition of instantaneous velocity vector:
 \begin{equation}
-\boxed{v(t) = \frac{d\vec{v}}{dt}}
+\boxed{v(t) = \frac{d\vec{x}}{dt}}
 \end{equation} \\
 \vspace{0.5cm}
 Simple example: Let the vector position of an object be
@@ -120,6 +128,93 @@ Then
 \begin{equation}
 \vec{v}(t) = (2 \hat{i} - 6t\hat{j}) \quad m/s
 \end{equation}
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+Definition of instantaneous \textit{acceleration} vector:
+\begin{equation}
+\boxed{a(t) = \frac{d\vec{v}}{dt} = \frac{d}{dt} \frac{d\vec{x}}{dt}}
+\end{equation} \\
+\vspace{0.5cm}
+Simple example: Let the vector position of an object be
+\begin{equation}
+\vec{x}(t) = (2t \hat{i} - 3t^2\hat{j}) \quad m
+\end{equation}
+Then
+\begin{equation}
+\vec{v}(t) = (-6\hat{j}) \quad m/s^2
+\end{equation}
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+\textit{Interesting...} If the motion of an object is \textit{quadratic} in time, then the acceleration is a constant. \\
+\vspace{0.2cm}
+Let the displacement versus time of an object be \\
+\begin{equation}
+\vec{y}(t) = (-\frac{1}{2}gt^2 + v_{i}t + y_{\rm 0}) \hat{j} \quad (m)
+\label{eq:freefall1}
+\end{equation}
+If Eq. \ref{eq:freefall1} gives the displacement in the $\hat{j}$ direction, then what are the velocity and acceleration?
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+Using the definitions of instantaneous velocity and acceleration: \\
+\begin{equation}
+\frac{d\vec{y}}{dt} = (-gt + v_{i}) \hat{j} \quad (m/s)
+\label{eq:freefall2}
+\end{equation}
+\begin{equation}
+\frac{d}{dt}\frac{d\vec{y}}{dt} = (-g) \hat{j} \quad (m/s^2)
+\label{eq:freefall3}
+\end{equation}
+The acceleration is just some constant, $g$, in the $-\hat{j}$ direction.  This leads to a \textit{linear} equation for the velocity, and a \textit{quadratic} equation for the displacement.
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+So we have the following three equations for a system experiencing constant acceleration:
+\begin{align}
+\vec{y}(t) &= (-\frac{1}{2}gt^2+v_{\rm i}t+y_{\rm 0}) \hat{j} \quad (m) \label{eq:threemain1} \\
+\vec{v}(t) &= (-gt + v_{\rm i}) \hat{j} \quad (m/s) \label{eq:threemain2} \\
+\vec{a}(t) &= (-g) \hat{j} \quad (m/s^2) \label{eq:threemain3}
+\end{align}
+What if we solve for time in Eq. \ref{eq:threemain2}, after taking the magnitude of the vector? \\
+\begin{equation}
+\frac{v-v_{\rm i}}{-g} = t
+\label{eq:subt1}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+Now substitute Eq. \ref{eq:subt1} into Eq. \ref{eq:threemain1}:\\
+\begin{align}
+y &= -\frac{1}{2}g\left(\frac{v-v_{\rm i}}{-g}\right)^2+v_{\rm i}\left(\frac{v-v_{\rm i}}{-g}\right)+y_{\rm 0} \label{eq:threemain4} \\ 
+-2g(y-y_{\rm 0}) &= (v-v_{\rm i})^2 + 2v_{\rm i}(v-v_{\rm i}) \label{eq:threemain5} \\
+-2g(y-y_{\rm 0}) &= v^2-v_{\rm i}^2 \label{eq:threemain6} \\
+-2g(y-y_{\rm 0})+v_{\rm i}^2 &= v^2 \label{eq:threemain7}
+\end{align}
+Equation \ref{eq:threemain7} provides a way to obtain the velocity of an accelerating system at some displacement without knowing the time.
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+A particle moves along the x-axis according to $x(t) = (10t-2t^2)\hat{i} \quad (m)$.  What is the instantaneous velocity
+at $t=2$ seconds and $t=3$ seconds? What is the average of these two numbers?
+\begin{itemize}
+\item A:
+\item B:
+\item C:
+\item D:
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+\small
+On February 15, 2013, a superbolide meteor (brighter than the Sun) entered Earth’s atmosphere over Chelyabinsk, Russia, and exploded at an altitude of 23.5 km. Eyewitnesses could feel the intense heat from the fireball, and the blast wave from the explosion blew out windows in buildings. The blast wave took approximately 2 minutes 30 seconds to reach ground level.  What was the average velocity of the blast wave?  Compare this with the speed of sound, which is 343 m/s at sea level.
+\begin{itemize}
+\item A: 
+\item B: 
+\item C: 
+\item D: 
+\end{itemize}
 \end{frame}
 
 \section{Answers}
