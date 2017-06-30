@@ -2,6 +2,7 @@
 \usetheme{metropolis}
 \usepackage{graphicx}
 \usepackage{subfig}
+\usepackage{hyperref}
 \title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Week 3}
 \date{September 18th - September 22nd, 2017}
 \author{Jordan Hanson}
@@ -353,6 +354,109 @@ What is the horizontal displacement of the shell when it explodes?
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Projectile Motion}
+\small
+Let's try gaining visual intuition about projectile motion through the following program: \\
+\vspace{0.25cm}
+\url{http://galileoandeinstein.physics.virginia.edu/more_stuff/Applets/Projectile/projectile.html}\\
+\begin{enumerate}
+\item First, set air resistance to zero, at bottom right.
+\item Make ten measurements of $g$ by creating some projectile trajectories, and taking the ratio $g = v_{\rm 0,y}^2/(2\Delta y)$.  What value do you obtain, on average?
+\item Now, set air resistance to $b/m \approx 0.02$, and repeat the ten measurements.  What value do you obtain?
+\item Explain why this value is smaller, larger, or equal to the first set of measurements.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Projectile Motion}
+Projectile motion in two dimensions, with constant acceleration in one dimension, produces \textit{quadratic curves}.  How do we obtain the \alert{trajectory}, or $y(x)$ for these curves?  Looking at the x-direction:\\
+\begin{align}
+x &= v_{\rm 0}\cos(\theta) t \\
+t &= \frac{x}{v_{\rm 0} \cos(\theta)} \label{eq:subst}
+\end{align}
+\end{frame}
+
+\begin{frame}{Projectile Motion}
+Substituting in Eq. \ref{eq:subst} for $t$ into the equation for vertical displacement gives:\\
+\begin{align}
+y(t) - y_{\rm 0} &= -\frac{1}{2}g\frac{x^2}{v_{\rm 0}^2\cos^2(\theta)} + \tan(\theta) x \\
+y(t) - y_{\rm 0} &= -\left(\frac{g}{2v_{\rm 0}^2\cos^2(\theta)}\right)x^2 + \tan(\theta) x \\
+y(x) - y_{\rm 0} &= -\left(\frac{g}{2v_{\rm 0}^2\cos^2(\theta)}\right)x^2 + \tan(\theta) x \label{eq:projfinal}
+\end{align}
+In Eq. \ref{eq:projfinal}, we are simply saying that $y(x)$ is some quadratic.  (It's still true that $y$ and $x$ are both functions of \textit{time}, however, those functions of time are related).
+\end{frame}
+
+\begin{frame}{Projectile Motion}
+A space explorer is on a moon around another planet, and wants to measure $g$.  She tosses a pebble from an initial height of 2 meter, at an angle of 45 degrees above horizontal, with an initial velocity of 2 m/s.  When it lands, the horizontal displacement is 10 meters.  What is the gravitational acceleration $g$?
+\begin{itemize}
+\item A: 0.125 m/s$^2$
+\item B: 0.25 m/s$^2$
+\item C: 0.5 m/s$^2$
+\item D: 1.0 m/s$^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Projectile Motion}
+Other useful equations are for the \textit{time-of-flight}, and the \textit{range}, concepts we've already seen in several examples: \\
+\begin{align}
+T_{\rm tof} &= \frac{2v_{\rm 0}\sin\theta}{g} \\
+R &= \frac{v_{\rm 0}^2\sin2\theta}{g}
+\end{align}
+\end{frame}
+
+\begin{frame}{Projectile Motion}
+\alert{Algebraic challenge}: Show that the ratio of the range to the time is just the horizontal velocity, using the trigonometric identity $\sin(2\theta) = 2\sin\theta\cos\theta$.
+\end{frame}
+
+\section{Relative Motion and Reference Frames}
+
+\begin{frame}{Relative Motion and Reference Frames}
+Thus far, we have been discussing \textit{kinematics} with respect to a \textit{fixed frame of reference}.  Usually, we think of this frame of reference as the Earth.  If we kick a soccer ball, we know how to use equations to describe the motion.  What if we are moving, and the ball is moving with us, when we kick it?
+\end{frame}
+
+\begin{frame}{Relative Motion and Reference Frames}
+Michael is running at 5 m/s, with a soccer ball rolling with him at the same speed.  He shoots the ball, such that he judges the speed to be 10 m/s.  What is the speed of the ball for someone who is observing, and standing still?
+\begin{itemize}
+\item A: 5 m/s
+\item B: 10 m/s
+\item C: 15 m/s
+\item D: Cannot determine.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Relative Motion and Reference Frames}
+So we see that relative motion is about adding and subtracting vectors.  Let's introduce a notation so that we always add vectors from reference frames correctly.  If two frames of reference (think of them as moving coordinate systems) $S$ and $S'$ are both moving with respect to each other.  The position of a particle $P$ in frame $S$ is \\
+\begin{equation}
+\vec{r}_{\rm PS} = \vec{r}_{\rm PS'} + \vec{r}_{\rm S'S}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Relative Motion and Reference Frames}
+\small
+\begin{equation}
+\vec{r}_{\rm PS} = \vec{r}_{\rm PS'} + \vec{r}_{\rm S'S}
+\end{equation}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/frames.png}
+\caption{\label{fig:frame} \small ``To get where you are going, first you must know where you are.''}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Relative Motion and Reference Frames}
+For positions:
+\begin{equation}
+\vec{r}_{\rm PS} = \vec{r}_{\rm PS'} + \vec{r}_{\rm S'S}
+\end{equation}\\
+Since velocities are just the time-derivatives of positions:
+\begin{equation}
+\vec{v}_{\rm PS} = \vec{v}_{\rm PS'} + \vec{v}_{\rm S'S}
+\end{equation}\\
+...and accelerations are just the time-derivatives of velocities:
+\begin{equation}
+\vec{a}_{\rm PS} = \vec{a}_{\rm PS'} + \vec{a}_{\rm S'S}
+\end{equation}
+\end{frame}
+
 \section{Answers}
 
 \begin{frame}{Answers}
@@ -374,6 +478,8 @@ What is the horizontal displacement of the shell when it explodes?
 \begin{itemize}
 \item 4.3 seconds
 \item 108 meters
+\item 0.5 m/s$^2$
+\item $R/T = v_{\rm 0} \cos\theta = v_{\rm x,0}$
 \end{itemize}
 \end{column}
 \end{columns}
