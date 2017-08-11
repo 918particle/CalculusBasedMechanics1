@@ -208,7 +208,123 @@ A man slides a palette crate across a concrete floor of his shop.  He exerts a f
 \section{Newton's Second Law}
 
 \begin{frame}{Newton's Second Law}
-From the prior problem, we see that \alert{Newton's First Law} holds even under relativity, for inertial reference frames.  Let's assume we observe a system from an intertial reference frame.
+From the prior problem, we see that \alert{Newton's First Law} holds even under relativity, for inertial reference frames.  Let's assume we observe a system from an intertial reference frame. \\
+\vspace{0.5cm}
+Let us also ignore any \textit{internal forces}: forces components of the system apply to each other.  Focusing on the external forces only, we make the following two observations: \\
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/NewtonsSecond.png}
+\caption{\label{fig:newton1} A force produces greater acceleration for less massive objects.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/NewtonsSecond2.png}
+\caption{\label{fig:newton2} A larger force produces greater acceleration for a given mass.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Newton's Second Law]
+\alert{The net force on a system is equal to the mass of the system multiplied by the acceleration of the system: $\vec{F}_{\rm net} = m \vec{a}$}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+A man slides a palette crate across a concrete floor of his shop.  He exerts a force of 60.0 N, and friction pushes against the crate with a force of 40.0 N.  What is the acceleration of the crate, if the crate is loaded with 50.0 kg of material?
+\begin{itemize}
+\item A: 0.1 m/s$^2$
+\item B: 1.0 m/s$^2$
+\item C: 0.5 m/s$^2$
+\item D: 0.4 m/s$^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+A man slides a palette crate across a concrete floor of his shop.  He exerts a net force of 30.0 N, and the crate accelerates at 0.5 m/s$^2$.  What mass is loaded onto the crate?
+\begin{itemize}
+\item A: 40.0 kg
+\item B: 50.0 kg
+\item C: 60.0 kg
+\item D: 70.0 kg
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/NewtonsSecond3.png}
+\caption{\label{fig:newton3} An example of a \textit{free body diagram}, which summarizes all external forces on a system.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,trim=0.75cm 0.5cm 0.75cm 0.5cm,clip=true]{figures/NetForce.pdf}
+\caption{\label{fig:fbd} The \textit{free-body diagram} is just a vector summation problem.  The \textit{normal force}, \textbf{N}, acts against the force of gravity, \textbf{w}, according to Netwon's Third Law.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+Indiana Jones is running through the rainforest, and he wades into a pit of quicksand.  He has a mass of 70 kg, however the normal force is only 400.0 N.  He pushes forward with a force of 250.0 N, and the quicksand sucks him backwards with a force of 50.0 N.  What is the net force on Indiana?  The force of gravity is his mass times $g$, in the downward direction.
+\begin{itemize}
+\item A: (200.0, -290) N
+\item B: (50.0, -690) N
+\item C: (200.0, 290) N
+\item D: (150.0, 690) N
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+What is the net acceleration on Indiana, from the previous example?
+\begin{itemize}
+\item A: 1.0 m/s$^2$
+\item B: 3.0 m/s$^2$
+\item C: 4.0 m/s$^2$
+\item D: 5.0 m/s$^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+Notice that if we define $\vec{p} = m\vec{v}$, we may write \\
+\vspace{0.5cm}
+\begin{equation}
+\vec{F}_{\rm net} = \frac{d\vec{p}_{\rm net}}{dt} = m \frac{d\vec{v}}{dt} = m \vec{a}_{\rm net}
+\end{equation} \\
+\vspace{0.5cm}
+In words: the force is the derivative of the \textit{momentum}, $\vec{p}$.
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+A particle of mass $m$ is falling under the influence of gravity, but experiences a thrust force upwards: $\vec{F}_{\rm t} = kt$, making the net force $\vec{F}_{\rm net} = kt - mg$.  Express the velocity as a function of time, assuming the velocity is $v_{\rm 0}$ at $t=0$.
+\begin{itemize}
+\item A: $v(t) = \frac{1}{2} \frac{k}{m} t^2+v_{\rm 0}$
+\item B:  $v(t) = \frac{k}{m} t - gt$
+\item C:  $v(t) = \frac{k}{m} t - gt +v_{\rm 0}$
+\item D: $v(t) = \frac{1}{2} \frac{k}{m} t^2 - gt +v_{\rm 0}$
+\end{itemize}
+\vspace{0.5cm}
+We will return to the concept of \textit{momentum} in the next few chapters...
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+There is a difference between \alert{\textit{mass}}, and \alert{\textit{weight}}.  \textit{Mass} is proportional to the number of atoms in an object.  \textit{Weight} is a force derived from Newton's second law (mass times acceleration), assuming the acceleration due to gravity is constant.  If an object has a mass of 1 kilogram, and the Earth's gravitational acceleration is $\approx 10$ m/s$^2$, then it \textit{weighs} $\approx 10.0$ N (10.0 kg m/s$^2$).
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+Astronauts are walking on the moon, and lifting moon rocks into cannisters.  On Earth, the cannisters weighed 40.0 N each, and each astronaut is expected to carry two of them, loaded each with 65.0 kg of moon rock.  The acceleration due to gravity on the Moon is about 17\% of that on Earth.  What weight are these astronauts expected to carry?
+\begin{itemize}
+\item A: 230 N
+\item B: 200 N
+\item C: 1000 N
+\item D: 170 N
+\end{itemize}
 \end{frame}
 
 \section{Conclusion}
@@ -223,6 +339,12 @@ From the prior problem, we see that \alert{Newton's First Law} holds even under 
 \item 10.1 seconds
 \item friction: -60.0 N
 \item 1.5 m/s, 60.0 N
+\item 0.4 m/s$^2$
+\item 60 kg
+\item (200.0, -290) N
+\item 5.0 m/s$^2$
+\item $v(t) = \frac{1}{2} \frac{k}{m} t^2 - gt +v_{\rm 0}$
+\item 230 N
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
