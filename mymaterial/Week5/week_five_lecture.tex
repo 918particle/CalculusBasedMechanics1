@@ -1,0 +1,244 @@
+\documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Week 5}
+\date{October 2nd - October 6th, 2017}
+\author{Jordan Hanson}
+\institute{Whittier College Department of Physics and Astronomy}
+
+\begin{document}
+\maketitle
+
+\section{Week 4 Review}
+
+\begin{frame}{Week 4 Review}
+\begin{enumerate}
+\item Deep statements about physics: \textit{dynamics} and \textit{kinematics}
+\begin{itemize}
+\item \textbf{Lab activity}: Force, mass and stretching springs
+\end{itemize}
+\item Newton's \alert{First Law}
+\begin{itemize}
+\item \textbf{Lab activity}: force tables
+\end{itemize}
+\item Newton's \alert{Second Law}
+\item Newton's \alert{Third Law}
+\item Applications
+\begin{itemize}
+\item Free-body diagrams
+\item Tension
+\item Inclined surfaces
+\item Restoring forces
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\section{Week 4 Review Problems}
+
+\begin{frame}{Week 4 Review Problems}
+A powerful motorcycle can produce an acceleration of 3.50 m/s$^2$ while traveling at 90.0 km/h. At that speed the forces resisting motion, including friction and air resistance, total 400 N. (Air resistance is analogous to air friction. It always opposes the motion of an object.) What is the magnitude of the force the motorcycle exerts backward on the ground to produce its acceleration if the mass of the motorcycle with rider is 245 kg?
+\begin{itemize}
+\item A: 1260 N
+\item B: 12,600 N
+\item C: 960 N
+\item D: 400 N
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Week 4 Review Problems}
+Two teams of nine members each engage in a tug of war.  Each of the first team’s members has an average mass of 68 kg and exerts an average force of 1350 N horizontally. Each of the second team’s members has an average mass of 73 kg and exerts an average force of 1365 N horizontally.  What is magnitude of the acceleration of the two teams?  What is the tension in the section of rope between the teams?
+\begin{itemize}
+\item A: 0.106 m/s$^2$, 33435 N
+\item B: 0.106 m/s$^2$, 12150 N
+\item C: 0.955 m/s$^2$, 33435 N
+\item D: 0.955 m/s$^2$, 12150 N
+\end{itemize}
+\end{frame}
+
+\section{Week 5 Summary}
+
+\begin{frame}{Week 5 Summary}
+\begin{enumerate}
+\item \alert{Friction}
+\begin{itemize}
+\item Normal force and friction
+\item Static, kinetic
+\end{itemize}
+\item \alert{Drag}
+\begin{itemize}
+\item Terminal velocity
+\end{itemize}
+\item \alert{Restoring Forces}
+\begin{itemize}
+\item Hooke's Law
+\item Young's modulus
+\item Shear modulus
+\item Bulk modulus
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\section{Friction}
+
+\begin{frame}{Friction}
+Some definitions: \\
+\begin{itemize}
+\item \textit{\alert{Friction}} is a force that opposes relative motion between systems in contact.
+\item \textit{\alert{Kinetic friction}} occurs between two systems that are in contact and moving relative to one another.
+\item \textit{\alert{Static friction}} is occuring between two systems in contact but there is no motion.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Friction}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/friction.png}
+\caption{\label{fig:fric} Friction is ultimately a microscopic phenomenon.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Friction}
+Let $N$ be the normal force, and $f$ is the force of friction opposing motion. \\
+\vspace{0.5cm}
+Static friction: \\
+\begin{equation}
+f_{\rm s} \leq \mu_{\rm s} N
+\end{equation}
+Static friction maximum: \\
+\begin{equation}
+f_{\rm s,max} = \mu_{\rm s} N
+\end{equation}
+Kinetic friction: \\
+\begin{equation}
+\boxed{
+f_{\rm k} = \mu_{\rm k} N ~~~ (\mu_{\rm k} < \mu_{\rm s})}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Friction}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/friction2.png}
+\caption{\label{fig:fric2} A handy table of friction coefficients.  For example, compare ice and concrete.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Friction}
+Suppose an object is moving horizontally along a surface, experiencing gravity and a normal force but no other forces.  From Newton's second law, we have \\
+\begin{align}
+\vec{F}_{\rm net} &= m \vec{a} \\
+\vec{f}_{\rm f} &= -m\vec{a} \\
+-f_{\rm f}/m &= a \\
+\mu_{\rm k} m g / m &= a \\
+a &= \mu_{\rm k} g
+\end{align}
+We may think of the friction coefficient as the fraction of gravitational acceleration transduced into opposing motion.
+\end{frame}
+
+\begin{frame}{Friction}
+What is the maximum frictional force in the knee joint of a person who supports 66.0 kg of her mass on that knee?  During strenuous exercise it is possible to exert forces to the joints that are easily ten times greater than the weight being supported. What is the maximum force of friction under such conditions?
+\begin{itemize}
+\item A: 1.06 N, 1.06 N
+\item B: 0.157 N, 1.57 N
+\item C: 103 N, 1133 N
+\item D: 10.3 N, 113 N
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Friction}
+Show that the acceleration of any object down a frictionless incline that makes an angle $\theta$ with the horizontal is $a = g\sin\theta$.  (Note that this is independent of mass).
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/incline.png}
+\caption{\label{fig:incline} Example of an incline with angle $\theta$ with respect to horizontal.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Friction}
+Next, show that the acceleration of any object down the same incline \alert{that has kinetic friction coefficient} $\mu_{\rm k} $ is given by $a = g(\sin\theta-\mu_{\rm k}\cos\theta)$.  Notice if we take the limit $\mu_{\rm k} \to 0$, we get the previous expression.
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/incline.png}
+\caption{\label{fig:incline2} Now with friction!}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Friction}
+A skiier is racing down a run with a 45 degree incline, and $\mu_{\rm k} = 0.1$.  Assuming the initial speed is 10 m/s, how long does it take to reach 40 m/s? (Let $g = 10$ m/s$^2$).
+\begin{itemize}
+\item A: $3\sqrt{2}$ seconds
+\item B: $10\sqrt{2}/3$ seconds
+\item C: $10$ seconds
+\item D: $30$ seconds
+\end{itemize}
+\end{frame}
+
+\section{Drag}
+
+\begin{frame}{Drag forces}
+The force of drag resisting the motion of an object of cross-sectional area $A$ moving at velocity $v$ through a fluid with density $\rho$ is \\
+\begin{equation}
+\boxed{F_{\rm D} = \frac{1}{2}C\rho A v^2}
+\label{eq:drag}
+\end{equation}
+In Eq. \ref{eq:drag}, C is a measured coefficient.
+\end{frame}
+
+\begin{frame}{Drag}
+A professor is riding his bicycle to work, at a constant velocity of 10 m/s.  His cross-sectional area is 1.0 m$^2$, the density of air is $\rho = 1.2$ kg/m$^3$, and $C \approx 0.5$.  What is the force of drag?  If he ducks down, making his area 0.25 m$^2$, what is the new force of drag?
+\begin{itemize}
+\item A: 30 N, 7.5 N
+\item B: 15 N, 15 N
+\item C: 30 N, 30 N
+\item D: 3 N, 3/4 N
+\end{itemize}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Week 5 Summary}
+\begin{enumerate}
+\item \alert{Friction}
+\begin{itemize}
+\item Normal force and friction
+\item Static, kinetic
+\end{itemize}
+\item \alert{Drag}
+\begin{itemize}
+\item Terminal velocity
+\end{itemize}
+\item \alert{Restoring Forces}
+\begin{itemize}
+\item Hooke's Law
+\item Young's modulus
+\item Shear modulus
+\item Bulk modulus
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\section{Answers}
+
+\begin{frame}{Answers}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item 1260 N
+\item 0.106 m/s$^2$, 12150 N
+\item 10.3 N, 113 N
+\item $10\sqrt{2}/3$ seconds
+\item 30 N, 7.5 N
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item ...
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}
