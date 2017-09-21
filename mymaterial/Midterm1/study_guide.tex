@@ -1,0 +1,58 @@
+\title{Study Guide for Midterm 1}
+\author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
+\date{\today}
+\documentclass[10pt]{article}
+\usepackage[a4paper, total={18cm, 27cm}]{geometry}
+\usepackage{outlines}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+\maketitle
+
+\section{Types of Problems on the Midterm}
+\begin{itemize}
+\item There are three problems on estimation, approximation, and unit analyis.  One of these involves kinematics, and another is multiple choice.
+\item There are two problems on kinematics with constant acceleration.
+\item There is one four-part problem on vectors.
+\end{itemize}
+
+\section{Estimation, Approximation, and Unit Analysis}
+Remember our three techniques for establishing estimates:
+\begin{itemize}
+\item Choose the right \textit{scale}.  For example, don't work in meters if the distances are between planets.  Work in $AU$ or light-minutes.
+\item Obtain complex quantities from simpler ones.  For example, estimate lengths first, and then multiply them to estimate volumes and areas.
+\item Constrain the unknown with upper and lower limits.  For example, the height of a child should not be 10 meters, or 0.1 meters.
+\end{itemize}
+
+\section{Displacement, Velocity, and Constant Acceleration Vectors}
+The definition of average velocity is
+\begin{equation}
+\bar{v} = \frac{x_{f} - x_{i}}{t_{f} - t_{i}} = \frac{\Delta x}{\Delta t}
+\label{eq:1}
+\end{equation}
+If the velocity is constant, the average velocity and the instantaneous velocity are the same.  The numerator of Eq. \ref{eq:1} is in general a vector called \textit{the displacement}: $\Delta \vec{x}$, describing the change in position of something.  If the velocity is constant, then
+\begin{equation}
+\Delta \vec{x} = \vec{v}\Delta t
+\label{eq:2}
+\end{equation}
+If the velocity is not constant, but the acceleration is constant, we have a system of equations relating displacement, time, velocity, and acceleration:
+\begin{align}
+x(t) &= x_0 + v_0 t + \frac{1}{2} a t^2 \\
+v(t) &= v_0 + a t \\
+a(t) &= a \\
+v^2 &= v_0^2 + 2a\Delta x
+\end{align}
+
+\section{Vectors}
+\begin{itemize}
+\item Practice adding and subtracting vectors.
+\begin{enumerate}
+\item Graphically
+\item As lists of numbers
+\end{enumerate}
+\item Practice breaking vectors into components: $\hat{x} \cdot \vec{v} = v\cos\theta$, $\hat{y} \cdot \vec{v}=v\sin\theta$ (if $\theta$ goes from x-axis to vector).
+\item Practice taking the magnitude of a vector: $\sqrt{\vec{v}\cdot\vec{v}}$, or Pythagorean theorem.
+\end{itemize}
+\end{document}
