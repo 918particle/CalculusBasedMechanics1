@@ -179,7 +179,7 @@ A skiier is racing down a run with a 45 degree incline, and $\mu_{\rm k} = 0.1$.
 \section{Drag}
 
 \begin{frame}{Drag forces}
-The force of drag resisting the motion of an object of cross-sectional area $A$ moving at velocity $v$ through a fluid with density $\rho$ is \\
+\alert{The force of drag} resisting the motion of an object of cross-sectional area $A$ moving at velocity $v$ through a fluid with density $\rho$ is \\
 \begin{equation}
 \boxed{F_{\rm D} = \frac{1}{2}C\rho A v^2}
 \label{eq:drag}
@@ -195,6 +195,148 @@ A professor is riding his bicycle to work, at a constant velocity of 10 m/s.  Hi
 \item C: 30 N, 30 N
 \item D: 3 N, 3/4 N
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Drag: Terminal Velocity}
+\small
+Suppose an object is falling through the atmosphere of Earth.  At a certain speed, the object stops accelerating.  Why?  The force of \textit{drag balances the force of gravity}.  Draw a free-body diagram describing the situation.  If $m$ is the mass of the falling object, $g$ is the acceleration of gravity, $C$ is the drag coefficient from Eq. \ref{eq:drag}, $\rho$ is the density of air, and $A$ is the area of the object, show that the maximum speed reached is $v_{\rm T} = \left(\frac{2mg}{C\rho A}\right)^{1/2}$.  What is the terminal velocity of a skydiver with: $m = 64$ kg, $A = 0.5$ m$^2$, $g = 10$ m/s$^2$, $C \approx 1$, $\rho \approx 1$ kg/m$^3$?
+\begin{itemize}
+\item A: 1800 km/hr
+\item B: 180 km/hr
+\item C: 18 km/hr
+\item D: 80 m/s
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Drag: Stoke's Law}
+\small
+\alert{\textbf{Stoke's Law}} describes drag on small systems moving slowly through viscous media: $F_{\rm D} = 6\pi r\eta v$, where $r$ is the radius of the object, $v$ is the velocity, and $\eta$ is the \textit{viscosity} (kg/(s$\cdot$m)).  In the same fashion as the prior exercise, show that the terminal velocity is $v_{\rm T} = mg/6\pi\eta v$.  Calculate this velocity assuming: $m\approx 10^{-9}$ kg, $r\approx 2 \cdot 10^{-3}$ m, $g\approx 10$ m/s$^2$, and $\eta \approx 2 \cdot 10^{-5}$ kg/(s m) for air.
+\begin{itemize}
+\item A: 100 cm/s
+\item B: 10 cm/s
+\item C: 1 cm/s
+\item D: 1 mm/s
+\end{itemize}
+\end{frame}
+
+\section{Restoring Forces}
+
+\begin{frame}{Restoring Forces}
+Let $F_{\rm app}$ be an applied force on a system, causing the length of the system to change by $\vec{x}$.  By Newton's Third Law, the system will exert a force $F$ in reaction. \\
+\vspace{1cm}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Hooke's Law]
+\alert{$\vec{F} = -k\vec{x}$}
+\end{tcolorbox}
+\vspace{0.5cm}
+Hooke's Law is an example of a \textit{restoring force}.  Examples of systems that obey Hooke's Law are springs, pendula, and other oscillators.
+\end{frame}
+
+\begin{frame}{Restoring Forces: Oscillations...}
+If a system follows Hooke's Law and Newton's Second Law in one-dimension, then \\
+\begin{align}
+m \frac{d^2x}{dt^2} &= -k x(t) \label{eq:osc1} \\
+\frac{d^2x}{dt^2} &= -\frac{k}{m} x(t) \label{eq:osc2}
+\end{align} \\
+What set of functions obeys this differential equation?  Sines and cosines...
+\end{frame}
+
+\begin{frame}{Restoring Forces: Young's Modulus}
+Suppose a force $F$ is \textit{applied} to a system of length $L$ and cross-sectional area $A$, which compresses an amount $x$.  Let \textit{Young's Modulus} be defined by $Y = k \frac{L}{A}$.  Rearranging Hooke's Law  gives \\
+\begin{equation}
+\frac{x}{L} = \frac{1}{Y}\frac{F}{A}
+\end{equation}
+\vspace{0.5cm}
+Force applied per unit area is also known as \textit{pressure}, $p$.
+\begin{equation}
+\boxed{\frac{x}{L} = \frac{p}{Y}}
+\label{eq:young}
+\end{equation} \\
+The SI unit for pressure is the \textit{Pascal}, or 1 Newton per square meter.  Young's Modulus also applies to tension, or the opposite of linear compression.
+\end{frame}
+
+\begin{frame}{Restoring Forces: Young's Modulus}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/young.png}
+\caption{\label{fig:young} Table of Young's Modulii for different materials.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Restoring Forces: Young's Modulus}
+Young's Modulus for spider silk is $3 \times 10^9$ N/m$^2$.  If a spider weighs 1 mg, and dangles from a strand of its silk with radius 0.5 mm, by what fraction does the strand stretch?  (Hint: this fraction is $x/L$ in Eq. \ref{eq:young}).
+\begin{itemize}
+\item A: $4 \times 10^{-2}$
+\item B: $4 \times 10^{-3}$
+\item C: $4 \times 10^{-5}$
+\item D: $4 \times 10^{-9}$
+\end{itemize}
+Why is it important for the silk of the spider to be this strong, from the perspective of evolution?
+\end{frame}
+
+\begin{frame}{Restoring Forces: Young's Modulus}
+Suppose we had a rope made of spider silk (same number for Young's Modulus), with a radius of 0.5 cm.  By what fraction would this rope stretch if it were to support the weight of a 80 kg human?
+\begin{itemize}
+\item A: $10^{-3}$
+\item B: $10^{-9}$
+\item C: $10^{-7}$
+\item D: $10^{-4}$
+\end{itemize}
+Yep, spider silk can hold a person without breaking.  Just need the right thickness.
+\end{frame}
+
+\begin{frame}{Restoring Forces: Stress and Strain}
+Pressure, when applied to material solids, is also called \textit{stress}.  The fractional change in length of a material solid, $x/L$ (or $\Delta L/L_{\rm 0}$ in the text), is called the \textit{strain}.  Using Eq. \ref{eq:young}, we have
+\begin{equation}
+stress = Y \times strain
+\end{equation}
+$Y$ is just the coefficient relating the linear shape change to the applied pressure.  Other coefficients describe other shape changes...
+\end{frame}
+
+\begin{frame}{Restoring Forces: Shear Modulus}
+Suppose the applied force is \textit{perpendicular} to $L$ and \textit{parallel} to $A$, also known as \textit{shearing}.  The \textit{Shear Modulus} $S$ relates shear to stress: \\
+\begin{equation}
+stress = S \times shear
+\end{equation}
+Shear and strain are similar, but in different directions.  One critical example is human bone.
+\end{frame}
+
+\begin{frame}{Restoring Forces: Shear Modulus}
+Suppose the ratio of Young's Modulus for bone to the Shear Modulus for bone is 20:1: $Y/S = 20$.  Leg bone can withstand stresses that lead to strains of $10^{-3}$ before breaking.  Suppose that corresponds to a pressure of $10^6$ N/m$^2$.  What pressure applied to a bone sideways (shear) would lead to a fracture?
+\begin{itemize}
+\item A: $\frac{1}{2} \times 10^{5}$ N/m$^2$
+\item B: $\frac{1}{2} \times 10^{4}$ N/m$^2$
+\item C: $\frac{1}{2} \times 10^{3}$ N/m$^2$
+\item D: $\frac{1}{2} \times 10^{2}$ N/m$^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Restoring Forces: Shear Modulus}
+If that pressure was applied to a $2$ cm$^2$ area of leg ($2 \times 10^{-2}$ cm$^2$), what is the corresponding force?
+\begin{itemize}
+\item A: $10^{3}$ N
+\item B: $10^{5}$ N
+\item C: $10^{2}$ N
+\item D: $10^{3}$ N
+\end{itemize}
+How does this compare to your body weight? Is it much greater, about the same, or less?  What if someone stood on your leg with one foot.  Would that break your leg?
+\end{frame}
+
+\begin{frame}{Restoring Forces: Bulk Modulus}
+Suppose the applied force per unit area is just some constant pressure, $p$, coming from all directions uniformly.  The \textit{Bulk Modulus} $B$ relates fractional volumetric change to this pressure: \\
+\begin{equation}
+p = B\frac{\Delta V}{V}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Restoring Forces: Shear Modulus}
+The bulk modulus of brass is about $75 \times 10^{9}$ N/m$^2$.  Suppose we want to compress a brass sphere of volume 4.3 cm$^3$ into a ring of volume 2.15 cm$^3$.  What pressure is required?
+\begin{itemize}
+\item A: $2.15 \times 10^{9}$ N/m$^2$ 
+\item B: $37.5 \times 10^{6}$ N/m$^2$ 
+\item C: $37.5 \times 10^{9}$ N/m$^2$ 
+\item D: $75 \times 10^{9}$ N/m$^2$ 
+\end{itemize}
+How does this compare to atmospheric pressure, if 1 atmosphere is 100 kPa = $10^5$ N/m$^2$?
 \end{frame}
 
 \section{Conclusion}
@@ -231,11 +373,17 @@ A professor is riding his bicycle to work, at a constant velocity of 10 m/s.  Hi
 \item 10.3 N, 113 N
 \item $10\sqrt{2}/3$ seconds
 \item 30 N, 7.5 N
+\item 180 km/hr
+\item 1 cm/s
+\item $4 \times 10^{-9}$
+\item $10^{-3}$
+\item $\frac{1}{2} \times 10^{5}$ N/m$^2$
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item ...
+\item $10^{3}$ N
+\item $37.5 \times 10^{9}$ N/m$^2$ 
 \end{itemize}
 \end{column}
 \end{columns}
