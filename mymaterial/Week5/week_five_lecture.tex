@@ -62,6 +62,12 @@ Two teams of nine members each engage in a tug of war.  Each of the first teamâ€
 
 \begin{frame}{Week 5 Summary}
 \begin{enumerate}
+\item \alert{Motion in a circle}
+\begin{itemize}
+\item Constant velocity
+\item Constant acceleration
+\item \textit{Returning to this topic when we reach \alert{momenum}}
+\end{itemize}
 \item \alert{Friction}
 \begin{itemize}
 \item Normal force and friction
@@ -79,6 +85,50 @@ Two teams of nine members each engage in a tug of war.  Each of the first teamâ€
 \item Bulk modulus
 \end{itemize}
 \end{enumerate}
+\end{frame}
+
+\section{Motion in a Circle}
+
+\begin{frame}{Motion in a Circle}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/circle.png}
+\caption{\label{fig:circle} A visual explanation of centripetal acceleration.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Motion in a Circle}
+\small
+The triangle involving velocity is \textit{similar} to the triangle involving radii.  (Similar means ratios of side lengths are the same).  Thus:
+\begin{align}
+\frac{\Delta v}{v} &= \frac{\Delta r}{r} \\
+\Delta v &= \frac{v}{r}\Delta r \\
+\frac{\Delta v}{\Delta t} &= \frac{v}{r}\frac{\Delta r}{\Delta t} \\
+\lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} &= \frac{v}{r} \lim_{\Delta t \to 0} \frac{\Delta r}{\Delta t}
+\end{align}
+\begin{equation}
+\boxed{a_{\rm C} = \frac{v^2}{r}}
+\end{equation}
+This acceleration is a \textbf{vector}, oriented towards the \textit{center} of the circle.
+\end{frame}
+
+\begin{frame}{Motion in a Circle}
+If there is a centripetal acceleration, then we may also define a centripetal \textit{force}, via Newton's Second Law:
+\begin{equation}
+\vec{F}_{\rm C} = m \frac{v^2}{r} \hat{r}
+\end{equation}
+Remember, this equation is meant to indicate a vector pointing towards the \textit{center of the circle}.
+\end{frame}
+
+\begin{frame}{Motion in a Circle}
+One other kinematic variable: \textit{angular velocity} $\omega$, in radians per second.  If $v$ is the radial velocity, the velocity at the edge of the circle, then 
+\begin{equation}
+v = r\omega
+\end{equation}
+(From the definition of the radian).  Think of $\omega = \frac{d\theta}{dt}$.  Then the centripetal force is
+\begin{equation}
+F_{\rm C} = m r \omega^2
+\end{equation}
 \end{frame}
 
 \section{Friction}
