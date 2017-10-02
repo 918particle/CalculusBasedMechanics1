@@ -127,8 +127,57 @@ v = r\omega
 \end{equation}
 (From the definition of the radian).  Think of $\omega = \frac{d\theta}{dt}$.  Then the centripetal force is
 \begin{equation}
-F_{\rm C} = m r \omega^2
+F_{\rm C} = - m r \omega^2
 \end{equation}
+\end{frame}
+
+\begin{frame}{Motion in a Circle}
+A man swings from a 10 meter long rope, and the centripetal force balances the gravitational force.  What is the radial velocity of the man? ($g \approx 10$ m/s$^2$).
+\begin{itemize}
+\item A: 1 m/s
+\item B: 5 m/s
+\item C: 10 m/s
+\item D: 20 m/s
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Motion in a Circle}
+To prepare for the experience of launching away from Earth, astronauts train on centrifuges that simulate g-forces on their bodies.  Suppose a 50 kg astronaut is seated in a centrifuge that moves her in a circle with radius 10 meters.  At what radial velocity will the centripetal force reach 4 g's?  (Take the ratio of the centripetal force to the astronaut's weight).  Does the answer depend on the mass of the astronaut?
+\begin{itemize}
+\item A: 1 m/s, yes
+\item B: 10 m/s, no
+\item C: 20 m/s, yes
+\item D: 20 m/s, no
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Motion in a Circle}
+Notice that $\Delta \theta = \omega t$, just like one of our \textit{constant-velocity} type equations in linear kinematics.  We can therefore write the position vector of a system undergoing uniform circular motion as follows:
+\begin{equation}
+\vec{r}(t) = R\cos(\omega t) \hat{i} + R\sin(\omega t) \hat{j}
+\end{equation}
+(R is the radius of the circle).  We can refer to $\omega$ as the angular frequency of this function, and the system goes around the circle once per \textit{period}, or $T = 2\pi/\omega$.
+\end{frame}
+
+\begin{frame}{Motion in a Circle}
+We can take derivatives to find that:
+\begin{equation}
+\vec{v}(t) = \frac{d\vec{r}(t)}{dt} = -R\omega\sin(\omega t) \hat{i} + R\omega\cos(\omega t) \hat{j}
+\end{equation}
+\begin{equation}
+\vec{a}(t) = \frac{d\vec{v}(t)}{dt} = -R\omega^2\cos(\omega t) \hat{i} - R\omega^2\sin(\omega t) \hat{j}
+\end{equation}
+Notice that the acceleration is always negative, or a vector pointing towards the center of the circle.
+\end{frame}
+
+\begin{frame}{Motion in a Circle}
+A proton has a speed $2 \times 10^6$ m/s and is moving in a circle in the x-y plane of radius 2 m.  What is the position of the proton at $t = 2 \times 10^{-6}$ seconds?  (At $t=0$, the proton is on the x-axis at $\vec{r}(t) = 0.175$ m $\hat{i}$).
+\begin{itemize}
+\item A: $\vec{r} = (2\cos(2)\hat{i} + 2\sin(2)\hat{j})$ m
+\item B: $\vec{r} = (2\cos(4)\hat{i} + 2\sin(4)\hat{j})$ m
+\item C: $\vec{r} = (\cos(2)\hat{i} + \sin(2)\hat{j})$ m
+\item D: $\vec{r} = (\cos(2)\hat{i})$ m
+\end{itemize}
 \end{frame}
 
 \section{Friction}
@@ -418,6 +467,9 @@ How does this compare to atmospheric pressure, if 1 atmosphere is 100 kPa = $10^
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{itemize}
+\item 10 m/s
+\item 20 m/s, no
+\item $\vec{r} = (2\cos(2)\hat{i} + 2\sin(2)\hat{j})$ m
 \item 1260 N
 \item 0.106 m/s$^2$, 12150 N
 \item 10.3 N, 113 N
@@ -425,13 +477,13 @@ How does this compare to atmospheric pressure, if 1 atmosphere is 100 kPa = $10^
 \item 30 N, 7.5 N
 \item 180 km/hr
 \item 1 cm/s
-\item $4 \times 10^{-9}$
-\item $10^{-3}$
-\item $\frac{1}{2} \times 10^{5}$ N/m$^2$
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
+\item $4 \times 10^{-9}$
+\item $10^{-3}$
+\item $\frac{1}{2} \times 10^{5}$ N/m$^2$
 \item $10^{3}$ N
 \item $37.5 \times 10^{9}$ N/m$^2$ 
 \end{itemize}
