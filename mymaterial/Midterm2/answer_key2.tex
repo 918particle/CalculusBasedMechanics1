@@ -12,30 +12,46 @@
 
 \section{Vectors and Newton's Laws}
 \begin{enumerate}
-\item Let $\vec{F}_{\rm 1} = -\frac{3}{2}\hat{x} + 2\hat{y}$ N, and $\vec{F}_{\rm 2} = -2\hat{x} + \frac{3}{2}\hat{y}$ N.  a) Give the magnitude of each force.  b) What is the net force?  c) What is the angle between these two forces? \vspace{2.0 cm}
+\item Let $\vec{F}_{\rm 1} = -\frac{3}{2}\hat{x} + 2\hat{y}$ N, and $\vec{F}_{\rm 2} = -2\hat{x} + \frac{3}{2}\hat{y}$ N.  a) Give the magnitude of each force.  b) What is the net force?  c) What is the angle between these two forces? N.  a) Give the magnitude of each force.  b) What is the net force?  c) What is the angle between these two forces? \\
+a) $|\vec{F}_{\rm 1}| = \sqrt{\left(\frac{3}{2}\right)^2+\left(2\right)^2} = \sqrt{\frac{25}{4}} = \frac{5}{2}$.  The magnitude of the forces are equal. \\
+b) $\vec{F}_{\rm 1}+\vec{F}_{\rm 2} = \left(\frac{3}{2}-2\right)\hat{i} + \left(2+\frac{3}{2}\right)\hat{j} = -\frac{1}{2}\hat{i} + \frac{7}{2}\hat{j}$. \\
+c) $\vec{F}_{\rm 1} \cdot \vec{F}_{\rm 2} = 0$, so the cosine of the angle is $0$, meaning $\theta = 90$ degrees.
 \item Imagine you are sitting in an airplane that has just lifted off with an acceleration vector 45 degrees with respect to horizontal.  Draw a free-body diagram corresponding to you, showing all forces acting on you.
-\vspace{2.0 cm}
-\item Imagine you are riding a skateboard down a hill.  Draw a free-body diagram corresponding to you, showing all forces acting on you.
-\vspace{2.0 cm}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.2\textwidth]{figures/FBD1.pdf}
+\caption{\label{fig:fbd1} Answer to number 2.}
+\end{figure}
+\item Imagine you are riding a skateboard down a hill (no friction) and the incline angle is 45 degrees.  Draw a free-body diagram corresponding to you, showing all forces acting on you.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.2\textwidth]{figures/FBD2.pdf}
+\caption{\label{fig:fbd2} Answer to number 3, which turns out to be similar to number 2.}
+\end{figure}
 \end{enumerate}
+\clearpage
 \section{Newton's Laws, and Circular Motion}
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.2\textwidth,trim=10cm 4.84cm 0cm 0.6cm,clip=true]{bank.png}
+\includegraphics[width=0.2\textwidth,trim=10cm 4.84cm 0cm 0.6cm,clip=true]{figures/bank.png}
 \caption{\label{fig:bank} Let the weight be $\vec{w}$, and the total lift be $\vec{L}$, which may be be broken into two components: the turning force (equal to centripetal force $\vec{f}_{\rm C}$) and vertical lift (which balances weight).}
 \end{figure}
 \begin{enumerate}
 \item When banking, the free-body diagram of a jet-fighter resembles Fig. \ref{fig:bank}.  To bank while maintaining altitude, the lift force $\vec{L}$ must \textit{both} balance the weight $\vec{w}$ and provide the centripetal force $\vec{f}_{\rm C}$.  Let the mass of the aircraft be $m$, the radius of the turn be $r$, and the angle between $\vec{L}$ and horizontal be $\theta$.
 \begin{itemize}
-\item Show that the angular velocity of the turn, $\omega$, is $\omega = \sqrt{\frac{L\cos\theta}{rm}}$ \vspace{3cm}
-\item If $\omega$ is the angular velocity, then the \textit{period} is $T = 2\pi/\omega$.  This is the time required to fly in a complete circle.  Show that one-half period is $\frac{T}{2} = \pi\sqrt{\frac{r m}{L\cos\theta}}$.  This is the time required to turn.\vspace{3cm}
-\item Let $L = 8\times 10^5$ N, $m = 2\times 10^4$ kg, $r = \frac{1}{2}$ km, and $\theta = 60$ degrees.  How long does it take the jet fighter to turn?\vspace{3cm}
-\item What is the speed of the jet fighter?
+\item Show that the angular velocity of the turn, $\omega$, is $\omega = \sqrt{\frac{L\cos\theta}{rm}}$ \\
+Turning force provides centripetal force: $L\cos\theta = mr\omega^2$.  Solve for $\omega$: $\omega = \sqrt{\frac{L\cos\theta}{rm}}$
+\item If $\omega$ is the angular velocity, then the \textit{period} is $T = 2\pi/\omega$.  This is the time required to fly in a complete circle.  Show that one-half period is $\frac{T}{2} = \pi\sqrt{\frac{r m}{L\cos\theta}}$.  This is the time required to turn. \\
+If $\omega = \sqrt{\frac{L\cos\theta}{rm}}$, then $2\pi/\omega = 2\pi \sqrt{\frac{rm}{L\cos\theta}}$, and half of that is $\frac{T}{2} = \pi\sqrt{\frac{r m}{L\cos\theta}}$.  This takes the aircraft half-way around a circle, or reversing course.
+\item Let $L = 8\times 10^5$ N, $m = 2\times 10^4$ kg, $r = \frac{1}{2}$ km, and $\theta = 60$ degrees.  How long does it take the jet fighter to turn? \\
+Plugging in the numbers, we get aboutr $5\pi$ seconds, or about 15.7 seconds.
+\item What is the speed of the jet fighter?\\
+If $v = r\omega$, then $v = \sqrt{\frac{rL\cos\theta}{m}}$.  Putting in numbers, we have $\approx 100$ m/s.
 \begin{itemize}
 \item A: 10 m/s 
 \item B: 20 m/s
-\item C: 100 m/s
-\item D: 120 m/s
+\item C: \textbf{100 m/s} (this is also a good estimate)
+\item D: 120 m/s (this is a good estimate, but off by 20\%).
 \end{itemize}
 \end{itemize} 
 \end{enumerate}
