@@ -19,11 +19,11 @@
 \vspace{2.0 cm}
 \end{enumerate}
 \section{Newton's Laws, and Circular Motion}
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.2\textwidth,trim=10cm 4.84cm 0cm 0.6cm,clip=true]{bank.png}
-\caption{\label{fig:bank} Let the weight be $\vec{w}$, and the total lift be $\vec{L}$, which may be be broken into two components: the turning force (equal to centripetal force $\vec{f}_{\rm C}$) and vertical lift (which balances weight).}
-\end{figure}
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=0.2\textwidth,trim=10cm 4.84cm 0cm 0.6cm,clip=true]{bank.png}
+%\caption{\label{fig:bank} Let the weight be $\vec{w}$, and the total lift be $\vec{L}$, which may be be broken into two components: the turning force (equal to centripetal force $\vec{f}_{\rm C}$) and vertical lift (which balances weight).}
+%\end{figure}
 \begin{enumerate}
 \item When banking, the free-body diagram of a jet-fighter resembles Fig. \ref{fig:bank}.  To bank while maintaining altitude, the lift force $\vec{L}$ must \textit{both} balance the weight $\vec{w}$ and provide the centripetal force $\vec{f}_{\rm C}$.  Let the mass of the aircraft be $m$, the radius of the turn be $r$, and the angle between $\vec{L}$ and horizontal be $\theta$.
 \begin{itemize}
@@ -49,9 +49,10 @@
 \item 0.5
 \item 1.2
 \end{itemize}
-\item Suppose they get a sample of the mystery liquid in a vile.  They assume the drag force is given by Stoke's Law, $F_{\rm D} = 6\pi r \eta v$, where $v$ is the velocity of a particle moving through they fluid, $r$ is the radius of the particle, and $\eta$ is the \textit{viscosity}.  They drop a bead with $r = 1$ mm and a mass of one gram into the fluid, and observe the bead sink with a constant (terminal) velocity of 1 m/s.  What is the viscosity of the fluid?  Units: kg/(m s).
+\item Suppose they get a sample of the mystery liquid in a vile.  They assume the drag force is given by Stoke's Law, $F_{\rm D} = 6\pi r \eta v$, where $v$ is the velocity of a particle moving through they fluid, $r$ is the radius of the particle, and $\eta$ is the \textit{viscosity}.  They drop a bead with $r = 1$ mm and a mass of one gram into the fluid, and observe the bead sink with a constant (terminal) velocity of 1 m/s.  What is the viscosity of the fluid?  Units: kg/(m s). \\ \\
+The net force is zero, because the bead is moving at constant velocity.  This implies that the force of gravity is balanced by the force of drag from Stoke's Law.  $mg = 6\pi\eta r v$.  All parameters are measured, so we may calculate $\eta$: $\eta = mg/(6\pi r v)$.  Using $g = 10$, we find $\eta = 5/(3\pi)$ kg/(m s).
 \begin{itemize}
-\item $5/(3\pi)$ kg/(m s)
+\item $5/(3\pi)$ kg/(m s) (Correct).  Also, we can estimate our way to this one by noticing that it is closer to 1 than the other answers.  This liquid is less sticky than honey, but more sticky than blood, and way stickier than water.
 \item $5/(30\pi)$ kg/(m s)
 \item $10$ kg/(m s)
 \item $5$ kg/(m s)
