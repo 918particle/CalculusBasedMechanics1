@@ -1,58 +1,47 @@
-\title{Study Guide for Midterm 1}
+\title{Midterm 2 for Calculus-Based Physics-1: Mechanics (PHYS150-01)}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
-\date{\today}
+\date{October 16th, 2017}
 \documentclass[10pt]{article}
 \usepackage[a4paper, total={18cm, 27cm}]{geometry}
 \usepackage{outlines}
 \usepackage[sfdefault]{FiraSans}
 \usepackage{graphicx}
-\usepackage{amsmath}
 
 \begin{document}
 \maketitle
 
-\section{Types of Problems on the Midterm}
-\begin{itemize}
-\item There are three problems on estimation, approximation, and unit analyis.  One of these involves kinematics, and another is multiple choice.
-\item There are two problems on kinematics with constant acceleration.
-\item There is one four-part problem on vectors.
-\end{itemize}
-
-\section{Estimation, Approximation, and Unit Analysis}
-Remember our three techniques for establishing estimates:
-\begin{itemize}
-\item Choose the right \textit{scale}.  For example, don't work in meters if the distances are between planets.  Work in $AU$ or light-minutes.
-\item Obtain complex quantities from simpler ones.  For example, estimate lengths first, and then multiply them to estimate volumes and areas.
-\item Constrain the unknown with upper and lower limits.  For example, the height of a child should not be 10 meters, or 0.1 meters.
-\end{itemize}
-
-\section{Displacement, Velocity, and Constant Acceleration Vectors}
-The definition of average velocity is
-\begin{equation}
-\bar{v} = \frac{x_{f} - x_{i}}{t_{f} - t_{i}} = \frac{\Delta x}{\Delta t}
-\label{eq:1}
-\end{equation}
-If the velocity is constant, the average velocity and the instantaneous velocity are the same.  The numerator of Eq. \ref{eq:1} is in general a vector called \textit{the displacement}: $\Delta \vec{x}$, describing the change in position of something.  If the velocity is constant, then
-\begin{equation}
-\Delta \vec{x} = \vec{v}\Delta t
-\label{eq:2}
-\end{equation}
-If the velocity is not constant, but the acceleration is constant, we have a system of equations relating displacement, time, velocity, and acceleration:
-\begin{align}
-x(t) &= x_0 + v_0 t + \frac{1}{2} a t^2 \\
-v(t) &= v_0 + a t \\
-a(t) &= a \\
-v^2 &= v_0^2 + 2a\Delta x
-\end{align}
-
-\section{Vectors}
-\begin{itemize}
-\item Practice adding and subtracting vectors.
+\section{Vectors and Newton's Laws}
 \begin{enumerate}
-\item Graphically
-\item As lists of numbers
+\item Practice the following skills with vectors: a) calculating the magnitude when the vector is given in algebraic form b) Summing vectors (as when obtaining net force) c) calculating the angle between two vectors using the dot product. \\ \\
+The dot product for vectors $\vec{f}_{\rm 1} = f_{\rm 1x}\hat{i} + f_{\rm 1y}\hat{j}$ and $\vec{f}_{\rm 2} = f_{\rm 2x}\hat{i} + f_{\rm 2y}\hat{j}$ is $\vec{f}_{\rm 1} \cdot \vec{f}_{\rm 2} = f_{\rm 1x}f_{\rm 2x} + f_{\rm 1y}f_{\rm 2y}$.  The magnitude $|\vec{f}_{\rm 1}|$ of a vector $\vec{f}_{\rm 1}$ is $\sqrt{\vec{f}_{\rm 1}\cdot\vec{f}_{\rm 1}}$ (Pythagorean theorem).  If $\theta$ is the angle between two vectors $\vec{f}_{\rm 1}$ and $\vec{f}_{\rm 2}$, then $\vec{f}_{\rm 1} \cdot \vec{f}_{\rm 2} = |\vec{f}_{\rm 1}||\vec{f}_{\rm 2}|\cos\theta$
+\item Practice drawing a free-body diagram that includes all \textit{external} forces on the \textit{system}.  Understand that centripetal force is not an \textit{external} force, but a force that describes circular motion and is supplied by some external effect like gravity.
+\item Practice drawing a free-body diagram that describes an object on an incline plane.
 \end{enumerate}
-\item Practice breaking vectors into components: $\hat{x} \cdot \vec{v} = v\cos\theta$, $\hat{y} \cdot \vec{v}=v\sin\theta$ (if $\theta$ goes from x-axis to vector).
-\item Practice taking the magnitude of a vector: $\sqrt{\vec{v}\cdot\vec{v}}$, or Pythagorean theorem.
+\section{Newton's Laws, and Circular Motion}
+\begin{enumerate}
+\item The displacement $\Delta s$ around a circle of radius $r$ is given by $\Delta s = r\Delta\theta$, where $\Delta\theta$ is the \textit{angular} displacement.  The derivative of the angular displacement is $\omega$, with $v = r\omega$.
+\begin{itemize}
+\item The centripetal acceleration is $a_{\rm C} = v^2/r = r\omega^2$.
+\item The centripetal force is $F_{\rm C} = mv^2/r = mr\omega^2$.
+\end{itemize} 
+\end{enumerate}
+\section{Frictional Forces}
+\begin{enumerate}
+\item Practice drawing free-body diagrams that include frictional forces.  What should be the direction of the frictional force?
+\item Let $N$ be the magnitude of the normal force.  If a frictional force is \textit{static}, then the magnitude of that force is $f_{\rm f,s} = \mu_{\rm s} N$.  If the frictional force is \textit{kinetic}, then the magntidue of that force is $f_{\rm f,k} = \mu_{\rm k} N$.  Usually, $\mu_{\rm k} < \mu_{\rm s}$.
+\item We encountered two forces of friction not associated with surface contact: drag forces.  One drag force was given by Stoke's Law: $F_{\rm D} = 6\pi r \eta v$.
+\begin{itemize}
+\item $r$ is the radius of the object moving through the medium in meters.
+\item $\eta$ is the \textit{viscosity} of the fluid in kg/(m s).
+\item $v$ is the velocity of the object in m/s.
+\item The force points in the opposite direction of velocity.
 \end{itemize}
+\item One other drag force was given by the following: $F_{\rm D} = \frac{1}{2}C\rho Av^2$.
+\begin{itemize}
+\item $C$ is a dimensionless empirical constant (usually close to 1).
+\item $\rho$ is the density of the fluid or gas through which the system moves, in kg/m$^3$.
+\item $A$ is the cross-sectional area of the system moving through the fluid or gas, in $m^2$.
+\item $v$ is the system velocity in m/s.
+\end{itemize}
+\end{enumerate}
 \end{document}
