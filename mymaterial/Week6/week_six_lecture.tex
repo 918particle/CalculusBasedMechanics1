@@ -4,7 +4,7 @@
 \usepackage{subfig}
 \usepackage{hyperref}
 \usepackage{tcolorbox}
-\title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Week 5}
+\title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Week 6}
 \date{October 9th - October 13th, 2017}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
@@ -37,13 +37,13 @@
 
 \section{Week 5 Review Problem}
 
-\begin{frame}{Week 4 Review Problems}
-...
+\begin{frame}{Week 5 Review Problem}
+A car rests on four shock absorbers, and each is like a spring with a spring constant $k = 1000 N/cm$.  The car weighs 10000 N.  By what distance is each spring compressed?
 \begin{itemize}
-\item A: 
-\item B: 
-\item C: 
-\item D: 
+\item A: 2.5 cm
+\item B: 10 cm
+\item C: 1 meter
+\item D: 0 cm
 \end{itemize}
 \end{frame}
 
@@ -51,29 +51,138 @@
 
 \begin{frame}{Week 6 Summary}
 \begin{enumerate}
-\item \alert{Angular} kinematics
+\item \alert{Work} has a scientifically precise definition
 \begin{itemize}
-\item Angular displacement
-\item Angular velocity
-\item centripetal acceleration
+\item Units
+\item As a product of force and displacement vectors
 \end{itemize}
-\item \alert{Newton's Law of Gravity} and circular orbits
-\item Kepler's Laws
+\item Kinetic Energy and the \alert{Work-Energy Theorem}
+\item Gravitational potential energy
+\begin{itemize}
+\item Potential energy
+\item \textit{Simplifying otherwise complex calculations}
+\item Potential energy near Earth's surface
+\item ...in space
+\end{itemize}
+\item Definition of a \textbf{conservative force}
+\begin{itemize}
+\item Relationship between conservative forces and potential energy
+\item Conservation of energy for conservative forces
+\end{itemize}
 \end{enumerate}
+\end{frame}
+
+\section{Definitions of Work}
+
+\begin{frame}{Definitions of Work}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Physical Definition of Work]
+\alert{Let $\vec{F}$ be a force exerted on a system, which is displaced by a displacement $\vec{x}$.  The \textbf{work} done on the system is} \\
+\alert{$W = \vec{F} \cdot \vec{x}$} \\
+\end{tcolorbox}
+The units of work are N m = kg m/s$^2$, or \textit{Joules}. \\
+\vspace{0.5cm}
+\small
+\textit{Extra credit opportunity}: \textbf{Do you like beer}?  Write a 10-page paper on the on the scientific challenge faced by James Prescott Joule, who began to formulate the modern view of energy in the 19th century, contrary to \textit{caloric theory}.  \textbf{Upon completion of this assignment I will change two homework scores to perfect scores.}
+\end{frame}
+
+\begin{frame}{Definitions of Work}
+Let $\theta$ be the angle between the force and the displacement.  Then this equation
+\begin{equation}
+W = \vec{F} \cdot \vec{x}
+\end{equation}
+becomes
+\begin{equation}
+W = Fx\cos\theta
+\end{equation}
+\end{frame}
+
+\begin{frame}{Definitions of Work}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/lawn.png}
+\caption{\label{fig:work} A case where $\theta \neq 0$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Definitions of Work}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/lawn2.png}
+\caption{\label{fig:work2} (Left): A case where $x = 0$, so $W=0$.  (Right): A case where $\theta = 90^{\circ}$, so $W=0$.}
+\end{figure}
+\small
+Just because an action requires \textit{energy} doesn't mean we are performing \textit{work}.  It requires muscular energy to hold up a heavy briefcase but this is not what we mean by work.  Work is about moving objects.
+\end{frame}
+
+\begin{frame}{Definitions of Work}
+What about Newton's 3rd Law?  If one system $A$ exerts a force $F_{\rm AB}$ on a system $B$, then Newton's 3rd law states that system $B$ exerts a force $-F_{\rm AB}$ on system A. \\
+\vspace{0.5cm}
+If \alert{the work done by $A$ on $B$} is $W = (F_{\rm AB})x\cos\theta$, then \alert{the work done by $B$ on $A$} is $W = -(F_{\rm AB})x\cos\theta$. \\
+\vspace{0.5cm}
+In Fig. \ref{fig:work}, the work done by the man on the mower is positive, but the work done by the mower on the man is negative.
+\end{frame}
+
+\begin{frame}{Definitions of Work}
+\small
+More units of energy:
+\begin{table}
+\centering
+\begin{tabular}{c | c | c}
+\alert{Unit Name} & \alert{Definition} & \alert{Value} \\ \hline
+electron-volt (eV) & energy of 1 e$^{-}$ through 1 V & $1.60\times 10^{-19}$ J \\ \hline
+1 Rydberg (Rd) & ionize 1 hydrogen atom & $21.8\times 10^{-19}$ J \\ \hline
+\textbf{Joule} & \textbf{1 N$\cdot$m} & \textbf{1.0 J} \\ \hline
+foot-pound & 1 ft$\cdot$lb & 1.36 J \\ \hline 
+calorie & Raise 1 gram of water 1$^{\circ}$ C & 4.184 J \\ \hline
+British Thermal Unit & Raise 1 lb of ice to boil ($^{\circ}$F) & 1054.3 J \\ \hline
+food calorie (kcal) & 1000 calories & 4184 J \\ \hline
+kilowatt hours & 1 kilowatt system for 1 hr & $3.6\times 10^6$ J \\ \hline
+gasoline galon equiv. & burning a galon of gas & $\approx 120 \times 10^6$ J \\ \hline
+$E = mc^2$, 1 mole of H$^{+}$ & Rest mass (fusion/fission) & $9 \times 10^{13}$ J \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}{Definitions of Work}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/integral.png}
+\caption{\label{fig:work3} Breaking the displacement $\vec{x}$ into pieces, and summing them.}
+\end{figure}
+\small
+This interpretation naturally leads to the subject of \textit{integration} in calculus.  
+\end{frame}
+
+\begin{frame}{Work Practice Problems}
+\begin{itemize}
+\item Linear, against friction
+\item Gravitational, near Earth's surface
+\item Same, with kinematics
+\end{itemize}
 \end{frame}
 
 \section{Conclusion}
 
 \begin{frame}{Week 6 Summary}
 \begin{enumerate}
-\item \alert{Angular} kinematics
+\item \alert{Work} has a scientifically precise definition
 \begin{itemize}
-\item Angular displacement
-\item Angular velocity
-\item centripetal acceleration
+\item Units
+\item As a product of force and displacement vectors
 \end{itemize}
-\item \alert{Newton's Law of Gravity} and circular orbits
-\item Kepler's Laws
+\item Kinetic Energy and the \alert{Work-Energy Theorem}
+\item Gravitational potential energy
+\begin{itemize}
+\item Potential energy
+\item \textit{Simplifying otherwise complex calculations}
+\item Potential energy near Earth's surface
+\item ...in space
+\end{itemize}
+\item Definition of a \textbf{conservative force}
+\begin{itemize}
+\item Relationship between conservative forces and potential energy
+\item Conservation of energy for conservative forces
+\end{itemize}
 \end{enumerate}
 \end{frame}
 
@@ -88,7 +197,7 @@
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item ...
+\item ... 
 \end{itemize}
 \end{column}
 \end{columns}
