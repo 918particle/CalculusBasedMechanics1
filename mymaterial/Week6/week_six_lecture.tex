@@ -469,6 +469,75 @@ Suppose we raise an object against gravity, and then, it remains motionless.  \t
 \alert{\textbf{Bonus}: \textit{Two loops?}}
 \end{frame}
 
+\section{Power}
+
+\begin{frame}{Power}
+\textbf{Power} is the derivative of \textbf{work}:
+\begin{align}
+P =& \frac{dW}{dt} \\
+W =& \int P dt
+\end{align}
+The unit of power is the Watt, or 1 J/s = 1 N m/s.
+\end{frame}
+
+\begin{frame}{Power}
+A common scale for home power usage is the kW hr, or kilowatt hours, which is a unit of energy.  If a home consumes 1000 kW hr in one month, what is the average power consumed at a given time in this home?  (Convert 1000 kW hr to kJ, then divide by the time of one month).
+\begin{itemize}
+\item A: 0.1 kW
+\item B: 1.4 kW
+\item C: 10 kW
+\item D: 1.2 MW
+\end{itemize}
+\textit{According to Google, central AC uses about 3500 W for a home.  Think about this the next time you get your electric bill...}
+\end{frame}
+
+\begin{frame}{Power}
+Since $P = \frac{dW}{dt}$ we may show that $P = \vec{F} \cdot \vec{v}$.  Suppose a 1000 kg car is driving up an incline of 30 degrees at 90 km/hr, meaning no change in kinetic energy.  Technically, the net work is therefore zero Joules.  However, we know that it takes gas to go up a hill.  Therefore, $\vec{F} \cdot \vec{v}$ must be the power required to raise the car against the force of gravity, $\vec{F} = -mg\hat{j}$.  Use $\vec{F} = mg\hat{j}$ and $\vec{v}$ to compute the power output of the car against gravity as it moves.
+\begin{itemize}
+\item A: 12.5 kW
+\item B: 125 kW
+\item C: 1250 kW
+\item D: 1 MW
+\end{itemize}
+\end{frame}
+
+\section{Definition of Conservative Force}
+
+\begin{frame}{Definition of Conservative Force}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Definition of Conservative Force]
+\alert{Let $\vec{F}(x,y)$ describe some \textit{force field}.  The field is \textbf{conservative} if the line integral around a closed path is zero: \\
+\begin{equation}
+\oint_{p} \vec{F} \cdot d\vec{r} = 0
+\end{equation}
+Returning the system to the same point implies no net work.}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Corollary 1]
+\begin{equation}
+\frac{dF_y}{dx} = \frac{dF_x}{dy}
+\end{equation}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Definition of Conservative Force}
+Consider the case of gravity: $\vec{F}(x,y) = 0\hat{i} -mg \hat{j}$.  So it depends neither on $x$ nor $y$.  Let's check that it is conservative:
+\begin{align}
+\frac{dF_y}{dx} =& 0 \\
+\frac{dF_x}{dy} =& 0 \\
+\frac{dF_y}{dx} =& \frac{dF_x}{dy}
+\end{align}
+\end{frame}
+
+\begin{frame}{Definition of Conservative Force}
+Which force is conservative?
+\begin{itemize}
+\item A: $\vec{F} = x^2\hat{i}+y^2\hat{j}$
+\item B: $\vec{F} = x\hat{i}-y^2\hat{j}$
+\item C: $\vec{F} = -\hat{i}+y\hat{j}$
+\item D: $\vec{F} = x^2\hat{i}-y\hat{j}$
+\end{itemize}
+\textit{Hint: when you picture a conservative force, picture symmetry}.
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Week 6 Summary}
@@ -516,6 +585,8 @@ Suppose we raise an object against gravity, and then, it remains motionless.  \t
 \item $\sqrt{6}$ m horizontally
 \item 0.05
 \item $h = \frac{5}{2}r$
+\item 1.4 kW
+\item 125 kW
 \end{itemize}
 \end{column}
 \end{columns}
