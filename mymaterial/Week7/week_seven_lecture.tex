@@ -185,11 +185,83 @@ Suppose path 1 goes from point A to B, and path 2 returns from B to A.  If the f
 \end{equation}
 \end{frame}
 
-\begin{frame}{Potential Energy and Conservative Forces}
-How do you show that a force is conservative?  We cannot test \textbf{all possible paths}.  This is a question for \textit{vector calculus}.  The results are straightforward to memorize:
-\begin{equation}
+\section{Conservation of Energy}
 
+\begin{frame}{Conservation of Energy}
+Bringing all these concepts together: \alert{\textbf{Conservation of Energy}}. \\ \vspace{1cm}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Conservation of Energy]
+\alert{$\Delta (KE + PE) = 0$}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Conservation of Energy}
+\textit{Recall the notion of a conservative force}.  In your own words, write down the defining characteristics of a conservative force.  Which of these forces is NOT conservative?
+\begin{itemize}
+\item A: Stoke's Law of viscous drag
+\item B: Gravity near Earth's surface
+\item C: Hooke's Law
+\item D: All are conservative
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conservation of Energy}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/pend.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Conservation of Energy}
+We can show that a \textit{pendulum} exhibits the same properties as a \textit{spring}.  A pendulum is like a spring, where the restoring force is determined by $g$, the gravitational acceleration, and $L$, the length of the pendulum.  That is, $a_{\rm p} = \frac{g}{L}x$, where $x$ is the displacement from equilibrium, and $a$ is the acceleration corresponding to $x$.  (Derivation to follow).  What is the force on a 1 meter-long pendulum suspending a mass of 100 grams if $x=10$ cm?
+\begin{itemize}
+\item A: 10 N
+\item B: 1 N
+\item C: 0.1 N
+\item D: 0.01 N
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conservation of Energy}
+The pendulum stores gravitational potential energy $U = mgh$.  Set the zero point of gravitational potential energy to the lowest point of the pendulum.  Show that the potential energy as a function of the angle $\theta$ is \\ \vspace{1cm}
+\begin{equation}
+U = mgL(1-\cos\theta)
 \end{equation}
+\end{frame}
+
+\begin{frame}{Conservation of Energy}
+At which point in the trajectory of the mass on the end of the pendulum is the velocity the highest?
+\begin{itemize}
+\item The starting point at the top
+\item The lowest point
+\item The top point at the side opposite from release point
+\item In between the highest and lowest points
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conservation of Energy}
+By setting pendulum potential energy equal to kinetic energy, show that the maximum velocity achieved by the pendulum mass is
+\begin{equation}
+v_{\rm max} = \sqrt{2Lg}(1-\cos\theta)^{1/2}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Conservation of Energy}
+If the length of the pendulum is 10 cm, and $g = 10$, and the initial angle is 30 degrees, what is the maximum speed of the pendulum? 
+\begin{itemize}
+\item 0.1 m/s
+\item 0.5 m/s
+\item 1 m/s
+\item 5 m/s
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conservation of Energy}
+We can show that the \textit{period} of the pendulum is related to other quantities as follows:
+\begin{equation}
+T^2 = 4\pi^2 \left(\frac{L}{g}\right)
+\end{equation}
+Using the PhET simulation below, measure the gravitational acceleration on the moon.  Record your reasoning in lab notebooks. \\ \vspace{1cm}
+\url{https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_en.html}
 \end{frame}
 
 \section{Conclusion}
@@ -201,7 +273,11 @@ How do you show that a force is conservative?  We cannot test \textbf{all possib
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \item $-mg$
-\item The force of gravity 
+\item The force of gravity
+\item Stoke's Law of viscous drag
+\item 0.1 N
+\item The lowest point
+\item 0.5 m/s
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
