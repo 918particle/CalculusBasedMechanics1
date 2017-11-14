@@ -61,7 +61,7 @@ What is the physical meaning of the quantity $-mg =-dU/dy$?
 
 \section{Week 7 Summary}
 
-\begin{frame}{Week 6 Summary}
+\begin{frame}{Week 7 Summary}
 \begin{enumerate}
 \item \alert{Work} and \alert{potential energy}
 \begin{itemize}
@@ -182,6 +182,7 @@ W_{\rm 1} = W_{\rm 2}
 Suppose path 1 goes from point A to B, and path 2 returns from B to A.  If the force remains constant, but the path is reversed, then $W_{\rm 1} = -W_{\rm 2}$.  But this means the path is \textit{closed}, so 
 \begin{equation}
 \oint \vec{F} \cdot d\vec{r} = W_{\rm 1} + W_{\rm 2} = W_{\rm 1} - W_{\rm 1} = 0
+\label{eq:work}
 \end{equation}
 \end{frame}
 
@@ -264,7 +265,69 @@ Using the PhET simulation below, measure the gravitational acceleration on the m
 \url{https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_en.html}
 \end{frame}
 
+\begin{frame}{Conservation of Energy}
+\small
+Conservative forces may be found by taking the negative derivative of the potential energies we've found through the work done: \\ \vspace{0.5cm}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\centering
+\textbf{Potential energy:}
+\begin{itemize}
+\item $U_{\rm s} = \frac{1}{2}kx^2$
+\item $U_{\rm g} = mgy$
+\item $U_{\rm p} = mgL(1-\cos\theta)$
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\centering
+\textbf{Corresponding force:}
+\begin{itemize}
+\item $\vec{F} = -kx\hat{i}$
+\item $\vec{F} = -mg\hat{j}$
+\item $\vec{F} = -\left(\frac{mg}{L}\right)x\hat{i}$
+\end{itemize}
+\end{column}
+\end{columns}
+Forces that follow Eq. \ref{eq:work} have to obey
+\begin{equation}
+\vec{F}(x) = -\frac{dU}{dx}\hat{i}
+\end{equation}
+We may use conservation of energy to predict the behavior of systems, even when we don't know actual trajectory versus time...
+\end{frame}
+
+\begin{frame}{Conservation of Energy}
+\small Suppose we encounter a particle with potential energy $U(x) = \frac{1}{2}k x^2 + Ae^{-\frac{1}{2}\left(\frac{x}{\sigma}\right)^2}$.  If the particle has a mass $m$ moving with this potential has a velocity $v_{\rm b}$ when located at $x = b$.  Show that the particle will not cross the origin unless \\ \vspace{0.5cm}
+\begin{equation}
+A \leq \frac{kb^2 + m v_{\rm b}^2}{2\left(1-e^{-\frac{1}{2}\left(\frac{b}{\sigma}\right)^2}\right)}
+\end{equation}
+\textbf{Solve in groups at the boards}.  \textit{Hint: Use conservation of energy, assuming the final energy is equal to the potential energy at the origin.}
+\end{frame}
+
+\begin{frame}{Conservation of Energy}
+\small Notice that if $\frac{1}{2}\left(\frac{b}{\sigma}\right)^2 \ll 1$, then \ \\ \vspace{0.5cm}
+\begin{align}
+A \lesssim \frac{\frac{1}{2}kb^2 + \frac{1}{2}m v_{\rm b}^2}{\frac{1}{2}\left(\frac{b}{\sigma}\right)^2} &= \frac{E_{\rm i}^0}{\frac{1}{2}\left(\frac{b}{\sigma}\right)^2} \\
+\left(\frac{A}{2}\right)\left(\frac{b}{\sigma}\right)^2 \lesssim E_{\rm i}^0
+\end{align}
+This is odd; why does the initial energy \alert{appear to be \textit{less than} $A$?}  The answer is that, in order to satisfy the limit, $b \ll \sqrt{2}\sigma$.  Thus, the particle has to be close to the origin to cross it, experiencing a gradual wall rather than a sharp one.  \textbf{The corresponding problem in the \textit{quantum limit} leads to quantum tunneling...} 
+\end{frame}
+
 \section{Conclusion}
+
+\begin{frame}{Week 7 Summary}
+\begin{enumerate}
+\item \alert{Work} and \alert{potential energy}
+\begin{itemize}
+\item \textbf{Lab activity:} Oscillator and gravity trading work and potential energy
+\end{itemize}
+\item Potential energy and \textbf{conservative forces}
+\item \alert{\textbf{Conservation of Energy}}
+\begin{itemize}
+\item \textit{Calculus review: the fundamental theorem of calculus}
+\item Graphical representations of integrals and energy
+\end{itemize}
+\end{enumerate}
+\end{frame}
 
 \section{Answers}
 
@@ -281,9 +344,7 @@ Using the PhET simulation below, measure the gravitational acceleration on the m
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
-\begin{itemize}
-\item ...
-\end{itemize}
+
 \end{column}
 \end{columns}
 \end{frame}
