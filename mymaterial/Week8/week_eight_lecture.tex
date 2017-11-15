@@ -1,0 +1,207 @@
+\documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Week 8}
+\date{October 23rd - October 27th, 2017}
+\author{Jordan Hanson}
+\institute{Whittier College Department of Physics and Astronomy}
+
+\begin{document}
+\maketitle
+
+\section{Week 7 Review}
+
+\begin{frame}{Week 7 Summary}
+\begin{enumerate}
+\item \alert{Work} and \alert{potential energy}
+\begin{itemize}
+\item \textbf{Lab activity:} Oscillator and gravity trading work and potential energy
+\end{itemize}
+\item Potential energy and \textbf{conservative forces}
+\item \alert{\textbf{Conservation of Energy}}
+\begin{itemize}
+\item \textit{Calculus review: the fundamental theorem of calculus}
+\item Graphical representations of integrals and energy
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\section{Week 7 Review Problem}
+
+\begin{frame}{Week 6 Review Problem}
+Suppose a particle moves in a potential energy surface $U(x) = U_{\rm 0} \left( x^4 - x^2 \right)$.  What is the force at $x=1$?
+\begin{itemize}
+\item A: $-4U_{\rm 0} + 2U_{\rm 1}$
+\item B: $4U_{\rm 0} - 2U_{\rm 1}$
+\item C: $-U_{\rm 0} + U_{\rm 1}$
+\item D: $0$
+\end{itemize}
+\end{frame}
+
+\section{Week 8 Summary}
+
+\begin{frame}{Week 8 Summary}
+\begin{enumerate}
+\item Definition of \alert{\textbf{momentum}}
+\item \alert{\textbf{\textit{Conservation of momentum}}}
+\begin{itemize}
+\item The proof and the assumptions
+\item Examples
+\end{itemize}
+\item \alert{\textbf{\textit{Classification of collisions}}}
+\begin{itemize}
+\item Elastic
+\item Inelastic
+\item $1 \rightarrow 1$, $1 \rightarrow n$, $n \rightarrow 1$, $n \rightarrow n$
+\end{itemize}
+\item \textbf{Momentum in multiple dimensions}
+\item \textbf{Center of mass}
+\begin{itemize}
+\item Derivation of $\vec{F}_{\rm Net} = \frac{d\vec{P}_{\rm CM}}{dt}$
+\item Center of mass motion
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\section{Definition of Momentum}
+
+\begin{frame}{Definition of momentum}
+\textit{Ready to jump down the rabbit hole?  Good.}  Momentum is defined as follows: \\ \vspace{1cm}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Definition of Momentum]
+\alert{A particle of mass $m$ and velocity $\vec{v}$ has the vector \textit{momentum}:} \\ \\
+\alert{$\vec{p} = m\vec{v}$}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Definition of momentum}
+There is a corollary: \\ \vspace{1cm}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Newton's Second Law with momentum]
+\alert{If a particle has acceleration $\vec{a} = \frac{d\vec{v}}{dt}$, then} \\ \\
+\alert{$\vec{F}_{\rm Net} = \frac{d\vec{p}}{dt}$}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Definition of momentum}
+An object that has a small mass and an object that has a large mass have the same momentum. Which mass has the largest kinetic energy?
+\begin{itemize}
+\item A: The one with the small mass
+\item B: The one with the large mass
+\item C: If the momentum is the same the kinetic energy is the same
+\item D: Cannot determine the answer
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definition of momentum}
+An object that has a small mass and an object that has a large mass have the same kinetic energy. Which mass has the largest momentum?
+\begin{itemize}
+\item A: The one with the small mass
+\item B: The one with the large mass
+\item C: If the momentum is the same the kinetic energy is the same
+\item D: Cannot determine the answer
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definition of momentum}
+The unit of linear momentum is kg m/s.  Suppose that a raindrop reaches a terminal velocity of 1 m/s, and the density of water is 1 gram per cm$^3$.  If a 1 cm$^3$ water droplet reaches terminal velocity, what is the momentum of the droplet?
+\begin{itemize}
+\item A: $10^{-3}$ kg m/s
+\item B: $10^{-2}$ kg m/s
+\item C: $10^{-1}$ kg m/s
+\item D: $1$ kg m/s
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definition of momentum}
+If $\vec{F}_{\rm Net} = \frac{d\vec{p}}{dt}$, and an object is undergoing constant acceleration, which of the following is true of the momentum?
+\begin{itemize}
+\item A: It is constant in time.
+\item B: It is a linear function of time.
+\item C: It is a quadratic function of time.
+\item D: It is zero.
+\end{itemize}
+\end{frame}
+
+\section{Conservation of Momentum}
+
+\begin{frame}{Conservation of Momentum}
+\textit{...continuing to fall down the rabbit hole...} \\ \vspace{1cm}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Conservation of Momentum]
+\alert{The momentum of a system of $N$ particles undergoing no external forces is conserved.} \\ \\
+\alert{$\frac{d\vec{P}}{dt}=0$}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Conservation of Momentum}
+Suppose two objects with momenta $\vec{p}_{\rm 1} = m_{\rm 1}\vec{v}_{\rm 1}$ and $\vec{p}_{\rm 2} = m_{\rm 2}\vec{v}_{\rm 2}$ collide. The new momenta after the collision are $\vec{p}'_{\rm 1} = m_{\rm 1}\vec{v}'_{\rm 1}$ and $\vec{p}'_{\rm 2} = m_{\rm 2}\vec{v}'_{\rm 2}$.  If $m_{\rm 2} = 2 m_{\rm 1}$ and $\vec{v}_{\rm 1} = 2\vec{v}_{\rm 2}$, and $\vec{v}'_{\rm 2}$ is observed to equal $\vec{v}_{\rm 1}$, what is $\vec{v}'_{\rm 1}$? \\ \vspace{1cm}
+\textbf{Solve together in groups on boards.}
+\end{frame}
+
+\begin{frame}{Conservation of Momentum}
+\small
+The proof of conservation of momentum is the combination of two concepts: \alert{\textbf{Newton's 3rd Law}} and \alert{\textbf{Newton's 2nd Law}}.  The net forces on two particles by Newton's 3rd Law are 
+\begin{equation}
+\vec{F}_{\rm 21} = -\vec{F}_{\rm 12}
+\end{equation}
+Substituting Newton's 2nd Law for the forces,
+\begin{equation}
+m_{\rm 1} \vec{a}_{\rm 1} = -m_{\rm 2}\vec{a}_{\rm 2}
+\end{equation}
+Acceleration is defined as the change in velocity, implying
+\begin{align}
+m_{\rm 1} \frac{d\vec{v}_{\rm 1}}{dt} &= -m_{\rm 2} \frac{d\vec{v}_{\rm 2}}{dt} \\
+\frac{d\vec{p}_{\rm 1}}{dt} &= -\frac{d\vec{p}_{\rm 2}}{dt} \\
+\frac{d\vec{p}_{\rm 1}}{dt} + \frac{d\vec{p}_{\rm 2}}{dt} &= 0 \\
+\frac{d}{dt}\left(\vec{p}_{\rm 1} + \vec{p}_{\rm 2}\right) &= 0
+\end{align}
+\end{frame}
+
+\begin{frame}{Conservation of Momentum}
+\begin{equation}
+\boxed{
+\frac{d}{dt}\left(\vec{p}_{\rm 1} + \vec{p}_{\rm 2}\right) = 0
+} \label{eq:momentum}
+\end{equation}
+Equation \ref{eq:momentum} states that the total momentum does not change with time.  The assumptions hold even if there are more than two particles, for every particle in the system exerts some force on every other particle, even if that force is zero.
+\begin{equation}
+\frac{d}{dt}\sum_{\rm i} \vec{p}_{\rm i} = \frac{d\vec{P}}{dt} = 0
+\end{equation}
+\end{frame}
+
+\begin{frame}{Conservation of Momentum}
+What two assumptions were necessary in the above proof?
+\begin{itemize}
+\item A: Each mass is constant in time, and the total velocity is zero.
+\item B: The total velocity is zero, and the net force is $\frac{dP}{dt}$.
+\item C: The net external force is zero, and the total velocity is zero.
+\item D: The net external force is zero, and the mass of each particle is zero.
+\end{itemize}
+\end{frame}
+
+\section{Conclusion}
+
+\section{Answers}
+
+\begin{frame}{Answers}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item $-4U_{\rm 0} + 2U_{\rm 1}$
+\item The one with the small mass
+\item The one with the large mass
+\item $10^{-2}$ kg m/s
+\item It is a linear function of time.
+\item The net external force is zero, and the mass of each particle is zero.
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item ...
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}
