@@ -106,8 +106,8 @@ What about multiplying exponentials?  What is $f(t)g(t)$, if $f(t) = \exp(\alpha
 \begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth]{figures/temp2.png}
-\caption{\label{fig:temp2} Three temperature scales.}
+\includegraphics[width=0.6\textwidth]{figures/temp2.png}
+\caption{\label{fig:temp2} Three temperature scales.  The Fahrenheit scale places 0 for a solution of brine and ice, with 180 degrees between freezing and boiling of water.  Celsius scale has 0 for freezing and 100 for boiling.  Absolute zero of Kelvin scale will be discussed below.}
 \end{figure}
 \end{frame}
 
@@ -153,9 +153,260 @@ In Eq. \ref{eq:linear}, $T$ is the temperature, $L$ is the length of an object, 
 \begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
 \begin{figure}
 \centering
-\includegraphics[width=0.55\textwidth]{figures/linear.png}
+\includegraphics[width=0.5\textwidth]{figures/linear.png}
 \caption{\label{fig:linear} Linear thermal expansion coefficients.}
 \end{figure}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics} 
+\begin{equation}
+\frac{dL}{dT} = \alpha L
+\label{eq:linear2}
+\end{equation}
+Equation \ref{eq:linear2} is a differential equation with a particular solution:
+\begin{equation}
+L(T) = L_{\rm 0}\exp(\alpha T) \label{eq:exp}
+\end{equation}
+We've seen that in practice, $\alpha$ values are small.  In this case we may approximate:
+\begin{align}
+L(T)/L_{\rm 0} &\approx 1+\alpha T \\
+\Delta L &\approx \alpha L_{\rm 0} \Delta T \label{eq:linear3}
+\end{align}
+Equation \ref{eq:linear3} is the equation found in Chapter 1 of the reading.
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/bridge.png}
+\caption{\label{fig:bridge} Bridge expansion joints.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics} 
+Chapter 1 also contains these formulae for two and three-dimensional expansion:
+\begin{align}
+\Delta A &\approx 2\alpha A_{\rm 0} \Delta T \label{eq:linear4} \\
+\Delta V &\approx 3\alpha V_{\rm 0} \Delta T \label{eq:linear5}
+\end{align}
+Why?  Properties of exponentials.  \textbf{Group board exercise}: prove Eq. \ref{eq:linear5} using Eq. \ref{eq:exp}.
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\small
+\textit{Pipe Transport}: Some oil and gasoline pipelines are above ground, exposed to the elements.  The coefficient of thermal volumetric expansion for gasoline is much larger than that of steel.  Why would it be a bad idea to completely fill a pipeline with gasoline, knowing there will be large temperature variations?
+\begin{itemize}
+\item A: For large increases in temperature, the pipeline expands more rapidly than gasoline, leaving gaps for leaks.
+\item B: For large increases in temperature, the gasoline expands more rapidly than the pipeline, building pressure and causing pipeline bursts.
+\item C: For large decreases in temperature, the gasoline shrinks more rapidly than the pipeline, building pressure and causing pipeline bursts.
+\item D: None of these.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+If an object has a length of 10 cm, and a linear thermal expansion coefficient of $100 \times 10^{-6}$ 1/$^{\circ}$C, what is the change in length of the object if the temperature is increased from 0 $^{\circ}$C to 100 $^{\circ}$C?
+\begin{itemize}
+\item A: 0.1 mm
+\item B: 1 mm
+\item C: 1 cm
+\item D: 10 cm
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+Recall from last semester that we studied \textit{stress} and \textit{strain}:
+\begin{align}
+\frac{F}{A} &= Y \frac{\Delta L}{L} \\
+stress &= Y \times strain
+\end{align}
+Now we can predict strain from temperature changes, and make statements about the implied \textit{thermal stresses}.  This is important for mechanical engineering designs.
+\begin{equation}
+\frac{F}{A} = Y \alpha \Delta T
+\end{equation}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{equation}
+\frac{F}{A} = Y \alpha \Delta T
+\end{equation}
+\textit{Steel pipeline design}: Suppose a steel pipeline ($\alpha = 12 \times 10^{-6}$ 1/$^{\circ}$C, $Y = 30\times 10^{9}$ N/m) is designed and built at temperatures of 30 $^{\circ}$C, but experiences temperatures of 0 $^{\circ}$C.  What stress does the pipeline experience at the attachment point?
+\begin{itemize}
+\item A: 0.1 MPa
+\item B: 1 MPa
+\item C: 10 MPa
+\item D: 100 MPa
+\end{itemize}
+\textit{Is the pipeline pulling or pushing on the attachment point?}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/Joule.png}
+\caption{\label{fig:Joule} Demonstrating that work and heat are equivalent (paper topic from last semester).}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+Which of the following is true, regarding Fig. \ref{fig:Joule}?
+\begin{itemize}
+\item A: The temperature increase is proportional to the decrease in height of the masses.
+\item B: The temperature increase is proportional to $g$.
+\item C: A and B
+\item D: None of these
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+Regarding Fig. \ref{fig:Joule}, if total mass is 1.0 kg (two 0.5 kg masses), $g = 10$ m/s$^2$, and $h = 1$ m, what is the temperature increase in the water?
+\begin{itemize}
+\item A: 10 J
+\item B: 10 $^{\circ}$K
+\item C: 10 $^{\circ}$C
+\item D: Cannot determine
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+The heat required to obtain a change in temperature is proportional to the mass of the substance to be heated (obvious if you understand heat to be caused by motions of molecules).  The coefficient is called the \textit{specific heat capacity}:
+\begin{equation}
+Q = mc\Delta T
+\end{equation}
+More generally,
+\begin{equation}
+c = \frac{1}{m}\frac{dQ}{dT}
+\end{equation}
+Units: Joules per unit temperature per unit mass (J/(kg C)).  1 \textit{calorie} is the energy required to heat 1 gram of water 1 degree C.  For food, 1 kcal = 1 Calorie $\rightarrow$ endless debates about food science...
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/c.png}
+\caption{\label{fig:c} Notice how water is on a different scale than most other substances.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+A 0.500 kg aluminum pan on a stove and 0.250 L of water in it are heated from 20.0 $^\circ$C to 80.0 $^\circ$C. a) How much heat is required? What percentage of the heat is used to raise the temperature of b) the pan and c) the water? \\ \vspace{0.5cm}
+\textbf{Group board exercise}: $c_{\rm W} = 4186$ J/kg/C and $c_{\rm Al} = 900$ J/kg/C.
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+For a thermodynamically isolated system, we have
+\begin{equation}
+Q_{\rm cold} + Q_{\rm hot} = 0
+\label{eq:calor}
+\end{equation}
+That is, if heat is conserved, the heat lost by a hot system is equal and opposite to the heat gained by the cold object. This sort of balancing is known as \textit{calorimetry}.  \\ \vspace{0.5cm}
+Es como la palabra ``calor'' en espa\~{n}ol: hace calor hoy.
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\small
+Suppose two systems in contact have the same mass, and are otherwise isolated from other systems.  System 1 has a much larger heat capacity than system 2, and they are at different temperatures.  Which temperature change is the largest?
+\begin{itemize}
+\item The temperature change corresponding to system 1.
+\item The temperature change corresponding to system 2.
+\item The changes corresponding to system 1 and 2 are equal.
+\item The changes are zero because the total heat is conserved.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\small
+Suppose two systems in contact have the same mass, and are otherwise isolated from other systems.  System 1 has the same heat capacity than system 2, and they are at different temperatures.  Which temperature change is the largest?
+\begin{itemize}
+\item The temperature change corresponding to system 1.
+\item The temperature change corresponding to system 2.
+\item The changes corresponding to system 1 and 2 are equal.
+\item The changes are zero because the total heat is conserved.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+The brakes in a car increase in temperature by T when bringing the car to rest from a speed v. How much greater would T be if the car initially had twice the speed? You may assume the car stops fast enough that no heat transfers out of the brakes.
+\begin{itemize}
+\item Higher by a factor of 2
+\item Higher by a factor of 4
+\item Same temperature difference (no potential energy change).
+\item Higher by a factor of 8
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\textit{The survival situation}: Suppose two people (60 kg each) are cuddling to stay warm in a tent because it is cold outside.  One person is at 37 Celsius, and the other is at 30 Celsius.  What is their final temperature, assuming they are calorimetrically isolated? \\ \vspace{0.5cm}
+\textbf{Group board exercise}: $c_{\rm Human} = 3500$ J/kg/C. \\ \vspace{0.5cm}
+\textit{Hint: We need Eq. \ref{eq:calor}, but $\Delta T$ is a variable and we need to use the heat capacity.}
+\alert{Moral of the story}: The temperature of one person has to go down so the temperature of the other person can go up. 
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\textit{{Bonus problem}: Temperature-dependent heat capacities.  Repeat Example 1.8 in the text, except substitute NaI (sodium iodide) for NaCl (sodium chloride) and look up the relevant heat capacity functions.  Turn this in for +2 bonus points on this week's homework (homeworks are usually out of 10 points).}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+Materials have four phases, and three are relevant for the classical physics in this course.
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/PT.png}
+\caption{\label{fig:pt} \textit{Phase transitions} occur when crossing the lines.  Boiling, melting, and sublimation are the three possible processes.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+A pressure cooker contains water and steam in equilibrium at a pressure greater than atmospheric pressure.  How does this greater pressure increase cooking speed?
+\begin{itemize}
+\item A: Raises the boiling point
+\item B: Raises the vapor pressure
+\item C: Both A and B
+\item D: Changes the heat capacity of water and steam
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+Triple point explained: \\ \url{https://www.youtube.com/watch?v=MP6MVLWuNZQ}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/artemis.jpg}
+\caption{\label{fig:artemis} Idea for bonus paper or group project: read \textit{Artemis} by Andy Weir and pick a chapter.  Explain each of the statements about surviving on the moon with lower artifical \textbf{vapor pressure}, artificial \textbf{boiling point}, no atmosphere, and a different $g$ value, etc.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\small
+During a phase transition, the temperature of a substance does not change.  The heat energy required to drive the phase transition is just proportional to the mass, for liquids and solids:
+\begin{align}
+Q &= m L_{\rm f} \\
+Q &= m L_{\rm v}
+\end{align}
+These coefficients are known as the laten heats of \textit{fusion} and \textit{vaporization}.  These numbers have a molecular interpretation.
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/lvlf.png}
+\caption{\label{fig:lvlf} As usual, look at water! (and aluminum).}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+Three ice cubes are used to chill a soda at 20 $^\circ$C with mass 0.25 kg. The ice is at 0 $^\circ$C and each ice cube has a mass of 6.0 g. Assume that the soda is kept in a foam container so that heat loss can be ignored and that the soda has the same specific heat as water. Find the final temperature when all ice has melted.
+\textbf{Group board exercise}: Latent heat of fusion of the ice: 334 kJ/kg, and heat capacity of water: 4186 J/kg/C.
+\end{frame}
+
+\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\small
+Greenhouse effect as heat transfer problem: \\ \url{https://phet.colorado.edu/en/simulation/greenhouse}
+\begin{itemize}
+\item What is the CO$_2$ concentration in the previous ice age, and what temperature does this allow on the Earth's surface?  With clouds?
+\item Repeat, but with the numbers of today.  Add clouds, and repeat.  Write down all the temperatures you think are the equilibrium temperatures.
+\item Open the photon absorption tab.  Create three different atmospheres: all methane, all carbon dioxide, and all nitrogen.  What happens to the infrared photons in each?
+\end{itemize}
 \end{frame}
 
 \section{Conclusion}
@@ -172,6 +423,7 @@ In Eq. \ref{eq:linear}, $T$ is the temperature, $L$ is the length of an object, 
 \section{Answers}
 
 \begin{frame}{Answers}
+\small
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{itemize}
@@ -182,11 +434,19 @@ In Eq. \ref{eq:linear}, $T$ is the temperature, $L$ is the length of an object, 
 \item The increase is smaller than 10 degrees in $^{\circ}$C
 \item The increase is the same in $^{\circ}$K
 \item $35^{\circ}-40^{\circ}$C is comparable to human body temperature
+\item Answer B
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item ...
+\item 1 mm
+\item 1 MPa
+\item A and B
+\item Cannot determine (would have needed the heat capacity of water)
+\item The temperature change corresponding to system 2
+\item The changes corresponding to system 1 and 2 are equal
+\item Higher by a factor of 4
+\item Both A and B
 \end{itemize}
 \end{column}
 \end{columns}
