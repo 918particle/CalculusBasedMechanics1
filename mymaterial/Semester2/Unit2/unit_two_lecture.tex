@@ -499,7 +499,7 @@ Jasmine, the heroine of \textit{Artemis}, by Andy Weir, lives on the moon.  Supp
 \item A: Fill a fixed-volume container with low-pressure air and heat it up.
 \item B: Fill an inflatable object with heated air at constant, low pressure.
 \item C: Fill a fixed-volume object with high-pressure air and heat it up.
-\item D: Fill an inflatable object with heated air at high pressure.
+\item D: Fill an inflatable object with heated air at constant, high pressure.
 \end{itemize}
 \end{frame}
 
@@ -509,12 +509,163 @@ Jasmine, the heroine of \textit{Artemis}, by Andy Weir, lives on the moon.  Supp
 \item A: Fill a fixed-volume container with low-pressure air and heat it up.
 \item B: Fill an inflatable object with heated air at constant, low pressure.
 \item C: Fill a fixed-volume object with high-pressure air and heat it up.
-\item D: Fill an inflatable object with heated air at high pressure.
+\item D: Fill an inflatable object with heated air at constant, high pressure.
 \end{itemize}
 \textit{I would say \textbf{D}, merely because we know that the heat capacity of the gas is higher at constant pressure rather than constant volume, and at high pressure we get more atoms of gas...}
 \end{frame}
 
+\begin{frame}{Heat Capacities of an Ideal Gas}
+Suppose a cylinder of 1 mole of an ideal gas at fixed volume is heated for 6 minutes with 10 W of power.  What is the change in temperature?  ($R = 8.314$ J/mol/Kelvin).
+\begin{itemize}
+\item A: About 10 degrees Kelvin
+\item B: About 50 degrees Kelvin
+\item C: About 100 degrees Kelvin
+\item D: About 150 degrees Kelvin
+\end{itemize}
+\end{frame}
+
 \section{Adiabatic Processes with an Ideal Gas}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+\textbf{\alert{Adiabatic}} describes a process in which no heat is exchanged, $dQ = 0$.  From the first law of thermodynamics,
+\begin{equation}
+dE_{\rm int} = -dW
+\end{equation}
+\textit{Free expansion} is used in the text to refer to the special adiabatic case in which $dW = 0$, so $E_{\rm f,int} = E_{\rm i,int}$.  More interesting is to consider the two forms of heat capacity, of the previous section, corresponding to isobaric and isochoric processes.
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+\small What follows is a traditional proof of the following theorem: \\ \vspace{0.5cm}
+Let $\gamma = \frac{C_{\rm P}}{C_{\rm V}}$.  During an adiabatic process, the following quantity remains constant:
+\begin{equation}
+pV^{\gamma} = const
+\end{equation}
+\textit{The produce of the pressure and volume to a fixed power remains constant during an adiabatic process.} \\ \vspace{0.5cm}
+\begin{itemize}
+\item \textbf{Assume} an ideal gas
+\item \textbf{Apply} First Law of Thermodynamics
+\item Evidence for \textit{independence of state function}
+\item Evidence for \textit{kinetic theory of gases}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+Consider an \textit{adiabatic} process ($dQ=0$) in which the First Law of Thermodynamics becomes
+\begin{equation}
+dE_{\rm int} = -dW = -pdV
+\end{equation}
+For any ideal gas, the internal energy is proportional to the temperature, regardless of the process type.  Thus,
+\begin{equation}
+dE_{\rm int} = n C_{\rm V} dT
+\end{equation}
+Substituting into the First Law and rearranging,
+\begin{equation}
+dT = -\frac{pdV}{n c_{\rm V}} \label{eq:t1}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+\small
+As before, differentiating the the idea gas law, assuming both pressure and volume may vary, yields
+\begin{equation}
+dT = \frac{dp V+pdV}{nR} \label{eq:t2}
+\end{equation}
+Equating these two expressions for $dT$, Eq. \ref{eq:t1} and Eq. \ref{eq:t2}, gives 
+\begin{equation}
+C_{\rm V} V dp + \left( C_{\rm V} + R \right) p dV = 0 \label{eq:almost}
+\end{equation}
+Recall that $C_{\rm V} + R = C_{\rm p}$.  Using this, Eq. \ref{eq:almost} becomes
+\begin{equation}
+C_{\rm V} V dp + C_{\rm p} p dV = 0 \label{eq:almost2}
+\end{equation}
+Letting $\gamma = \frac{C_{\rm p}}{C_{\rm V}} > 1$, Eq. \ref{eq:almost2} reads
+\begin{equation}
+V dp + \gamma p dV = 0 \label{eq:gamma}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+Rearranging Eq. \ref{eq:gamma} and integrating both sides,
+\begin{align}
+\int \frac{dp}{p} + \gamma \int \frac{dV}{V} &= 0 \\
+\ln p + \ln V^{\gamma} &= const \\
+\ln pV^{\gamma} &= const \\
+pV^\gamma &= const
+\end{align}
+Thus, the theorem holds:
+\begin{equation}
+\boxed{ pV^\gamma = const}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+The reason this result is important is now we have a way to describe adiabatic transitions on $pV$ diagrams.
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/adiabatic.png}
+\caption{\label{fig:adiabatic} Isothermal: $pV = const$.  Adiabatic: $pV^\gamma = const$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+\small
+With an understanding of $pV$ behavior of different processes, and the First Law, we can begin to construct more complex processes, and predict the work done, and heat required.
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/carnot_cycle.png}
+\caption{\label{fig:carnot} An example of a complex cycle: the Carnot cycle.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+We have seen how \textbf{cyclic} processes have $dE_{\rm int} = 0$, so $dQ = dW$ by the First Law.  However, we need to introduce \textit{how} to calculate the $dQ$ to perform a given process, so that we may know the predicted work to be done. \\ \vspace{0.5cm}
+\textit{Isothermal process, ideal gas}:
+\begin{align}
+dQ &= dW \\
+dQ &= pdV \\
+dQ &= \frac{nRT dV}{V} \\
+\int dQ &= \int \frac{nRT dV}{V} \\
+Q &= nRT \ln\left(\frac{V_{\rm f}}{V_{\rm i}}\right)
+\end{align}
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+Heat required to change the volume of an idea gas isothermically:
+\begin{equation}
+\boxed{Q = nRT \ln\left(\frac{V_{\rm f}}{V_{\rm i}}\right)} \label{eq:isoT}
+\end{equation}
+We can repeat this procedure for adiabatic processes:
+\begin{equation}
+\boxed{Q = \frac{k}{1-\gamma}\left(V_{\rm f}^{1-\gamma} - V_{\rm i}^{1-\gamma}\right)} \label{eq:ad}
+\end{equation}
+In Eq. \ref{eq:ad}, $k = p_{\rm i}V_{\rm i}^\gamma$.  The utility of these formulae: \alert{we can predict the heat required to go from one known state to another}.  The isobaric and isochoric processes are much simpler, but the derivation is similar.
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+One mole of an ideal gas in a piston is at a temperature of 600 K.  How much heat is required to expand the volume of the piston isothermically by a factor of 2.718?
+\begin{itemize}
+\item A: 3 kJ
+\item B: 4 kJ
+\item C: 5 kJ
+\item D: 6 kJ
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+One mole of an ideal gas in a piston is at a temperature of 300 K.  How much heat is required to expand the volume of the piston isothermically by a factor of 2.718?
+\begin{itemize}
+\item A: 1.5 kJ
+\item B: 2.5 kJ
+\item C: 3.5 kJ
+\item D: 4.5 kJ
+\end{itemize}
+\end{frame}
+
+\section{The Second Law of Thermodynamics}
+
+\begin{frame}{The Second Law of Thermodynamics}
+
+\end{frame}
 
 \section{Conclusion}
 
@@ -543,6 +694,10 @@ Jasmine, the heroine of \textit{Artemis}, by Andy Weir, lives on the moon.  Supp
 \item 50 J
 \item 0.2 degrees C
 \item Fill an inflatable object with heated air at high pressure.
+\item The piston
+\item About 100 degrees Kelvin
+\item 5 kJ
+\item 2.5 kJ
 \end{itemize}
 \end{column}
 \end{columns}
