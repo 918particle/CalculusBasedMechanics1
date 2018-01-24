@@ -585,6 +585,214 @@ Imagine two infinite disks with equal uniform charge distributions, some distanc
 \end{itemize}
 \end{frame}
 
+\begin{frame}{E-Fields of Charge Distributions}
+Other interesting charge distributions:
+\begin{itemize}
+\item A line of charge with length $L$ and total charge $Q = \lambda L$, where $P = (0,0,z)$ above midpoint:
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{\lambda L}{z\sqrt{z^2 + \frac{1}{4} L^2}} \hat{k} \label{eq:line2}
+\end{equation}
+\item Equation \ref{eq:line2}, but with $L \rightarrow \infty$:
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2\lambda}{z} \hat{k}
+\end{equation}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+Other interesting charge distributions:
+\begin{itemize}
+\item A ring of radius $R$ and total charge $Q = 2\pi R\lambda$, where $P = (0,0,z)$ above midpoint:
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2\pi R \lambda z}{\left(z^2 + R^2\right)^{3/2}} \hat{k} \label{eq:ring}
+\end{equation}
+\item Equation \ref{eq:ring}, but with $z \gg R$:
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2\pi R \lambda }{z^2} \hat{k} \label{eq:ring2}
+\end{equation}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+In Eq. \ref{eq:ring}, what does the quantity $2\pi R\lambda$ represent?
+\begin{itemize}
+\item A: The total charge density on the ring
+\item B: The circumference of the ring
+\item C: The magnitude of the electric field from the ring
+\item D: The total charge on the ring
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+Let $Q_{\rm tot} = 2\pi R \lambda$.  That makes Eq. \ref{eq:ring2}
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{Q_{\rm tot}}{z^2} \hat{k}
+\end{equation}
+This is identical to the electric field of what charge distribution?  (Think back to the definition of the electric field).
+\begin{itemize}
+\item A: A plane with charge density $Q_{\rm tot}/A$, where $A$ is the area
+\item B: A line with total charge $Q_{\rm tot}$
+\item C: A dipole of charge $\pm Q_{\rm tot}$
+\item D: A point charge $Q_{\rm tot}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+As we shall see, the last few results follow from a notion known as \alert{Gauss's Law}.  First we need two concepts:
+\begin{itemize}
+\item The \textbf{area vector} of a surface
+\item The concept of flux
+\end{itemize}
+\end{frame}
+
+\section{Gauss's Law}
+
+\begin{frame}{Gauss's Law}
+Let $\vec{A}$ be a vector that:
+\begin{itemize}
+\item has a magnitude equal to the area of a surface
+\item has a direction that is orthogonal to the surface
+\end{itemize}
+If a surface has area $A$, then $\vec{A} = A \hat{n}$, where $\hat{n}$ is normal, and pointed outward orthogonally from the surface.  What does \textit{outward} mean?
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/areaVector.png}
+\caption{\label{fig:n} The convention for the area vector direction is outward, not inward.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/patch.png}
+\caption{\label{fig:patch} We may think of a surface $S$ as the sum of many infinitesimal square patches $dS_i$, each with an area vector $\vec{dA}_i$ equal in magnitude but not direction.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+A rectangular surface has length $a$, width $b$, and it is located in the x-y plane.  What is the area vector of the rectangular surface?
+\begin{itemize}
+\item A: $b^2 \hat{k}$
+\item B: $a^2 \hat{i}$
+\item C: $ab \hat{k}$
+\item D: $ab \hat{j}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/coin.png}
+\caption{\label{fig:coin} A circular patch, with an external electric field.  How many electric field lines would pass through the circular patch if it was tilted to 90$^{\circ}$ from the field?  How about 0$^{\circ}$?}
+\end{figure}
+This behavior indicates a \textbf{dot-product} is working (zero and maximal over a span of 90 degrees).  But a dot-product of which two quantities?
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+Electric flux:
+\begin{equation}
+\boxed{
+\Phi = \vec{E} \cdot \vec{A}} = E A \cos\theta
+\end{equation}
+Assumptions:
+\begin{itemize}
+\item $\theta$ is the angle between the area vector and the field
+\item The electric field is uniform over this surface
+\item The surface is flat
+\end{itemize}
+These assumptions do not hold for any arbitrary configuration of charge and surfaces.  However, if we zoom in closely enough to an individual patch, it does. \\ \vspace{0.5cm}
+The units of electric flux are N C$^{-1}$ m$^2$.
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+How can we obtain the flux of more complex electric fields through more complex surfaces?  Simple: zoom in, get the flux from a patch, add it to the total:
+\begin{equation}
+\Phi = \sum_i^N \vec{E}_i \cdot d\vec{A}_i
+\end{equation}
+In situations like this, the summation usually becomes an integral if we make $dA$ small and $N$ very large.  That is, break the surface into many small patches.  But now we are dealing with two vectors, $\vec{E}$ and $d\vec{A}$...
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+\begin{equation}
+\boxed{
+\Phi = \int_{\rm S} \vec{E} \cdot d\vec{A}} \label{eq:flux}
+\end{equation}
+Equation \ref{eq:flux} is known as a \textit{surface integral.}  We can do these!  Let's try an easy one.  Let $\vec{E} = E_0 x \hat{k}$, and $S$ be a square of width $x_0$ and height $y_0$ in the x-y plane. \\ \vspace{0.5cm}
+\textbf{Group board exercise:} Compute the electric flux $\Phi$, and check the units to make sure they are correct.
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+$\Phi = \frac{1}{2} E_0 y_0 x_0^2$.  (This has units of electric field times area).  Which of the following would increase the flux?
+\begin{itemize}
+\item A: If $x_0$ or $y_0$ were to grow larger
+\item B: If $E_0$ were to grow larger
+\item C: If $\vec{E}$ were directed at an angle to the z-axis
+\item D: Both A and B
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+Imagine now that there is another, identical surface \textit{above} the first surface, but it is \textit{upside-down}.  The electric field passes through both surfaces.  What is the total flux, the sum of the fluxes through both surfaces?
+\begin{itemize}
+\item A: $\Phi = \frac{1}{2} E_0 y_0 x_0^2$
+\item B: $\Phi = E_0 y_0 x_0^2$
+\item C: $0$
+\item D: $\Phi = -\frac{1}{2} E_0 y_0 x_0^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+The answer is zero because, for the \textit{upside-down} surface, the area vector is in the direction $-\hat{k}$.  In fact, this result applies to any \textbf{closed surface}:
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/cube.png}
+\caption{\label{fig:cube} The flux through a closed surface due to an external field is zero.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+We can encapsulate this idea in the following equation:
+\begin{equation}
+\boxed{
+\Phi = \oint_{\rm S} \vec{E}_{\rm ext} \cdot d\vec{A} = 0} \label{eq:ext}
+\end{equation}
+In general:
+\begin{equation}
+\boxed{
+\Phi = \oint_{\rm S} \vec{E} \cdot d\vec{A}} \label{eq:general}
+\end{equation}
+However this implies something interesting about closed surfaces.  If the flux is non-zero through a closed surface, the field cannot be an external field.  It has to be an \textit{internal field}.
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+How do you make an electric field \textit{internal} to a closed surface?  How do you make an electric field in general?  \textbf{Charge.}  Charge is the origin of any electric field.
+\begin{equation}
+\boxed{
+\Phi = \oint_{\rm S} \vec{E} \cdot d\vec{A} \propto Q} \label{eq:general2}
+\end{equation}
+If the charge $Q$ is outside the surface, then by definition the field is external to the surface.  If the surface \textit{encloses the charge}, then the total flux is non-zero, and\footnote{Formal proof relies on the \textit{divergence theorem}, from Calculus III.}
+\begin{equation}
+\boxed{
+\frac{Q_{\rm enc}}{\epsilon_0} = \oint_{\rm S} \vec{E} \cdot d\vec{A}} \label{eq:gauss}
+\end{equation}
+Are you ready to do just, like, so many Gauss's Law problems?!  Good!
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+A charge $Q$ is at the origin.  Compute the electric field via Gauss's Law, at $P = (0,0,R)$. \\ \vspace{0.5cm}
+\textbf{Group board exercise.}
+\end{frame}
+
+\section{Applying Gauss's Law}
+
+\begin{frame}{Applying Gauss's Law}
+Are you ready to do just, like, so many Gauss's Law problems?!  Good!
+\end{frame}
+
 \section{Conclusion}
 
 \section{Answers}
@@ -615,7 +823,11 @@ Imagine two infinite disks with equal uniform charge distributions, some distanc
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item ...
+\item The total charge on the ring
+\item A point charge $Q_{\rm tot}$
+\item $ab \hat{k}$
+\item Both A and B
+\item $0$
 \end{itemize}
 \end{column}
 \end{columns}
