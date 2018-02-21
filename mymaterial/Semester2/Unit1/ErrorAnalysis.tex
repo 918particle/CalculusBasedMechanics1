@@ -100,4 +100,24 @@ L_{f,H20} = \left( T_{i,H20} - 2T_f\right) \pm \sqrt{\sigma_{i,H20}^2 + (2\sigma
 
 The group used two degrees for the error in the initial and final temperatures in Eq. \ref{eq:L3}, and 80 degrees and 0 degrees were the observations.  \textbf{Plugging this information into Eq. \ref{eq:L3} yields} $80 \pm 4.5$ calories per gram.  The expected value is 80 calorie per gram, and the error is $4/80 = 5\%$ of the result.  Dividing the \textit{standard deviation by the result is called the fractional error}.  In the next lesson on error analysis, we will learn to account for multiplication and division of variables through the use of fractional errors.
 
+\subsection{Addition and Subtraction of variables with errors}
+
+If two variables are multiplied or divided, the \textit{fractional errors} are combined rather than the \textit{absolute errors.}  Suppose we are trying to quantify the momentum of a system with mass $m$ and speed $v$:
+
+\begin{equation}
+p = mv
+\end{equation}
+
+We measure the mass: $m\pm \sigma_m$, and the speed: $v\pm\sigma_v$.  The \textit{fractional error} in the momentum, speed, and mass are $\frac{\sigma_p}{p}$, $\frac{\sigma_v}{v}$, and $\frac{\sigma_m}{m}$ respectively.  The relationship between the fractional error in momentum and the other two is
+
+\begin{equation}
+\left(\frac{\sigma_p}{p}\right)^2 = \left(\frac{\sigma_m}{m}\right)^2 + \left(\frac{\sigma_v}{v}\right)^2
+\end{equation}
+
+Notice that the fractional errors of the mass and speed are added in quadrature (summing squares) to produce the frational error of the momentum.  Thus, to quote a measurement of momentum, the result is:
+
+\begin{equation}
+p = (mv) \pm (mv) \sqrt{\left(\frac{\sigma_m}{m}\right)^2 + \left(\frac{\sigma_v}{v}\right)^2}
+\end{equation}
+
 \end{document}
