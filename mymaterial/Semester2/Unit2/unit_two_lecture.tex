@@ -64,10 +64,78 @@ Suppose the the water begins at 95 $^{\circ}$C, and ends at 100 $^{\circ}$C.  Ho
 \end{enumerate}
 \end{frame}
 
-\section{JITT Reading Assignment for Wednesday}
+\section{JITT Reading -  1.3}
 
-\begin{frame}{Reading Assignment}
-If you have not already, \textbf{read chapter 3}, and we will have JITT on Wednesday.
+\begin{frame}{JITT Reading -  1.3}
+\begin{enumerate}
+\item In your own words, why is the internal energy path-independent, for paths on a p-V diagram?
+\item If a system gains heat but the internal energy does not change, according to the first law of thermodynamics, what should happen?
+\item What is the difference between absolute error and fractional error?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{JITT Reading -  1.3}
+\small
+In your own words, why is the internal energy path-independent, for paths on a p-V diagram? \\ \hrulefill \\
+``It doesn’t matter how you go from place one place to the next.'' \\
+``The internal energy path is independent for paths on the p-V diagram because internal energy is only dependent on temperature, not on pressure and volume.'' \\
+``Internal energy is path independent because none of the atoms touch each other and the potential energy is constant.''
+\end{frame}
+
+\begin{frame}{JITT Reading -  1.3}
+\small
+If a system gains heat but the internal energy does not change, according to the first law of thermodynamics, what should happen? \\ \hrulefill \\
+``According to the first law of thermodynamics, the system would have to do work in some way, usually by moving a piston which would increase the volume of the system.'' \\
+``If a system gains heat but the internal energy doesn't change, according to the first law of thermodynamics work is lost.''
+\end{frame}
+
+\begin{frame}{JITT Reading -  1.3}
+\small
+What is the difference between absolute error and fractional error? \\ \hrulefill \\
+\textit{(Some people expressed confusion, so we will do some examples).} \\ \vspace{0.5cm}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\centering
+\underline{Absolute error:} Let $x$ and $y$ be quantities we are measuring, and let $z=x-y$.
+\begin{align}
+x\pm\sigma_x & \\
+y\pm\sigma_y & \\
+\end{align}
+The quantities $\sigma_x$, $\sigma_y$, and $\sigma_z$ are called \textit{absolute errors,} and they have the same units $x$, $y$, and $z$.
+\end{column}
+\vline \hspace{0.1cm}
+\begin{column}{0.5\textwidth}
+\centering
+\underline{Fractional error:} Let $x$ and $y$ be quantities we are measuring, and let $z=xy$.
+\begin{align}
+x\pm\sigma_x & \\
+y\pm\sigma_y & \\
+\frac{\sigma_z}{z} &= \sqrt{\left(\frac{\sigma_x}{x}\right)^2 + \left(\frac{\sigma_y}{y}\right)^2} 
+\end{align}
+The quantities $\sigma_x/x$, $\sigma_y/y$, and $\sigma_z/z$ are called \textit{fractional errors,} and they have the no units.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{JITT Reading -  1.3}
+To summarize, three rules:
+\begin{enumerate}
+\item Adding or subtracting variables with absolute errors: absolute errors combine \textit{in quadrature}.
+\item Multiplying or dividing variables with absolute errors: fractional errors combine \textit{in quadrature}.
+\item Multiplying a variable with absolute errors by a constant: the constant just multiplies the absolute error.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Fractional versus Absolute Error}
+Supose a thermodynamic system has $Q = 100\pm 10$ kJ of heat \textit{added to it}, and $W = 100\pm 10$ kJ of work \textit{done on it.}  What is the change in internal energy, accounting for absolute errors?
+\end{frame}
+
+\begin{frame}{Fractional versus Absolute Error}
+Suppose we measure the temperature $T=200$ K of an ideal gas, with some absolute error $\sigma_T = \pm 50$ K.  Suppose we measure the number of moles $n=2.0$ in the gas with some absolute error $\sigma_n = \pm 0.5$.  What is the internal energy $E_{int}$ of the ideal gas?
+\end{frame}
+
+\begin{frame}{Fractional versus Absolute Error}
+A block of frozen substance has a measured mass of $4.0\pm 1.0$ kg, and a measured latent heat of $100\pm 25$ kJ/kg.  How much heat (within errors) is required to melt it?
 \end{frame}
 
 \section{The First Law of Thermodynamics}
@@ -326,12 +394,12 @@ In each of the following scenarios, select the best answer:
 \begin{frame}{The First Law of Thermodynamics}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
-\small Suppose $\Delta E_{\rm int} = 0$.  Which of the following is true?
+\small Suppose $\Delta E_{\rm int} = 0$.  Which path performs the most net work?
 \begin{itemize}
-\item A: For path 1, the system gains the most heat.
-\item B: For path 5, the system loses the most heat.
-\item C: For path 3, the system loses the most heat.
-\item D: For path 1, the system loses the most heat.
+\item A: AB: path 2, BA: returns along path 2
+\item B: AB: path 2, BA: returns along path 3
+\item C: AB: path 2, BA: returns along path 4
+\item D: AB: path 2, BA: returns along path 5
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -417,7 +485,7 @@ If in the heat-to-rocket system, we have to provide the heat first to 2 moles of
 
 \begin{frame}{The First Law of Thermodynamics}
 In the previous two problems we equated heat energy with mechanical energy: $mgh = Q$, and then calculated $Q$ with $Q=\frac{3}{2}nRT$.  Thus, we used $mgh = \frac{3}{2}nRT$.  Let's try one with kinetic energy instead of potential energy. \\ \vspace{0.5cm}
-If we are using the heat stored in 2 moles of an ideal gas, what temperature change is required to get that heat to accelerate a 0.1 kg object to 10 m/s?
+If we are using the heat stored in 2 moles of an ideal gas, what temperature change is required to get that heat to accelerate a 0.1 kg object to 10 m/s? \textit{Is the temperature change positive or negative?}
 \begin{itemize}
 \item A: 3 degrees C
 \item B: 2 degrees C
@@ -979,12 +1047,13 @@ The final statement of the Second Law of Thermodynamics summarizes Carnot engine
 \item $E_{\rm int}$ decreases
 \item $E_{\rm int}$ increases
 \item Path 5 most work, path 2 least work.
-\item For path 1, the system gains the most heat
+\item AB: path 2, BA: returns along path 5
 \item Path 5
 \item 3460 J
 \item 2305 J
 \item -2305 J
 \item 50 J
+\item 2 degrees C
 \item 0.2 degrees C
 \item Fill an inflatable object with heated air at high pressure.
 \item The piston
