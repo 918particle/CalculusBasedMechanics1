@@ -511,7 +511,7 @@ Words of the text: ``A quasi-static transition is one in which the change in sta
 A process is called \textbf{cyclic} if it returns a system to the same state with the same internal energy.
 We should know at least these types of quasi-static processes: \small 
 \begin{enumerate}
-\item Isothermal ($T$ is constant)
+\item \alert{Isothermal} ($T$ is constant)
 \item Isobaric ($p$ is constant)
 \item Adiabatic ($Q$, the head added/subtracted, is zero)
 \item Isochoric ($V$ is constant)
@@ -521,10 +521,26 @@ Exercise: use the following simulation to create cyclic processes.
 \end{frame}
 
 \begin{frame}{The First Law of Thermodynamics}
+\small
 Exercise: use the following simulation to create cyclic processes: \url{https://www.geogebra.org/m/mXvUPjFz}.  What do you notice about the total heat exchanged $Q$, and the total work done, $W$?
 \begin{enumerate}
-\item Create four different cyclic processes that involve the four quasi-static process types, and explain quantitatively (in your lab notebook) why each fits the relevant criterion.
-\item What is true about $Q$ and $W$ for each of these for processes you've created?  Why is this the case?
+\item Create three processes between states A and B: isobaric, isochoric, and adiabatic.  Explain quantitatively why each fits the relevant criterion.  What is true about $Q$ and $W$ for each of these for processes you've created?
+\begin{itemize}
+\item \textbf{Isobaric}: what is the slope of an isobaric process?
+\item \textbf{Isobaric}: how do you calculate the work done?
+\item \textbf{Isochoric}: what is the slope of an isochoric process?
+\item \textbf{Isochoric}: what is true of the heat added/subtracted to/from the system?
+\item \textbf{Adiabatic}: create several process with $dQ \approx 0$. Calculate $pV^{\frac{5}{3}}$ for each.  What do you notice?
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{The First Law of Thermodynamics}
+\small
+Exercise: use the following simulation to create cyclic processes: \url{https://www.geogebra.org/m/mXvUPjFz}.  What do you notice about the total heat exchanged $Q$, and the total work done, $W$?
+\begin{enumerate}
+\item Create three processes between states A and B: isobaric, isochoric, and adiabatic.  Explain quantitatively why each fits the relevant criterion.  What is true about $Q$ and $W$ for each of these for processes you've created?
+\item \alert{Consider three different cyclic processes ABCD, and predict the net work done.  Compare your calculations to the simulation output.}
 \end{enumerate}
 \end{frame}
 
@@ -589,7 +605,7 @@ It has been shown that $C_{\rm V} = \frac{3}{2}R$ from the equipartition princip
 
 \begin{frame}{Heat Capacities of an Ideal Gas}
 \small
-Jasmine, the heroine of \textit{Artemis}, by Andy Weir, lives on the moon.  Suppose she needs to power up a bulkhead in a compartment that has lost pressure, but the bulkhead won't work below a certain temperature.  She devises a plan fill up a heated container with oxygen and open it in the compartment, both releasing oxygen and heat.  How should she fill the container with heated air, to store the most heat in a given time limit?
+Jasmine, the heroine of \textit{Artemis}, by Andy Weir, lives on the moon.  She needs to power up a bulkhead in a compartment that has lost pressure, but the bulkhead won't work below a certain temperature.  She devises a plan fill up a heated container with oxygen and open it in the compartment, both releasing oxygen and heat.  How should she proceed, to store the most heat in a given time limit?
 \begin{itemize}
 \item A: Fill a fixed-volume container with low-pressure air and heat it up.
 \item B: Fill an inflatable object with heated air at constant, low pressure.
@@ -610,12 +626,12 @@ Jasmine, the heroine of \textit{Artemis}, by Andy Weir, lives on the moon.  Supp
 \end{frame}
 
 \begin{frame}{Heat Capacities of an Ideal Gas}
-Suppose a cylinder of 1 mole of an ideal gas at fixed volume is heated for 6 minutes with 10 W of power.  What is the change in temperature?  ($R = 8.314$ J/mol/Kelvin).
+Suppose a cylinder of 1 mole of an ideal gas at fixed pressure is heated for 6 minutes with 10 W of power.  What is the change in temperature?  ($R = 8.314$ J/mol/Kelvin).
 \begin{itemize}
-\item A: About 10 degrees Kelvin
-\item B: About 50 degrees Kelvin
-\item C: About 100 degrees Kelvin
-\item D: About 150 degrees Kelvin
+\item A: About 20 degrees Kelvin
+\item B: About 70 degrees Kelvin
+\item C: About 120 degrees Kelvin
+\item D: About 170 degrees Kelvin
 \end{itemize}
 \end{frame}
 
@@ -716,11 +732,10 @@ With an understanding of $pV$ behavior of different processes, and the First Law
 We have seen how \textbf{cyclic} processes have $dE_{\rm int} = 0$, so $dQ = dW$ by the First Law.  However, we need to introduce \textit{how} to calculate the $dQ$ to perform a given process, so that we may know the predicted work to be done. \\ \vspace{0.5cm}
 \textit{Isothermal process, ideal gas}:
 \begin{align}
-dQ &= dW \\
-dQ &= pdV \\
-dQ &= \frac{nRT dV}{V} \\
-\int dQ &= \int \frac{nRT dV}{V} \\
-Q &= nRT \ln\left(\frac{V_{\rm f}}{V_{\rm i}}\right)
+dW &= pdV \\
+dW &= \frac{nRT dV}{V} \\
+\int dW &= \int \frac{nRT dV}{V} \\
+W &= nRT \ln\left(\frac{V_{\rm f}}{V_{\rm i}}\right)
 \end{align}
 \end{frame}
 
@@ -731,29 +746,29 @@ Heat required to change the volume of an idea gas isothermically:
 \end{equation}
 We can repeat this procedure for adiabatic processes:
 \begin{equation}
-\boxed{Q = \frac{k}{1-\gamma}\left(V_{\rm f}^{1-\gamma} - V_{\rm i}^{1-\gamma}\right)} \label{eq:ad}
+\boxed{W = \frac{k}{1-\gamma}\left(V_{\rm f}^{1-\gamma} - V_{\rm i}^{1-\gamma}\right)} \label{eq:ad}
 \end{equation}
 In Eq. \ref{eq:ad}, $k = p_{\rm i}V_{\rm i}^\gamma$.  The utility of these formulae: \alert{we can predict the heat required to go from one known state to another}.  The isobaric and isochoric processes are much simpler, but the derivation is similar.
 \end{frame}
 
 \begin{frame}{Adiabatic Processes with an Ideal Gas}
-One mole of an ideal gas in a piston is at a temperature of 600 K.  How much heat is required to expand the volume of the piston isothermically by a factor of 2.718?
+\small 
+\textbf{Example 3.7 from Section 3.6 of text}.  Gasoline vapor is injected into the cylinder of an automobile engine when the piston is in its expanded position.
+The temperature, pressure, and volume of the resulting gas-air mixture are 20 deg C, $10^5$ Pa, and 240 cm$^3$.  The mixture is then compressed adiabatically to a volume of 40 cm$^3$.  (a) What are the pressure and temperature of the mixture after the compression? (b) How much work is done by the mixture during the compression?
 \begin{itemize}
-\item A: 3 kJ
-\item B: 4 kJ
-\item C: 5 kJ
-\item D: 6 kJ
+\item Part (a), example.
+\item Part (b), \textbf{groups on board.}
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Adiabatic Processes with an Ideal Gas}
-One mole of an ideal gas in a piston is at a temperature of 300 K.  How much heat is required to expand the volume of the piston isothermically by a factor of 2.718?
-\begin{itemize}
-\item A: 1.5 kJ
-\item B: 2.5 kJ
-\item C: 3.5 kJ
-\item D: 4.5 kJ
-\end{itemize}
+One mole of an ideal gas in a piston is at a temperature of 600 K, a pressure of 2 atm, and a volume of 1.0 L.  How much work is done if the volume expands  \alert{isothermically} by a factor of 2.718?
+\textbf{Group exercise on board.}
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+One mole of an ideal gas in a piston is at a temperature of 600 K, a pressure of 2 atm, and a volume of 1.0 L.  How much work is done if the volume expands  \alert{adiabatically} by a factor of 2.718?
+\textbf{Group exercise on board.}
 \end{frame}
 
 \section{The Second Law of Thermodynamics}
@@ -1056,10 +1071,7 @@ The final statement of the Second Law of Thermodynamics summarizes Carnot engine
 \item 2 degrees C
 \item 0.2 degrees C
 \item Fill an inflatable object with heated air at high pressure.
-\item The piston
-\item About 100 degrees Kelvin
-\item 5 kJ
-\item 2.5 kJ
+\item About 170 degrees Kelvin
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
