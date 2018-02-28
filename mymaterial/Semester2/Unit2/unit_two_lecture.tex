@@ -574,7 +574,7 @@ dE = n C_{\rm V} dT
 
 \begin{frame}{Heat Capacities of an Idea Gas}
 \small
-Consider the same gas, but at fixed pressure.  Beginning with first law of thermodynamics now accounts for work: \\ $dE = dQ - dW = dQ - pdV$.  If heat $dQ$ is added to the vessel, the corresponding temperature change is
+Consider the same gas, but at fixed pressure.  Beginning with the first law of thermodynamics: \\ $dE = dQ - dW = dQ - pdV$.  If heat $dQ$ is added to the vessel, the corresponding temperature change is
 \begin{equation}
 dQ = n C_{\rm P} dT \label{eq:dq}
 \end{equation}
@@ -601,28 +601,6 @@ If the internal energy of a thermodynamic system depends only on the temperature
 C_{\rm P} = C_{\rm V} + R}
 \end{equation}
 It has been shown that $C_{\rm V} = \frac{3}{2}R$ from the equipartition principle, so $C_{\rm P} = \frac{5}{2}R$ for an ideal gas.
-\end{frame}
-
-\begin{frame}{Heat Capacities of an Ideal Gas}
-\small
-Jasmine, the heroine of \textit{Artemis}, by Andy Weir, lives on the moon.  She needs to power up a bulkhead in a compartment that has lost pressure, but the bulkhead won't work below a certain temperature.  She devises a plan fill up a heated container with oxygen and open it in the compartment, both releasing oxygen and heat.  How should she proceed, to store the most heat in a given time limit?
-\begin{itemize}
-\item A: Fill a fixed-volume container with low-pressure air and heat it up.
-\item B: Fill an inflatable object with heated air at constant, low pressure.
-\item C: Fill a fixed-volume object with high-pressure air and heat it up.
-\item D: Fill an inflatable object with heated air at constant, high pressure.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Heat Capacities of an Ideal Gas}
-\small
-\begin{itemize}
-\item A: Fill a fixed-volume container with low-pressure air and heat it up.
-\item B: Fill an inflatable object with heated air at constant, low pressure.
-\item C: Fill a fixed-volume object with high-pressure air and heat it up.
-\item D: Fill an inflatable object with heated air at constant, high pressure.
-\end{itemize}
-\textit{I would say \textbf{D}, merely because we know that the heat capacity of the gas is higher at constant pressure rather than constant volume, and at high pressure we get more atoms of gas...}
 \end{frame}
 
 \begin{frame}{Heat Capacities of an Ideal Gas}
@@ -746,9 +724,9 @@ Heat required to change the volume of an idea gas isothermically:
 \end{equation}
 We can repeat this procedure for adiabatic processes:
 \begin{equation}
-\boxed{W = \frac{k}{1-\gamma}\left(V_{\rm f}^{1-\gamma} - V_{\rm i}^{1-\gamma}\right)} \label{eq:ad}
+\boxed{W = \frac{1}{1-\gamma}\left(p_{\rm f}V_{\rm f} - p_{\rm i}V_{\rm i}\right)} \label{eq:ad}
 \end{equation}
-In Eq. \ref{eq:ad}, $k = p_{\rm i}V_{\rm i}^\gamma$.  The utility of these formulae: \alert{we can predict the heat required to go from one known state to another}.  The isobaric and isochoric processes are much simpler, but the derivation is similar.
+In Eq. \ref{eq:ad}, $k = p_{\rm i}V_{\rm i}^\gamma = p_{\rm f}V_{\rm f}^\gamma$.  The utility of these formulae: \alert{we can predict the heat required to go from one known state to another}.  The isobaric and isochoric processes are much simpler, but the derivation is similar.
 \end{frame}
 
 \begin{frame}{Adiabatic Processes with an Ideal Gas}
@@ -762,12 +740,20 @@ The temperature, pressure, and volume of the resulting gas-air mixture are 20 de
 \end{frame}
 
 \begin{frame}{Adiabatic Processes with an Ideal Gas}
-One mole of an ideal gas in a piston is at a temperature of 600 K, a pressure of 2 atm, and a volume of 1.0 L.  How much work is done if the volume expands  \alert{isothermically} by a factor of 2.718?
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/GasolineComp.png}
+\caption{\label{fig:gas} Gasoline components are polyatomic. From left to right: isooctane, butane, 3-ethyltoluene, and MTBE.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Adiabatic Processes with an Ideal Gas}
+One mole of an ideal gas ($d=5$) in a piston is at a temperature of 600 K, a pressure of 2 atm, and a volume of 1.0 L.  How much work is done if the volume expands  \alert{isothermically} by a factor of 2.718?
 \textbf{Group exercise on board.}
 \end{frame}
 
 \begin{frame}{Adiabatic Processes with an Ideal Gas}
-One mole of an ideal gas in a piston is at a temperature of 600 K, a pressure of 2 atm, and a volume of 1.0 L.  How much work is done if the volume expands  \alert{adiabatically} by a factor of 2.718?
+One mole of an ideal gas ($d=5$) in a piston is at a temperature of 600 K, a pressure of 2 atm, and a volume of 1.0 L.  How much work is done if the volume expands  \alert{adiabatically} by a factor of 2.718?
 \textbf{Group exercise on board.}
 \end{frame}
 
@@ -789,9 +775,8 @@ The key to understanding the \alert{Second Law of Thermodynamics} is the \textbf
 \url{https://phet.colorado.edu/en/simulation/reversible-reactions} \\ \vspace{0.5cm}
 Assignment for this activity:
 \begin{enumerate}
-\item Group discussion with professor.
 \item Learn the controls: barrier, adding particles, and adding heat.
-\item Raise the barrier, and add a few particles to one chamber.  Increase the temperature, and lower the barrier.  How long does it take for the system to equilibrate?
+\item Raise the barrier, and add a few particles to one chamber.  Increase the temperature, and lower the barrier.  How long does it take for the system to equilibrate, and how does this depend on temperature?
 \item Can you raise the barrier, trapping all particles on one side?
 \item Repeat with an \textbf{increasingly large number of particles.}  What are the results?
 \end{enumerate}
@@ -800,9 +785,8 @@ Assignment for this activity:
 \begin{frame}{The Second Law of Thermodynamics}
 \small
 \begin{enumerate}
-\item Group discussion with professor.
 \item Learn the controls: barrier, adding particles, and adding heat.
-\item Raise the barrier, and add a few particles to one chamber.  Increase the temperature, and lower the barrier.  How long does it take for the system to equilibrate?
+\item Raise the barrier, and add a few particles to one chamber.  Increase the temperature, and lower the barrier.  How long does it take for the system to equilibrate, and how does this depend on temperature?
 \item Can you raise the barrier, trapping all particles on one side?
 \item Repeat with an \textbf{increasingly large number of particles.}  What are the results?
 \item \textbf{Group discussion at the conclusion.}  How do the results depend on temperature?  Is energy of the initial state conserved?
@@ -842,7 +826,7 @@ Another subject that guides us to think about The Second Law of Thermodynamics i
 From The First Law of Thermodynamics:
 \begin{align}
 dE_{\rm int} &= Q - W \\
-0 &= Q_{\rm h} - Q_{\rm c} - 0 \\
+0 &= Q_{\rm h} - Q_{\rm c} - W \\
 W &= Q_{\rm h} - Q_{\rm c}
 \end{align}
 So the work performed by an engine is
@@ -877,7 +861,7 @@ K_{\rm R} = \frac{Q_{\rm c}}{W} = \frac{Q_{\rm c}}{Q_{\rm h}-Q_{\rm c}}
 \end{equation}
 The coefficient of performance for refridgeration, $K_{\rm R}$.
 \begin{equation}
-K_{\rm R} = \frac{Q_{\rm h}}{W} = \frac{Q_{\rm h}}{Q_{\rm h}-Q_{\rm c}}
+K_{\rm P} = \frac{Q_{\rm h}}{W} = \frac{Q_{\rm h}}{Q_{\rm h}-Q_{\rm c}}
 \end{equation}
 The coefficient of performance for a heat pump, $K_{\rm P}$.  $K_{\rm P} = 1/e$.
 \end{frame}
