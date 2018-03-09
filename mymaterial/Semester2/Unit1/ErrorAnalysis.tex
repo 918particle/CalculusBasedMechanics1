@@ -100,7 +100,7 @@ L_{f,H20} = \left( T_{i,H20} - 2T_f\right) \pm \sqrt{\sigma_{i,H20}^2 + (2\sigma
 
 The group used two degrees for the error in the initial and final temperatures in Eq. \ref{eq:L3}, and 80 degrees and 0 degrees were the observations.  \textbf{Plugging this information into Eq. \ref{eq:L3} yields} $80 \pm 4.5$ calories per gram.  The expected value is 80 calorie per gram, and the error is $4/80 = 5\%$ of the result.  Dividing the \textit{standard deviation by the result is called the fractional error}.  In the next lesson on error analysis, we will learn to account for multiplication and division of variables through the use of fractional errors.
 
-\subsection{Addition and Subtraction of variables with errors}
+\subsection{Multiplication and Division of variables with errors}
 
 If two variables are multiplied or divided, the \textit{fractional errors} are combined rather than the \textit{absolute errors.}  Suppose we are trying to quantify the momentum of a system with mass $m$ and speed $v$:
 
@@ -119,5 +119,46 @@ Notice that the fractional errors of the mass and speed are added in quadrature 
 \begin{equation}
 p = (mv) \pm (mv) \sqrt{\left(\frac{\sigma_m}{m}\right)^2 + \left(\frac{\sigma_v}{v}\right)^2}
 \end{equation}
+
+\section{Example with Addition and Subtraction, Multiplication and Division}
+
+\textbf{Adiabatic work}. The work done by an adiabatic process is given by
+
+\begin{equation}
+W = \frac{1}{1-\gamma} \left( p_f V_f - p_i V_i \right)
+\label{eq:W}
+\end{equation}
+
+Let's assume we are working with a monatomic gas with only three degrees of freedom.  This makes $\gamma = c_P / c_V = (c_V + R)/c_V = (3/2+1)/(3/2) = 5/3$.  Suppose a process takes a system from a state ($1.0\pm 0.05$ L,$2.0\pm 0.1$ atm) to ($2.0\pm 0.1$ L,$0.5\pm 0.1$ atm).  What is the work done, accounting for random statistical errors?
+
+\begin{enumerate}
+\item First, let's compute the factor in front of Eq. \ref{eq:W} on the right side, since it just scales everything and doesn't contribute to the error propagation.
+\begin{equation}
+\frac{1}{1-\gamma} = \frac{1}{1-\frac{5}{3}} = \frac{1}{-\frac{2}{3}} = -\frac{3}{2}
+\end{equation}
+Even though this pre-factor is negative, the work done is positive, because the area under the $pV$ curve will be positive.
+\item We can see that the errors associated with the pressures and volumes with combine following the multiplication rule: fractional errors combine in quadrature.  For the error in the each state, we have
+\begin{equation}
+\frac{\sigma_{pV}}{pV} = \sqrt{\left(\frac{\sigma_p}{p}\right)^2+\left(\frac{\sigma_V}{V}\right)^2}
+\end{equation}
+\item Solving for $\sigma_{pV}$, and plugging in numbers for each state with units of liters $\times$ atmospheres:
+\begin{align}
+\sigma_{pV} &= (pV)\sqrt{\left(\frac{\sigma_p}{p}\right)^2+\left(\frac{\sigma_V}{V}\right)^2} \\
+\sigma_{i} &= (1\cdot 2)\sqrt{\left(\frac{0.1}{2.0}\right)^2+\left(\frac{0.05}{1.0}\right)^2} = 0.1414~~L\cdot atm \\ 
+\sigma_{f} &= (1\cdot 2)\sqrt{\left(\frac{0.1}{0.5}\right)^2+\left(\frac{0.1}{2.0}\right)^2} = 0.4123~~L\cdot atm
+\end{align}
+\item Now we have the errors for the initial and final states, $p_i V_i$ and $p_f V_f$.  These states are subtracted, then multiplied by $-\frac{3}{2}$.  The multiplication by this factor just scales the error, so let's save that for last.  Absolute errors combine in quadrature when we subtract or add them:
+\begin{equation}
+\sigma = \sqrt{\sigma_{i}^2+\sigma_{f}^2} = \sqrt{(0.1414)^2+(0.4123)^2} = 0.4358 ~~ L \cdot atm
+\end{equation}
+\item Now we multiply by $\frac{3}{2}$ (error can be positive \textit{or} negative, so it doesn't really matter that the pre-factor is $-\frac{3}{2}$):
+\begin{equation}
+\sigma \times \frac{3}{2} = 0.6537 ~~ L \cdot atm
+\end{equation}
+\item Quoting the results:
+\begin{equation}
+W \pm \sigma = 1.5 \pm 0.65 ~~ L \cdot atm = 150 \pm 65 ~~J
+\end{equation}
+\end{enumerate}
 
 \end{document}
