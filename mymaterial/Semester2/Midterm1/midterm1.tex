@@ -1,6 +1,6 @@
 \title{Midterm 1 for Calculus-Based Physics: Electricity, Magnetism, and Thermodynamics}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
-\date{\today}
+\date{March 12th, 2018}
 \documentclass[10pt]{article}
 \usepackage[a4paper, total={18cm, 27cm}]{geometry}
 \usepackage{outlines}
@@ -21,7 +21,7 @@
 \item The specific heat capacity of water is 1 \textit{calorie}/gram/degree Celsius, and the latent heat of water is 80 \textit{calories}/gram.  Suppose we have a 100 gram block of solid ice.  What is the heat required to turn it into 100 grams of water at 100 degrees Celsius? \\ \vspace{2cm}
 \item Recall our JITT discussions, and in-class discussions.  In your own words, describe the class of materials that have low heat capcities relative to that of water, and list some reasons why. \\ \vspace{3cm}
 \end{enumerate}
-\item \textbf{Error analysis.}  Suppose two temperatures are measured to be $T_{\rm 1} = 100 \pm 5$ degrees Celsius, and $T_{\rm 2} = 125 \pm 15$ degrees Celsius (accounting for random statistical errors).  What is the temperature difference $\Delta T = T_{\rm 2} - T_{\rm 1}$, accounting for random statistical errors? \\ \vspace{2cm}
+\item \textbf{Error analysis.}  Suppose two temperatures are measured to be $T_{\rm 1} = 100 \pm 5$ degrees Celsius, and $T_{\rm 2} = 125 \pm 15$ degrees Celsius (accounting for random statistical errors).  What is the temperature difference $\Delta T = T_{\rm 2} - T_{\rm 1}$, accounting for random statistical errors?  Is $\Delta T = T_2 - T_1$ statistically different from zero? \\ \vspace{2cm}
 \item \textbf{Kinetic Theory of Gases.} Recall that the internal energy of an ideal gas is $E_{\rm int} = \frac{3}{2}n R T$, and $R = 8.31$ J/mol/K.  Recall also that the \textit{ideal gas law} states that $pV = n R T$, where $p$ is the pressure in Pascals, $V$ is the volume in m$^3$, $T$ is the temperature in degrees Kelvin, and $n$ is the number of moles.
 \begin{enumerate}
 \item If a container with an ideal gas inside has a volume of 1.0 L, a temperature of 300 K, and a pressure of 1.0 atm ($10^5$ Pascals), how many moles are inside? \\ \vspace{2cm}
@@ -30,19 +30,22 @@
 \end{enumerate}
 \item \textbf{The First Law of Thermodynamics, and pV phase-space diagrams.}  Recall that an \textit{isothermic process} is a quasi-static process in phase-space, and that on a $pV$ diagram, $p \propto V^{-1}$ for an ideal gas.  Recall also the First Law of Thermodynamics: $\Delta E_{\rm int} = Q - W$.
 \begin{enumerate}
-\item Draw a $pV$ phase-space diagram, labeling the axes with volume units of liters and pressure units of atmospheres.  Add to it an isothermic process that begins from (1.0 L, 7.0 atm) and ends at (3.0 L, 2.0 atm). \\ \vspace{3cm}
+\item Draw a $pV$ phase-space diagram, labeling the axes with volume units of liters and pressure units of atmospheres.  Add to it an isothermic process that begins from (1.0 L, 7.0 atm) and ends at (3.5 L, 2.0 atm). \\ \vspace{3cm}
 \item If the process involves 4 moles of ideal gas, to what temperature does this isothermic process correspond?  (\textit{Hint: use the ideal gas law}). \\ \vspace{2cm}
 \item How much work is performed by the process?  (\textit{Hint: recall the formula for the work done by an isothermic process $W = nRT\ln(V_f/V_i)$}). \\ \vspace{2cm}
 \item How much heat is required to perform this work, according to the First Law? Is the work positive or negative? \\ \vspace{2cm}
 \end{enumerate}
-\item \textbf{Heat Capacities of an Ideal Gas.} Recall that $c_{\rm V} = \frac{d}{2}R$ for an ideal gas with $d$ degrees of freedom on the molecular level, and that $c_{\rm P}$, the heat capacity of a gas at constant pressure is $c_{\rm P} = c_{\rm V} + R$.  Suppose a gas at constant pressure is heated, and it requires 10 kJ for 1 mole to rise 500 degrees in temperature ($R = 8.31$ J/mol/K).  How many degrees of freedom does this gas have?  Is it monatomic or diatomic? \\ \vspace{3cm}
+\item \textbf{Heat Capacities of an Ideal Gas.} Recall that $c_{V} = \frac{d}{2}R$ for an ideal gas with $d$ degrees of freedom on the molecular level, and that $c_{\rm P}$, the heat capacity of a gas at constant pressure is $c_{P} = c_{V} + R$.  Recall also that the heat $Q = n c_p \Delta T$ is required to raise $n$ moles by a temperature $\Delta T$.
+\begin{enumerate}
+\item Suppose one mole of a gas at constant pressure is heated, and it requires 10 kJ for 1 mole to rise 500 degrees in temperature ($R = 8.31$ J/mol/K).  What is the specific heat capacity $c_P$, in J/mol/K? \\ \vspace{1cm}
+\item Solve for $d$, the number of degrees of freedom of the gas.  Is the gas monatomic? \\ \vspace{1.5cm}
+\end{enumerate}
 \item \textbf{The Second Law of Thermodynamics, and the Carnot Cycle.}  Recall that the efficiency of the Carnot cycle is $e = W/Q_{\rm h}$, where $W$ is the work performed and $Q_{\rm h}$ is the heat required.  $Q_{\rm c}$ is the heat required to return the engine to the original state (exhaust heat).  It may be shown that $e = 1 - \frac{T_c}{T_h}$, where $T_h$ and $T_c$ are the temperatures of $Q_h$ and $Q_c$.
 \begin{enumerate}
 \item What is the efficiency of an engine that operates with $T_h = 1000$ K and $T_c = 500$ K? \\ \vspace{2cm}
 \item What is the work output if the heat input is 1 kJ? \\ \vspace{2cm}
-\item What is the change in \textit{entropy} for the cycle? \\ \vspace{2cm}
 \item Draw a diagram of this engine's 4 proceses in $pV$ phase-space.  Label all axes, temperatures, and heats, and indicate which processes are adiabatic and which are isothermal. What would be the work done if the process were run in reverse? \\ \vspace{4cm}
-\item What are the entropies of the two isothermal processes? (Recall that entropy is $S = \frac{Q}{T}$ for an isothermal process).
+\item What are the entropies of the two isothermal processes? (Recall that entropy is $S = \frac{Q}{T}$ for an isothermal process).  What is the difference between them?
 \end{enumerate}
 \end{enumerate}
 \end{document}
