@@ -336,6 +336,201 @@ The electron-volt: eV.  This is the energy gained by an electron accelerated thr
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Units of Energy}
+A proton is released into a 40 kV electric potential.  What is the final kinetic energy of the proton?
+\begin{itemize}
+\item A: -20 kV
+\item B: 40 kV
+\item C: -40 keV
+\item D: 40 keV
+\end{itemize}
+\end{frame}
+
+\section{Capacitance}
+
+\begin{frame}{Capacitance}
+\textbf{Capacitance} is the ability of an object to store charge.  Let the voltage difference across an object be $V$, storing $-Q$ on one side and $+Q$ on another.  The \textit{capacitance} $C$ is given by
+\begin{equation}
+Q = C V
+\end{equation}
+Let the object be two parallel plates, and the charges be $\pm Q$.
+\end{frame}
+
+\begin{frame}{Capacitance}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/cap.png}
+\caption{\label{fig:cap} General scheme of a capacitor.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Capacitance}
+The electric field and voltage between two charged plates separated by a distance $d$ is $V = Ed$.  The field is $E = \sigma/\epsilon_0$, and $Q = \sigma/A$, where $A$ is the plate area and $\sigma$ is the surface charged density.  Note that
+\begin{align}
+C = Q/V &= (Q)/(E d) \\
+= (Q \epsilon_0)/(\sigma d) &= (Q A \epsilon_0)/(Q d) \\
+= \frac{A \epsilon_0}{d} &
+\end{align}
+So the capacitance depends on the permittivity of free space, the area, and the distance.  In other words, just the geometry of the system.  The units of capcitance are \textbf{\alert{Farads}} (F).  This is a large unit.  Typical capacitors have nF or pF.
+\end{frame}
+
+\begin{frame}{Capacitance}
+\textbf{Group board exercise}: The permittivity of free space is $8.85 \times 10^{-12}$ N$^{-1}$ C$^2$ m$^{-2}$.  A capacitor has an area of 1 mm$^2$, and $d = 0.001$ mm.  What is the capacitance? \\ 
+\textbf{Group board exercise}: The permittivity of free space is $8.85 \times 10^{-12}$ N$^{-1}$ C$^2$ m$^{-2}$.  A capacitor has an area of 10 mm$^2$, and $d = 0.001$ mm.  What is the capacitance? \\
+\textbf{Group board exercise}: The permittivity of free space is $8.85 \times 10^{-12}$ N$^{-1}$ C$^2$ m$^{-2}$.  A capacitor has an area of 1 mm$^2$, and $d = 0.01$ mm.  What is the capacitance?
+\end{frame}
+
+\section{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+Voltage and capacitance can be combined with another concept, \alert{resistance}, to build an understanding of \alert{circuits}.  Ohm's law is the relationship between \textit{current} and \textit{voltage}:
+\begin{equation}
+V = I R = \frac{dQ}{dt}R
+\end{equation}
+Current is the \textit{flow of charge.}  The unit of resistance is called the Ohm, and the unit of current is called the amp, for Amp\`{e}re.
+\end{frame}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+A 9 V battery powers a smoke detector, and the current is 0.009 amps.  What is the resistance of the circuit powering the smoke detector?
+\begin{itemize}
+\item A: 1000 Ohms
+\item B: 100 Ohms
+\item C: 10 Ohms
+\item D: 1 Ohm
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+A 3.3 V battery powers a christmas light, and the current is 0.33 amps.  What is the resistance of the circuit powering the smoke detector?
+\begin{itemize}
+\item A: 1000 Ohms
+\item B: 100 Ohms
+\item C: 10 Ohms
+\item D: 1 Ohm
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+Resistors, capacitors, voltages, and current can be combined conceptually to form \alert{\textbf{DC Circuits}} (direct-current).  The following rules govern the interaction of resistors with each other, and capacitors with each other:
+\begin{itemize}
+\item For resistors \textit{in series}: $R = R_1 + R_2 + R_3 + ...$
+\item For resistors \textit{in parallel}: $R^{-1} = R_1^{-1} + R_2^{-1} + R_3^{-1} + ...$
+\item For capacitors \textit{in parallel}: $C = C_1 + C_2 + C_3 + ...$
+\item For capacitors \textit{in series}: $C^{-1} = C_1^{-1} + C_2^{-1} + C_3^{-1} + ...$
+\end{itemize}
+\textbf{Observe on board:} difference between in series, and in parallel? (Hint, different voltage for in series, same voltage for in parallel).
+\end{frame}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+Two resistors have 1 k$\Omega$ each (1000 Ohms).  What is the effective resistance if they are added \textit{in parallel}?
+\begin{itemize}
+\item A: 1000 Ohms
+\item B: 500 Ohms
+\item C: 2000 Ohms
+\item D: 200 Ohms
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+Two capacitors have 1 nF each.  What is the effective capacitance if they are added \textit{in series}?
+\begin{itemize}
+\item A: 0.5 nF
+\item B: 5 nF
+\item C: 1 nF
+\item D: 2 nF
+\end{itemize}
+\end{frame}
+
+\section{Graphical Analysis of Simple Circuits}
+
+\begin{frame}{Current}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve.pdf}
+\caption{\label{fig:iVCurve1} Circuits components are represented graphically by iV curves.}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\small
+If the resistance $R$ is increased, what will happen?
+\begin{itemize}
+\item A: The slope on the graph will increase
+\item B: The slope on the graph will decrease
+\item C: The slope will stay the same
+\item D: Cannot determine what will happen
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Current}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve2.pdf}
+\caption{\label{fig:iVCurve2} Circuits components are represented graphically by iV curves.}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\small
+Should the slope now be greater than, less than, or equal to the that of Fig. \ref{fig:iVCurve1}?
+\begin{itemize}
+\item A: Greater than Fig. \ref{fig:iVCurve1}
+\item B: Less than Fig. \ref{fig:iVCurve1}
+\item C: Equal to Fig. \ref{fig:iVCurve1}
+\item D: Cannot determine.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Current}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve3.pdf}
+\caption{\label{fig:iVCurve3} Circuits components are represented graphically by iV curves.}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\small
+Should the slope now be greater than, less than, or equal to the that of Fig. \ref{fig:iVCurve1}?
+\begin{itemize}
+\item A: Greater than Fig. \ref{fig:iVCurve1}
+\item B: Less than Fig. \ref{fig:iVCurve1}
+\item C: Equal to Fig. \ref{fig:iVCurve1}
+\item D: Cannot determine.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Current}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve4.pdf}
+\caption{\label{fig:iVCurve4} Circuits components are represented graphically by iV curves.}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\small
+Should the slope now be greater than, less than, or equal to the that of Fig. \ref{fig:iVCurve1}?
+\begin{itemize}
+\item A: Greater than Fig. \ref{fig:iVCurve1}
+\item B: Less than Fig. \ref{fig:iVCurve1}
+\item C: Equal to Fig. \ref{fig:iVCurve1}
+\item D: Cannot determine.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Unit 4 Summary}
@@ -362,6 +557,11 @@ The electron-volt: eV.  This is the energy gained by an electron accelerated thr
 \item $\frac{kq}{r^2}$
 \item D
 \item $-2k\lambda\ln(r) + V_0$
+\item 40 keV
+\item 1000 Ohms
+\item 10 Ohms
+\item 500 Ohms
+\item 0.5 nF
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
