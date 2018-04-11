@@ -1,0 +1,35 @@
+\title{Study Guide for Midterm 2 for Calculus-Based Physics: Electricity, Magnetism, and Thermodynamics}
+\author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
+\date{\today}
+\documentclass[10pt]{article}
+\usepackage[a4paper, total={18cm, 27cm}]{geometry}
+\usepackage{outlines}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{hyperref}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item \textbf{Electrostatics}
+\begin{enumerate}
+\item \textbf{Conceptual, electrostatics}: A negative charge is placed at the center of a ring of uniform positive charge. What is the motion (if any) of the
+charge? What if the charge were placed at a point on the axis of the ring other than the center? \\ \\ 
+To what concept do we always return in electrostatics and magnetostatics? \textit{Symmetry.}  The Coulomb force is attractive, but by symmetry it is equally attractive in all directions in the first state. Thus, the negative charge does not move. \\ \\
+In the second state, we must remind ourselves that \textit{symmetry} tells us that the field only depends on $z$ and not $\phi$ or $\theta$, if the negative charge is always on the axis of the ring.  Thus, the charge will be pulled into equilibrium, which is the first state, with the negative charge at the center.
+\item \textbf{Conceptual, electrostatics:} Two charges lie along the x-axis. Is it true that the net electric field always vanishes at some point (other than infinity) along the x-axis? \\ \\ 
+Given that we can have four cases of charge, let's go through each individually.  1) Both positive.  At the midpoint between the charges, the field will vanish.  2) Both negative.  At the midpoint, the field will vanish.  3) The left charge is negative, and the right charge is positive.  The field will only vanish if the charges are co-located.  4) The left charge is positive, and the right charge is negative.  Same answer as 3).
+\item A charge $+q$ is located at $P_1 = (0,0,a)$, and a charge $-q$ is located at $P_2 = (0,0,-a)$.  (a) What is the vector dipole moment, if $q = 0.5$ nC, and $a = 1$ nm?  (b) What is the torque on this dipole if the external E-field is $\vec{E} = 1 \hat{y}$ N/C? (Recall that the formula for the dipole moment is $\vec{p} = q \vec{d}$, and that the torque is $\vec{\tau} = \vec{p} \times \vec{E}$).  \\ \\
+(a) The dipole moment is a vector from the negative to the positive charge, so it points up.  $\vec{p} = q \vec{d}$.  In this case, $d = 2a = 2$ nm.  The dipole moment is $\vec{p} = \frac{1}{2} 2 \hat{z} = 1 \hat{z}$ nC nm. (b) The torque is $\vec{\tau} = \vec{p} \times \vec{E}$, and $E = 1 \hat{y}$ nN/nC.  The magnitude of the torque is $pE = 1$ nN nm, and the direction is given by $\hat{z} \times \hat{y} = -\hat{x}$, so $\vec{\tau} = -1 \hat{x}$ nN nm.
+\end{enumerate}
+\item \textbf{Gauss' Law}
+\begin{enumerate}
+\item Using Gauss' Law, prove that the Coulomb field around a single point charge $q$ is $\vec{E} = \frac{k q}{r^2}$.  What is the field strength of a charge of 1 nC, 1 m away from the charge? \\ \\
+(For the first part, see Fig. 6.22 of the text).  Second part: $E = \frac{9 \times 10^9 10^{-9}}{1^2} = 9$ N.  Pay attention to units.
+\end{enumerate}
+\item \textbf{Electric potential}
+\begin{enumerate}
+\item Suppose two charged plates are 1 mm apart.  One has 1 pC of charge, and the other has -1 pC of charge.  The plates are squares with side length of 1 cm.  (a) What is the surface charge density of each plate?  (b) What is the electric field between the plates?  (c) As accurately as possible, and labelling all axes, draw the voltage as a function of position between the plates.  (We will look at this one in class).
+\item Suppose a charge distribution creates a voltage described by $V(x,y,z) = (x_0 - a x) \hat{x} + (x_0 - b y) \hat{y} + (x_0 - c z) \hat{z}$.  Derive the $\vec{E}$-field.  \textit{Hint: recall how to take the gradient.  Take the gradient and multiply by -1.}
+\end{enumerate}
+\end{enumerate}
+\end{document}
