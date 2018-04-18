@@ -383,6 +383,7 @@ So the capacitance depends on the permittivity of free space, the area, and the 
 \section{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
 
 \begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+\textbf{Read chapters 9 and 10 for Monday.}
 Voltage and capacitance can be combined with another concept, \alert{resistance}, to build an understanding of \alert{circuits}.  Ohm's law is the relationship between \textit{current} and \textit{voltage}:
 \begin{equation}
 V = I R = \frac{dQ}{dt}R
@@ -422,6 +423,15 @@ Resistors, capacitors, voltages, and current can be combined conceptually to for
 \end{frame}
 
 \begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+Kirchhoff's rules:
+\begin{enumerate}
+\item Summing the voltage in a loop must equal zero ($\vec{E}$-fields are conservative).
+\item Current entering an leaving a node is conserved.
+\end{enumerate}
+\textbf{Observe on board.}
+\end{frame}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
 Two resistors have 1 k$\Omega$ each (1000 Ohms).  What is the effective resistance if they are added \textit{in parallel}?
 \begin{itemize}
 \item A: 1000 Ohms
@@ -441,9 +451,19 @@ Two capacitors have 1 nF each.  What is the effective capacitance if they are ad
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+Two capacitors have 1 nF each.  What is the effective capacitance if they are added \textit{in parallel}?
+\begin{itemize}
+\item A: 0.5 nF
+\item B: 5 nF
+\item C: 1 nF
+\item D: 2 nF
+\end{itemize}
+\end{frame}
+
 \section{Graphical Analysis of Simple Circuits}
 
-\begin{frame}{Current}
+\begin{frame}{Graphical Analysis}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{figure}
@@ -465,7 +485,7 @@ If the resistance $R$ is increased, what will happen?
 \end{columns}
 \end{frame}
 
-\begin{frame}{Current}
+\begin{frame}{Graphical Analysis}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{figure}
@@ -487,7 +507,7 @@ Should the slope now be greater than, less than, or equal to the that of Fig. \r
 \end{columns}
 \end{frame}
 
-\begin{frame}{Current}
+\begin{frame}{Graphical Analysis}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{figure}
@@ -509,7 +529,7 @@ Should the slope now be greater than, less than, or equal to the that of Fig. \r
 \end{columns}
 \end{frame}
 
-\begin{frame}{Current}
+\begin{frame}{Graphical Analysis}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{figure}
@@ -529,6 +549,48 @@ Should the slope now be greater than, less than, or equal to the that of Fig. \r
 \end{itemize}
 \end{column}
 \end{columns}
+\end{frame}
+
+\begin{frame}{DC circuit Analysis}
+\textbf{Group board exercise:} Solve for the current.
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/iVCurve5.pdf}
+\caption{\label{fig:iVCurve5} Three resistors in parallel.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{DC circuit Analysis}
+\textbf{Group board exercise:} Solve for the current.
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/iVCurve6.pdf}
+\caption{\label{fig:iVCurve6} Two resistors in parallel, and in series with a third.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{DC circuit Analysis}
+\textbf{Group board exercise:} Solve for the current.
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/iVCurve7.pdf}
+\caption{\label{fig:iVCurve7} A resistor in series with a capacitor...}
+\end{figure}
+\end{frame}
+
+\begin{frame}{DC circuit Analysis}
+Using Kirchhoff's loop rule:
+\begin{align}
+V - iR - QC^{-1} &= 0 \\
+Q_0 &= CV \\
+\tau &= RC \\
+\tau \dot{Q} + Q &= Q_0
+\end{align}
+\textbf{Group board exercise:} Show that the solution for the charge on the capacitor is
+\begin{equation}
+Q(t) = Q_0 \left(1 - \exp(-t/\tau)\right)
+\end{equation}
+Take the derivative of both sides to find the current versus time.  Graph the current.
 \end{frame}
 
 \section{Conclusion}
@@ -562,11 +624,15 @@ Should the slope now be greater than, less than, or equal to the that of Fig. \r
 \item 10 Ohms
 \item 500 Ohms
 \item 0.5 nF
+\item 2 nF
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item 
+\item The slope on the graph will decrease
+\item Less than Fig. \ref{fig:iVCurve1}
+\item Greater than Fig. \ref{fig:iVCurve1}
+\item Less than Fig. \ref{fig:iVCurve1}
 \end{itemize}
 \end{column}
 \end{columns}
