@@ -593,6 +593,197 @@ Q(t) = Q_0 \left(1 - \exp(-t/\tau)\right)
 Take the derivative of both sides to find the current versus time.  Graph the current.
 \end{frame}
 
+\begin{frame}{DC circuit Analysis}
+So we see that the current is an exponential function:
+\begin{equation}
+i(t) = i_0 e^{-t/\tau}
+\end{equation}
+($i_0 = V/R$, the initial current).  What is the current in a circuit with a 1k resistor and a 1 nF capacitor after 3 $\mu$s, if the voltage is 5 V?
+\begin{itemize}
+\item A: 0.25 mA
+\item B: 0.5 mA
+\item C: 1.0 mA
+\item D: 2.0 mA
+\end{itemize}
+\end{frame}
+
+\begin{frame}{DC circuit Analysis}
+So we see that the current is an exponential function:
+\begin{equation}
+i(t) = i_0 e^{-t/\tau}
+\end{equation}
+($i_0 = V/R$, the initial current).  Thinking of the same circuit: when is the current 0.0 mA?
+\begin{itemize}
+\item A: 3 microseconds
+\item B: 30 microseconds
+\item C: 300 microseconds
+\item D: never
+\end{itemize}
+\end{frame}
+
+\section{Current}
+
+\begin{frame}{JITT 1.8}
+\begin{enumerate}
+\item Car batteries are rated in ampere-hours (A h). To what physical quantity do ampere-hours correspond (voltage, current, charge, energy, power,...)?
+\item When working with high-power electric circuits, it is advised that whenever possible, you work “one-handed” or “keep one hand in your pocket.” Why is this a sensible suggestion?
+\item Does the resistance of an object depend on the path current takes through it? Consider, for example, a rectangular bar—is its resistance the same along its length as across its width?
+\item How many electrons flow through a point in a wire in 3.00 s if there is a constant current of I = 4.00 A ?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{JITT 1.8}
+\textbf{Car batteries are rated in ampere-hours (A h). To what physical quantity do ampere-hours correspond (voltage, current, charge, energy, power,...)?} \\
+``They are rated to charge.'' \\
+``1 ampere an hour is equal to 3600 coulomb.'' \\
+``Ampere hours equals voltage.''
+\end{frame}
+
+\begin{frame}{JITT 1.8}
+\textbf{When working with high-power electric circuits, it is advised that whenever possible, you work “one-handed” or “keep one hand in your pocket.” Why is this a sensible suggestion?} \\
+``Keep you grounded.'' \\
+``So you never complete the current your working with so you are not electrocuted.'' \\
+``to keep you grounded, your body has a lot more resistance, and you can't complete the circuit when you only work with one hand.''
+\end{frame}
+
+\begin{frame}{JITT 1.8}
+\textbf{Does the resistance of an object depend on the path current takes through it? Consider, for example, a rectangular bar—is its resistance the same along its length as across its width?} \\
+``yes, the resistance along the length would be greater than that along the width.'' \\
+``resistance depends on the path you take through and object since the equation R=p(L/A) depends on a length L to find Resistance.  The resistance is not the same when you go through the length and width. The length would produce a higher resistance.''
+``Yes it still has the same resistance.''
+\end{frame}
+
+\begin{frame}{JITT 1.8}
+\textbf{How many electrons flow through a point in a wire in 3.00 s if there is a constant current of I = 4.00 A ?} \\
+\begin{itemize}
+\item A: $6 \times 10^{18}$
+\item B: $6 \times 10^{19}$
+\item C: $6 \times 10^{20}$
+\item D: $6 \times 10^{21}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+\underline{Notions of current:}
+\begin{itemize}
+	\item $I = \frac{\Delta Q}{\Delta t}$ - The derivative of charge
+	\item The \textit{movement} of electrons
+	\item The \textit{flow} of charge
+	\item Number of Coulombs per second (1 Amp = C/s)
+\end{itemize}
+\underline{There is an interesting problem with the notion of current} \underline{as movement of charges.} \\ \vspace{0.5cm}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Speed of typical electronic signals: $\approx 10^{8}$ m/s
+\end{column}
+\begin{column}{0.5\textwidth}
+Typical speed of actual charges passing through a conductor under voltage: $\approx 10^{-4}$ m/s
+\end{column}
+\end{columns} \vspace{0.25cm}
+\textbf{Since there is a 12 order of magnitude range, it's probably a good idea to ponder...}
+\end{frame}
+
+\begin{frame}{Current}
+\small
+Are the electrons colliding/interacting to form electrical signals?  Or just moving all together?
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{figures/current1.png}
+\caption{\label{fig:current1} The \textit{drift velocity} is the average velocity of an electron, and current is derived from this average velocity.}
+\end{figure}
+\url{https://youtu.be/8dgyPRA86K0}
+\end{frame}
+
+\begin{frame}{Current}
+So we see how electrical signals can move near the speed of light, but we measure the movements of electrons in circuits to be slow.  Can we make a calculation to understand the speed of the electrons? \\ \vspace{0.5cm}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{figures/current3.png}
+\caption{\label{fig:current3} Consider the volume $V$ of conductor with cross-sectional area $A$ and length $\Delta x$, having $n$ free electrons per unit volume.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Current}
+An \textbf{amp} is one \textit{Coulomb} per \textit{second}.  The definition of current is
+\begin{equation}
+I = \frac{\Delta Q}{\Delta t} = \frac{qnA\Delta x}{\Delta t} = q n A v_{\rm d}
+\end{equation}
+Solving for drift velocity:
+\begin{equation}
+v_{\rm d} = \frac{I}{q n A}
+\end{equation}
+Suppose our conductor is a wire with radius $r$ and $A = \pi r^2$.  Substituting,
+\begin{equation}
+v_{\rm d} = \frac{I}{\pi q n r^2}
+\end{equation}
+Remember that $q = 1.6 \times 10^{-19}$ C, and $n$ is the number of free electrons \textit{per atom per unit volume}.  How do we get this number?
+\end{frame}
+
+\begin{frame}{Current}
+\textbf{Number density}: The total number of objects in a system is equal to the \textit{number density} times the volume of the system.
+\begin{equation}
+N = nV
+\end{equation}
+\begin{itemize}
+\item N: Total number
+\item n: \textit{number density}
+\item V: Volume
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+\textbf{Example:} \alert{Number of Stars in the Milky Way}.  How many stars are in our galaxy?  Assume the galaxy is a disk of height $h$ and radius $r$.  We observe $n$ stars per unit volume.
+\begin{itemize}
+\item $r$ = $50 \times 10^3$ \textit{light-years}
+\item $h = 2 \times 10^3$ \textit{light-years}
+\item $n = 10^{-2}$ \textit{light-year} $^{-3}$
+\end{itemize}
+\begin{enumerate}
+\item Compute the volume in \textit{light-years}$^3$
+\item Multiply the volume by the number density to obtain the total number.
+\item Compare the result with others' results.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Current}
+\small
+How many \textbf{conduction} electrons are there in a cube of copper that is 1 micron (1 $\mu$m = $10^{-6}$ m) on a side?
+\begin{itemize}
+\item Copper has a density of 8.8 grams per cubic centimeter.
+\item Copper has an atomic weight of 63.54 grams per mole.  (\textit{Do you remember what a mole is?}).
+\item There are $N_A = 6.02 \times 10^{23}$ atoms per mole.
+\item Only one electron per atom of copper is a conduction electron.
+\end{itemize} \hrulefill
+\begin{enumerate}
+\item Divide the density by the atomic weight.  What are the units?
+\item Multiply by $N_A$ (Avogadro's number).  What are the units?
+\item Convert the units from $cm^{-3}$ to $\mu m^{-3}$.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Current}
+\textbf{Number density}: Let's examine copper, a common wire material with one free electron per atom.  Copper has a density of 8800 kg/m$^3$, and $0.06354$ kg/mol.  There are $6.02 \times 10^{23}$ atoms/mol.  How many free electrons per m$^3$ of copper? (Remember that there is only one conduction electron per copper atom).
+\begin{itemize}
+\item A: $10^{26}$ free electrons per m$^3$
+\item B: $10^{27}$ free electrons per m$^3$
+\item C: $10^{28}$ free electrons per m$^3$
+\item D: $10^{29}$ free electrons per m$^3$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+Consider a copper wire with radius $r = 2.053$ mm that is carrying 20.0 A of current.  Using $q = 1.6\times 10^{19}$, and $n = 8.34 \times 10^{28}$ electrons/m$^3$, and $v_{\rm d} = I/(\pi q n r^2)$, compute the drift velocity of charge in the wire.  \textit{This is a common situation in household wiring.}
+\begin{itemize}
+\item A: $10^{-1}$ m/s
+\item B: $10^{-2}$ m/s
+\item C: $10^{-3}$ m/s
+\item D: $10^{-4}$ m/s
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+\textbf{Drift speed vs. signal speed}.  Given that the electrons move at 1mm/s, how is it that electric signals move at $10^8$ m/s? \\ \vspace{1cm}
+\textbf{Electrical signals are more like a \alert{wave on a string}}: \\ \url{https://phet.colorado.edu/en/simulation/legacy/wave-on-a-string}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Unit 4 Summary}
@@ -633,6 +824,9 @@ Take the derivative of both sides to find the current versus time.  Graph the cu
 \item Less than Fig. \ref{fig:iVCurve1}
 \item Greater than Fig. \ref{fig:iVCurve1}
 \item Less than Fig. \ref{fig:iVCurve1}
+\item 0.25 mA
+\item never
+\item $6 \times 10^{19}$
 \end{itemize}
 \end{column}
 \end{columns}
