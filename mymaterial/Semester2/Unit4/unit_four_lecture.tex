@@ -780,8 +780,121 @@ Consider a copper wire with radius $r = 2.053$ mm that is carrying 20.0 A of cur
 \end{frame}
 
 \begin{frame}{Current}
-\textbf{Drift speed vs. signal speed}.  Given that the electrons move at 1mm/s, how is it that electric signals move at $10^8$ m/s? \\ \vspace{1cm}
-\textbf{Electrical signals are more like a \alert{wave on a string}}: \\ \url{https://phet.colorado.edu/en/simulation/legacy/wave-on-a-string}
+\textbf{Drift speed vs. signal speed}.  Given that the electrons move at 1 mm/s, how is it that electric signals move at $10^8$ m/s? \\ \vspace{1cm}
+\textbf{Electrical signals are \alert{waves} of charge}: \\ \url{https://phet.colorado.edu/en/simulation/legacy/wave-on-a-string}
+\end{frame}
+
+\begin{frame}{Current}
+\textbf{Resistivity} $\rho$ and \textbf{conductivity} $\sigma$ are intrinsic properties of materials, and they are reciprocals of each other:
+\begin{equation}
+\rho = 1/\sigma
+\end{equation}
+Let $\vec{J}$ be the \textit{current density}.  The most general form of Ohm's law is
+\begin{equation}
+\boxed{
+\vec{J} = \sigma \vec{E}}
+\end{equation}
+Let's assume that current is flowing down a conductor of length $L$ and cross-sectional area $\vec{A}$, parallel to $\vec{E}$.  Integrate both sides:
+\begin{align}
+I &= \sigma \int \vec{E} \cdot \vec{dA} = E A = \frac{V}{L} A \\
+V &= \frac{L \rho}{A} I = I R
+\end{align} 
+\end{frame}
+
+\begin{frame}{Current}
+Thus, the \textit{resistance} of an object is 
+\begin{equation}
+R = \frac{L \rho}{A}
+\end{equation}
+The resistivity has units of Ohm meters.  Which of the following is true of a conductor?
+\begin{itemize}
+\item A: Lengthening it increases the resistance, and widening it increases the resistance.
+\item B: Lengthening it decreases the resistance, and widening it increases the resistance.
+\item C: Lengthening it increases the resistance, and widening it decreases the resistance.
+\item D: Lengthening it decreases the resistance, and widening it decreases the resistance.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+Thus, the \textit{resistance} of an object is 
+\begin{equation}
+R = \frac{L \rho}{A}
+\end{equation}
+Suppose the length of a conductor is doubled, and the area is quadrupled.  By how much does the resistance change?
+\begin{itemize}
+\item A: It decreases by a factor of two.
+\item B: It decreases by a factor of four.
+\item C: It increases by a factor of two.
+\item D: It increases by a factor of four.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+What is the resistance of a 1 meter-long wire with area 3 mm$^2$ that made from a metal that has $\rho = 10^{-7}$ $\Omega$ m?
+\begin{itemize}
+\item A: 0.01 Ohms
+\item B: 0.1 Ohms
+\item C: 1.0 Ohms
+\item D: 10.0 Ohms
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/resist.png}
+\caption{\label{fig:resist} Resistivities of various metals.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Current}
+Like the expansion of metals with increasing temperature, \textit{resistivity has a temperature dependence.}  Let $\Delta T = T - T_0$, with $T_0 = 20.0$ C.
+\begin{equation}
+\rho = \rho_0 \exp \left( \alpha \Delta T \right)
+\end{equation}
+Using a Taylor series around $\Delta T = 0$, we find
+\begin{equation}
+\rho(T) \approx \rho_0 \left(1 + \alpha \Delta T \right)
+\end{equation}
+\end{frame}
+
+\begin{frame}{Current}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/resist.png}
+\caption{\label{fig:resist2} Resistivities of various metals.  Notice the temperature coefficients are small, so the Taylor series is justified.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Current}
+Consider a copper wire that has a resistance of 0.1 Ohms at 20 degrees C.  What will be the resistance of the wire at 40 degrees C, if the temperature coefficient of copper resistivity is 0.004?
+\begin{itemize}
+\item A: 0.104 Ohms
+\item B: 0.108 Ohms
+\item C: 0.112 Ohms
+\item D: 0.116 Ohms
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+Consider a copper wire that has a resistance of 5 Ohms at 20 degrees C.  What will be the resistance of the wire at 50 degrees C, if the temperature coefficient of copper resistivity is 0.004?
+\begin{itemize}
+\item A: 4.8 Ohms
+\item B: 5.0 Ohms
+\item C: 5.6 Ohms
+\item D: 6.0 Ohms
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+Given that we found a 12\% increase in the resistance of the wire in the prior example, what would happen to the voltage delivered to a device at the other end of that wire?
+\begin{itemize}
+\item A: It would be unaffected.
+\item B: It would decrease by 12 percent.
+\item C: It would increase by 12 percent.
+\item D: It would decrease by 6 percent.
+\end{itemize}
+\textit{So you can see why we don't do DC power transmission over long distances.}
 \end{frame}
 
 \section{Conclusion}
@@ -827,6 +940,12 @@ Consider a copper wire with radius $r = 2.053$ mm that is carrying 20.0 A of cur
 \item 0.25 mA
 \item never
 \item $6 \times 10^{19}$
+\item Lengthening it increases the resistance, and widening it decreases the resistance.
+\item It decreases by a factor of two.
+\item 0.1 Ohms
+\item 0.108 Ohms
+\item 5.6 Ohms
+\item It would receive 12 percent less power.
 \end{itemize}
 \end{column}
 \end{columns}
