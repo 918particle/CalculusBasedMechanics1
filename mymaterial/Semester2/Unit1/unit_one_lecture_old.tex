@@ -20,93 +20,102 @@
 \begin{frame}{Unit 1 Summary}
 \textbf{Reading: Chapters 5-6}
 \begin{enumerate}
-\item Charge, conductors and insulators
-\item Coulomb's law and electric Fields
-\item Electric fields of charge distributions
+\item Charge, Conductors and Insulators
+\item Coulomb's Law and Electric Fields
+\item E-fields of Charge Distributions
 \item Gauss's Law
+\item Electric Potentials (voltage)
 \end{enumerate}
+\textbf{Reading for next lecture: all of chapter 5 (electrostatics)} \\ 
+\alert{Reading for spring break: chapter 6 (Gauss' Law)} \\
+\alert{\textbf{Group presentations:} March 30th} \\
+Note that I've had to update the syllabus.
 \end{frame}
 
 \section{Charge, Conductors and Insulators}
 
-%\begin{frame}{Charge, Conductors and Insulators}
-%\centering
-%\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
-%\hrulefill
-%\small
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\alert{Gravity}
-%\begin{enumerate}
-%\item Force: $\vec{F} = G \frac{m M}{r^2} \hat{r}$
-%\item Parameters: $r$ is absolute distance between two objects with masses $m$ and $M$, and the direction is $\hat{r}$
-%\item \textit{Charge} of one object: $m$
-%\item \textit{Field felt by that object}: $\vec{G} = G \frac{M}{r^2} \hat{r}$
-%\item $\vec{F} = m \vec{G}$
-%\end{enumerate}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\alert{Electricity}
-%\begin{enumerate}
-%\item Force: $\vec{F} = k \frac{q Q}{r^2} \hat{r}$
-%\item Parameters: $r$ is absolute distance between two objects with electric charges $q$ and $Q$, and the direction is $\hat{r}$
-%\item \textit{Charge} of one object: $q$
-%\item \textit{Field felt by that object}: $\vec{E} = G \frac{Q}{r^2} \hat{r}$
-%\item $\vec{F} = q \vec{E}$
-%\end{enumerate}
-%\end{column}
-%\end{columns}
-%\end{frame}
+\begin{frame}{Charge, Conductors and Insulators}
+Let's begin this topic in a special way: comparison to \textit{gravity}.  What do electricity and gravity have in common?  The answer lies in a notion we call \textit{charge...}
+\end{frame}
 
-%\begin{frame}{Charge, Conductors and Insulators}
-%\centering
-%\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
-%\hrulefill \\
-%\small
-%In the field paradigm, objects with charges \textit{emanate} fields, causing other objects with charge to experience force. \\
-%\hrulefill \\
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\alert{Gravity} \\
-%How many \textit{types of charge}, or how many charges, exist under the force of gravity? \\
-%\textbf{One.} We call it mass.
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\alert{Electricity} \\
-%How many \textit{types of charge}, or how many charges, exist under the force of electricity? \\
-%\textbf{Two.} We call one positive, and one negative.
-%\end{column}
-%\end{columns}
-%\end{frame}
+\begin{frame}{Charge, Conductors and Insulators}
+\centering
+\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
+\hrulefill
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\alert{Gravity}
+\begin{enumerate}
+\item Force: $\vec{F} = G \frac{m M}{r^2} \hat{r}$
+\item Parameters: $r$ is absolute distance between two objects with masses $m$ and $M$, and the direction is $\hat{r}$
+\item \textit{Charge} of one object: $m$
+\item \textit{Field felt by that object}: $\vec{G} = G \frac{M}{r^2} \hat{r}$
+\item $\vec{F} = m \vec{G}$
+\end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+\alert{Electricity}
+\begin{enumerate}
+\item Force: $\vec{F} = k \frac{q Q}{r^2} \hat{r}$
+\item Parameters: $r$ is absolute distance between two objects with electric charges $q$ and $Q$, and the direction is $\hat{r}$
+\item \textit{Charge} of one object: $q$
+\item \textit{Field felt by that object}: $\vec{E} = G \frac{Q}{r^2} \hat{r}$
+\item $\vec{F} = q \vec{E}$
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
 
-%\begin{frame}{Charge, Conductors and Insulators}
-%\centering
-%\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
-%\hrulefill \\
-%\small
-%In the field paradigm, objects with charges \textit{emanate} fields, causing other objects with charge to experience force. \\
-%\hrulefill \\
-%In the field paradigm, gravity has one charge (mass), and electricity has two charges (positive and negative). \\
-%\hrulefill \\
-%\textbf{There is one fundamental fact that is puzzling.} What about Newton's 2nd law?  Acceleration is not a field, it is a kinematic function.
-%\begin{equation}
-%\vec{F}_{\rm net} = m \vec{a}
-%\end{equation}
-%Aparently there are \textit{two kinds of mass}: \textbf{inertial} and \textbf{gravitational}.  
-%\end{frame}
+\begin{frame}{Charge, Conductors and Insulators}
+\centering
+\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
+\hrulefill \\
+\small
+In the field paradigm, objects with charges \textit{emanate} fields, causing other objects with charge to experience force. \\
+\hrulefill \\
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\alert{Gravity} \\
+How many \textit{types of charge}, or how many charges, exist under the force of gravity? \\
+\textbf{One.} We call it mass.
+\end{column}
+\begin{column}{0.5\textwidth}
+\alert{Electricity} \\
+How many \textit{types of charge}, or how many charges, exist under the force of electricity? \\
+\textbf{Two.} We call one positive, and one negative.
+\end{column}
+\end{columns}
+\end{frame}
 
-%\begin{frame}{Charge, Conductors and Insulators}
-%\small
-%\textit{Equivalence principle:} \\ \hrulefill \\
-%There are \textit{two kinds of mass}: \textbf{inertial} and \textbf{gravitational}, with \textbf{equal value} for a given object. \\ \vspace{0.5cm}
-%\url{https://en.wikipedia.org/wiki/Equivalence_principle} \\
-%\hrulefill \\
-%There is no similar principle for charge.  If the electric force on a charged object is calculated, that force must still be inserted into \textbf{Newton's 2nd Law} to obtain the acceleration, and the inertial mass must be known.
-%\end{frame}
+\begin{frame}{Charge, Conductors and Insulators}
+\centering
+\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
+\hrulefill \\
+\small
+In the field paradigm, objects with charges \textit{emanate} fields, causing other objects with charge to experience force. \\
+\hrulefill \\
+In the field paradigm, gravity has one charge (mass), and electricity has two charges (positive and negative). \\
+\hrulefill \\
+\textbf{There is one fundamental fact that is puzzling.} What about Newton's 2nd law?  Acceleration is not a field, it is a kinematic function.
+\begin{equation}
+\vec{F}_{\rm net} = m \vec{a}
+\end{equation}
+Aparently there are \textit{two kinds of mass}: \textbf{inertial} and \textbf{gravitational}.  
+\end{frame}
 
 \begin{frame}{Charge, Conductors and Insulators}
 \small
-Charge the following intrinsic properties: \\ \vspace{0.25cm}
+\textit{Equivalence principle:} \\ \hrulefill \\
+There are \textit{two kinds of mass}: \textbf{inertial} and \textbf{gravitational}, with \textbf{equal value} for a given object. \\ \vspace{0.5cm}
+\url{https://en.wikipedia.org/wiki/Equivalence_principle} \\
+\hrulefill \\
+There is no similar principle for charge.  If the electric force on a charged object is calculated, that force must still be inserted into \textbf{Newton's 2nd Law} to obtain the acceleration, and the inertial mass must be known.
+\end{frame}
+
+\begin{frame}{Charge, Conductors and Insulators}
+\small
+Charge has other properties, some similar to gravitational mass: \\ \vspace{0.25cm}
 \begin{enumerate}
 \item Charge is conserved globally (charge cannot be created nor destroyed).  Mass has the same property.
 \item Charge is conserved locally (if we pull charge out of the system, charge will flow into the system).
@@ -154,64 +163,11 @@ A rod with a positive charge is held next to a \textit{conductor} (an object wer
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Charge, Conductors and Insulators}
-An \textit{insulator} with a net positive charge is held next to an \textit{insulator} with a net negative charge.  Which of the following is true?
-\begin{itemize}
-\item A: The charges in the conductor all remain in place, and the force is attractive.
-\item B: The charges in the conductor all move around until the force is attractive.
-\item C: The charges in the conductor all remain in place, and the force is repellent.
-\item D: The charges in the conductor all move around until the force is repellent.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Coulomb’s Law and Electric Fields}
-The boundary conditions of problems can vary depending on the materials involved: \\ \vspace{0.5cm}
-\textbf{Insulator}: A material in which there are no free charges available to conduct electricity.  Charges may be fixed in position within an insulator. \\
-\textbf{Conductor}: A material in which there are free charges available to conduct electricity.  Charges may not be fixed in position within a conductor. \\
-\textbf{Semi-conductor}: A material in which there are free charges available to conduct electricity if certain requirements are met.
-\end{frame}
-
-\section{Activity: PhET Charges and Fields}
-
-\begin{frame}{Activity: PhET Charges and Fields}
-At your tables, go to the following URL: \\ \vspace{0.2cm}
-\url{https://phet.colorado.edu/en/simulation/charges-and-fields} \\ \vspace{0.2cm}
-Click on the java app to get it running.  Notice the following:
-\begin{enumerate}
-\item This is a 2D coordinate space, and you can activate the grid lines at right, by clicking \textit{grid.}
-\item Clicking \textit{values} gives you the measurement scale.
-\item Click \textit{electric field}, or make sure it is activated.
-\item Verify the length scale with the \textbf{ruler tool}, shaped like a tape measure.  It can be dragged from the box at right.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Activity: PhET Charges and Fields}
-\small
-\url{https://phet.colorado.edu/en/simulation/charges-and-fields} \\ \vspace{0.2cm}
-\textbf{Click and drag a positive charge into the 2D coordinate system.  This is analagous to charging an insulator.}
-\begin{enumerate}
-\item Drag the yellow tool at the bottom into the space, and use it to measure the field strength.  Notice the units are in V/m and m.
-\item Write down in your notes the field strength versus distance.  Use 25 cm distance increments, and record 15 data points in two columns.
-\item Copy the data to Excel. Let $r$ be the distance. In a third column, multiply the field strength by $r^{2}$.
-\item In a fourth column, compute the base-10 logarithm of $r^2$ times the field strength.  In a fifth column, compute the base-10 logarithm of the distance.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Activity: PhET Charges and Fields}
-\small
-\url{https://phet.colorado.edu/en/simulation/charges-and-fields} \\ \vspace{0.2cm}
-\textbf{Click and drag a positive charge into the 2D coordinate system.  This is analagous to charging an insulator.}
-\begin{enumerate}
-\item Plot $\log_{10}(r^2 E)$ vs. $\log_{10}(r)$ and estimate the slope.  How close to zero do you think it is?  What are some sources of error that contribute to the uncertainty in the slope?
-\item Repeat this same exercise, but instead of measuring field strength versus \textit{distance}, measure it in one location, versus \textit{charge.} Take 15 data points in two columns and plot the results in Excel.  What is the slope of the line?  Notice the units of charge are nC.
-\end{enumerate}
-\end{frame}
-
 \section{Coulomb’s Law and Electric Fields}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
 \textbf{Coulomb's Law} describes the force between charges. \\ \vspace{0.5cm}
-\begin{tcolorbox}[colback=white,colframe=black!100!black,title=Coulomb's Law]
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Coulomb's Law]
 \alert{The electric force, or \textbf{Coulomb force}, between two electrically charged systems with charges $q_{\rm 1}$ and $q_{\rm 2}$ separated by a distance $r$ is
 \begin{equation}
 \vec{F}_{\rm C} = \frac{1}{4\pi\epsilon_{\rm 0}} \frac{q_{\rm 1} q_{\rm 2}}{r^2} \hat{r} \label{eq:C}
@@ -221,7 +177,7 @@ In Eq. \ref{eq:C}, $\hat{r} = \vec{r}/|\vec{r}|$, and $\epsilon_{\rm 0} = 8.8541
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
-\begin{tcolorbox}[colback=white,colframe=black!100!black,title=Coulomb Field]
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Coulomb Field]
 \alert{The electric field corresponding to Eq. \ref{eq:C}, experienced by a charge $q$ and generated by a charge $Q$ is 
 \begin{equation}
 \vec{E}_{\rm C} = \frac{1}{4\pi\epsilon_{\rm 0}} \frac{Q}{r^2} \hat{r} \label{eq:Cf}
@@ -233,31 +189,31 @@ The SI Unit of charge is the Coulomb, which is equal to the amount of charge in 
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
-Suppose a charge $+q$ experiences the Coulomb field of another charge of $-2q$, separated by a distance $r$.  Which of the following is true, if the charges are in free space?
+Suppose a charge $+q$ experiences the Coulomb field of another charge of $-2q$, separated by a distance $r$.  Which of the following is true?
 \begin{itemize}
-\item A: The charge $+q$ accelerates towards the other charge, and the charge $-2q$ remains stationary, because it is larger.
-\item B: The charge $-2q$ accelerates towards the other charge, and the charge $+q$ remains stationary, because it is the positive charge.
-\item C: The charge $-2q$ accelerates towards the other charge, and the charge $+q$ remains stationary, because it is smaller.
+\item A: The charge $+q$ accelerates towards the other charge, and the charge $-2q$ remains stationary, because opposite charges attract.
+\item B: The charge $-2q$ accelerates towards the other charge, and the charge $+q$ remains stationary, because opposite charges attract.
+\item C: No charges move; the force on one is equal to the force on the other.
 \item D: The charges accelerate towards each other.
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
-Newton's Third Law still applies, but in \textit{materials} the positive charges are stationary.
+The answer to the previous problem involves Newton's Third Law.  (\textit{Why did only the negative charges move})?
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{figures/third.png}
-\caption{\label{fig:third} Newton's Third Law applies to the Coulomb force, as it does for all forces.}
+\caption{\label{fig:third} Newton's Third Law still applies.}
 \end{figure}
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
-Suppose a charge $2q$ is at rest at the origin (0,0).  Where should we place a charge $-2q$ such that the field is zero at (0,3)?
+Suppose a charge $+q$ experiences the Coulomb fields of two other charges of $-2q$, each located a distance $r$ from $+q$.  The charges are all colinear (on the same line).  Which of the following is true?
 \begin{itemize}
-\item A: (0,3)
-\item B: (0,6)
-\item C: (3,0)
-\item D: (6,0)
+\item A: The charge $+q$ accelerates towards one of the other charge, because opposite charges attract.
+\item B: The charges $-2q$ accelerate towards the charge $+q$.
+\item C: The charges $-2q$ accelerate towards the charge $+q$, but eventually repel each other back in the other direction.
+\item D: The charges $-2q$ repel each other from the start.
 \end{itemize}
 \end{frame}
 
@@ -353,7 +309,26 @@ What is the fastest way to solve this problem?
 \end{columns}
 \end{frame}
 
-\section{The Superposition Principle and Symmetry}
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+What is the angle of the E-field at point (1,1) in Fig. \ref{fig:netfield3} at right?
+\begin{itemize}
+\item A: About 0 deg
+\item B: About 25 deg
+\item C: About 45 deg
+\item D: About 60 deg
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/NetField3.pdf}
+\caption{\label{fig:netfield3} Two charges create a field for a hypothetical \textit{test charge}.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
 The forces of $N$ fixed charges on a test charge $Q$ create a net force, where the individual forces simply add like vectors.  This is known as the \textbf{superposition principle}.
@@ -386,6 +361,13 @@ Equation \ref{eq:P} represents the field at a \textit{position} $P = P(x,y,z)$, 
 \end{figure}
 \end{column}
 \end{columns}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+Notice in the prior examples of \textit{fixed} charges, we need an \textit{explanation} for why the fixed charges remain fixed, even though they are obviously subject to Coulomb forces. \\ \vspace{0.5cm}
+\textbf{Insulator}: A material in which there are no free charges available to conduct electricity.  Charges may be fixed in position within an insulator. \\
+\textbf{Conductor}: A material in which there are free charges available to conduct electricity.  Charges may not be fixed in position within a conductor. \\
+\textbf{Semi-conductor}: A material in which there are free charges available to conduct electricity if certain requirements are met.
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
@@ -618,6 +600,49 @@ As we shall see, the last few results follow from a notion known as \alert{Gauss
 \end{itemize}
 \end{frame}
 
+\section{JITT 1.6}
+
+\begin{frame}{JITT 1.6}
+\begin{enumerate}
+\item Discuss how would orient a planar surface of area A in a uniform electric field of magnitude E to obtain (a) the maximum flux and (b) the minimum flux through the area.
+\item Discuss whether Gauss’s law can be applied to other forces, and if so, which ones.
+\item A charge q is placed in the cavity of a conductor as shown below. Will a charge outside the conductor experience an electric field due to the presence of q? (This is conceptual question 18 in the text).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{JITT 1.6}
+\small
+\textbf{Discuss how would orient a planar surface of area A in a uniform electric field of magnitude E to obtain (a) the maximum flux and (b) the minimum flux through the area.}
+``If you orient the plane to maximize the number of field lines passing through it the flux will be maximum. If you do the opposite with the plane it should minimize the flux through the area.'' \\
+``To obtain the maximum flux you would orient the area perpendicular to the flow of energy (ex. —| ), and to minimize it you would orient the area parallel to the flow of energy (ex. — — )'' \\
+\end{frame}
+
+\begin{frame}{JITT 1.6}
+\small
+\textbf{Discuss whether Gauss’s law can be applied to other forces, and if so, which ones.}
+``no, Gauss’s Law is its own hypothesis'' \\
+``gravity'' \\
+``don't know, gravity?'' \\
+\end{frame}
+
+\begin{frame}{JITT 1.6}
+\small
+\textbf{A charge q is placed in the cavity of a conductor as shown below. Will a charge outside the conductor experience an electric field due to the presence of q? (This is conceptual question 18 in the text).}
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{figures/jittFigure1.png}
+\caption{\label{fig:jittFigure1} From conceptual question 18 in the text.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{JITT 1.6}
+\small
+``The conductor will experience  an electrical field from q.'' \\
+``yes it will it will experience the a charge of the same as the charge inside the cavity, either positive or negative'' \\
+``yes, gaussian radius is greater than conductor's radius. '' \\
+``yes because the q will be positive inside the cavity'' \\
+\end{frame}
+
 \section{Gauss's Law}
 
 \begin{frame}{Gauss's Law}
@@ -774,23 +799,36 @@ A charge $Q$ is at the origin.  Compute the electric field via Gauss's Law, at $
 \section{Answers}
 
 \begin{frame}{Answers}
-\small
+\tiny
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{itemize}
+\item It is zero.
+\item Entropy has increased, but the internal energy returns to the original value
+\item 0.5
+\item The system does work equal to 0.5 liters times 1 atm
 \item +1
-\item The positive charges remain in place but the negative charges move away from the rod.
-\item The charges in the conductor all remain in place, and the force is attractive.
+\item The negative charges in the conductor move toward the positive charges in the rod.
 \item The charges accelerate towards each other.
-\item (0,6)
+\item The charges $-2q$ accelerate towards the charge $+q$.
 \item They are probably $\vec{v}_{\rm i} = -\hat{i}-\hat{j}$
-\item $\vec{v}_{\rm i} = \hat{i}-\hat{j}$
+\item They are probably $\vec{v}_{\rm i} = \hat{i}-\hat{j}$
+\item 45 deg
+\item Symmetry
+\item About 25 deg (26.56 degrees)
+\item Taking the value $z = R$ represents a minimum in the field strength.
+\item The field is constant.
+\item $\frac{\sigma}{\epsilon_0}$ N/C
+\item 0 N/C
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item 45 deg
-\item Symmetry
+\item The total charge on the ring
+\item A point charge $Q_{\rm tot}$
+\item $ab \hat{k}$
+\item Both A and B
+\item $0$
 \end{itemize}
 \end{column}
 \end{columns}
