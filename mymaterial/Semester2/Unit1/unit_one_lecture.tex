@@ -10,943 +10,826 @@
 \begin{document}
 \maketitle
 
-\section{Unit 0 Review}
-
-\begin{frame}{Unit 0 Review}
-\textit{Physics} - $\phi\upsilon\sigma\iota\kappa\acute{\eta}$ - "phusik\'e": \textit{knowledge of nature} \\
-from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature} \\
-\textbf{Reading: Chapters 1 and 2 (for Unit 1)}
-\begin{enumerate}
-\item Estimation/Approximation
-\begin{itemize}
-\item \alert{Estimating} the correct order of magnitude
-\item \alert{Building} complex quantities
-\item \alert{Unit analysis}
-\end{itemize}
-\item Review of concepts from Newtonian mechanics
-\begin{itemize}
-\item Kinematics and \alert{Newton's Laws}
-\item Work-energy theorem, energy conservation
-\item Momentum, conservation of momentum
-\end{itemize}
-\end{enumerate}
+\begin{frame}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/hyper.pdf}
 \end{frame}
 
-\begin{frame}{Unit 0 Review}
-Two molucules collide elastically.  Which of the following is true?
-\begin{itemize}
-\item A: Both potential energy and momentum are conserved for each molecule
-\item B: Only the momentum is conserved for each molecule
-\item C: Momentum and kinetic energy are conserved for each molecule
-\item D: Neither momentum nor energy is conserved for each molecule
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Unit 0 Review}
-Suppose a molecule is headed towards the wall of a container with speed $v$ and mass $m$.  If it collides elastically with the wall and returns in the exact same direction from which it came, what is the change in momentum of the molecule?
-\begin{itemize}
-\item A: $mv$
-\item B: $\frac{1}{2}mv^2$
-\item C: $mv^2$
-\item D: $2mv$
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Unit 0 Review}
-Do you remember how to take the derivative of an exponential function?  Let $f(t) = \exp(\alpha t)$.  What is $f'(t)$?
-\begin{itemize}
-\item A: $\exp(\alpha t)$
-\item B: $\alpha\exp(\alpha t)$
-\item C: $\exp(\alpha t)/\alpha$
-\item D: $\exp(2\alpha t)$
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Unit 0 Review}
-What about multiplying exponentials?  What is $f(t)g(t)$, if $f(t) = \exp(\alpha t)$ and $g(t) = \exp(\beta t)$?
-\begin{itemize}
-\item A: $\exp(\alpha\beta t)$
-\item B: $\exp(\frac{\alpha}{\beta} t)$
-\item C: $\exp(\frac{\beta}{\alpha} t)$
-\item D: $\exp((\alpha+\beta) t)$
-\end{itemize}
-\end{frame}
-
-\section{Unit 1 Summary}
+\section{Summary}
 
 \begin{frame}{Unit 1 Summary}
-\textbf{Reading: Chapters 1 and 2}
+\textbf{Reading: Chapters 5-6}
 \begin{enumerate}
-\item Temperature, Heat, and the 0th Law of Thermodynamics
-\item Heat flow and transfer mechanisms
-\item Kinetic Theory of Gases
+\item Charge, Conductors and Insulators
+\item Coulomb's Law and Electric Fields
+\item E-fields of Charge Distributions
+\item Gauss's Law
+\item Electric Potentials (voltage)
 \end{enumerate}
+\textbf{Reading for next lecture: all of chapter 5 (electrostatics)} \\ 
+\alert{Reading for spring break: chapter 6 (Gauss' Law)} \\
+\alert{\textbf{Group presentations:} March 30th} \\
+Note that I've had to update the syllabus.
 \end{frame}
 
-\section{JITT - Reading Quiz Results}
+\section{Charge, Conductors and Insulators}
 
-\begin{frame}{JITT - Reading Quiz Results}
-\begin{enumerate}
-\item In your own words, what is the cause of thermal expansion, and how is thermal expansion in three dimensions tied to thermal expansion in one dimension (linear expansion)?
-\item Describe in your own words the difference between two objects with different emissivities, as emissivity is related to the Stefan-Boltzmann equation.
-\item Describe in your own words the role of Boltzmann's constant and Avogadro's number in thermodynamics.
-\end{enumerate}
+\begin{frame}{Charge, Conductors and Insulators}
+Let's begin this topic in a special way: comparison to \textit{gravity}.  What do electricity and gravity have in common?  The answer lies in a notion we call \textit{charge...}
 \end{frame}
 
-\begin{frame}{JITT 1.1 Question 1}
+\begin{frame}{Charge, Conductors and Insulators}
+\centering
+\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
+\hrulefill
 \small
-The cause of thermal expansion is a change in temperature, thermal expansion in three dimensions is tied to thermal expansion in one dimension because they are similar equations when solving them, one just deals with a single length and the other deals with a volume and a multiple of 3 (Its late and I can’t think of a way to connect them outside of one of them is in one dimension and the other is in 3 dimensions, so I looked at the formulas for solving them).
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\alert{Gravity}
 \begin{enumerate}
-\item What is correct about this statement?
-\item How can we improve the correctness?
+\item Force: $\vec{F} = G \frac{m M}{r^2} \hat{r}$
+\item Parameters: $r$ is absolute distance between two objects with masses $m$ and $M$, and the direction is $\hat{r}$
+\item \textit{Charge} of one object: $m$
+\item \textit{Field felt by that object}: $\vec{G} = G \frac{M}{r^2} \hat{r}$
+\item $\vec{F} = m \vec{G}$
 \end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+\alert{Electricity}
+\begin{enumerate}
+\item Force: $\vec{F} = k \frac{q Q}{r^2} \hat{r}$
+\item Parameters: $r$ is absolute distance between two objects with electric charges $q$ and $Q$, and the direction is $\hat{r}$
+\item \textit{Charge} of one object: $q$
+\item \textit{Field felt by that object}: $\vec{E} = G \frac{Q}{r^2} \hat{r}$
+\item $\vec{F} = q \vec{E}$
+\end{enumerate}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}{JITT 1.1 Question 1}
+\begin{frame}{Charge, Conductors and Insulators}
+\centering
+\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
+\hrulefill \\
 \small
-Thermal expansion is caused when molecules are heated and start to get "energize" and spread out and bonds break or loosen. Objects expand in all directions, and linear expansion changes in length, which could be tied to a particular direction. 
-\begin{enumerate}
-\item What is correct about this statement?
-\item How can we improve the correctness?
-\end{enumerate}
+In the field paradigm, objects with charges \textit{emanate} fields, causing other objects with charge to experience force. \\
+\hrulefill \\
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\alert{Gravity} \\
+How many \textit{types of charge}, or how many charges, exist under the force of gravity? \\
+\textbf{One.} We call it mass.
+\end{column}
+\begin{column}{0.5\textwidth}
+\alert{Electricity} \\
+How many \textit{types of charge}, or how many charges, exist under the force of electricity? \\
+\textbf{Two.} We call one positive, and one negative.
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}{JITT 1.1 Question 1}
-\textbf{Things to consider:} 
-\begin{enumerate}
-\item The asymmetry of the molecular (Leonard-Jones) potential.
-\item One and three dimensional versions of Equation 1.1 in the text.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{JITT 1.1 Question 2}
+\begin{frame}{Charge, Conductors and Insulators}
+\centering
+\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
+\hrulefill \\
 \small
-Under the same temperature and wavelength conditions an object that emitts more energy relative to a blackbody has a greater emissivity as the temperatures of the objects increase, their emissivities do as well.
-\begin{enumerate}
-\item What is correct about this statement?
-\item How can we improve the correctness?
-\end{enumerate}
+In the field paradigm, objects with charges \textit{emanate} fields, causing other objects with charge to experience force. \\
+\hrulefill \\
+In the field paradigm, gravity has one charge (mass), and electricity has two charges (positive and negative). \\
+\hrulefill \\
+\textbf{There is one fundamental fact that is puzzling.} What about Newton's 2nd law?  Acceleration is not a field, it is a kinematic function.
+\begin{equation}
+\vec{F}_{\rm net} = m \vec{a}
+\end{equation}
+Aparently there are \textit{two kinds of mass}: \textbf{inertial} and \textbf{gravitational}.  
 \end{frame}
 
-\begin{frame}{JITT 1.1 Question 2}
+\begin{frame}{Charge, Conductors and Insulators}
 \small
-The two objects with different emissivities will have two different absolute temperatures, as the absolute temperature is proportionate to emissivity.
-\begin{enumerate}
-\item What is correct about this statement?
-\item How can we improve the correctness?
-\end{enumerate}
+\textit{Equivalence principle:} \\ \hrulefill \\
+There are \textit{two kinds of mass}: \textbf{inertial} and \textbf{gravitational}, with \textbf{equal value} for a given object. \\ \vspace{0.5cm}
+\url{https://en.wikipedia.org/wiki/Equivalence_principle} \\
+\hrulefill \\
+There is no similar principle for charge.  If the electric force on a charged object is calculated, that force must still be inserted into \textbf{Newton's 2nd Law} to obtain the acceleration, and the inertial mass must be known.
 \end{frame}
 
-\begin{frame}{JITT 1.1 Question 2}
+\begin{frame}{Charge, Conductors and Insulators}
 \small
-Emissivity is the property of an object to absorb and emit thermal radiation. Black being a better emitter and absorber than colors such as white or gray. Radiation is also emitted from all parts of an object, so a greater surface area means more emission. this can be calculated with the Stefan-Boltzmann equation.
+Charge has other properties, some similar to gravitational mass: \\ \vspace{0.25cm}
 \begin{enumerate}
-\item What is correct about this statement?
-\item How can we improve the correctness?
+\item Charge is conserved globally (charge cannot be created nor destroyed).  Mass has the same property.
+\item Charge is conserved locally (if we pull charge out of the system, charge will flow into the system).
+\item Charge is quantized, with an electron (for example) having the fundamental negative unit, and a proton (for example) having the fundamental positive unit.
+\item The laws of physics are the same for positive and negative charges.
+\item The two kinds of charge emit fields that attract each other; fields emitted by charges of the same type repel such charges.
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{JITT 1.1 Question 2}
-\textbf{Things to consider:} 
-\begin{enumerate}
-\item $\sigma e A T^4$ versus $\sigma e A \left( T_2^4 - T_1^4 \right)$.
-\item Heat and color as an indication of temperature (we can do this with stars, for example).
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{JITT 1.1 Question 3}
-\small
-Avagardos number ($6.02 \times 10^{23}$) relates the mass of an object to the number of its neutrons and protons since they should roughly be the same as the total mass. Boltzmann's constant ($1.38 \times 10^{-23}$) is used in the ideal gas law which describes how a gas acts when the desnity is too low or the temperature is so high that the gas is far from becoming a liquid.
-\begin{enumerate}
-\item What is correct about this statement?
-\item How can we improve the correctness?
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{JITT 1.1 Question 3}
-\small
-Both Boltzmann’s constant and Avogadro’s number are used In many equations involving thermodynamics.  (it was a difficult reading to understand and I’d appreciate it if we could briefly go over some of it in class and identify the most important parts of it to help me better understand, thanks!) 
-\begin{enumerate}
-\item This is \textit{good.}  Admitting we don't know is good.
-\item How would you describe the role of Boltzmann's constant in the ideal gas law?
-\item How would you describe the role of Avogadro's number in the ideal gas law?
-\end{enumerate}
-\end{frame}
-
-\section{Temperature, Heat, and the 0th Law of Thermodynamics}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{frame}{Charge, Conductors and Insulators}
+\textbf{Benjamin Franklin and the Leyden Jar}.  (Good paper topic).
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth,trim=0cm 4cm 0cm 0cm,clip=true]{figures/zero.png}
-\caption{\label{fig:zero} The zeroeth law of thermodynamics.  We need this idea to have a firm understanding of temperature readings, because a \textbf{thermometer} is itself a thermal system.}
+\includegraphics[width=0.3\textwidth]{figures/leyden.png}
+\caption{\label{fig:leyden} A Leyden jar was an early version of a capacitor.  Benjamin Franklin guessed that one type of charge moves and another remains stationary, explaining several behaviors of charged objects.}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{frame}{Charge, Conductors and Insulators}
+The rest of the properties of charge are connected to the development of the structure of the atom, and we will return to this topic at the end of the semeter.
 \begin{figure}
 \centering
-\includegraphics[width=0.95\textwidth,trim=0cm 1.5cm 0cm 0cm,clip=true]{figures/temp1.png}
-\caption{\label{fig:temp1} Three temperature scales.}
+\includegraphics[width=0.5\textwidth]{figures/atom.png}
+\caption{\label{fig:atom} A sketch of our current atomic paradigm.}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figures/temp2.png}
-\caption{\label{fig:temp2} Three temperature scales.  The Fahrenheit scale places 0 for a solution of brine and ice, with 180 degrees between freezing and boiling of water.  Celsius scale has 0 for freezing and 100 for boiling.  Absolute zero of Kelvin scale will be discussed below.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Suppose the temperature of a system is raised by 10$^{\circ}$ F.  Which of the following is true?
+\begin{frame}{Charge, Conductors and Insulators}
+Suppose an ion is composed of six protons, eight neutrons, and five electrons.  What is the net charge?
 \begin{itemize}
-\item A: The increase is more than 10 degrees in $^{\circ}$C.
-\item B: The increase is smaller than 10 degrees in $^{\circ}$C.
-\item C: The increase is the same in $^{\circ}$C.
-\item D: Depends on the initial temperature in $^{\circ}$F.
+\item A: +1
+\item B: 0
+\item C: -1
+\item D: -2
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Suppose the temperature of a system is raised by 10$^{\circ}$C.  Which of the following is true?
+\begin{frame}{Charge, Conductors and Insulators}
+A rod with a positive charge is held next to a \textit{conductor} (an object were charge can move around freely).  Which of the following is true?
 \begin{itemize}
-\item A: The increase is more than 10 degrees in $^{\circ}$K.
-\item B: The increase is smaller than 10 degrees in $^{\circ}$K.
-\item C: The increase is the same in $^{\circ}$K.
-\item D: Depends on the initial temperature in $^{\circ}$C.
+\item A: The charges in the conductor all remain in place because charge is conserved.
+\item B: The negative charges in the conductor move toward the positive charges in the rod.
+\item C: The positive charges remain in place but the negative charges move away from the rod.
+\item D: The positive charges move toward the rod and the negative charges remain in place.
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-The formula for conversion from Celcius temperature to Fahrenheit temperatures is $T_{\rm F} = \frac{9}{5}T_{\rm C} + 32$.  Which of the following is true?
-\begin{itemize}
-\item A: $0^{\circ}-10^{\circ}$C is comparable to room temperature
-\item B: $35^{\circ}-40^{\circ}$C is comparable to human body temperature
-\item C: $30^{\circ}-35^{\circ}$C is comparable to human body temperature
-\item D: $15^{\circ}-20^{\circ}$C outdoors would correspond to hot weather
-\end{itemize}
-\end{frame}
+\section{Coulomb’s Law and Electric Fields}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-How do thermometers work?  What is temperature, really?  \textit{Temperature is a macroscopic indication of microscopic kinetic energy}.  We need the idea of \textbf{thermal expansion}: \\ 
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\textbf{Coulomb's Law} describes the force between charges. \\ \vspace{0.5cm}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Coulomb's Law]
+\alert{The electric force, or \textbf{Coulomb force}, between two electrically charged systems with charges $q_{\rm 1}$ and $q_{\rm 2}$ separated by a distance $r$ is
 \begin{equation}
-\frac{dL}{dT} = \alpha L
-\label{eq:linear}
+\vec{F}_{\rm C} = \frac{1}{4\pi\epsilon_{\rm 0}} \frac{q_{\rm 1} q_{\rm 2}}{r^2} \hat{r} \label{eq:C}
 \end{equation}
-In Eq. \ref{eq:linear}, $T$ is the temperature, $L$ is the length of an object, and $\alpha$ is the coefficient of linear thermal expansion, in units of inverse degrees.
+In Eq. \ref{eq:C}, $\hat{r} = \vec{r}/|\vec{r}|$, and $\epsilon_{\rm 0} = 8.85418782\times 10^{-12} N^{-1} m^{-2} C^2$, called the \textit{perimittivity of free space.}}
+\end{tcolorbox}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Coulomb Field]
+\alert{The electric field corresponding to Eq. \ref{eq:C}, experienced by a charge $q$ and generated by a charge $Q$ is 
+\begin{equation}
+\vec{E}_{\rm C} = \frac{1}{4\pi\epsilon_{\rm 0}} \frac{Q}{r^2} \hat{r} \label{eq:Cf}
+\end{equation}
+In Eq. \ref{eq:Cf}, $r$ remains the separation between $q$ and $Q$.}
+\end{tcolorbox}
+Thus we have: $\vec{F}_{\rm C} = q \vec{E}_{\rm C}$. \\ \vspace{0.5cm}
+The SI Unit of charge is the Coulomb, which is equal to the amount of charge in a "current" of 1 amp for 1 second (more on this later).  \textbf{The charge of an electron is $1.6\times 10^{-19}$ Coulombs, or C.}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+Suppose a charge $+q$ experiences the Coulomb field of another charge of $-2q$, separated by a distance $r$.  Which of the following is true?
+\begin{itemize}
+\item A: The charge $+q$ accelerates towards the other charge, and the charge $-2q$ remains stationary, because opposite charges attract.
+\item B: The charge $-2q$ accelerates towards the other charge, and the charge $+q$ remains stationary, because opposite charges attract.
+\item C: No charges move; the force on one is equal to the force on the other.
+\item D: The charges accelerate towards each other.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+The answer to the previous problem involves Newton's Third Law.  (\textit{Why did only the negative charges move})?
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{figures/linear.png}
-\caption{\label{fig:linear} Linear thermal expansion coefficients.}
+\includegraphics[width=0.9\textwidth]{figures/third.png}
+\caption{\label{fig:third} Newton's Third Law still applies.}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics} 
-\begin{equation}
-\frac{dL}{dT} = \alpha L
-\label{eq:linear2}
-\end{equation}
-Equation \ref{eq:linear2} is a differential equation with a particular solution:
-\begin{equation}
-L(T) = L_{\rm 0}\exp(\alpha T) \label{eq:exp}
-\end{equation}
-We've seen that in practice, $\alpha$ values are small.  In this case we may approximate:
+\begin{frame}{Coulomb’s Law and Electric Fields}
+Suppose a charge $+q$ experiences the Coulomb fields of two other charges of $-2q$, each located a distance $r$ from $+q$.  The charges are all colinear (on the same line).  Which of the following is true?
+\begin{itemize}
+\item A: The charge $+q$ accelerates towards one of the other charge, because opposite charges attract.
+\item B: The charges $-2q$ accelerate towards the charge $+q$.
+\item C: The charges $-2q$ accelerate towards the charge $+q$, but eventually repel each other back in the other direction.
+\item D: The charges $-2q$ repel each other from the start.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\small
+The Coulomb force equation gives a vector, and so does the corresponding electric field.  Like a gravitational field, this effect has a vector at each point in space, so we refer to the Coulomb force and the Coulomb field as \textit{vector fields}. \\ \vspace{0.5cm}
+\textbf{Vector field}: An assignment of a vector to each point in a subset of space.
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Which of the following is true of vectors $\vec{v}_{\rm i}$ in the lower left-hand corner of the figure at right?
+\begin{itemize}
+\item A: They are probably $\vec{v}_{\rm i} = -\hat{i}-\hat{j}$
+\item B: They are probably $\vec{v}_{\rm i} = \hat{i}+\hat{j}$
+\item C: They are probably $\vec{v}_{\rm i} = -\hat{i}+\hat{j}$
+\item D: They are probably $\vec{v}_{\rm i} = \hat{i}-\hat{j}$
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/vectorField.png}
+\caption{\label{fig:field} A vector field of vectors $\vec{v}_{\rm i}$.  Let $\hat{j}$ represent up, and $\hat{i}$ represent right.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Which of the following is true of vectors $\vec{v}_{\rm i}$ in the upper left-hand corner of the figure at right?
+\begin{itemize}
+\item A: They are probably $\vec{v}_{\rm i} = -\hat{i}-\hat{j}$
+\item B: They are probably $\vec{v}_{\rm i} = \hat{i}+\hat{j}$
+\item C: They are probably $\vec{v}_{\rm i} = -\hat{i}+\hat{j}$
+\item D: They are probably $\vec{v}_{\rm i} = \hat{i}-\hat{j}$
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/vectorField.png}
+\caption{\label{fig:field2} A vector field of vectors $\vec{v}_{\rm i}$.  Let $\hat{j}$ represent up, and $\hat{i}$ represent right.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\textbf{Group board exercise}: What is the angle of the net electric field for the \textit{test charge} at the point (1,1) in Fig. \ref{fig:netfield1}? \\ \vspace{0.5cm}
+\textbf{Group board exercise}: What is the magnitude of the net electric field for the \textit{test charge} at the point (1,1) in Fig. \ref{fig:netfield1}, if the distances have units of nanometers, and $q$ is the charge of an electron, $1.6\times 10^{-19}$ C? (Let $\frac{1}{4\pi\epsilon_{\rm 0}} = 9\times 10^{9}$ N m$^2$ C$^{-2}$).\\ \vspace{0.5cm}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/NetField1.pdf}
+\caption{\label{fig:netfield1} Three charges create a field for a hypothetical \textit{test charge}.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+What is the angle of the E-field at point (1,1) in Fig. \ref{fig:netfield2} at right?
+\begin{itemize}
+\item A: 0 deg
+\item B: 45 deg
+\item C: 90 deg
+\item D: 135 deg
+\end{itemize}
+What is the fastest way to solve this problem?
+\begin{itemize}
+\item A: Blind luck
+\item B: Do the algebra
+\item C: Symmetry
+\item D: Numerical estimation
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/NetField2.pdf}
+\caption{\label{fig:netfield2} Two charges create a field for a hypothetical \textit{test charge}.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+What is the angle of the E-field at point (1,1) in Fig. \ref{fig:netfield3} at right?
+\begin{itemize}
+\item A: About 0 deg
+\item B: About 25 deg
+\item C: About 45 deg
+\item D: About 60 deg
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/NetField3.pdf}
+\caption{\label{fig:netfield3} Two charges create a field for a hypothetical \textit{test charge}.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+The forces of $N$ fixed charges on a test charge $Q$ create a net force, where the individual forces simply add like vectors.  This is known as the \textbf{superposition principle}.
 \begin{align}
-L(T)/L_{\rm 0} &\approx 1+\alpha T \\
-\Delta L &\approx \alpha L_{\rm 0} \Delta T \label{eq:linear3}
+\vec{F}_{\rm C,Net} &= \frac{1}{4\pi\epsilon_{\rm 0}} Q \sum_{i = 1}^N \frac{q_i}{r_i^2}\hat{r}_i = Q \vec{E}_{\rm C,Net} \\
+\vec{E}_{\rm C,Net} &= \frac{1}{4\pi\epsilon_{\rm 0}} \sum_{i = 1}^N \frac{q_i}{r_i^2}\hat{r}_i
 \end{align}
-Equation \ref{eq:linear3} is the equation found in Chapter 1 of the reading.
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{figures/bridge.png}
-\caption{\label{fig:bridge} Bridge expansion joints.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics} 
-Chapter 1 also contains these formulae for two and three-dimensional expansion:
-\begin{align}
-\Delta A &\approx 2\alpha A_{\rm 0} \Delta T \label{eq:linear4} \\
-\Delta V &\approx 3\alpha V_{\rm 0} \Delta T \label{eq:linear5}
-\end{align}
-Why?  Properties of exponentials.  \textbf{Group board exercise}: prove Eq. \ref{eq:linear5} using Eq. \ref{eq:exp}.
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\small
-\textit{Pipe Transport}: Some oil and gasoline pipelines are above ground, exposed to the elements.  The coefficient of thermal volumetric expansion for gasoline is much larger than that of steel.  Why would it be a bad idea to completely fill a pipeline with gasoline, knowing there will be large temperature variations?
-\begin{itemize}
-\item A: For large increases in temperature, the pipeline expands more rapidly than gasoline, leaving gaps for leaks.
-\item B: For large increases in temperature, the gasoline expands more rapidly than the pipeline, building pressure and causing pipeline bursts.
-\item C: For large decreases in temperature, the gasoline shrinks more rapidly than the pipeline, building pressure and causing pipeline bursts.
-\item D: None of these.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-If an object has a length of 10 cm, and a linear thermal expansion coefficient of $100 \times 10^{-6}$ 1/$^{\circ}$C, what is the change in length of the object if the temperature is increased from 0 $^{\circ}$C to 100 $^{\circ}$C?
-\begin{itemize}
-\item A: 0.1 mm
-\item B: 1 mm
-\item C: 1 cm
-\item D: 10 cm
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Recall from last semester that we studied \textit{stress} and \textit{strain}:
-\begin{align}
-\frac{F}{A} &= Y \frac{\Delta L}{L} \\
-stress &= Y \times strain
-\end{align}
-Now we can predict strain from temperature changes, and make statements about the implied \textit{thermal stresses}.  This is important for mechanical engineering designs.
+\begin{frame}{Coulomb’s Law and Electric Fields}
+For the expressions of fields built from the superposition principle, let's adopt a notation:
 \begin{equation}
-\frac{F}{A} = Y \alpha \Delta T
+\vec{E}_{\rm C,Net}(P) = \frac{1}{4\pi\epsilon_{\rm 0}} \sum_{i = 1}^N \frac{q_i}{r_i^2}\hat{r}_i \label{eq:P}
 \end{equation}
+Equation \ref{eq:P} represents the field at a \textit{position} $P = P(x,y,z)$, relative to the positions $\vec{r}_i$ of the source charges.
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\begin{equation}
-\frac{F}{A} = Y \alpha \Delta T
-\end{equation}
-\textit{Steel pipeline design}: Suppose a steel pipeline ($\alpha = 12 \times 10^{-6}$ 1/$^{\circ}$C, $Y = 30\times 10^{9}$ N/m$^2$) is designed and built at temperatures of 30 $^{\circ}$C, but experiences temperatures of 0 $^{\circ}$C.  What stress does the pipeline experience at the attachment point?
-\begin{itemize}
-\item A: -0.1 MPa
-\item B: 1 MPa
-\item C: -10 MPa
-\item D: 100 MPa
-\end{itemize}
-\textit{Is the pipeline pulling or pushing on the attachment point?}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/Joule.png}
-\caption{\label{fig:Joule} Demonstrating that work and heat are equivalent (paper topic from last semester).}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Which of the following is true, regarding Fig. \ref{fig:Joule}?
-\begin{itemize}
-\item A: The temperature increase is proportional to the decrease in height of the masses.
-\item B: The temperature increase is proportional to $g$.
-\item C: A and B
-\item D: None of these
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Regarding Fig. \ref{fig:Joule}, if total mass is 1.0 kg (two 0.5 kg masses), $g = 10$ m/s$^2$, and $h = 1$ m, what is the temperature increase in the water?
-\begin{itemize}
-\item A: 10 J
-\item B: 10 $^{\circ}$K
-\item C: 10 $^{\circ}$C
-\item D: Cannot determine
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-The heat required to obtain a change in temperature is proportional to the mass of the substance to be heated (obvious if you understand heat to be caused by motions of molecules).  The coefficient is called the \textit{specific heat capacity}:
-\begin{equation}
-Q = mc\Delta T
-\end{equation}
-More generally,
-\begin{equation}
-c = \frac{1}{m}\frac{dQ}{dT}
-\end{equation}
-Units: Joules per unit temperature per unit mass (J/(kg C)).  1 \textit{calorie} is the energy required to heat 1 gram of water 1 degree C.  For food, 1 kcal = 1 Calorie $\rightarrow$ endless debates about food science...
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/c.png}
-\caption{\label{fig:c} Notice how water is on a different scale than most other substances.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-A 0.500 kg aluminum pan on a stove and 0.250 L of water in it are heated from 20.0 $^\circ$C to 80.0 $^\circ$C. a) How much heat is required? What percentage of the heat is used to raise the temperature of b) the pan and c) the water? \\ \vspace{0.5cm}
-\textbf{Group board exercise}: $c_{\rm W} = 4186$ J/kg/C and $c_{\rm Al} = 900$ J/kg/C.
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-For a thermodynamically isolated system, we have
-\begin{equation}
-Q_{\rm cold} + Q_{\rm hot} = 0
-\label{eq:calor}
-\end{equation}
-That is, if heat is conserved, the heat lost by a hot system is equal and opposite to the heat gained by the cold object. This sort of balancing is known as \textit{calorimetry}.  \\ \vspace{0.5cm}
-Es como la palabra ``calor'' en espa\~{n}ol: hace calor hoy.
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{frame}{Coulomb’s Law and Electric Fields}
 \small
-Suppose two systems in contact have the same mass, and are otherwise isolated from other systems.  System 1 has a much larger heat capacity than system 2, and they are at different temperatures.  Which temperature change is the largest?
-\begin{itemize}
-\item A: The temperature change corresponding to system 1.
-\item B: The temperature change corresponding to system 2.
-\item C: The changes corresponding to system 1 and 2 are equal.
-\item D: The changes are zero because the total heat is conserved.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\small
-Suppose two systems in contact have the same mass, and are otherwise isolated from other systems.  System 1 has the same heat capacity than system 2, and they are at different temperatures.  Which temperature change is the largest?
-\begin{itemize}
-\item A: The temperature change corresponding to system 1.
-\item B: The temperature change corresponding to system 2.
-\item C: The changes corresponding to system 1 and 2 are equal.
-\item D: The changes are zero because the total heat is conserved.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-The brakes in a car increase in temperature by T when bringing the car to rest from a speed v. How much greater would T be if the car initially had twice the speed? You may assume the car stops fast enough that no heat transfers out of the brakes.
-\begin{itemize}
-\item A: Higher by a factor of 2
-\item B: Higher by a factor of 4
-\item C: Same temperature difference (no potential energy change).
-\item D: Higher by a factor of 8
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\textit{The survival situation}: Suppose two people (60 kg each) are cuddling to stay warm in a tent because it is cold outside.  One person is at 37 Celsius, and the other is at 30 Celsius.  What is their final temperature, assuming they are calorimetrically isolated? \\ \vspace{0.5cm}
-\textbf{Group board exercise}: $c_{\rm Human} = 3500$ J/kg/C. \\ \vspace{0.5cm}
-\textit{Hint: We need Eq. \ref{eq:calor}, but $\Delta T$ is a variable and we need to use the heat capacity.}
-\alert{Moral of the story}: The temperature of one person has to go down so the temperature of the other person can go up. 
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\textit{{Bonus problem}: Temperature-dependent heat capacities.  Repeat Example 1.8 in the text, except substitute NaI (sodium iodide) for NaCl (sodium chloride) and look up the relevant heat capacity functions.  Turn this in for +2 bonus points on this week's homework (homeworks are usually out of 10 points).}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Materials have four phases, and three are relevant for the classical physics in this course.
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\textbf{Table exercise:} Calculate $\vec{E}_{\rm C,Net}(P)$, if $P = (1,1)$. \\ \vspace{0.5cm}
+\textbf{Table exercise:} Calculate $\vec{E}_{\rm C,Net}(P)$, if $P = (-1,-1)$. \\ \vspace{0.5cm}
+\textbf{Group discussion:} What does it mean if $P = (1,0)$? \\ \vspace{0.5cm}
+\end{column}
+\begin{column}{0.5\textwidth}
 \begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/PT.png}
-\caption{\label{fig:pt} \textit{Phase transitions} occur when crossing the lines.  Boiling, melting, and sublimation are the three possible processes.}
+\includegraphics[width=\textwidth]{figures/NetField4.pdf}
+\caption{\label{fig:netfield4} Two charges create a field for a hypothetical \textit{test charge}.}
 \end{figure}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Snow \textit{sublimation}: \\ \vspace{0.5cm}
-\url{https://youtu.be/8gh29dV-glI}
+\begin{frame}{Coulomb’s Law and Electric Fields}
+Notice in the prior examples of \textit{fixed} charges, we need an \textit{explanation} for why the fixed charges remain fixed, even though they are obviously subject to Coulomb forces. \\ \vspace{0.5cm}
+\textbf{Insulator}: A material in which there are no free charges available to conduct electricity.  Charges may be fixed in position within an insulator. \\
+\textbf{Conductor}: A material in which there are free charges available to conduct electricity.  Charges may not be fixed in position within a conductor. \\
+\textbf{Semi-conductor}: A material in which there are free charges available to conduct electricity if certain requirements are met.
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-A pressure cooker contains water and steam in equilibrium at a pressure greater than atmospheric pressure.  How does this greater pressure increase cooking speed?
-\begin{itemize}
-\item A: Raises the boiling point
-\item B: Raises the vapor pressure
-\item C: Both A and B
-\item D: Changes the heat capacity of water and steam
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Triple point explained: \\ \url{https://www.youtube.com/watch?v=MP6MVLWuNZQ}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/artemis.jpg}
-\caption{\label{fig:artemis} Idea for bonus paper or group project: read \textit{Artemis} by Andy Weir and pick a chapter.  Explain each of the statements about surviving on the moon with lower artifical \textbf{vapor pressure}, artificial \textbf{boiling point}, no atmosphere, and a different $g$ value, etc.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{frame}{Coulomb’s Law and Electric Fields}
 \small
-During a phase transition, the temperature of a substance does not change.  The heat energy required to drive the phase transition is just proportional to the mass, for liquids and solids:
-\begin{align}
-Q &= m L_{\rm f} \\
-Q &= m L_{\rm v}
-\end{align}
-These coefficients are known as the laten heats of \textit{fusion} and \textit{vaporization}.  These numbers have a molecular interpretation.
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+The following problem is an example of solving for a field analytically, and \textit{testing various limits}.  Upon taking limits results are often simple and intuitive. \\ \vspace{0.5cm}
+Two charges $+q$ are on the fixed in an insulator on the x-axis.  Solve for the E-field at $P = (0,0,z)$. \\ \vspace{0.5cm}
+Show that the general solution is
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2qz}{\left(z^2+\left(\frac{d}{2}\right)^2\right)^{3/2}} \hat{k}
+\end{equation}
+\end{column}
+\begin{column}{0.5\textwidth}
 \begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{figures/lvlf.png}
-\caption{\label{fig:lvlf} As usual, look at water! (and aluminum).}
+\includegraphics[width=\textwidth]{figures/twoChargesZ.png}
+\caption{\label{fig:twoChargesZ} Solve for the E-field as a function of $z$, $d$, and $q$.}
 \end{figure}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Three ice cubes are used to chill a soda at 20 $^\circ$C with mass 0.25 kg. The ice is at 0 $^\circ$C and each ice cube has a mass of 100.0 g. Assume that the soda is kept in a foam container so that heat loss can be ignored and that the soda has the same specific heat as water. Find the final temperature when all ice has melted.
-\textbf{Group board exercise}: Latent heat of fusion of the ice: 334 kJ/kg, and heat capacity of water: 4186 J/kg/C.
-\end{frame}
-
-\section{Heat Capacity of Water, Latent Heat of Fusion of Water}
-
-\begin{frame}{Heat Capacity of Water, Latent Heat of Fusion of Water}
+\begin{frame}{Coulomb’s Law and Electric Fields}
 \small
-\textbf{Lab activity:} We are going to toss some ice into boiling water and measure the final temperature.  \textit{Choose the correct scale: calories, grams and degrees Celsius.} \alert{The specific heat of water is 1.0 calorie/gram/degree Celsius}.
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Show that the general solution is
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2qz}{\left(z^2+\left(\frac{d}{2}\right)^2\right)^{3/2}} \hat{k}
+\end{equation}
+\textit{Take the following two limits:} \\ 1) $z \gg d$ and 2) $z=0$.  What are the results? \\ \vspace{0.5cm}
+Keep these results in mind, because we are about to start drawing \textbf{vector fields,} in order to visualize the algebra.
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/twoChargesZ.png}
+\caption{\label{fig:twoChargesZ2} Solve for the E-field as a function of $z$, $d$, and $q$.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\textbf{PhET Simulation of E-fields from Charges}: \\ \vspace{0.5cm}
+\url{https://phet.colorado.edu/en/simulation/charges-and-fields}
 \begin{enumerate}
-\item Items: A thermometer, two small cups and one large cup, a scale, some ice, and some boiling water.
-\item Measure the mass of each cup.
-\item Pour some ice into one of the small cups and measure the mass of the ice.
-\item Pour boiling water into the other small cup and measure the mass.
-\item Mix them in the large cup, and wait until equilibrium is reached.
-\item Measure the final temperature of the water/melted ice mixture.
+\item Create the situation in the prior problem, in Fig. \ref{fig:twoChargesZ2}.
+\item Use the yellow sensor object to determine the local direction of the E-field at various points along the z-axis.
+\begin{itemize}
+\item Do the results match the limit $z\gg d$?
+\item Do the results match the limit $z = 0$, halfway between the charges?
+\item Where is the field maximal?
+\end{itemize}
+\item Make sure you can see above and below the charges, and repeat steps 1 and 2 for negative z-values.  What do you find?
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Heat Capacity of Water, Latent Heat of Fusion of Water}
+\begin{frame}{Coulomb’s Law and Electric Fields}
 \small
-\textbf{Lab activity:} We are going to toss some ice into boiling water and measure the final temperature.  \textit{Choose the correct scale: calories, grams and degrees Celsius.} \alert{The specific heat of water is 1.0 calorie/gram/degree Celsius}.
+\textbf{PhET Simulation of E-fields from Charges}: \\ \vspace{0.5cm}
+Build E-fields with the following properties, by adding single charges.  Let the \textit{z-axis be upwards}, and let the \textit{x-axis be to the right.}
 \begin{enumerate}
-\item Using the initial and final temperatures of the ice and water, and the specific heat of water, measure the \textit{latent heat of fusion} $L_{\rm F}$ of ice.
-\item $L_{f,ice} = c_{\rm w} \left( \frac{m_{\rm water}}{m_{\rm ice}} (T_{\rm i,H20} - T_{\rm f}) - T_{\rm f} \right)$
-\item Expected value: 334 kJ/kg = 334 J/g
-\item Collect handout on error analysis.  Use the handout to compute the average class value of latent heat of water, with proper statistical errors.  \textit{Review next class period.}
+\item Build an electric field that has \textbf{reflection symmetry} across the z-axis, with at least five charges.
+\item Build an electric field that has \textit{radial symmetry} about the origin, with at least six charges.
+\item Build an electric field that would be the same if I rotated the picture by 90 degrees (\textbf{4-fold symmetry}) with at least four charges, some negative and some positive.
+\item Build an electric field that would be the same if I rotated the picture by 45 degrees (\textbf{8-fold symmetry}) with at least eight charges, some negative and some positive.
 \end{enumerate}
 \end{frame}
 
-\section{JITT - Reading Quiz Results}
-
-\begin{frame}{JITT 1.2}
-\begin{enumerate}
-\item What principle is used to determine the relationship between the internal energy of an ideal gas, and the temperature of the gas?
-\item What principle or principles are used to determine the heat capacity of an ideal gas at constant volume?
-\item The Maxwell-Boltzman distribution of molecular speeds gives the probability that a molecule will have a given speed in an ideal gas.  If it's not impossible for a molecule to have a speed of 0 m/s, why does this distribution go towards zero for v=0?
-\end{enumerate}
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\small
+\textbf{PhET Simulation of E-fields from Charges}: \\ \vspace{0.5cm}
+\alert{The lesson is that the E-field has the \textit{symmetry properties} of the \textit{charge distribution}}.
 \end{frame}
 
-\begin{frame}{JITT 1.2}
-\textbf{What principle is used to determine the relationship between the internal energy of an ideal gas, and the temperature of the gas?}
-The ideal gas law. It relates the pressure and volume of the of a gas to its gas molecules (or number of moles of the gas) and the temperature of the gas.
-\end{frame}
-
-\begin{frame}{JITT 1.2}
-\textbf{What principle is used to determine the relationship between the internal energy of an ideal gas, and the temperature of the gas?}
-The temperature of molecules is used to determine the average kinetic energy of each molecule in a system. Then that kinetic energy is used to find the internal energy of an entire thermodynamic system. They use the equations $KE = \frac{3}{2}k_B T$ and $E_{int}=\frac{3}{2}Nk_BT$.
-\end{frame}
-
-\begin{frame}{JITT 1.2}
-\textbf{What principle or principles are used to determine the heat capacity of an ideal gas at constant volume?}
-Equiparition theorem.
-\end{frame}
-
-\begin{frame}{JITT 1.2}
-\textbf{What principle or principles are used to determine the heat capacity of an ideal gas at constant volume?}
-To determine the heat capacity of an ideal gas at a constant volume we use the principles of work and since there is no displacement, there is no work done and volume is constant. Using the formula for heat transfer, we set it equal to the amount of internal energy in the ideal gas, the resulting solution is $\frac{3}{2}R$.
-\end{frame}
-
-\begin{frame}{JITT 1.2}
-\textbf{The Maxwell-Boltzman distribution of molecular speeds gives the probability that a molecule will have a given speed in an ideal gas.  If it's not impossible for a molecule to have a speed of 0 m/s, why does this distribution go towards zero for v=0?} \\
-I don’t know.
-\end{frame}
-
-\begin{frame}{JITT 1.2}
-\textbf{The Maxwell-Boltzman distribution of molecular speeds gives the probability that a molecule will have a given speed in an ideal gas.  If it's not impossible for a molecule to have a speed of 0 m/s, why does this distribution go towards zero for v=0?}
-The distribution goes towards zero because the probability that a molecule will have exactly a given speed is 0.
-\end{frame}
-
-\begin{frame}{JITT 1.2}
-\textbf{The Maxwell-Boltzman distribution of molecular speeds gives the probability that a molecule will have a given speed in an ideal gas.  If it's not impossible for a molecule to have a speed of 0 m/s, why does this distribution go towards zero for v=0?}
-Because the probability of the molecules in a gas going 0 m/s is very low, thus the distribution heads to 0....A molecule slows down quicker and approaches zero quickly but never gets to it.
-\end{frame}
-
-\section{Mechanisms of Heat Transfer}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\textbf{Heat transfer mechanisms}:
-\begin{itemize}
-\item Conduction
-\item Convection
-\item Radiation
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\textbf{Conduction} - \textit{Heat transfer through stationary matter by physical contact.} \\ \vspace{0.5cm}
-Which of the following do you think \textit{is not} an example of heat conduction?
-\begin{itemize}
-\item A: Accidentally touching a hot stove and feeling the burn
-\item B: The sun shining on your face, making your face feel warm
-\item C: Laying on hot sand on the beach, making you feel warm
-\item D: A wire getting hot because it is carrying too much current
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{frame}{Coulomb’s Law and Electric Fields}
+When we connect the vectors in a vector field, the results are figures like Fig. \ref{fig:lines}.  Fields by convention originate from positive charges and terminate on negative ones.
 \begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figures/heat1.png}
-\caption{\label{fig:heat1} Our model for heat transfer follows a differential equation.}
+\includegraphics[width=0.8\textwidth]{figures/lines.png}
+\caption{\label{fig:lines} Field-line diagrams.  The density of lines indicates electric field strength.}
 \end{figure}
-\begin{equation}
-P = \frac{dQ}{dt} = \frac{kA(T_{\rm h} - T_{\rm c})}{d} \rightarrow -kA \frac{dT}{dx}
-\end{equation}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\alert{Rate of conductive heat transfer}:
+\section{E-Fields of Charge Distributions}
+
+\begin{frame}{E-Fields of Charge Distributions}
+Welcome to calculus! Let $k = 1/(4\pi\epsilon_0)$.
+\begin{align}
+\vec{E}(P) &= k \sum_{i = 1}^N \left(\frac{q_i}{r_i^2}\right) \hat{r} \label{eq:point} \\
+\vec{E}(P) &= k \int_{line} \left(\frac{\lambda dl}{r^2}\right) \hat{r} \label{eq:line} \\
+\vec{E}(P) &= k \int_{surface} \left(\frac{\sigma dA}{r^2}\right) \hat{r} \label{eq:surface} \\
+\vec{E}(P) &= k \int_{volume} \left(\frac{\rho dV}{r^2}\right) \hat{r} \label{eq:volume}
+\end{align}
+The functions $\lambda$, $\sigma$, and $\rho$ are just charge densities.  They decribe where charge is, and how much there is.  
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+\begin{figure}
+\includegraphics[width=0.45\textwidth]{figures/disk.png}
+\caption{\label{fig:disk} We are going to work this example together, and other examples will be left to homework.}
+\end{figure}
+\textbf{Observe on board.}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+\begin{figure}
+\includegraphics[width=0.4\textwidth]{figures/disk.png}
+\caption{\label{fig:disk2} We are going to work this example together, and other examples will be left to homework.}
+\end{figure}
+Result:
 \begin{equation}
 \boxed{
-P = \frac{dQ}{dt} = \frac{kA(T_{\rm h} - T_{\rm c})}{d} \rightarrow -kA \frac{dT}{dx}}
+\vec{E} = k\left(2\pi\sigma - \frac{2\pi\sigma z}{\sqrt{R^2 + z^2}} \right)\hat{k}}
 \end{equation}
-\begin{itemize}
-\item \textit{k}: Thermal conductivity, W/m $^{\circ}$C
-\item \textit{A}: Surface area in contact, m$^2$
-\item \textit{d}: Thickness of contact area, m
-\item \textit{$T_{\rm h}$, $T_{\rm c}$}: Hot and cold initial temperatures
-\end{itemize}
-The x-coordinate is the direction of heat flow and the minus sign reflects the corresponding decrease in temperature.  \textit{In American construction, sometimes $R = d/k$, known as the R-factor.}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-An aluminum can with thermal conductivity $k$ has a total area of $A$, and walls that are $x$ thick.  The soda in the can is much colder than the air outside, and a density $\rho$.  How much time passes before the soda is at the same temperature as the air?
+\begin{frame}{E-Fields of Charge Distributions}
+\begin{equation}
+\boxed{
+\vec{E} = k\left(2\pi\sigma - \frac{2\pi\sigma z}{\sqrt{R^2 + z^2}} \right)\hat{k}} \label{eq:disk}
+\end{equation}
+Which of the following not true of Eq. \ref{eq:disk}?
 \begin{itemize}
-\item A: $t = \frac{\rho Vcx}{kA}$
-\item B: $t = \frac{cx}{kA}$
-\item C: $t = \frac{kAT}{x}$
-\item D: $t = \frac{kAT}{x}$
+\item A: Taking the limit $R \rightarrow \infty$ yields a constant field.
+\item B: Taking the limit $z \rightarrow 0$ yields a constant field.
+\item C: The charge distribution has radial symmetry, so the field cannot have horizontal components.
+\item D: Taking the value $z = R$ represents a minimum in the field strength.
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Why does the temperature difference not matter in the prior answer?
+\begin{frame}{E-Fields of Charge Distributions}
+\begin{equation}
+\boxed{
+\vec{E} = k\left(2\pi\sigma - \frac{2\pi\sigma z}{\sqrt{R^2 + z^2}} \right)\hat{k}} \label{eq:disk2}
+\end{equation}
+What happens to Eq. \ref{eq:disk2}, in the limit that $R \rightarrow \infty$?
 \begin{itemize}
-\item A: Heat is not a rate, it's a substance
-\item B: The aluminum does the heat conduction, not the soda
-\item C: Energy conservation: the heat transferred does not depend on the initial and final temperature
-\item D: The capacity of the air to absorb heat is much larger than the small can, so it happens as fast as possible
+\item A: The field decreases to zero.
+\item B: The field is constant.
+\item C: The field grows increasingly positive.
+\item D: The field grows increasingly negative.
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Heat convection: we will not cover this quantitatively because it involves fluid dynamics. However, a good example is fur insulation against wind:
+\begin{frame}{E-Fields of Charge Distributions}
+In the limit that $R \rightarrow \infty$,
+\begin{equation}
+\vec{E} = 2\pi\sigma k \hat{k} = \frac{\sigma}{2\epsilon_0} \hat{k} \label{eq:disk3}
+\end{equation}
+Equation for the electric field of a uniform infinite disk.
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+Imagine two infinite disks with equal uniform charge distributions, some distance apart.  One has positive charge, the other negative charge.  What is the E-field between them?
+\begin{itemize}
+\item A: 0
+\item B: $\frac{\sigma}{2\epsilon_0}$
+\item C: $\frac{\sigma}{\epsilon_0}$
+\item D: $\frac{\sigma}{4\epsilon_0}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+Imagine two infinite disks with equal uniform charge distributions, some distance apart.  Both have positive charge.  What is the E-field between them?
+\begin{itemize}
+\item A: 0
+\item B: $\frac{\sigma}{2\epsilon_0}$
+\item C: $\frac{\sigma}{\epsilon_0}$
+\item D: $\frac{\sigma}{4\epsilon_0}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+Other interesting charge distributions:
+\begin{itemize}
+\item A line of charge with length $L$ and total charge $Q = \lambda L$, where $P = (0,0,z)$ above midpoint:
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{\lambda L}{z\sqrt{z^2 + \frac{1}{4} L^2}} \hat{k} \label{eq:line2}
+\end{equation}
+\item Equation \ref{eq:line2}, but with $L \rightarrow \infty$:
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2\lambda}{z} \hat{k}
+\end{equation}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+Other interesting charge distributions:
+\begin{itemize}
+\item A ring of radius $R$ and total charge $Q = 2\pi R\lambda$, where $P = (0,0,z)$ above midpoint:
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2\pi R \lambda z}{\left(z^2 + R^2\right)^{3/2}} \hat{k} \label{eq:ring}
+\end{equation}
+\item Equation \ref{eq:ring}, but with $z \gg R$:
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2\pi R \lambda }{z^2} \hat{k} \label{eq:ring2}
+\end{equation}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+In Eq. \ref{eq:ring}, what does the quantity $2\pi R\lambda$ represent?
+\begin{itemize}
+\item A: The total charge density on the ring
+\item B: The circumference of the ring
+\item C: The magnitude of the electric field from the ring
+\item D: The total charge on the ring
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+Let $Q_{\rm tot} = 2\pi R \lambda$.  That makes Eq. \ref{eq:ring2}
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{Q_{\rm tot}}{z^2} \hat{k}
+\end{equation}
+This is identical to the electric field of what charge distribution?  (Think back to the definition of the electric field).
+\begin{itemize}
+\item A: A plane with charge density $Q_{\rm tot}/A$, where $A$ is the area
+\item B: A line with total charge $Q_{\rm tot}$
+\item C: A dipole of charge $\pm Q_{\rm tot}$
+\item D: A point charge $Q_{\rm tot}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-Fields of Charge Distributions}
+As we shall see, the last few results follow from a notion known as \alert{Gauss's Law}.  First we need two concepts:
+\begin{itemize}
+\item The \textbf{area vector} of a surface
+\item The concept of flux
+\end{itemize}
+\end{frame}
+
+\section{JITT 1.6}
+
+\begin{frame}{JITT 1.6}
+\begin{enumerate}
+\item Discuss how would orient a planar surface of area A in a uniform electric field of magnitude E to obtain (a) the maximum flux and (b) the minimum flux through the area.
+\item Discuss whether Gauss’s law can be applied to other forces, and if so, which ones.
+\item A charge q is placed in the cavity of a conductor as shown below. Will a charge outside the conductor experience an electric field due to the presence of q? (This is conceptual question 18 in the text).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{JITT 1.6}
+\small
+\textbf{Discuss how would orient a planar surface of area A in a uniform electric field of magnitude E to obtain (a) the maximum flux and (b) the minimum flux through the area.}
+``If you orient the plane to maximize the number of field lines passing through it the flux will be maximum. If you do the opposite with the plane it should minimize the flux through the area.'' \\
+``To obtain the maximum flux you would orient the area perpendicular to the flow of energy (ex. —| ), and to minimize it you would orient the area parallel to the flow of energy (ex. — — )'' \\
+\end{frame}
+
+\begin{frame}{JITT 1.6}
+\small
+\textbf{Discuss whether Gauss’s law can be applied to other forces, and if so, which ones.}
+``no, Gauss’s Law is its own hypothesis'' \\
+``gravity'' \\
+``don't know, gravity?'' \\
+\end{frame}
+
+\begin{frame}{JITT 1.6}
+\small
+\textbf{A charge q is placed in the cavity of a conductor as shown below. Will a charge outside the conductor experience an electric field due to the presence of q? (This is conceptual question 18 in the text).}
 \begin{figure}
 \centering
-\includegraphics[width=0.4\textwidth,trim=0cm 0.1cm 0cm 0.1cm,clip=true]{figures/heat2.png}
-\caption{\label{fig:heat2} Fur helps to insulate against wind chill.}
+\includegraphics[width=0.35\textwidth]{figures/jittFigure1.png}
+\caption{\label{fig:jittFigure1} From conceptual question 18 in the text.}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{frame}{JITT 1.6}
 \small
-Heat radiation: We can make one quantitative statement about radiative heat transfer.
+``The conductor will experience  an electrical field from q.'' \\
+``yes it will it will experience the a charge of the same as the charge inside the cavity, either positive or negative'' \\
+``yes, gaussian radius is greater than conductor's radius. '' \\
+``yes because the q will be positive inside the cavity'' \\
+\end{frame}
+
+\section{Gauss's Law}
+
+\begin{frame}{Gauss's Law}
+Let $\vec{A}$ be a vector that:
+\begin{itemize}
+\item has a magnitude equal to the area of a surface
+\item has a direction that is orthogonal to the surface
+\end{itemize}
+If a surface has area $A$, then $\vec{A} = A \hat{n}$, where $\hat{n}$ is normal, and pointed outward orthogonally from the surface.  What does \textit{outward} mean?
+\end{frame}
+
+\begin{frame}{Gauss's Law}
 \begin{figure}
 \centering
-\includegraphics[width=0.6\textwidth]{figures/heat3.png}
-\caption{\label{fig:heat3} Black-body radiation, where color depends on temperature.}
-\end{figure}
-\begin{equation}
-P_{\rm net} = \sigma A e (T_{\rm 2}^4 - T_{\rm 1}^4)
-\end{equation}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\alert{The Stephan-Boltzmann} law of radiation
-\begin{equation}
-P_{\rm net} = \sigma A e (T_{\rm 2}^4 - T_{\rm 1}^4)
-\end{equation}
-\begin{itemize}
-\item $\sigma$: Stefan-Boltsmann constant, $5.67 \times 10^{-8}$ W/(m$^2$ K$^4$)
-\item $A$ is the surface area
-\item $T_{\rm 1}$, $T_{\rm 2}$: temperatures of the object and environment
-\item $e$: \textit{emissivity} of the object (can depend on the wavelength)
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-This may sound like an odd question, but why do people need clothing?  Even if we are standing around in a room at room temperature, why do we get cold and get sick?
-\begin{itemize}
-\item A: The air conducts heat away from us if it is slightly colder
-\item B: If there is a breeze, convection takes heat away from us
-\item C: We naturally radiate heat in the infrared
-\item D: All of these
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\textbf{Group board exercise}: Let's estimate the heat radiated by a person.  Use Stefan-Boltzmann law of radiation, with emissitivity of $1$ for infrared light.  Compare this to what you think is the natural amount of heat generated by a normal person's body (could start with 2000 Calories per day, for example).
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\small
-Greenhouse effect as heat transfer problem: \\ \url{https://phet.colorado.edu/en/simulation/greenhouse}
-\begin{itemize}
-\item What is the CO$_2$ concentration in the previous ice age, and what temperature does this allow on the Earth's surface?  With clouds?
-\item Repeat, but with the numbers of today.  Add clouds, and repeat.  Write down all the temperatures you think are the equilibrium temperatures.
-\item Open the photon absorption tab.  Create three different atmospheres: all methane, all carbon dioxide, and all nitrogen.  What happens to the infrared photons in each?
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Kinetic theory of gases}
-When we say the word "molecule," we take it for granted.  How do you actually know substances are made of molecules?  Can we know this by observing gases? \\ \vspace{1cm}
-Chapter 2 leads us into the subject of the \alert{kinetic theory of gases}, acting on the hypothesis of the existence of molecules and drawing conclusions about the behavior of gases.
-\end{frame}
-
-\begin{frame}{Kinetic theory of gases}
-After observations in the 16th-19th centuries (Boyle's Law, Charles's Law, Guy-Lussac Law), we arrived here: \\ \vspace{1cm}
-\begin{equation}
-\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
-\end{equation}
-\begin{itemize}
-\item p: pressure
-\item V: volume
-\item T: temperature
-\end{itemize}
-Suppose we guess that gases are made of smaller pieces, and that temperature is the experience of the flow of heat, and that heat is proportional to the kinetic energy of the smaller pieces.
-\end{frame}
-
-\begin{frame}{Kinetic theory of gases}
-Let us name that last idea \textit{equipartition of energy}, that each \alert{degree of freedom} gets one piece of kinetic energy proportional to temperature:
-\begin{equation}
-e_{\rm dof} = \frac{1}{2}kT
-\end{equation}
-\begin{itemize}
-\item T is the temperature of the gas of molecules
-\item k, for now, is some constant
-\item e is the energy per degree of freedom
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Kinetic theory of gases}
-Suppose a molecule bounces off of a flat container.  What if pressure is just the collective force per unit area of molecules all bouncing around at the same time?  How do we describe this process with concepts from last semester?
-\begin{itemize}
-\item Elastic collisions, momentum conservation
-\item Force in terms of momentum
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\small
-\begin{figure}
-\centering
-\includegraphics[width=0.4\textwidth]{figures/p1.png}
-\includegraphics[width=0.4\textwidth]{figures/p2.png}
-\caption{\label{fig:p1} The force imparted on the wall by a molecule with velocity $v$, then $v'$, causes pressure.  The box is a length $l$ and the molecule is assumed to travel all the way across.}
+\includegraphics[width=0.5\textwidth]{figures/areaVector.png}
+\caption{\label{fig:n} The convention for the area vector direction is outward, not inward.}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
+\begin{frame}{Gauss's Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/patch.png}
+\caption{\label{fig:patch} We may think of a surface $S$ as the sum of many infinitesimal square patches $dS_i$, each with an area vector $\vec{dA}_i$ equal in magnitude but not direction.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+A rectangular surface has length $a$, width $b$, and it is located in the x-y plane.  What is the area vector of the rectangular surface?
+\begin{itemize}
+\item A: $b^2 \hat{k}$
+\item B: $a^2 \hat{i}$
+\item C: $ab \hat{k}$
+\item D: $ab \hat{j}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/coin.png}
+\caption{\label{fig:coin} A circular patch, with an external electric field.  How many electric field lines would pass through the circular patch if it was tilted to 90$^{\circ}$ from the field?  How about 0$^{\circ}$?}
+\end{figure}
+This behavior indicates a \textbf{dot-product} is working (zero and maximal over a span of 90 degrees).  But a dot-product of which two quantities?
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+Electric flux:
+\begin{equation}
+\boxed{
+\Phi = \vec{E} \cdot \vec{A}} = E A \cos\theta
+\end{equation}
 Assumptions:
 \begin{itemize}
-\item Large number $N$ of molecules with mass $m$.
-\item Molecules are classical (Newton's laws)
-\item Molecules are much smaller than the container and distance between each other
-\item All collisions are elastic
+\item $\theta$ is the angle between the area vector and the field
+\item The electric field is uniform over this surface
+\item The surface is flat
 \end{itemize}
+These assumptions do not hold for any arbitrary configuration of charge and surfaces.  However, if we zoom in closely enough to an individual patch, it does. \\ \vspace{0.5cm}
+The units of electric flux are N C$^{-1}$ m$^2$.
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Momentum transfer of one molecule colliding with the wall: \\
+\begin{frame}{Gauss's Law}
+How can we obtain the flux of more complex electric fields through more complex surfaces?  Simple: zoom in, get the flux from a patch, add it to the total:
 \begin{equation}
-F_i = (mv_{x} - m(-v_{x}'))/\Delta t = \frac{2mv_x}{\Delta t}
+\Phi = \sum_i^N \vec{E}_i \cdot d\vec{A}_i
 \end{equation}
-The box has a length $l$:
-\begin{equation}
-F_i = \frac{2mv_x}{2l/v_x} = \frac{mv_x^2}{l}
-\end{equation}
+In situations like this, the summation usually becomes an integral if we make $dA$ small and $N$ very large.  That is, break the surface into many small patches.  But now we are dealing with two vectors, $\vec{E}$ and $d\vec{A}$...
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Now let's account for all molecules:
-\begin{equation}
-F = \frac{m}{l}\Sigma_i^N v_x^2 = \frac{Nm}{l} \bar{v_x^2}
-\end{equation}
-(That's the \textit{average} of the squared velocity).  The x-direction is not special, so we may assume $\bar{v_x^2} = \frac{1}{3}\bar{v^2}$
-\begin{equation}
-F = \frac{Nm\bar{v^2}}{3l}
-\end{equation}
-And pressure is just force per surface area:
-\begin{equation}
-pA = \frac{Nm\bar{v^2}}{3l}
-\end{equation}
-Now we realize that $Al = V$...
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Now we realize that $Al = V$...
-\begin{equation}
-pV = \frac{Nm\bar{v^2}}{3} = \frac{2}{3} N \left(\frac{1}{2}\right) m \bar{v^2}
-\label{eq:soHot}
-\end{equation}
-Now, use the \textit{equipartition theorem}, assuming three degrees of freedom per molecule (three dimensions of velocity):
-\begin{equation}
-\bar{K} = \frac{3}{2}kT
-\end{equation}
-Substituting the kinetic energy into Eq. \ref{eq:soHot}, we find
+\begin{frame}{Gauss's Law}
 \begin{equation}
 \boxed{
-pV = NkT}
+\Phi = \int_{\rm S} \vec{E} \cdot d\vec{A}} \label{eq:flux}
 \end{equation}
-The Ideal Gas Law.
+Equation \ref{eq:flux} is known as a \textit{surface integral.}  We can do these!  Let's try an easy one.  Let $\vec{E} = E_0 x \hat{k}$, and $S$ be a square of width $x_0$ and height $y_0$ in the x-y plane. \\ \vspace{0.5cm}
+\textbf{Group board exercise:} Compute the electric flux $\Phi$, and check the units to make sure they are correct.
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-We need a new unit, a new \textit{scale}, since the number of molecules is so large.  How about the number of carbon atoms in 12 grams of carbon-12 (the most common isotope)? \\ \vspace{0.5cm}
-Let's call the number of molecules $N_{\rm A}$ in 12 grams of carbon a \alert{\textit{mole}}, and let $n = N/N_{\rm A}$.  If the \alert{Gas constant} $R = kN_{\rm A}$, then the Ideal Gas Law says
-\begin{equation}
-pV = nRT
-\end{equation}
-where $n$ is the number of moles and $R = kN_A = 8.31$ J/mole/Kelvin $\approx 2$ cal/mole/Kelvin.
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Guess what's about to happen?  A ton of problems with the Idea Gas Law?  You're right! \\ \vspace{0.5cm}
-If we have a \textit{1 liter} ($10^{-3}$ m$^3$) vessel of argon at a temperature of 300 K, what should the pressure be, if there are only 0.3 moles in the vessel?
+\begin{frame}{Gauss's Law}
+$\Phi = \frac{1}{2} E_0 y_0 x_0^2$.  (This has units of electric field times area).  Which of the following would increase the flux?
 \begin{itemize}
-\item A: 0.7 atm
-\item B: 7 atm
-\item C: 70 atm
-\item D: 700 atm
+\item A: If $x_0$ or $y_0$ were to grow larger
+\item B: If $E_0$ were to grow larger
+\item C: If $\vec{E}$ were directed at an angle to the z-axis
+\item D: Both A and B
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-How many air molecules are in a liter of air? ($p = 1$ atm = 100 kPa, $V = 10^{-3}$ m$^3$, $R = 8.31$ J/mole/Kelvin, $T = 300$ K).
+\begin{frame}{Gauss's Law}
+Imagine now that there is another, identical surface \textit{above} the first surface, but it is \textit{upside-down}.  The electric field passes through both surfaces.  What is the total flux, the sum of the fluxes through both surfaces?
 \begin{itemize}
-\item A: $3 \times 10^{21}$
-\item B: $3 \times 10^{22}$
-\item C: $6 \times 10^{21}$
-\item D: $6 \times 10^{22}$
-\end{itemize}
-Precise measurement of Avogadro's Number $N_A = 6.02 \times 10^{23}$ molecules.
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-PhET Simulation:
-\url{https://phet.colorado.edu/en/simulation/gas-properties} \\ \vspace{0.5cm}
-I would like you to measure \textbf{\alert{Boltzmann's Constant, $k_{\rm B}$}}, using the idea gas law and the PhET simulation.
-\begin{itemize}
-\item $pV = Nk_{\rm B}T$
-\item $N$ is calibrated on right side
-\item $p$ and $T$ are measurements
-\item Assume $V = Al$.  The ruler can measure $l$, and assume $A$ is (35 nm)$^2$.
-\item You can independently adjust the temperature by adding heat at the bottom.
-\end{itemize}
-Separately, confirm Boyle's Law and Charles's Law.
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\textbf{\alert{Boltzmann's Constant, $k_{\rm B}$}} is related to the gas constant $R$ by $R = N_{\rm A} k_{\rm B}$.  Electrochemical measurements and Brownian motion measurements (\textit{paper idea}) tell us that $N_{\rm A} = 6.02 \times 10^{23}$.  So $R$ involves cancellation of many orders of magnitude to have the value of 8.31 in SI units...
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Modification to Idea Gas Law: known as van der Waals equation of state.
-\begin{equation}
-\left(p + a \left(\frac{n}{V}\right)^2\right)(V-nb) = nRT
-\end{equation}
-\begin{itemize}
-\item a and b are empirical constants
-\item Same temperature for a lower pressure $\rightarrow$ molecular attractions
-\item Corrects for high density gases in which the molecule volume matters
+\item A: $\Phi = \frac{1}{2} E_0 y_0 x_0^2$
+\item B: $\Phi = E_0 y_0 x_0^2$
+\item C: $0$
+\item D: $\Phi = -\frac{1}{2} E_0 y_0 x_0^2$
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\small
+\begin{frame}{Gauss's Law}
+The answer is zero because, for the \textit{upside-down} surface, the area vector is in the direction $-\hat{k}$.  In fact, this result applies to any \textbf{closed surface}:
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{figures/p3.png}
-\caption{\label{fig:p3} The van der Waals equation of state leads to more realistic isotherms, and probes the liquid-vaper region near the critical point.}
+\includegraphics[width=0.4\textwidth]{figures/cube.png}
+\caption{\label{fig:cube} The flux through a closed surface due to an external field is zero.}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\textbf{Heat capacities of gases}: As we saw from the PhET simulation activity, we cannot just change the temperature of a gas without either the pressure or the volume changing.  To understand heat flow into gases, we need to hold these constant (theoretically).  Recall that the average energy for a molecule in a gas is 
+\begin{frame}{Gauss's Law}
+We can encapsulate this idea in the following equation:
 \begin{equation}
-E_{\rm int} = \frac{3}{2}nRT
+\boxed{
+\Phi = \oint_{\rm S} \vec{E}_{\rm ext} \cdot d\vec{A} = 0} \label{eq:ext}
 \end{equation}
-Let the \textit{molar heat capacity at constant volume} be defined in a similar way to solids:
+In general:
 \begin{equation}
-C_{\rm V} = \frac{1}{n}\frac{Q}{\Delta T}
+\boxed{
+\Phi = \oint_{\rm S} \vec{E} \cdot d\vec{A}} \label{eq:general}
+\end{equation}
+However this implies something interesting about closed surfaces.  If the flux is non-zero through a closed surface, the field cannot be an external field.  It has to be an \textit{internal field}.
+\end{frame}
+
+\begin{frame}{Gauss's Law}
+How do you make an electric field \textit{internal} to a closed surface?  How do you make an electric field in general?  \textbf{Charge.}  Charge is the origin of any electric field.
+\begin{equation}
+\boxed{
+\Phi = \oint_{\rm S} \vec{E} \cdot d\vec{A} \propto Q} \label{eq:general2}
+\end{equation}
+If the charge $Q$ is outside the surface, then by definition the field is external to the surface.  If the surface \textit{encloses the charge}, then the total flux is non-zero, and\footnote{Formal proof relies on the \textit{divergence theorem}, from Calculus III.}
+\begin{equation}
+\boxed{
+\frac{Q_{\rm enc}}{\epsilon_0} = \oint_{\rm S} \vec{E} \cdot d\vec{A}} \label{eq:gauss}
 \end{equation}
 \end{frame}
 
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-Combining these two equations, we find  
-\begin{equation}
-C_{\rm V} = \frac{3}{2}R
-\end{equation}
-$C_{\rm V}$ is independent of temperature, merely a constant of nature for idea gases. However, note that we only find the number $\frac{3}{2}$ because of the equipartition theorem while assuming only three degrees of freedom.  If we had identified more degrees of freedom, we would have drawn a different conclusion.
-\end{frame}
-
-\begin{frame}{Temperature, Heat, and the 0th Law of Thermodynamics}
-\small
-\begin{figure}
-\centering
-\includegraphics[width=0.8\textwidth]{figures/cv.png}
-\caption{\label{fig:cv} $C_{\rm V}$ for H-gas reveals molecular (atomic) nature of the gas.  The right-most temperatures correspond to a few percent of 1 Rydberg energy.}
-\end{figure}
+\begin{frame}{Gauss's Law}
+A charge $Q$ is at the origin.  Compute the electric field via Gauss's Law, at $P = (0,0,R)$. \\ \vspace{0.5cm}
+\textbf{Group board exercise.}
 \end{frame}
 
 \section{Conclusion}
 
-\begin{frame}{Unit 1 Summary}
-\textbf{Reading: Chapters 1 and 2}
+\begin{frame}{Unit 3 Summary}
+\textbf{Reading: Chapters 5-7}
 \begin{enumerate}
-\item Temperature, Heat, and the 0th Law of Thermodynamics
-\item Heat flow and transfer mechanisms
-\item Kinetic Theory of Gases
+\item Charge, Conductors and Insulators
+\item Coulomb's Law and Electric Fields
+\item E-fields of Charge Distributions
+\item Gauss's Law
 \end{enumerate}
 \end{frame}
 
 \section{Answers}
 
 \begin{frame}{Answers}
-\small
+\tiny
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item Momentum and kinetic energy are conserved for each molecule
-\item $2mv$
-\item $\alpha\exp(\alpha t)$
-\item $\exp((\alpha+\beta) t)$
-\item The increase is smaller than 10 degrees in $^{\circ}$C
-\item The increase is the same in $^{\circ}$K
-\item $35^{\circ}-40^{\circ}$C is comparable to human body temperature
-\item Answer B
+\item It is zero.
+\item Entropy has increased, but the internal energy returns to the original value
+\item 0.5
+\item The system does work equal to 0.5 liters times 1 atm
+\item +1
+\item The negative charges in the conductor move toward the positive charges in the rod.
+\item The charges accelerate towards each other.
+\item The charges $-2q$ accelerate towards the charge $+q$.
+\item They are probably $\vec{v}_{\rm i} = -\hat{i}-\hat{j}$
+\item They are probably $\vec{v}_{\rm i} = \hat{i}-\hat{j}$
+\item 45 deg
+\item Symmetry
+\item About 25 deg (26.56 degrees)
+\item Taking the value $z = R$ represents a minimum in the field strength.
+\item The field is constant.
+\item $\frac{\sigma}{\epsilon_0}$ N/C
+\item 0 N/C
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item 1 mm
-\item -10 MPa
-\item A and B
-\item Cannot determine (would have needed the heat capacity of water)
-\item The temperature change corresponding to system 2
-\item The changes corresponding to system 1 and 2 are equal
-\item Higher by a factor of 4
+\item The total charge on the ring
+\item A point charge $Q_{\rm tot}$
+\item $ab \hat{k}$
 \item Both A and B
+\item $0$
 \end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Answers}
-\small
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{itemize}
-\item The sun shining on your face, making your face feel warm
-\item $t = \frac{\rho Vcx}{kA}$
-\item Energy conservation: the heat transferred does not depend on the initial and final temperature
-\item 7 atm
-\item $3 \times 10^{22}$
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
 \end{column}
 \end{columns}
 \end{frame}
