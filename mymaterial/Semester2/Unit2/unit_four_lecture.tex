@@ -3,17 +3,17 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{tcolorbox}
-\title{Calculus-Based Physics-2: Electricity, Magnetism, and Thermodynamics (PHYS180-02): Unit 4}
+\title{Calculus-Based Physics-2: Electricity and Magnetism (PHYS180-02): Unit 2}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
 
 \begin{document}
 \maketitle
 
-\section{Unit 3 Review}
+\section{Unit 1 Review}
 
-\begin{frame}{Unit 3 Summary}
-\textbf{Reading: Chapters 5-7}
+\begin{frame}{Unit 1 Summary}
+\textbf{Reading: Chapters 5-6}
 \begin{enumerate}
 \item Charge, Conductors and Insulators
 \item Coulomb's Law and Electric Fields
@@ -22,7 +22,7 @@
 \end{enumerate}
 \end{frame}
 
-\section{Unit 3 Review Problems}
+\section{Unit 1 Review Problems}
 
 \begin{frame}{Unit 3 Review Problems}
 Suppose a charge $q$ is located at the origin.  Use Gauss' law to find the electric field.  What is the electric field?
@@ -37,9 +37,9 @@ Suppose a charge $q$ is located at the origin.  Use Gauss' law to find the elect
 \begin{frame}{Unit 3 Review Problems}
 Suppose a line of charge runs up the z-axis.  The charge per unit length is $\lambda$.  Use Gauss' law to find the electric field.  What is the electric field at a point $P = (x,0,0)$?
 \begin{itemize}
-\item A: $\vec{E} = \frac{2k\lambda}{r^2}$
-\item B: $\vec{E} = \frac{2k\lambda^2}{r^2}$
-\item C: $\vec{E} = \frac{2k\lambda}{r}$
+\item A: $\vec{E} = \frac{2k\lambda}{r^2} \hat{x}$
+\item B: $\vec{E} = \frac{2k\lambda^2}{r^2} \hat{x}$
+\item C: $\vec{E} = \frac{2k\lambda}{r} \hat{x}$
 \item D: $\vec{E} = 0$
 \end{itemize}
 \end{frame}
@@ -47,44 +47,15 @@ Suppose a line of charge runs up the z-axis.  The charge per unit length is $\la
 \section{Summary}
 
 \begin{frame}{Unit 4 Summary}
-\textbf{Reading: Chapters 7, 9, and 10}
+\textbf{Reading: Chapters 7-8}
 \begin{enumerate}
-\item \alert{Voltage and Capacitance}
-\item Ohm's Law
-\item DC circuits
-\end{enumerate}
-\end{frame}
-
-\section{JITT 1.7}
-
-\begin{frame}{JITT 1.5}
+\item Voltage
 \begin{enumerate}
-\item Suppose we have two charged plates, one with +Q and one with -Q, with a uniform electric field E in between them.  If the distance between the plates is d, what is the voltage difference between the plates?
-\item Form an analogy between voltage and potential energy from kinematics.  In this analogy, what kinematic quantity is analogous to electric field?
-\item Explain in your own works how the \alert{gradient} of a \alert{scalar field} is calculated, and how it relates to voltage and E-fields.
+\item Review of work and energy
+\item Review of conservative forces
 \end{enumerate}
-\end{frame}
-
-\begin{frame}{JITT 1.5}
-\textbf{Suppose we have two charged plates, one with +Q and one with -Q, with a uniform electric field E in between them.  If the distance between the plates is d, what is the voltage difference between the plates?} \\
-``you would use the equation Q=CV to find the voltage difference between the plates.'' \\
-``delta V= delta U/ Q'' \\
-``The voltage difference would be +Q-Q.''
-\end{frame}
-
-\begin{frame}{JITT 1.5}
-\textbf{Form an analogy between voltage and potential energy from kinematics.  In this analogy, what kinematic quantity is analogous to electric field?} \\
-``Voltage is similar to potential energy in that voltage is the potential change in charge and potential energy is the potential change in velocity. The electric field of a voltage would be similar to the gravity of a potential energy.'' \\
-``voltage is the electric potential difference, or the possible difference between two charges. This is similar to potential energy because potential energy is the possible amount of energy of an object. Gravity would be the kinematic equivalent to electric fields.'' \\
-\end{frame}
-
-\begin{frame}{JITT 1.5}
-\textbf{Explain in your own works how the \alert{gradient} of a \alert{scalar field} is calculated, and how it relates to voltage and E-fields.} \\
-``you differentiate the relationship between (delta)V (this is Voltage)  and (delta)s (this is distance). deltaV/deltas = Electric field.'' \\ \vspace{0.5cm}
-Let a scalar field be $U(x,y,z)$.  The \textit{gradient} of the scalar field is
-\begin{equation}
-\vec{\nabla} U = \frac{\partial U}{\partial x}\hat{i} + \frac{\partial U}{\partial y}\hat{j} + \frac{\partial U}{\partial z}\hat{k}
-\end{equation}
+\item Capacitance
+\end{enumerate}
 \end{frame}
 
 \section{Voltage}
@@ -113,7 +84,7 @@ For example, if the field is $E = \sigma/\epsilon_0$, and the potential energy i
 
 \begin{frame}{Voltage}
 \alert{Voltage} is analogous to potential energy in electrostatics. \\ \vspace{1cm}
-Potential energy is just an energy.  A \textit{potential} in mechanics is the potential energy per unit mass.  \textit{Voltage}, or \textit{electrostatic potential} is \textbf{\alert{potential energy per unit charge.}} \\ 
+Potential energy is just an energy.  A \textit{potential} in mechanics is the potential energy per unit mass.  \textit{Voltage}, or \textit{electrostatic potential} is \textbf{\alert{potential energy per unit charge.}} \\ \vspace{0.5cm}
 The Volt (V) is the unit of voltage, and it has units of 1 V = 1 J/C.
 \end{frame}
 
@@ -149,7 +120,7 @@ The derivative, or \textit{gradient}, of $a$ in Eq. \ref{eq:field} is analogous 
 The gradient is like a derivative, but gives you the proper direction wherever you are.
 \begin{equation}
 \boxed{
-\vec{\nabla} V = \vec{E} = -\frac{\partial V}{\partial x}\hat{i}-\frac{\partial V}{\partial y}\hat{j}-\frac{\partial V}{\partial z}\hat{k}}
+-\vec{\nabla} V = \vec{E} = -\frac{\partial V}{\partial x}\hat{i}-\frac{\partial V}{\partial y}\hat{j}-\frac{\partial V}{\partial z}\hat{k}}
 \end{equation}
 \end{frame}
 
@@ -159,7 +130,7 @@ Suppose the voltage due to some charge distribution is $V(x,y,z) = ax+b$.  What 
 \item A: $\vec{E} = a\hat{j}$
 \item B: $\vec{E} = a\hat{k}$
 \item C: $\vec{E} = b\hat{i}$
-\item D: $\vec{E} = a\hat{i}$
+\item D: $\vec{E} = -a\hat{i}$
 \end{itemize}
 \end{frame}
 
