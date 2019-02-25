@@ -357,6 +357,113 @@ So the capacitance depends on the permittivity of free space, the area, and the 
 \textbf{Create a simple circuit with capacitors}, and a battery to charge them.  How much total charge is stored?  Exchange your design with another group, and solve each others' problem.
 \end{frame}
 
+\section{The Cylindrical Capacitor and Coaxial Cables}
+
+\begin{frame}{The Cylindrical Capacitor and Coaxial Cables}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/cyl.png}
+\caption{\label{fig:cyl} A cylindrical capacitor, as a model for a coaxial cable.  There is an inner radius and an outer radius, with our Gaussian surface drawn in between the two conductors.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{The Cylindrical Capacitor and Coaxial Cables}
+Recall that
+\begin{align}
+Q &= \Delta VC \\
+\Delta V &= - \int_{R_1}^{R_2} \vec{E} \cdot d\vec{r}
+\end{align}
+\begin{itemize}
+\item What is the electric field $\vec{E}$ of a section of this coaxial cable of length $l$? (\textit{Recall from warm-up.}).
+\item What if we integrate from positive charge (inner radius) to negative charge (outer)? \textbf{Observe on board.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Cylindrical Capacitor and Coaxial Cables}
+Thus we have the capacitance per unit length:
+\begin{equation}
+\boxed{
+\frac{C}{l} = \frac{2\pi\epsilon_0}{\ln(R_2/R_1)}
+}
+\end{equation}
+What are the units of $\epsilon_0$?
+\begin{itemize}
+\item A: F/m$^2$
+\item B: F/m
+\item C: F/$\ln(m)$
+\item D: F
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Cylindrical Capacitor and Coaxial Cables}
+Thus we have the capacitance per unit length:
+\begin{equation}
+\boxed{
+\frac{C}{l} = \frac{2\pi\epsilon_0}{\ln(R_2/R_1)}
+}
+\end{equation}
+Suppose the cap per unit length is 0.1 nF, and we \textit{square} $R_2/R_1$.  What is the new cap per unit length?
+\begin{itemize}
+\item A: 0.1 nF
+\item B: 0.05 nF
+\item C: 0.2 nF
+\item D: 0 nF
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Cylindrical Capacitor and Coaxial Cables}
+Thus we have the capacitance per unit length:
+\begin{equation}
+\boxed{
+\frac{C}{l} = \frac{2\pi\epsilon_0}{\ln(R_2/R_1)}
+}
+\end{equation}
+Suppose the cap per unit length is 0.1 nF, and we \textit{triple} $\epsilon_0$ in some way.  What is the new cap per unit length?
+\begin{itemize}
+\item A: 0.1 nF
+\item B: 0.2 nF
+\item C: 0.3 nF
+\item D: 0.5 nF
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Cylindrical Capacitor and Coaxial Cables}
+(Preview of Unit 3).  Suppose we have a system that obeys
+\begin{equation}
+v(t) = R \frac{dQ}{dt} = i(t) R
+\end{equation}
+This is called \textbf{Ohm's law.}
+\begin{figure}
+\centering
+\includegraphics[width=0.55\textwidth]{figures/iVCurve.pdf}
+\caption{\label{fig:iv} A simple circuit with a resistor element, some voltage, and \textit{ground.} This just means that 0V is at the negative terminal.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{The Cylindrical Capacitor and Coaxial Cables}
+(Preview of Unit 3).  What if we add a capacitor?
+\begin{equation}
+V_0 = R \frac{dQ}{dt} +\frac{Q}{C}
+\end{equation}
+This is called \textbf{Ohm's law.}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/iVCurve8.pdf}
+\caption{\label{fig:iv2} A simple circuit with a resistor and capacitor elements.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{The Cylindrical Capacitor and Coaxial Cables}
+(Preview of Unit 3).  What if we add a capacitor?
+We can show that
+\begin{equation}
+V_{out}(t) = V_0 \exp(-t/\tau)
+\end{equation}
+with $\tau = RC$.  Thus, if we send a signal $V_{in}$ down a ``very long'' coaxial cable, with some capacitance per unit length, it will not exit the cable. \\ \vspace{0.5cm}
+For example: \url{https://www.pasternack.com/images/ProductPDF/LMR-400.pdf} \\ \vspace{0.5cm}
+What is the attenuation per 100 m of this cable at 150 MHz?
+\end{frame}
+
 \section{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
 
 \begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
@@ -599,46 +706,6 @@ i(t) = i_0 e^{-t/\tau}
 \end{frame}
 
 \section{Current}
-
-\begin{frame}{JITT 1.8}
-\begin{enumerate}
-\item Car batteries are rated in ampere-hours (A h). To what physical quantity do ampere-hours correspond (voltage, current, charge, energy, power,...)?
-\item When working with high-power electric circuits, it is advised that whenever possible, you work “one-handed” or “keep one hand in your pocket.” Why is this a sensible suggestion?
-\item Does the resistance of an object depend on the path current takes through it? Consider, for example, a rectangular bar—is its resistance the same along its length as across its width?
-\item How many electrons flow through a point in a wire in 3.00 s if there is a constant current of I = 4.00 A ?
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{JITT 1.8}
-\textbf{Car batteries are rated in ampere-hours (A h). To what physical quantity do ampere-hours correspond (voltage, current, charge, energy, power,...)?} \\
-``They are rated to charge.'' \\
-``1 ampere an hour is equal to 3600 coulomb.'' \\
-``Ampere hours equals voltage.''
-\end{frame}
-
-\begin{frame}{JITT 1.8}
-\textbf{When working with high-power electric circuits, it is advised that whenever possible, you work “one-handed” or “keep one hand in your pocket.” Why is this a sensible suggestion?} \\
-``Keep you grounded.'' \\
-``So you never complete the current your working with so you are not electrocuted.'' \\
-``to keep you grounded, your body has a lot more resistance, and you can't complete the circuit when you only work with one hand.''
-\end{frame}
-
-\begin{frame}{JITT 1.8}
-\textbf{Does the resistance of an object depend on the path current takes through it? Consider, for example, a rectangular bar—is its resistance the same along its length as across its width?} \\
-``yes, the resistance along the length would be greater than that along the width.'' \\
-``resistance depends on the path you take through and object since the equation R=p(L/A) depends on a length L to find Resistance.  The resistance is not the same when you go through the length and width. The length would produce a higher resistance.''
-``Yes it still has the same resistance.''
-\end{frame}
-
-\begin{frame}{JITT 1.8}
-\textbf{How many electrons flow through a point in a wire in 3.00 s if there is a constant current of I = 4.00 A ?} \\
-\begin{itemize}
-\item A: $6 \times 10^{18}$
-\item B: $6 \times 10^{19}$
-\item C: $6 \times 10^{20}$
-\item D: $6 \times 10^{21}$
-\end{itemize}
-\end{frame}
 
 \begin{frame}{Current}
 \underline{Notions of current:}
@@ -906,7 +973,9 @@ Given that we found a 12\% increase in the resistance of the wire in the prior e
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item ...
+\item F/m
+\item 0.05 nF
+\item 0.3 nF
 \end{itemize}
 \end{column}
 \end{columns}
