@@ -47,9 +47,12 @@
 \begin{enumerate}
 \item \textbf{Chapter 5, Electrostatics}
 \begin{enumerate}
-\item Protons in an atomic nucleus are typically $10^{-15}$ m apart. What is the electric force of repulsion between nuclear protons? \\ \vspace{2cm}
-\item A charge $q_1 = 20 \mu$C and a charge $q_2 = 10 \mu$C are 1.0 m apart.  What is the force on a positive test charge halfway between them, and in which direction is the force? \\ \vspace{2cm}
-\item Suppose the ``deflector'' in Fig. \ref{fig:e1} is $d=12$ cm long.  If a proton (mass given in Memory Bank) has an initial speed of $v=1.5 \times 10^{7}$ m/s, and the field depicted is $4.0 \times 10^5$ N/C, by how much has it been deflected?  (What is $d$?). \\ \vspace{2cm}
+\item Protons in an atomic nucleus are typically $10^{-15}$ m apart. What is the electric force of repulsion between nuclear protons? \\ \\\
+Using $F = \frac{k q_e^2}{r^2}$, we find $F \approx 230$ N. \\
+\item A charge $q_1 = 20 \mu$C and a charge $q_2 = 10 \mu$C are 1.0 m apart.  What is the force on a positive test charge halfway between them, and in which direction is the force? \\ \\
+The electric field points away from $q_1$ and has a magnitude of $3.6\times 10^5$ N/C.  Suppose the test charge has a charge $q$.  The force is $F = qE$. \\
+\item Suppose the ``deflector'' in Fig. \ref{fig:e1} is $d=12$ cm long.  If a proton (mass given in Memory Bank) has an initial speed of $v=1.5 \times 10^{7}$ m/s, and the field depicted is $4.0 \times 10^5$ N/C, by how much has it been deflected?  (What is $d$?). \\ \\
+Using kinematics and the fact that $F=qE$, $d = \frac{1}{2} \frac{qE}{m}\left(\frac{\Delta x}{v}\right)^2 \approx 1.15$ mm.
 \begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{figures/e1.png}
@@ -58,19 +61,26 @@
 \end{enumerate}
 \item \textbf{Chapter 6, Gauss' Law}
 \begin{enumerate}
-\item Show that the field a distance $z$ above an infinite line of charge with charge density $\lambda$ (C/m) is $\vec{E}(z) = \frac{2k\lambda}{z}\hat{z}$.  Use a Gaussian surface that has \textit{cylindrical symmetry.} \\ \vspace{2cm}
+\item Show that the field a distance $z$ above an infinite line of charge with charge density $\lambda$ (C/m) is $\vec{E}(z) = \frac{2k\lambda}{z}\hat{z}$.  Use a Gaussian surface that has \textit{cylindrical symmetry.} \\ \\
+See Figure 6.29 of the text. \\
 \end{enumerate}
 \item \textbf{Chapter 7, Voltage}
 \begin{enumerate}
-\item A lightning bolt strikes a tree, moving 20.0 C of charge through a potential difference of $10^8$ Volts. What energy was dissipated? \\ \vspace{2cm}
-\item Consult again Fig. \ref{fig:e1}.  If the plates are 6 cm apart, and the field is still $4.0 \times 10^5$ N/C, what is the voltage difference between the plates? \\ \vspace{2cm}
+\item A lightning bolt strikes a tree, moving 20.0 C of charge through a potential difference of $10^8$ Volts. What energy was dissipated? \\ \\
+$U = 2 \times 10^{9}$ J, or 2 GJ. \\
+\item Consult again Fig. \ref{fig:e1}.  If the plates are 6 cm apart, and the field is still $4.0 \times 10^5$ N/C, what is the voltage difference between the plates? \\ \\
+Using $E = \Delta V/\Delta x \rightarrow V = E\Delta x$, we find 24 kV. \\
 \end{enumerate}
 \item \textbf{Chapter 8, Capacitance}
 \begin{enumerate}
-\item Find the charge stored when 5.0 V is applied to an 8.00 pF capacitor. \\ \vspace{1cm}
-\item Find the charge stored when 5.0 V is applied to two 8.00 pF capacitors \textit{in parallel}. \\ \vspace{1cm}
-\item Find the charge stored when 5.0 V is applied to two 8.00 pF capacitors \textit{in series}. \\ \vspace{1cm}
-\item Find the total capacitance in the circuit diagram of Fig. \ref{fig:c1}. \\ \vspace{2cm}
+\item Find the charge stored when 5.0 V is applied to an 8.00 pF capacitor. \\ \\
+Using $q = CV$, we find 40 pC. \\
+\item Find the charge stored when 5.0 V is applied to two 8.00 pF capacitors \textit{in parallel}. \\ \\
+80 pC, from scaling. \\
+\item Find the charge stored when 5.0 V is applied to two 8.00 pF capacitors \textit{in series}. \\ \\
+20 pC, from scaling. \\
+\item Find the total capacitance in the circuit diagram of Fig. \ref{fig:c1}. \\ \\
+The two capacitors on the left side are added in series, and that is added in parallel with the right-hand capacitor.  The result is $2.8 \mu$F. \\
 \begin{figure}
 \centering
 \includegraphics[width=0.4\textwidth]{figures/c1.png}
@@ -79,9 +89,14 @@
 \end{enumerate}
 \item \textbf{Chapter 9, Current and Ohm's law}
 \begin{enumerate}
-\item What current passes through a resistor with $R=1$ k$\Omega$, if the voltage applied is 12 V? \\ \vspace{1cm}
-\item What current passes through two resistors with $R=1$ k$\Omega$, if the voltage applied is 12 V, and the resistors are connected \textit{in series}? Draw a circuit diagram. \\ \vspace{2cm}
-\item What current passes through two resistors with $R=1$ k$\Omega$, if the voltage applied is 12 V, and the resistors are connected \textit{in parallel}? Draw a circuit diagram. \\ \vspace{2cm}
+\item What current passes through a resistor with $R=1$ k$\Omega$, if the voltage applied is 12 V? \\ \\
+Using Ohm's Law, we find 12 mA.
+\\
+\item What current passes through two resistors with $R=1$ k$\Omega$, if the voltage applied is 12 V, and the resistors are connected \textit{in series}? Draw a circuit diagram. \\ \\
+6 mA, from scaling, and the fact that the total resistance has doubled.
+\\
+\item What current passes through two resistors with $R=1$ k$\Omega$, if the voltage applied is 12 V, and the resistors are connected \textit{in parallel}? Draw a circuit diagram. \\ \\
+24 mA, from scaling, and the fact that the total resistance has been halved relative to the first question.
 \end{enumerate}
 \end{enumerate}
 \end{document}
