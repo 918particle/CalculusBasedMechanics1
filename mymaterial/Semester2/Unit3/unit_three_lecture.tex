@@ -429,6 +429,74 @@ P = IV = \frac{I^2}{R}
 \textbf{Practical example: home energy consumption.} (Example 9.10).
 \end{frame}
 
+\section{Batteries and Internal Resistance}
+
+\begin{frame}{Batteries and Internal Resistance}
+\small
+\begin{enumerate}
+\item A battery is a series of electrochemical \textit{cells}.
+\item The \textbf{cathode} gives electrons to the \textbf{anode}.
+\item Molecular acid-base reactions ``pump'' charge to a higher potential at the cost of some internal resistance.
+\end{enumerate}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/batt.png}
+\caption{\label{fig:batt} A simplified view of a liquid Pb-acid battery.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Batteries and Internal Resistance}
+\small
+\begin{enumerate}
+\item A battery is a series of electrochemical \textit{cells}.
+\item The \textbf{cathode} gives electrons to the \textbf{anode}.
+\item Molecular acid-base reactions ``pump'' charge to a higher potential at the cost of some internal resistance.
+\end{enumerate}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/batt2.png}
+\caption{\label{fig:batt2} A microscopic picture of Fig. \ref{fig:batt}.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Batteries and Internal Resistance}
+\small
+\begin{enumerate}
+\item The \textit{internal resistance} of a battery obeys the following model.
+\item $V_{term} = \epsilon - I r_{int}$
+\end{enumerate}
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth]{figures/batt3.png}
+\caption{\label{fig:batt3} A good model of battery internal resistance.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Batteries and Internal Resistance}
+\small
+\begin{enumerate}
+\item The \textit{internal resistance} of a battery obeys the following model.
+\item $V_{term} = \epsilon - I r_{int}$.  A battery may be \textit{rated} at $\epsilon$, but not produce $\epsilon$.
+\item To most accurately predict current flow, both $r$ and $R$ must be included (note the labeling of the circuit).
+\end{enumerate}
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth]{figures/batt4.png}
+\includegraphics[width=0.5\textwidth]{figures/batt5.png}
+\caption{\label{fig:batt4} A good model of battery internal resistance.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Batteries and Internal Resistance}
+A 5V battery powers a motor with effective resistance of 45 $\Omega$.  If the current draw is 100 mA, what is the internal battery resistance? (\textit{Hint:} draw a diagram and go around the loop).
+\begin{itemize}
+\item A: 3 $\Omega$
+\item B: 30 $\Omega$
+\item C: 5 $\Omega$
+\item D: 50 $\Omega$
+\end{itemize}
+\end{frame}
+
 \section{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
 
 \begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
@@ -473,8 +541,8 @@ Resistors, capacitors, voltages, and current can be combined conceptually to for
 \begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
 Kirchhoff's rules:
 \begin{enumerate}
-\item Summing the voltage in a loop must equal zero ($\vec{E}$-fields are conservative).
-\item Current entering an leaving a node is conserved.
+\item Summing the voltage in a loop must equal zero ($\vec{E}$-fields are conservative, energy is conserved).
+\item Current through a node is conserved (charge is conserved).
 \end{enumerate}
 \textbf{Observe on board.}
 \end{frame}
@@ -507,6 +575,59 @@ Two capacitors have 1 nF each.  What is the effective capacitance if they are ad
 \item C: 1 nF
 \item D: 2 nF
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+\small
+\begin{enumerate}
+\item Summing the voltage in a loop must equal zero ($\vec{E}$-fields are conservative, energy is conserved).
+\item Current through a node is conserved (charge is conserved).
+\end{enumerate}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/batt6.png}
+\caption{\label{fig:batt5} Using a loop to solve for the current, $I$.  The resistor rule for series resistors comes out of the calculation (observe on board).}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+\small
+\begin{enumerate}
+\item Summing the voltage in a loop must equal zero ($\vec{E}$-fields are conservative, energy is conserved).
+\item Current through a node is conserved (charge is conserved).
+\end{enumerate}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/batt7.png}
+\caption{\label{fig:batt6} The result is a complete understanding of voltage and current in the DC circuit.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{figures/batt8.png}
+\caption{\label{fig:batt7} Loops and nodes produce a \textbf{system of equations}. The number of equations must be equal to the number of unknowns.  \textit{Pay attention to negative/positive signs for voltage and current!}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/example1026.png}
+\caption{\label{fig:batt8} (1) Label the circuit. (2) Identify nodes with current labels, and loops. (3) Apply Kirchhoff's Rules.}
+\end{figure}
+\textbf{Work together in groups at tables.} (We'll take this in steps.  First identify two loops and a node...)
+\end{frame}
+
+\section{PhET: DC Circuit Modeling}
+
+\begin{frame}{Ohm's Law, Kirchhoff's Rules and Simple Circuits}
+\textbf{Use DC circuit PhET simulation to model Fig. \ref{fig:batt8}, checking the currents $I_1$, $I_2$, and $I_3$.} \\ \vspace{1cm}
+\url{https://phet.colorado.edu/en/simulation/circuit-construction-kit-dc-virtual-lab} \\ \vspace{1cm}
+Do you obtain the same results as the example?  What is the power consumption of this circuit?
 \end{frame}
 
 \section{Graphical Analysis of Simple Circuits}
