@@ -56,7 +56,7 @@ Unlike the voltage divider, the circuits in Fig. \ref{fig:fig2} have capacitors.
 
 \section{Building a Passive Differentiator}
 
-Using the bread-board, wires, resistors, and capacitors, build a single-pole high-pass filter.  If $\omega \gg \omega_0$, the transfer function is approximately:
+Using the bread-board, wires, resistors, and capacitors, build a single-pole high-pass filter.  If $\omega \ll \omega_0$, the transfer function is approximately:
 
 \begin{equation}
 \frac{\tilde{v}_{out}(\omega)}{\tilde{v}_{in}(\omega)} \approx \frac{\omega}{-j\omega_0} = j\omega \tau = j\omega RC
@@ -83,7 +83,7 @@ Equation \ref{eq:eq20} shows that for some frequencies, the circuit output is th
 \textbf{Questions:}
 \begin{enumerate}
 \item Explain the shape of the \textit{filtered} signal relative to the \textit{unfiltered} signal. What should the derivative of the triangle wave be? \\ \vspace{1.5cm}
-\item What is the \textit{gain} of your filtered signal?  It should be a number close to the time constant of your circuit. \\ \vspace{1.5cm}
+\item What is the \textit{gain} of your filtered signal?  It should be a number close to the time constant of your circuit. Is the gain positive or negative? \\ \vspace{1.5cm}
 \end{enumerate}
 
 \section{Building a Passive Integrator}
@@ -115,7 +115,7 @@ Equation \ref{eq:eq22} shows that for some frequencies, the circuit output is th
 \textbf{Questions:}
 \begin{enumerate}
 \item Explain the shape of the \textit{filtered} signal relative to the \textit{unfiltered} signal. What should the integral of the square wave be? \\ \vspace{1.5cm}
-\item What is the \textit{gain} of your filtered signal?  It should be a number close to the inverse of the time constant of your circuit. \\ \vspace{1.5cm}
+\item What is the \textit{gain} of your filtered signal?  It should be a number close to the inverse of the time constant of your circuit. Is the gain positive or negative? \\ \vspace{1.5cm}
 \end{enumerate}
 
 \end{document}
