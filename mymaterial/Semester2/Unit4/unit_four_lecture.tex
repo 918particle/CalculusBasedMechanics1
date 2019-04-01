@@ -87,7 +87,7 @@ What is the maximum charge stored eventually in the capacitor?  \textit{Recall t
 
 \section{Summary}
 
-\begin{frame}{Unit 5 Summary}
+\begin{frame}{Unit 4 Summary}
 \textbf{Reading: Chapters 11-12} \\ \vspace{0.5cm}
 \textit{This class: 11.1-4}
 \begin{enumerate}
@@ -468,18 +468,18 @@ Suppose a power supply provides the current in the previous example.  What if th
 \end{frame}
 
 \begin{frame}{Forces on Current-Carrying Conductors}
-If the wire is raised, what is doing the work to raise it?
+If the wire rises, what is doing the work to raise it?
 \begin{itemize}
-\item A: The wire will rise.
-\item B: The wire will fall.
-\item C: The magentic field will decrease.
-\item D: Nothing.
+\item A: The B-field
+\item B: The current
+\item C: The battery
+\item D: Gravity
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Forces on Current-Carrying Conductors}
 \small
-\textbf{Group board exercise}: Suppose the current is raised from 1 amp to 2 amps for 0.1 seconds.  By how much will the wire be raised?  What is doing the work to raise this object?
+\textbf{Group board exercise}: Suppose the current is raised from 1 amp to 2 amps for 0.1 seconds.  By how much will the wire be raised?  \textit{Hint: you can obtain the acceleration from the \textbf{net} force, and then obtain the displacement.}
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{figures/leads.png}
@@ -524,12 +524,76 @@ If the wire is raised, what is doing the work to raise it?
 Let a single current loop of current $I$ and area $\vec{A} = A \hat{n}$ exist in a uniform magnetic field $\vec{B}$.  The torque $\tau$ on the loop is
 \begin{equation}
 \boxed{
-\tau = \mu \times \vec{B} \label{eq:torque}
+\tau = \vec{\mu} \times \vec{B} \label{eq:torque}
 }
 \end{equation}
-In Eq. \ref{eq:torque}, the quantity $\vec{mu} = I\vec{A}$ is called the \textit{magnetic moment.} \\ \vspace{0.2cm}
-\textbf{Now that we can change voltage to torque, all we need for a motor is a uniform magnetic field.  How do we make one of those...?}
+In Eq. \ref{eq:torque}, the quantity $\vec{\mu} = I\vec{A}$ is called the \textit{magnetic dipole moment.}
+\begin{itemize}
+\item $\vec{p} = q\vec{d}$ ... $\vec{\mu} = I\vec{A}$.
+\item $\vec{\tau}_E = \vec{p} \times \vec{E}$ ... $\vec{\tau}_B = \vec{\mu} \times \vec{B}$
+\end{itemize}
+\textbf{How do we make a uniform $\vec{B}-field$?}...Postpone this to discuss one more effect: \textit{The Hall Effect}
 \end{frame}
+
+\section{The Hall Effect}
+
+\begin{frame}{The Hall Effect}
+Negative charge flows in conductors.
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/Hall.png}
+\caption{\label{fig:Hall} The Hall effect is an important way to establish that what we call \textit{negative charge} is actually flowing in conductors.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{The Hall Effect}
+Negative charge flows in conductors. \\ \vspace{0.5cm}
+``Therefore, by simply measuring the sign of V, we can determine the sign of the majority charge carriers in a metal.
+Hall potential measurements show that electrons are the dominant charge carriers in most metals. However, Hall potentials
+indicate that for a few metals, such as tungsten, beryllium, and many semiconductors, the majority of charge carriers are
+positive. It turns out that conduction by positive charge is caused by the migration of missing electron sites (called holes) on
+ions.''
+\end{frame}
+
+\begin{frame}{The Hall Effect}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/Hall2.png}
+\caption{\label{fig:Hall2} An example of a Hall measurement, with some typical numbers.}
+\end{figure}
+\begin{itemize}
+\item $I = 100$ A
+\item $B = 1.5$ T
+\item $l = 1.0\times 10^{-2}$ m
+\item $n = 5.9 \times 10^{28}$ m$^{-3}$, $e = 1.6 \times 10^{-19}$ C
+\item $A = 2.0 \times 10^{-5}$ m$^{2}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Hall Effect}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/Hall3.png}
+\caption{\label{fig:Hall3} A Hall measurement that is used to measure fluid flow.}
+\end{figure}
+\textbf{Group exercise:} A Hall effect flow probe is placed on an artery, applying a 0.1 T magnetic field across it, in a setup similar to that in Fig. \ref{fig:Hall3}. What is the blood velocity, given the vessel’s inside diameter is 4.00 mm and the Hall voltage is $0.8 \mu V$?
+\end{frame}
+
+\begin{frame}{Unit 4 Summary}
+\textit{Last week:} Chapter 11 \\
+\textit{This week:} Chapter 12 \\
+\textbf{Next class: 12.1-12.4}
+\begin{enumerate}
+\item 12.1: The Biot-Savart Law
+\item 12.2: Thin straight wire
+\item 12.3: Two parallel currents
+\item 12.4: Current loops
+\end{enumerate}
+\textit{Friday's class:} read sections 12.5-7
+\end{frame}
+
 
 \section{PHeT: Electromagnets}
 
@@ -601,13 +665,15 @@ B &= \mu_0 n I
 \item B
 \item A
 \item B
-\item B
+\item D
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \item C
 \item D
+\item A
+\item C
 \end{itemize}
 \end{column}
 \end{columns}
