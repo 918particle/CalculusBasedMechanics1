@@ -617,7 +617,7 @@ Follow the link: \\ \vspace{0.5cm}
 \textbf{Electromagnets.}
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{figures/phetemmag.png}
+\includegraphics[width=0.55\textwidth]{figures/phetemmag.png}
 \caption{\label{fig:phetemmag} The electromagnet converts charge to magnetic field strength.}
 \end{figure}
 \end{frame}
@@ -635,6 +635,98 @@ B &= \mu_0 n I
 \end{itemize}
 \end{frame}
 
+\section{The Biot-Savart Law}
+
+\begin{frame}{The Biot-Savart Law}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=The Biot-Savart Law]
+\alert{Let a current $I$ exist along a line segment $d\vec{l}$ located a displacement $\vec{r}$ from an observation point.  The magnetic field contribution from this current element is
+\begin{equation}
+d\vec{B} = \frac{\mu_0}{4\pi} \frac{Id\vec{l} \times \hat{r}}{r^2}
+\label{eq:biot}
+\end{equation}}
+\end{tcolorbox}
+\begin{itemize}
+\item Integrating this expression properly yields the total magnetic field at a given point
+\item We have to take advantage of symmetries just like Coulomb's law
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Biot-Savart Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.55\textwidth]{figures/biot1.png}
+\caption{\label{fig:biot1} The angle $\theta$ is between $\hat{r}$ and $d\vec{l}$, as shown.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{The Biot-Savart Law}
+Which expression is equal to the magnitude of $Id\vec{l} \times \hat{r}$?
+\begin{itemize}
+\item A: $Idlr$
+\item B: $Idlr\sin(\theta)$
+\item C: $Idl\sin(\theta)$
+\item D: $I\sin(\theta)$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Biot-Savart Law}
+If the B-field due to a line-segment of current is 1.0 Gauss at 1cm, what is the value of the B-field 10 cm from the line-segment, for the same orientation?
+\begin{itemize}
+\item A: 0.1 Gauss
+\item B: 0.05 Gauss
+\item C: 1.0 Gauss
+\item D: 0.01 Gauss
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Biot-Savart Law}
+If the B-field due to a line-segment of current is 1.0 Gauss at 1cm, and $\hat{r}$ is perpendicular to $d\vec{l}$, what is the B-field when $d\vec{l}$ is \textit{parallel} to $d\vec{l}$?
+\begin{itemize}
+\item A: 0.0 Gauss
+\item B: 0.05 Gauss
+\item C: 1.0 Gauss
+\item D: 0.01 Gauss
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Biot-Savart Law}
+If the B-field due to a line-segment of current is 1.0 Gauss for a current of 0.5 A, what is the B-field when the current is increased to 1.0 A?
+\begin{itemize}
+\item A: 0.0 Gauss
+\item B: 0.02 Gauss
+\item C: 2.0 Gauss
+\item D: 0.02 Gauss
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Biot-Savart Law}
+If the B-field due to a line-segment of current is 1.0 Gauss for a current of 0.5 A at a distance of 10 cm, what is the B-field when the current is increased to 1.0 A, and the distance is decreased to 1 cm?
+\begin{itemize}
+\item A: 20 Gauss
+\item B: 200 Gauss
+\item C: 500 Gauss
+\item D: 1000 Gauss
+\end{itemize}
+\end{frame}
+
+\section{Biot-Savart Example: The thin straight wire}
+
+\begin{frame}{Biot-Savart Example: The thin straight wire}
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{figures/biot2.png}
+\caption{\label{fig:biot2} Observe on board the derivation of the formula for $\vec{B}$ at a point $P$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Biot-Savart Example: The three straight wires}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{figures/biot3.png}
+\caption{\label{fig:biot3} Derive the magnitude and direction for $\vec{B}$ at a point $P$, if the sides of the square are 1cm and the currents are each 2.0 A.}
+\end{figure}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Unit 5 Summary}
@@ -647,7 +739,7 @@ B &= \mu_0 n I
 \end{enumerate}
 \end{frame}
 
-\section{Answers}
+\section{Answers - Chapter 11}
 
 \begin{frame}{Answers}
 \small
@@ -674,6 +766,28 @@ B &= \mu_0 n I
 \item D
 \item A
 \item C
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Answers - Chapter 12}
+
+\begin{frame}{Answers}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item C
+\item D
+\item A
+\item C
+\item B
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item ...
 \end{itemize}
 \end{column}
 \end{columns}
