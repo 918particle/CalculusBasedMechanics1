@@ -719,6 +719,14 @@ If the B-field due to a line-segment of current is 1.0 Gauss for a current of 0.
 \end{figure}
 \end{frame}
 
+\begin{frame}{Biot-Savart Example: The thin straight wire}
+The magnetic field a distance R from a long thin straight wire carrying current I is
+\begin{equation}
+\vec{B} = \frac{\mu_0 I}{2\pi R} \hat{\phi}
+\end{equation}
+The direction is in a right-handed sense around the wire.
+\end{frame}
+
 \begin{frame}{Biot-Savart Example: The three straight wires}
 \begin{figure}
 \centering
@@ -727,15 +735,121 @@ If the B-field due to a line-segment of current is 1.0 Gauss for a current of 0.
 \end{figure}
 \end{frame}
 
+\section{Biot-Savart Example: The current loop}
+
+\begin{frame}{Biot-Savart Example: The thin straight wire}
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{figures/magloop.png}
+\caption{\label{fig:biot4} Observe on board the derivation of the formula for $\vec{B}$ at a point $P$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Biot-Savart Example: The three straight wires}
+Let a current loop with magnetic moment $\vec{\mu}$ and radius $R$ carry a current I.  The B-field along the loop axis at a distance $y$ from the center is
+\begin{equation}
+\vec{B} = \frac{\mu_0 \vec{\mu}}{2\pi(y^2+R^2)^{3/2}}
+\end{equation}
+At the center of the loop, the field simplifies to
+\begin{equation}
+\vec{B}_{center} = \frac{\mu_0 I}{2 R}\hat{\mu}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Biot-Savart Example: The current loop}
+Let a current loop be oriented in the x-y plane, with the current proceding counter-clockwise as we look down on it from positive z positions.  In which direction does the magnetic moment point?
+\begin{itemize}
+\item A: $-\hat{z}$
+\item B: $\hat{y}$
+\item C: $\hat{z}$
+\item D: in x-y plane
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Biot-Savart Example: The current loop}
+The current is 0.5 A, the radius is 2 cm.  What is the B-field magnitude at the center of the loop?
+\begin{itemize}
+\item A: 0.16 Gauss
+\item B: 1.6 Gauss
+\item C: 0.016 Tesla
+\item D: 1.6 Tesla
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Biot-Savart Example: The current loop}
+Two identical current loops are oriented with centers at $x=y=0$, but with different z values.  If the currents spin in opposite directions, which of the following is true of the B-field at a point half-way between the loop centers?
+\begin{itemize}
+\item A: It points in the $+\hat{z}$ direction
+\item B: It points in the $-\hat{z}$ direction
+\item C: It points in the $+\hat{y}$ direction
+\item D: It is 0.0 T
+\end{itemize}
+\end{frame}
+
+\section{Lab Activity: The First Electromagnet}
+
+\begin{frame}{Lab Activity: The First Electromagnet}
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{figures/coil.jpg}
+\caption{\label{fig:lab1coil} The electromagnetic coil has $N$ turns, and we must figure out how many.  Which formula is appropriate for describing the magnetic field at the center?}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Lab Activity: The First Electromagnet}
+\textbf{Parts required:}
+\begin{enumerate}
+\item Vernier LabPro and magnetic probe attachment
+\item Desktop PC with Logger Pro
+\item DC power supply (\textbf{current limiting})
+\item Red/black cables
+\item Electromagnetic coil with platform
+\item Ruler
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Lab Activity: The First Electromagnet}
+\textbf{Instructions:}
+\begin{enumerate}
+\item Connect the Vernier LabPro to the PC, and the magnetic probe to the LabPro.
+\item Launch the LoggerPro program (should be an icon on the Desktop)
+\item LoggerPro should recongnize the instrument and begin displaying magnetic field in mT (lower left)
+\item Record average magnetic field in 6 direction ($\pm x$, $\pm y$, $\pm z$ with respect to coil).  Let the z-axis be aligned with the magnetic moment of the coil. Assess the uncertainty in each direction.
+\item Use the ruler to measure the radius of the coils. Assess the uncertainty.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Lab Activity: The First Electromagnet}
+\textbf{Instructions:}
+\begin{enumerate}
+\item The DC power supply has two black knobs: voltage and current.
+\item The current knob controls the maximum current that can flow from the terminals.
+\item Connect the power supply to the coil with the red and black cables, and turn down the current knob until it reads between 0.1-0.6 amps.
+\item Use the magnetic probe to measure the magnetic field at the center of the coils.  How many turns $N$ are in the coil?
+\item Make a plot of B-field versus current.  You can fit the slope in Excel in the usual way (ask if this is unfamiliar).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Lab Activity: The First Electromagnet}
+\textbf{Instructions:}
+\begin{enumerate}
+\item Using the slope of B vs. I, derive a more precise measurement of the turns $N$ in the coil.
+\item Is there a \textit{systematic error} in the slope method?  When is B-field zero?
+\item We will need this number in subsequent labs!
+\end{enumerate}
+\end{frame}
+
 \section{Conclusion}
 
-\begin{frame}{Unit 5 Summary}
-\textbf{Reading: Chapter 11}
+\begin{frame}{Unit 4 Summary}
+\textbf{Reading: Chapters 11-12}
 \begin{enumerate}
 \item Magnetism and magnetic fields
-\item \alert{Motion of a charged particle in a magnetic field}
-\item Other forces
-\item Current loops
+\item Lorentz Force
+\item Forces on Conductors
+\item Biot-Savart Law
+\item Amp\`{e}re's Law
+\item Wires, loops, and solenoids
 \end{enumerate}
 \end{frame}
 
@@ -783,6 +897,9 @@ If the B-field due to a line-segment of current is 1.0 Gauss for a current of 0.
 \item A
 \item C
 \item B
+\item C
+\item A
+\item D
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
