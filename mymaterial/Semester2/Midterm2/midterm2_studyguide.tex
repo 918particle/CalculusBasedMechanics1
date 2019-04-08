@@ -1,35 +1,61 @@
-\title{Study Guide for Midterm 2 for Calculus-Based Physics: Electricity, Magnetism, and Thermodynamics}
+\title{Study Guide for Midterm 2 for Calculus-Based Physics: Electricity and Magnetism}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
 \date{\today}
 \documentclass[10pt]{article}
 \usepackage[a4paper, total={18cm, 27cm}]{geometry}
 \usepackage{outlines}
-\usepackage[sfdefault]{FiraSans}
-\usepackage{hyperref}
+\usepackage{graphicx}
 \begin{document}
 \maketitle
 
 \begin{enumerate}
-\item \textbf{Electrostatics}
+\item \textbf{Chapter 10: DC Circuits and Kirchhoff's Rules}
 \begin{enumerate}
-\item \textbf{Conceptual, electrostatics}: A negative charge is placed at the center of a ring of uniform positive charge. What is the motion (if any) of the
-charge? What if the charge were placed at a point on the axis of the ring other than the center? \\ \\ 
-To what concept do we always return in electrostatics and magnetostatics? \textit{Symmetry.}  The Coulomb force is attractive, but by symmetry it is equally attractive in all directions in the first state. Thus, the negative charge does not move. \\ \\
-In the second state, we must remind ourselves that \textit{symmetry} tells us that the field only depends on $z$ and not $\phi$ or $\theta$, if the negative charge is always on the axis of the ring.  Thus, the charge will be pulled into equilibrium, which is the first state, with the negative charge at the center.
-\item \textbf{Conceptual, electrostatics:} Two charges lie along the x-axis. Is it true that the net electric field always vanishes at some point (other than infinity) along the x-axis? \\ \\ 
-Given that we can have four cases of charge, let's go through each individually.  1) Both positive.  At the midpoint between the charges, the field will vanish.  2) Both negative.  At the midpoint, the field will vanish.  3) The left charge is negative, and the right charge is positive.  The field will only vanish if the charges are co-located.  4) The left charge is positive, and the right charge is negative.  Same answer as 3).
-\item A charge $+q$ is located at $P_1 = (0,0,a)$, and a charge $-q$ is located at $P_2 = (0,0,-a)$.  (a) What is the vector dipole moment, if $q = 0.5$ nC, and $a = 1$ nm?  (b) What is the torque on this dipole if the external E-field is $\vec{E} = 1 \hat{y}$ N/C? (Recall that the formula for the dipole moment is $\vec{p} = q \vec{d}$, and that the torque is $\vec{\tau} = \vec{p} \times \vec{E}$).  \\ \\
-(a) The dipole moment is a vector from the negative to the positive charge, so it points up.  $\vec{p} = q \vec{d}$.  In this case, $d = 2a = 2$ nm.  The dipole moment is $\vec{p} = \frac{1}{2} 2 \hat{z} = 1 \hat{z}$ nC nm. (b) The torque is $\vec{\tau} = \vec{p} \times \vec{E}$, and $E = 1 \hat{y}$ nN/nC.  The magnitude of the torque is $pE = 1$ nN nm, and the direction is given by $\hat{z} \times \hat{y} = -\hat{x}$, so $\vec{\tau} = -1 \hat{x}$ nN nm.
+\item 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.4\textwidth]{circuit1.png}
+\caption{\label{fig:circuit1} A circuit with five resistors powered by a battery with internal resistance.}
+\end{figure}
+What is the current flowing from the battery in Fig. \ref{fig:circuit1}?  What is the total power consumption? \\ \vspace{4cm}
+\item 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.4\textwidth]{circuit2.png}
+\caption{\label{fig:circuit2} A circuit consisting of two batteries and five resistors.}
+\end{figure}
+Solve algebraiclly for the five currents in Fig. \ref{fig:circuit2}.  Remember to use the \textit{junction rule} and the \textit{loop rule.} \\ \vspace{4cm}
+\item 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.3\textwidth]{circuit3.png}
+\caption{\label{fig:circuit3} This type of circuit is called a relaxation oscillator.}
+\end{figure}
+Figure \ref{fig:circuit3} shows a \textit{relaxation oscillator}.  The RC circuit charges, and once the capacitor voltage reaches 50 V, the neon lamp lights and completely discharges the capacitor.  The process then repeats.  How long between neon lamp flashes? \\ \vspace{2cm}
 \end{enumerate}
-\item \textbf{Gauss' Law}
+\item \textbf{Chapter 11: Magnetic forces and fields}
 \begin{enumerate}
-\item Using Gauss' Law, prove that the Coulomb field around a single point charge $q$ is $\vec{E} = \frac{k q}{r^2}$.  What is the field strength of a charge of 1 nC, 1 m away from the charge? \\ \\
-(For the first part, see Fig. 6.22 of the text).  Second part: $E = \frac{9 \times 10^9 10^{-9}}{1^2} = 9$ N.  Pay attention to units.
+\item 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.3\textwidth]{lorentz1.png}
+\caption{\label{fig:lorentz1} Each diagram depicts the force on a negatively-charged particle in a B-field.}
+\end{figure}
+Determine the velocity of a negatively-charged particle in Fig. \ref{fig:lorentz1} (a)-(c). \\ \vspace{1cm}
+\item A cosmic-ray electron moves at $6 \times 10^6$ m/s perpendicular to Earth’s magnetic field at an altitude where the field strength is $1.0 \times 10^{-5}$ T. What is the radius of the circular path the electron follows?  Show that the \textit{angular velocity} $\omega$ of the electron around the magnetic field lines is related to the $q/m$ ratio by $\omega/B = q/m$. \\ \vspace{1.5 cm}
+\item What is the maximum torque on a 150-turn circular loop of wire with radius 8.0 cm that carries a 50.0-A current in a 1.60 T B-field? \\ \vspace{2 cm}
 \end{enumerate}
-\item \textbf{Electric potential}
+\item \textbf{Chapter 12: Sources of Magnetic Fields}
 \begin{enumerate}
-\item Suppose two charged plates are 1 mm apart.  One has 1 pC of charge, and the other has -1 pC of charge.  The plates are squares with side length of 1 cm.  (a) What is the surface charge density of each plate?  (b) What is the electric field between the plates?  (c) As accurately as possible, and labelling all axes, draw the voltage as a function of position between the plates.  (We will look at this one in class).
-\item Suppose a charge distribution creates a voltage described by $V(x,y,z) = (x_0 - a x) + (x_0 - b y) + (x_0 - c z)$.  Derive the $\vec{E}$-field.  \textit{Hint: recall how to take the gradient.  Take the gradient and multiply by -1.}
+\item What is the magnetic field created by the loops in the previous problem, at the center of the loops?  What is the \textit{total} magnetic moment of the loops? \\ \vspace{1cm}
+\item Using Amp\`{e}re's Law, re-derive the equation for a magnetic field due to a long staight wire.  Now model a lightning bolt as a long straight wire.  A typical current in a lightning bolt is $10^4$ A. Estimate the magnetic field 1 m from the bolt. \\ \vspace{1 cm}
+\item
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth,trim=0cm 0cm 0cm 0.25cm,clip=true]{amplaw.png}
+\caption{\label{fig:amplaw} Several current arrangements with closed line integrals.}
+\end{figure}
+Evaluate $\oint \vec{B} \cdot d\vec{l}$ for cases (a)-(e) in Fig. \ref{fig:amplaw}.
 \end{enumerate}
 \end{enumerate}
 \end{document}
