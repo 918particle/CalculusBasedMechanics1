@@ -1,0 +1,157 @@
+\documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{tcolorbox}
+\title{Calculus-Based Physics-2: Electricity, Magnetism, and Thermodynamics (PHYS180-02): Unit 5}
+\author{Jordan Hanson}
+\institute{Whittier College Department of Physics and Astronomy}
+
+\begin{document}
+\maketitle
+
+\section{Unit 4 Review}
+
+\begin{frame}{Unit 4 Review}
+Suppose a bundle of wires is carrying current along what we call the $\hat{z}$ direction.  Each wire runs along the z-axis and they are close enough to ignore the fact that the volume of each wire prevents it from being exactly on the z-axis.  One wire carries +2.0 A, another carries +1.5 A, and a third carries -0.5 A.  What is the B-field strength at a distance of 1 cm away in the x-y plane?
+\begin{itemize}
+\item A: 6 Gauss
+\item B: 0.6 Gauss
+\item C: 6 Tesla
+\item D: 0.6 Tesla
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Unit 4 Review}
+Suppose a loop of current exists in the x-y plane, and a uniform B-field is in the $\hat{z}$ direction.  Which of the following will occur?
+\begin{itemize}
+\item A: The loop will not rotate - there is no torque.
+\item B: The loop will rotate 180 degrees - there is torque.
+\item C: The loop will rotate 90 degrees - there is torque.
+\item D: The loop will rotate -90 degrees - there is negative torque.
+\end{itemize}
+\end{frame}
+
+\section{Summary}
+
+\begin{frame}{Summary}
+\textbf{Reading: Chapters 13 and 14} \\ \vspace{0.5cm}
+\textit{This weekend:}
+\begin{enumerate}
+\item 13.1-2: Faraday's and Lenz's Law
+\item 13.3: Motional EMF
+\item 13.4: Induced E-fields
+\end{enumerate}
+\textit{Next week:} Chapter 14.1-3
+\end{frame}
+
+\section{Faraday's Law and Lenz's Law}
+
+\begin{frame}{Faraday's Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/farad.png}
+\caption{\label{fig:farad1} Not only does moving charge create B-fields, but B-fields can create moving charge.  Study each of the cases above, and (Professor) define the concept of \textit{magnetic flux}.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Faraday's Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/farad2.png}
+\caption{\label{fig:farad2} In addition to a moving magnetic field, \textit{other circuits} can make current flow in a circuit.  The effect must have something to do with \textit{changing} magnetic fields.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Faraday's Law}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=Faraday's Law]
+\alert{The emf $\epsilon$ induced is the negative change in the magnetic flux $\Phi_m$ per unit time. Any change in the magnetic field
+or change in orientation of the area of the coil with respect to the magnetic field induces a voltage (emf).
+\begin{align}
+\phi_m &= \int_S \vec{B} \cdot d\vec{A} \\
+\epsilon &= - \frac{d\phi_m}{dt}
+\label{eq:farad}
+\end{align}}
+\end{tcolorbox}
+\textit{The unit of magnetic flux is the Webter, or 1 Wb = 1 T m$^2$.}
+\end{frame}
+
+\begin{frame}{Faraday's Law}
+\small
+\textbf{Example:}
+A square coil has sides 0.25 m long and is tightly wound with 200 turns of wire. The resistance of the coil 5.0 Ohms. The coil is placed in a spatially uniform magnetic field that is directed perpendicular to the face of the coil and whose magnitude is decreasing by −0.040 T/s. (a) What is the magnitude of the emf induced in the coil? (b) What is the magnitude of the current circulating through the coil?
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{figures/loop1.png}
+\caption{\label{fig:loop1} A 200 turn loop in a B-field.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Faraday's Law}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=Lenz's Law]
+\alert{The direction of the induced emf drives current around a wire loop to always oppose the change in magnetic flux that
+causes the emf.}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Faraday's Law}
+\small
+\textbf{Example:}
+A magnetic field B is directed outward perpendicular to the plane of a circular coil of radius r = 0.50 m.  The field is cylindrically symmetrical with respect to the center of the coil, and its magnitude decays exponentially according to
+\begin{equation}
+B(t) = B_0 \exp(-a t)
+\end{equation}
+with $B_0 = 1.5$ T and $a = 5.0$ s$^{-1}$.  (a) Calculate the emf induced in the coil at the times $t_0 = 0$, $t_1 = 0.05$, and $t_2 = 1.0$ seconds. (b) Determine the current in the coil if the resistance is 10 Ohms. 
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Summary}
+\textbf{Reading: Chapters 13 and 14} \\ \vspace{0.5cm}
+\textit{This weekend:}
+\begin{enumerate}
+\item 13.1-2: Faraday's and Lenz's Law
+\item 13.3: Motional EMF
+\item 13.4: Induced E-fields
+\end{enumerate}
+\textit{Next week:} Chapter 14.1-3
+\end{frame}
+
+\section{Answers - Chapter 13 and Unit 4 Review}
+
+\begin{frame}{Answers}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item B
+\item A
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item ...
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Answers - Chapter 14}
+
+\begin{frame}{Answers}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item ...
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item ...
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}
