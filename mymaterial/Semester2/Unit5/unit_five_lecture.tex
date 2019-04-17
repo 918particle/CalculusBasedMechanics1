@@ -104,6 +104,138 @@ B(t) = B_0 \exp(-a t)
 with $B_0 = 1.5$ T and $a = 5.0$ s$^{-1}$.  (a) Calculate the emf induced in the coil at the times $t_0 = 0$, $t_1 = 0.05$, and $t_2 = 1.0$ seconds. (b) Determine the current in the coil if the resistance is 10 Ohms. 
 \end{frame}
 
+\begin{frame}{Faraday's Law}
+In the previous example, what would happen if the area $A$ of the loop were increased?
+\begin{itemize}
+\item A: The current would decrease.
+\item B: The current would stay the same.
+\item C: The voltage would decrease.
+\item D: The voltage would increase.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Faraday's Law}
+In the previous example, what would happen if the sign of the exponent in $B(t)$ were flipped?
+\begin{itemize}
+\item A: The current would reverse direction and increase in magnitude.
+\item B: The current would reverse direction and decrease in magnitude.
+\item C: The current would keep the same direction and increase in magnitude.
+\item D: The current would keep the same direction and decrease in magnitude.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Faraday's Law}
+In the previous example, what would happen if $\alpha$ in the exponent in $B(t)$ were increased?
+\begin{itemize}
+\item A: The current would reverse direction and increase in magnitude.
+\item B: The current would reverse direction and decrease in magnitude.
+\item C: The current would keep the same direction and increase in magnitude.
+\item D: The current would keep the same direction and decrease in magnitude.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Faraday's Law}
+\small
+\textbf{Example:}
+The square coil of Figure \ref{fig:loop2} has sides l = 0.25 m long and is tightly wound with N = 200 turns of wire. The resistance of the coil is R = 5.0 $\Omega$. The coil is placed in a spatially uniform magnetic field that is directed perpendicular to the face of the coil and whose magnitude is decreasing at a rate $dB/dt = −0.040 t$. (a) Graph the magnitude of the emf induced in the coil. (b) What is the magnitude of the current through the coil at 100 ms?
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{figures/loop1.png}
+\caption{\label{fig:loop2} A 200 turn loop in a B-field.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Lenz's Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/lenz.png}
+\caption{\label{fig:loop3} Lenz's Law relates sign of current to B-field.}
+\end{figure}
+\end{frame}
+
+\section{Motional EMF}
+
+\begin{frame}{Lenz's Law}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/loop2.png}
+\caption{\label{fig:loop4} A system in which the magnetic flux depends on time.}
+\end{figure}
+\begin{enumerate}
+\item Show that power is equal to $P = \vec{F} \cdot \vec{v}$ for constant acceleration.
+\item Show that the emf is $\epsilon = B l v$, from Faraday's Law.
+\item Show that power generated, $P = I^2 R$, is equal to power injected.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Faraday's Law}
+In the previous example, what would happen if $\vec{F}_a$ was pointed to the left?
+\begin{itemize}
+\item A: The current would reverse direction.
+\item B: The current would keep the same direction.
+\item C: The magnetic flux due to the external field would decrease.
+\item D: A and C
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Faraday's Law}
+In the previous example, what would happen if $R$ were increased, but the magnitude of $F_a$ were kept the same?
+\begin{itemize}
+\item A: The current would decrease.
+\item B: The current would increase.
+\item C: The current would remain constant.
+\item D: The power required would increase.
+\end{itemize}
+\end{frame}
+
+\section{Induced Electric Fields}
+
+\begin{frame}{Induced Electric Fields}
+Recall that the relationship between voltage and electric field is
+\begin{equation}
+\vec{E} = - \nabla V = -\frac{\partial V}{\partial x}\hat{x}-\frac{\partial V}{\partial y}\hat{y}-\frac{\partial V}{\partial z}\hat{z}
+\end{equation}
+In one dimension, this becomes
+\begin{equation}
+\vec{E} = -\frac{dV}{dx}\hat{x}
+\end{equation}
+If we take a dot product with $- d\vec{x} = - dx ~ \hat{x}$ on each side, we find
+\begin{equation}
+-\vec{E} \cdot d\vec{x} = dV
+\end{equation}
+Integrating, we have
+\begin{equation}
+V = - \int \vec{E} \cdot d\vec{x}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Induced Electric Fields}
+However, if the voltage is a result of a changing magnetic field, and Faraday's Law, then
+\begin{equation}
+\frac{d\phi_m}{dt} = \oint \vec{E} \cdot d\vec{x}
+\end{equation}
+Recall that from \textit{electrostatics},
+\begin{equation}
+\oint \vec{E} \cdot d\vec{x} = 0 \label{eq:cons}
+\end{equation}
+Equation \ref{eq:cons} is true for eletrostatics because the Coulomb force is \textbf{conservative}.  But in a previous example we showed that power was being generated and \textit{conserved}, despite the fact that magnetic flux is changing.  What is happening?
+\end{frame}
+
+\begin{frame}{Lenz's Law}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/loop3.png}
+\caption{\label{fig:loop5} A solenoid with a changing current will induce an E-field.  The solenoid has turn density $n$, and is long compared to the radius.}
+\end{figure}
+\begin{enumerate}
+\item What is the E-field outside the solenoid?
+\item What is the E-field inside the solenoid?
+\item Create a graph of the E-field strength versus distance.
+\end{enumerate}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Summary}
@@ -125,6 +257,11 @@ with $B_0 = 1.5$ T and $a = 5.0$ s$^{-1}$.  (a) Calculate the emf induced in the
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \item B
+\item A
+\item D
+\item A
+\item D
+\item D
 \item A
 \end{itemize}
 \end{column}
