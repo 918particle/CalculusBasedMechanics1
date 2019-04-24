@@ -277,7 +277,7 @@ The AC voltage equation above is a basic model for the voltage from a generator.
 \item A: Turning the area more slowly.
 \item B: Turning the area more quickly.
 \item C: Increasing the B-field.
-\item D: Both C and D.
+\item D: Both B and C.
 \end{itemize}
 \end{frame}
 
@@ -290,7 +290,7 @@ The AC voltage equation above is a basic model for the voltage from a generator.
 \item A: Turning the area more slowly.
 \item B: Turning the area more quickly.
 \item C: Increasing the B-field.
-\item D: Both C and D.
+\item D: Both B and C.
 \end{itemize}
 \end{frame}
 
@@ -387,6 +387,36 @@ L = \mu_0 n^2 V
 \end{frame}
 
 \begin{frame}{Self-inductance and inductors}
+Suppose we're making an inductor out of a coil of wire shaped like a solenoid.  What happens to the inductance if we double the number of coils but keep the length and radius the same?
+\begin{itemize}
+\item A: $L$ doubles.
+\item B: $L$ quadruples.
+\item C: $L$ gets divided by 2.
+\item D: $L$ gets divided by 4.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Self-inductance and inductors}
+Suppose we're making an inductor out of a coil of wire shaped like a solenoid.  What happens to the inductance if we double the number of coils, but also double the length?
+\begin{itemize}
+\item A: $L$ doubles.
+\item B: $L$ quadruples.
+\item C: $L$ gets divided by 2.
+\item D: $L$ gets divided by 4.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Self-inductance and inductors}
+We're almost finished with our design, which currently has an inductance $L_0$.  We decide to double the number of turns, but keep the length the same.  Also, we insert a type of iron into the solenoid that boosts $\mu_0$ by a factor of 10$^3$, so the new inductance is $L$.  What is $L/L_0$?
+\begin{itemize}
+\item A: 1000
+\item B: 2000
+\item C: 4000
+\item D: 8000
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Self-inductance and inductors}
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{figures/ind5.png}
@@ -399,23 +429,103 @@ L = \mu_0 n^2 V
 \begin{equation}
 L = \frac{\mu_0}{2\pi}N^2 h \ln\left(\frac{R_2}{R_1}\right)
 \end{equation}
-Thus the two expressions have turn-density squared in common, and the volume comes into play. \\
-\textbf{Similar to calculating the capacitance in electrostatics.}
 \end{frame}
 
-\section{The RLC circuit}
+\begin{frame}{Self-inductance and inductors}
+Suppose we're making an inductor out of a toroid as in the previous slide.  If we decrease the number of turns by a factor of 2, what happens to the inductance?
+\begin{itemize}
+\item A: $L$ doubles.
+\item B: $L$ quadruples.
+\item C: $L$ gets divided by 2.
+\item D: $L$ gets divided by 4.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Self-inductance and inductors}
+Suppose we're making an inductor out of a toroid as in the previous slide.  If we decrease the number of turns by a factor of 2 and double the height, what happens to the inductance?
+\begin{itemize}
+\item A: $L$ doubles.
+\item B: $L$ quadruples.
+\item C: $L$ gets divided by 2.
+\item D: $L$ gets divided by 4.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Self-inductance and inductors}
+Suppose we're making an inductor out of a toroid as in the previous slide.  If we quadruple the outer radius and only double the inner radius, what happens to the inductance?
+\begin{itemize}
+\item A: $L$ increases by a factor of 2.
+\item B: $L$ increases by a factor of $\ln(2)$.
+\item C: $L$ increases by a factor of $\ln(4)$.
+\item D: $L$ increases by a factor of 4.
+\end{itemize}
+\end{frame}
+
+\section{Energy in Magnetic Fields}
+
+\begin{frame}{Energy in Magnetic Fields}
+\begin{figure}
+\center
+\includegraphics[width=0.75\textwidth]{figures/hyper.pdf}
+\end{figure}
+\textbf{The speed of light emerges in a most unexpected place.}
+\end{frame}
+
+\section{PhET: The RL circuit}
+
+\begin{frame}{The RL circuit}
+\textbf{Suppose we apply the loop rule to a circuit with a resistor and an inductor (observe on board).} \\ \vspace{0.5cm}
+We can show the current follows
+\begin{equation}
+I(t) = I_0 \left(1 - \exp(-t/\tau_l)\right)
+\end{equation}
+\end{frame}
+
+\begin{frame}{PhET: The RL circuit}
+Go to the link: \\ \vspace{0.5cm}
+\url{https://phet.colorado.edu/en/simulation/circuit-construction-kit-ac-virtual-lab}
+\end{frame}
+
+\begin{frame}{PhET: The RL circuit}
+\small
+\textbf{Instructions:}
+\begin{enumerate}
+\item Select a battery at right and place it in the main area.  Right click on it to set the voltage to 12.0 V.
+\item Connect two wires to the battery, using the wire tool at right.
+\item Connect a resistor to one of the wires (leaving the circuit open).  Right click on it to set the resistance to 50 $\Omega$.
+\item Connect an inductor to one wire, using the inductor tool (bottom right), and right click it.  Set the inductance to 100 Henries.
+\item If you were to close this circuit by adding the final wire, how long would it take the current to reach the steady state?
+\item What should the value of the steady state current be?
+\item Select ``current chart'' at right and drag the reticule to measure the current in the circuit.  Complete the circuit with a final wire.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{PhET: The RL circuit}
+\small
+\textbf{Instructions:}
+\begin{enumerate}
+\item How long before the current reaches the steady state?
+\item What is the steady state current? Does it match your expectation?
+\item Change the battery to an AC voltage source by right clicking the battery and selecting ``remove,'' and replacing with AC voltage object at right.  You can control the properties of of the AC source by right clicking it.
+\item Do a \textit{frequency sweep}, by observing the current as you tune the AC voltage frequency from 0.0 to 2.0 Hz.  What happens to the amplitude?  Why does this make sense physically?
+\item What do we call devices that change the output amplitude depending on frequency? (See COSC360: Digital Signal Processing).
+\end{enumerate}
+\end{frame}
 
 \section{Conclusion}
 
 \begin{frame}{Summary}
 \textbf{Reading: Chapters 13 and 14} \\ \vspace{0.5cm}
-\textit{This weekend:}
 \begin{enumerate}
 \item 13.1-2: Faraday's and Lenz's Law
 \item 13.3: Motional EMF
 \item 13.4: Induced E-fields
 \end{enumerate}
-\textit{Next week:} Chapter 14.1-3
+\begin{enumerate}
+\item 14.1: Mutual inductance
+\item 14.2: Self-inductance and inductors
+\item 14.3: Energy in a magnetic field
+\end{enumerate}
 \end{frame}
 
 \section{Answers - Chapter 13 and Unit 4 Review}
@@ -450,7 +560,12 @@ Thus the two expressions have turn-density squared in common, and the volume com
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item ...
+\item B
+\item A
+\item C
+\item D
+\item C
+\item C
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
