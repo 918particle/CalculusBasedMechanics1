@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\title{Faraday's Law: Magnetic oscillation measurement}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Let $\mathcal{E}$ be the emf induced in a conductor with $N$ coils or loops by a changing magnetic flux $\phi = \vec{B} \cdot \vec{A}$ with respect to time.  Faraday's Law states that
+
+\begin{equation}
+\mathcal{E} = -N \frac{d\phi}{dt}
+\end{equation}
+
+The minus sign indicates Lenz's Law, which states that the emf will correspond to a current flowing in the circuit that \textit{opposes} the change in flux.  Suppose we had a magnetic field that oscillated in strength, with amplitude $B_0$, angular frequency $\omega$, and angular phase $\phi_0$:
+
+\begin{equation}
+B(t) = B_0 \cos(\omega t + \phi_0)
+\end{equation}
+
+Further, assume that this field is oscillating in a solenoid with $N$ turns and radius $r$.  The flux would then depend on time:
+
+\begin{equation}
+\phi = B_0 \pi r^2 \cos(\omega t + \phi_0)
+\end{equation}
+
+Taking the first derivative and multiplying by $-N$ gives
+
+\begin{equation}
+\mathcal{E} = N \omega B_0 \pi r^2 \sin(\omega t + \phi_0) \label{eq:main}
+\end{equation}
+
+Define $\mathcal{E}_0 = N B_0 \pi r^2$, so that (check the units)
+
+\begin{equation}
+\mathcal{E} = \mathcal{E}_0 \omega \sin(\omega t + \phi_0) \label{eq:main2}
+\end{equation}
+
+In the following lab, Eq. \ref{eq:main2} will be an approximation for the magnetic field.  The $\vec{B}$-field will originate from an oscillating bar magnet on a spring, dipping in and out of a solenoid.  The voltage expressed in Eq. \ref{eq:main2} will hopefully appear on the oscilloscope, and we are trying to predict and measure $\mathcal{E}_0$.
+
+\section{Setup}
+
+The necessary items will be:
+
+\begin{enumerate}
+\item Oscilloscope and power chord, with settings of 10 mV/division vertical, and 500 ms/division horizontal.  Set the trigger to manual, with a threshold of about 10 mV.
+\item A solenoid with exactly 80 turns, and radius of $\approx 8$ cm.
+\item A coaxial to alligator-clip conversion cable.
+\item A bench clamp (black)
+\item Three metal rods
+\item Two right-angle rod connectors (black plastic)
+\item One Vernier LabPro measurement unit
+\item One magnetic probe attachment
+\item One spring
+\item One bar-magnet
+\item Strips of tape
+\end{enumerate}
+
+Place the solenoid next to the oscilloscope, with one end pointing towards the ceiling, and the other towards the table.  Connect the coaxial cable to channel one, and connect the alligator clips to the solenoid.  The choice of red/black will only change the sign of $\mathcal{E}(t)$.  Connect the clamp to the table and use the other hardware to place a horizontal bar $\approx 5-10$ cm above the top of the solenoid.  Tape the bar magnet to one end of the spring, and hang the bar magnet/spring assembly over the solenoid.  Raise the bar magnet until the spring is fully compressed, and release.  The oscilloscope should trigger, drawing a sinusoidal signal.
+
+\section{Predicting $\mathcal{E}_0$}
+
+Remove the solenoid temporarily, and connect the Vernier LabPro and magnetic probe attachment.  Click on the LoggerPro icon on the Windows desktop and check that the program is configured to measure B-fields. Start the magnet oscillations, and use the probe to measure the B-field versus time.  Orient the white dot to point upwards, and hold the probe at the average position of the magnet as it oscillates.  Record the magnetic field versus time in LoggerPro and transfer the data to Excel.  Plot the B-field versus time below: \\ \vspace{5cm}
+
+\section{The Interpretation}
+
+Solving Eq. \ref{eq:main} for the current (accounting for the number of turns in the coil) gives
+
+\begin{equation}
+I_{pred} = \frac{dl}{\mu_0} \sum_i B_{||} \label{eq:main2}
+\end{equation}
+
+Assume no error for $dl$, only account for the error in the B-field.  Make sure to first convert the sum and the error in the sum to Tesla before using Eq. \ref{eq:main2}.  The result is the \textit{predicted current} $I_{pred}$.  How do the predicted and measured current compare?  Compute the percent error between the predicted current and measured current below.  Do we observe a systematic offset? \textbf{Bonus: with the current on, try measuring around a loop that does not enclose the current.  What happens?} \\ \vspace{7cm}
+
+\end{document}
