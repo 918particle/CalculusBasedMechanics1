@@ -33,7 +33,7 @@ Taking the first derivative and multiplying by $-N$ gives
 \mathcal{E} = N \omega B_0 \pi r^2 \sin(\omega t + \phi_0) \label{eq:main}
 \end{equation}
 
-Define $\mathcal{E}_0 = N B_0 \pi r^2$, so that (check the units)
+Define $\mathcal{E}_0 = N B_0 \pi r^2$, so that (what are the units of $\mathcal{E}_0$?)
 
 \begin{equation}
 \mathcal{E} = \mathcal{E}_0 \omega \sin(\omega t + \phi_0) \label{eq:main2}
@@ -63,16 +63,35 @@ Place the solenoid next to the oscilloscope, with one end pointing towards the c
 
 \section{Predicting $\mathcal{E}_0$}
 
-Remove the solenoid temporarily, and connect the Vernier LabPro and magnetic probe attachment.  Click on the LoggerPro icon on the Windows desktop and check that the program is configured to measure B-fields. Start the magnet oscillations, and use the probe to measure the B-field versus time.  Orient the white dot to point upwards, and hold the probe at the average position of the magnet as it oscillates.  Record the magnetic field versus time in LoggerPro and transfer the data to Excel.  Plot the B-field versus time below: \\ \vspace{5cm}
+Remove the solenoid temporarily, and connect the Vernier LabPro and magnetic probe attachment.  Click on the LoggerPro icon on the Windows desktop and check that the program is configured to measure B-fields. Start the magnet oscillations, and use the probe to measure the B-field versus time.  Orient the white dot to point upwards, and hold the probe at the average position of the magnet as it oscillates.  Record the magnetic field versus time in LoggerPro and transfer the data to Excel.  Plot the B-field versus time below, with the correct units: \\ \vspace{3cm}
 
-\section{The Interpretation}
+\section{The Root-Mean-Square}
 
-Solving Eq. \ref{eq:main} for the current (accounting for the number of turns in the coil) gives
+The root-mean-square is a statistic used to quantify the size of a series of measurements that has a mean close to zero.  It is defined as
 
 \begin{equation}
-I_{pred} = \frac{dl}{\mu_0} \sum_i B_{||} \label{eq:main2}
+x_{rms} = \sqrt{\frac{1}{N}\sum_i x_1^2 + x_2^2 + ... + x_N^2} \label{eq:rms}
 \end{equation}
 
-Assume no error for $dl$, only account for the error in the B-field.  Make sure to first convert the sum and the error in the sum to Tesla before using Eq. \ref{eq:main2}.  The result is the \textit{predicted current} $I_{pred}$.  How do the predicted and measured current compare?  Compute the percent error between the predicted current and measured current below.  Do we observe a systematic offset? \textbf{Bonus: with the current on, try measuring around a loop that does not enclose the current.  What happens?} \\ \vspace{7cm}
+Equation \ref{eq:rms} is close to the definition of the standard deviation encountered in previous labs.  Compute the rms of the B-field in the solenoid using the data in Excel: \\
+
+$B_{rms} = $ \\
+
+\textbf{As a first approximation}, let's treat $B_{rms}$ as the $B_0$ in Eq. \ref{eq:main}.  Now count the number of turns in the solenoid (it should be close to 80).  Record that as your measurement of $N$.  Measure the radius of the wires of the solenoid.  For the moment we are ignoring the statistical errors of these quantities.  Insert these measured values into $\mathcal{E}_0 = N B_0 \pi r^2$, and record your value for $\mathcal{E}_0$ below, with the correct units: \\
+
+$\mathcal{E}_0 = $
+
+\section{RMS voltage from Faraday's Law}
+
+Now reinsert the solenoid under the oscillating bar magnet and trigger on the voltage waveform.  Using the gray measurement button at right, open the menu for measurements.  Select channel 1, and twist the gray highlighted knob to choose RMS for channel 1, and click add measurement.  Similarly, add a measurement for the frequency of the waveform.  Record both numbers below, converting the frequency to angular frequency: \\
+
+$\mathcal{E}_{rms} = $ \\ \\
+$~~~~~~\omega = $ \\
+
+Now compare the \textit{predicted} $\mathcal{E}_0 \omega$ to the \textit{measured} $\mathcal{E}_{rms}$.  How close can you get them?  What sources of error are there, and how can this comparison be made more accurate?  Draw the voltage waveform below, with correct depiction of the height and period in volts and seconds, respectively: \\ \vspace{3cm}
+
+\section{Voltage versus Frequency}
+
+Now oscillate the bar magnet with your hand instead of the spring.  Although it's less precise, you can vary the frequency if you are oscillating the bar magnet.  Using the oscilloscope, make a measurement of 10 different $\mathcal{E}_{rms}$ values at 10 different $\omega$ values.  Remember that you'll have to convert frequency to $\omega$.  Make a plot of $\mathcal{E}_{rms}$ versus $\mathcal{E}_0 \omega$ below, with the correct units.  Is it linear?  Why or why not?\\ \vspace{3cm}
 
 \end{document}
