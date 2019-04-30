@@ -17,9 +17,15 @@
 \item Charge density, charge and volume: $Q = \rho V$.
 \item Coulomb force: $\vec{F}_C = k \frac{q_1 q_2}{r^2}\hat{r}$.
 \item Definition of electric field: $\vec{F}_C = q\vec{E}$.
+\item Definition of electric flux: $\phi_E = \vec{E} \cdot \vec{A}$.
+\item Gauss' Law: $\phi_E = q_{enc}/\epsilon_0$. (Assumes field is uniform over the surface).
 \item Voltage and electric field, one dimension, uniform field: $|E| = - \frac{\Delta V}{\Delta x}$.
 \item Voltage and electric field, general case: $\vec{E} = -\nabla V$.
-\item Definition of magnetic flux: $\phi = \vec{B} \cdot \vec{A}$.  The units are T m$^2$, which is called a Weber, or Wb.
+\item Ohm's Law: $V = IR$.
+\item Electrical power: $P = IV = I^2 R = V^2/R$.
+\item Magnetic dipole moment: $\vec{\mu} = I \vec{A}$, where $\vec{A}$ is the area vector.
+\item Torque on a magnetic dipole: $\tau = \vec{\mu} \times \vec{B}$.
+\item Definition of magnetic flux: $\phi_m = \vec{B} \cdot \vec{A}$.  The units are T m$^2$, which is called a Weber, or Wb.
 \item Faraday's Law: $emf = -N \frac{d \phi}{d t}$
 \item Faraday's Law using \textbf{Inductance}, M: $emf = -M \frac{dI}{dt}$.
 \item Typically, we refer to \textit{mutual inductance} between two objects as $M$, and \textit{self inductance} as $L$.
@@ -38,7 +44,7 @@
 \item \textbf{Chapters 5-6: Electrostatics and Gauss' Law}
 \begin{enumerate}
 \item A spherical water droplet of radius $25 \times 10^{-6}$ m carries an excess 250 electrons. If the density of water is 997 kg m$^{-3}$, what vertical electric field is needed to balance the gravitational force on the droplet at the surface of the earth? (a) First, calculate the mass of the water droplet. (b) Second, work out the total charge of the water droplet.  (c) What is the Coulomb force required to balance gravity? \\ \vspace{4cm}
-\item Two non-conducting spheres are uniformly charged with charge densities $\rho_1$ and $\rho_2$, respectively.  The geometry of the system is depicted in Fig. \ref{fig:spheres}.  (a) Write an expression for the total charge of each sphere separately.  (b)  Write the expression for the electric field of each sphere separately, observed at $P$ for each.  (c) Break each electric field into x and y components.  (d) Sum the total electric field due to spheres 1 and 2, observed at point $P$. \\ \vspace{4cm}
+\item Two non-conducting spheres are uniformly charged with charge densities $\rho_1$ and $\rho_2$, respectively.  The geometry of the system is depicted in Fig. \ref{fig:spheres}.  (a) Write an expression for the total charge of each sphere separately.  (b)  Using Gauss' law, write the expression for the electric field of each sphere separately, observed at $P$ for each.  (c) Break each electric field into x and y components.  (d) Sum the total electric field due to spheres 1 and 2, observed at point $P$. \\ \vspace{4cm}
 \begin{figure}
 \centering
 \includegraphics[width=0.3\textwidth]{spheres.png}
@@ -49,6 +55,33 @@
 \begin{enumerate}
 \item The voltage across a membrane forming a cell wall is 80.0 mV and the membrane is 9.00 nm thick. What is the electric field strength? (The value is surprisingly large, but correct.) You may assume a uniform electric field. \\ \vspace{2cm}
 \item An electric potential is defined by $V(x,y,z) = a x^2 + b y^2 + c z^2$, with $a = 2.0$ V m$^{-2}$, $b = 1.0$ V m$^{-2}$, and $c = 4.0$ V m$^{-2}$.  What is the corresponding electric field? \\ \vspace{2cm}
+\end{enumerate}
+\item \textbf{Chapters 9-10: Current, Resistance, and DC Circuits}
+\begin{enumerate}
+\item Figure \ref{fig:OhmsTable} contains the measurements of a current through and the voltage across a sample of material. Plot the data, and assuming the object is an ohmic device, estimate the resistance. \\ \vspace{3cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.12\textwidth]{OhmsTable.png}
+\caption{\label{fig:OhmsTable} A table of current (left column) and voltage (right column) data for a sample of material.}
+\end{figure}
+\item An alternative to CFL bulbs and incandescent bulbs are light-emitting diode (LED) bulbs. A 100-W incandescent bulb can be replaced by a 16-W LED bulb.  Both produce 1600 lumens of light. Assuming the cost of electricity is \$0.10 per kilowatt-hour, how much does it cost to run the bulb for one year if it runs for four hours a day? \\ \vspace{2cm}
+\item Two AA batteries are connected \textit{in parallel} with a load resistor $R$, as shown in Fig. \ref{fig:batt1}.  The two internal resistances are $r_1$ and $r_2$, and the two emf's are $\mathcal{E}_1$ and $\mathcal{E}_2$. (a) Using the junction rule once, and the loop rule twice, solve for the current through the load resistor algebraically. (b) If  $\mathcal{E}_1 = \mathcal{E}_2 = 1.5$ V, $r_1 = r_2 = 0.1 \Omega$, and $R = 100\Omega$, what is the current through $R$? \\ \vspace{4cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{batt1.png}[hb]
+\caption{\label{fig:batt1} Two batteries connected in parallel with internal resistances (left) can be modelled by a circuit (right).}
+\end{figure}
+\end{enumerate}
+\item \textbf{Chapters 11-12: Magnetic fields and Sources of Magnetic Fields}
+\begin{enumerate}
+\item A circular loop of wire of area $10^{-2}$ m$^{2}$ carries a current of 20.0 A.  At a particular instant, the loop lies in the $xy$-plane and is subjected to a magnetic field $\vec{B} = \left( 3.0 \hat{i} + 6.0 \hat{j} + 3.0 \hat{k} \right) \times 10^{-2}$ T.  As
+viewed from above the xy-plane, the current is circulating clockwise. (a) What is the magnetic dipole moment of the current loop? (b) At this instant, what is the magnetic torque on the loop? \\ \vspace{3cm}
+\item Use Amp\`{e}re's Law to evaluate $\oint \vec{B} \cdot d\vec{l}$ for the current configurations and paths (a)-(c) in Fig. \ref{fig:amplaw}. \\ \vspace{2cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{amplaw.png}
+\caption{\label{fig:amplaw} Two batteries connected in parallel with internal resistances (left) can be modelled by a circuit (right).}
+\end{figure}
 \end{enumerate}
 \item \textbf{Chapters 13-14: Electromagnetic Induction and Inductance}
 \begin{enumerate}
