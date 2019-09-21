@@ -2,57 +2,56 @@
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
 \date{\today}
 \documentclass[10pt]{article}
-\usepackage[a4paper, total={18cm, 27cm}]{geometry}
+\usepackage[margin=1.5cm]{geometry}
 \usepackage{outlines}
-\usepackage[sfdefault]{FiraSans}
 \usepackage{graphicx}
 \usepackage{amsmath}
 
 \begin{document}
 \maketitle
 
-\section{Types of Problems on the Midterm}
-\begin{itemize}
-\item There are three problems on estimation, approximation, and unit analyis.  One of these involves kinematics, and another is multiple choice.
-\item There are two problems on kinematics with constant acceleration.
-\item There is one four-part problem on vectors.
-\end{itemize}
+\section{Memory Bank}
 
-\section{Estimation, Approximation, and Unit Analysis}
-Remember our three techniques for establishing estimates:
 \begin{itemize}
-\item Choose the right \textit{scale}.  For example, don't work in meters if the distances are between planets.  Work in $AU$ or light-minutes.
-\item Obtain complex quantities from simpler ones.  For example, estimate lengths first, and then multiply them to estimate volumes and areas.
-\item Constrain the unknown with upper and lower limits.  For example, the height of a child should not be 10 meters, or 0.1 meters.
-\end{itemize}
-
-\section{Displacement, Velocity, and Constant Acceleration Vectors}
-The definition of average velocity is
-\begin{equation}
-\bar{v} = \frac{x_{f} - x_{i}}{t_{f} - t_{i}} = \frac{\Delta x}{\Delta t}
-\label{eq:1}
-\end{equation}
-If the velocity is constant, the average velocity and the instantaneous velocity are the same.  The numerator of Eq. \ref{eq:1} is in general a vector called \textit{the displacement}: $\Delta \vec{x}$, describing the change in position of something.  If the velocity is constant, then
-\begin{equation}
-\Delta \vec{x} = \vec{v}\Delta t
-\label{eq:2}
-\end{equation}
-If the velocity is not constant, but the acceleration is constant, we have a system of equations relating displacement, time, velocity, and acceleration:
+\item Unit conversions: 1 km = 1000 m, 1 m = 100 cm, 1 hr = 3600 s, 1 year = $\pi \times 10^7$ s, 1 g/cm$^3$ = 1000 kg/m$^3$.
+\item $\vec{x} = a \hat{i} + b\hat{j}$ ... Component form of a two-dimensional vector.
+\item $|\vec{x}| = \sqrt{a^2+b^2}$ ... Pythagorean theorem for obtaining vector magnitude.
+\item $\theta = \tan^{-1}(b/a)$ ... Obtaining the angle between vector and x-axis.
+\item $a = |\vec{x}|\cos(\theta)$ ... Obtaining the x-component with trigonometry.
+\item $b = |\vec{x}|\sin(\theta)$ ... Obtaining the y-component with trigonometry.
+\item $\Delta x = \vec{x}_f - \vec{x}_i$ ... Definition of displacement.
+\item $\vec{v} = \frac{\Delta \vec{x}}{\Delta t} = \frac{\vec{x}_f - \vec{x}_i}{t_f-t_i}$ ... Definition of velocity.
+\item $\vec{a} = \frac{\Delta \vec{v}}{\Delta t} = \frac{\vec{v}_f - \vec{v}_i}{t_f-t_i}$ ... Definition of acceleration.
+\item $x(t) = x_i + v t$ ... Velocity is the slope of position versus time.
+\item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
+\item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
+\item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
+\item $\vec{v}(t) = \frac{d\vec{x}}{dt}$ ... General calculus-based definition of velocity.
+\item $\vec{a}(t) = \frac{d\vec{v}}{dt}$ ... General calculus-based definition of acceleration.
+\item General set of 2D kinematic equations, assuming gravity provides constant vertical negative acceleration.
 \begin{align}
-x(t) &= x_0 + v_0 t + \frac{1}{2} a t^2 \\
-v(t) &= v_0 + a t \\
-a(t) &= a \\
-v^2 &= v_0^2 + 2a\Delta x
+\vec{x}(t) &= (x_i + v_{x,i} t) \hat{i} \\
+\vec{y}(t) &= (-\frac{1}{2}g t^2 + v_{i,y} t + y_i) \hat{j} \\
+\vec{v}_y &= (v_{i,y} - g t) \hat{j} \\
+\vec{a} &= -g \hat{j} \\
+T_{tof} &= \frac{2 v_0\sin(\theta_0)}{g} \\
+R &= \frac{v_0^2\sin(\theta_0)}{g} \\
+v_{x,i} &= v_0 \cos(\theta) \\
+v_{y,i} &= v_0 \sin(\theta)
 \end{align}
-
-\section{Vectors}
-\begin{itemize}
-\item Practice adding and subtracting vectors.
-\begin{enumerate}
-\item Graphically
-\item As lists of numbers
-\end{enumerate}
-\item Practice breaking vectors into components: $\hat{x} \cdot \vec{v} = v\cos\theta$, $\hat{y} \cdot \vec{v}=v\sin\theta$ (if $\theta$ goes from x-axis to vector).
-\item Practice taking the magnitude of a vector: $\sqrt{\vec{v}\cdot\vec{v}}$, or Pythagorean theorem.
 \end{itemize}
+
+\clearpage
+
+\section{Chapter 1: Estimations and Unit Analysis}
+
+\begin{enumerate}
+\item Nerve fibers are often observed to make nerve signals propagate at a speed of 100 m/s.  Estimate the reaction time of a person, if they touch something hot.  That is, the signal must travel from their finger touching a hot surface, to the spinal chord, and back to the finger to make it move. \\ \vspace{1.5cm}
+\item A distance of 1 AU is the distance from the Earth to the Sun, and is equal to $\approx 1.5 \times 10^8$ km.  Jupiter is about 5 AU from the Sun.  How many kilometers between Jupiter and the Sun? \\ \vspace{1.5cm}
+\item The speed of sound is measured to be 342 m/s on a certain day. What is this measurement in kilometers per hour? \\ \vspace{1.5cm}
+\item A two \textit{liter} bottle of water has a volume of $2000$ cm$^3$.  What is this volume in m$^3$?  \textit{Should it be a large or small number?} \\ \vspace{1.5cm}
+\end{enumerate}
+
+\section{Chapter 2: }
+
 \end{document}
