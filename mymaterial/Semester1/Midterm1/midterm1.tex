@@ -1,40 +1,76 @@
-\title{Midterm 1 for Calculus-Based Physics-1: Mechanics (PHYS150-01)}
+\title{Calculus-Based Physics-1: Mechanics (PHYS150-02): Midterm1}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
-\date{September 25th, 2017}
+\date{\today}
 \documentclass[10pt]{article}
-\usepackage[a4paper, total={18cm, 27cm}]{geometry}
+\usepackage[margin=1.5cm]{geometry}
 \usepackage{outlines}
-\usepackage[sfdefault]{FiraSans}
 \usepackage{graphicx}
+\usepackage{amsmath}
 
 \begin{document}
 \maketitle
 
-\section{Estimation, Approximation, and Unit Analysis}
-\begin{enumerate}
-\item There is a jar full of candies.  Estimate the number of candies in the jar, if this type of round candy has a radius of $\approx 0.3$ cm, and the jar has a radius of $\approx 12$ cm, and a similar height.  (Remember, the answer only has to be accurate to the correct order of magnitude). \vspace{1.5 cm}
-\item An explorer lands on Mars, which has an acceleration due to gravity of $\approx 0.4 g$.  If the explorer drops a bag from shoulder height, how long does it take to reach the ground? \vspace{1.5 cm}
-\item Our bodies contain special nerve fibers from the spinal cord to extermities, for quick reactions.  Suppose a curious child, who is 0.75 m tall, touches a flame.  The child's body jerks the hand away after 20 milliseconds (0.02 seconds).  What was the speed of the nerve signal? \\
+\section{Memory Bank}
+
 \begin{itemize}
-\item A: 1 m
-\item B: 5 s
-\item C: 20 m/s
-\item D: 100 m/s
+\item Acceleration due to gravity: $g = 9.81$ m/s$^2$.
+\item Unit conversions: 1 km = 1000 m, 1 m = 100 cm, 1 hr = 3600 s, 1 year = $\pi \times 10^7$ s, 1 g/cm$^3$ = 1000 kg/m$^3$.
+\item $\vec{x} = a \hat{i} + b\hat{j}$ ... Component form of a two-dimensional vector.
+\item $|\vec{x}| = \sqrt{a^2+b^2}$ ... Pythagorean theorem for obtaining vector magnitude.
+\item $\theta = \tan^{-1}(b/a)$ ... Obtaining the angle between vector and x-axis.
+\item $a = |\vec{x}|\cos(\theta)$ ... Obtaining the x-component with trigonometry.
+\item $b = |\vec{x}|\sin(\theta)$ ... Obtaining the y-component with trigonometry.
+\item $\Delta x = \vec{x}_f - \vec{x}_i$ ... Definition of displacement.
+\item $\vec{v} = \frac{\Delta \vec{x}}{\Delta t} = \frac{\vec{x}_f - \vec{x}_i}{t_f-t_i}$ ... Definition of velocity.
+\item $\vec{a} = \frac{\Delta \vec{v}}{\Delta t} = \frac{\vec{v}_f - \vec{v}_i}{t_f-t_i}$ ... Definition of acceleration.
+\item $x(t) = x_i + v t$ ... Velocity is the slope of position versus time.
+\item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
+\item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
+\item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
+\item $\vec{v}(t) = \frac{d\vec{x}}{dt}$ ... General calculus-based definition of velocity.
+\item $\vec{a}(t) = \frac{d\vec{v}}{dt}$ ... General calculus-based definition of acceleration.
+\item General set of 2D kinematic equations, assuming gravity provides constant vertical negative acceleration.
+\begin{align}
+\vec{x}(t) &= (x_i + v_{x,i} t) \hat{i} \\
+\vec{y}(t) &= (-\frac{1}{2}g t^2 + v_{i,y} t + y_i) \hat{j} \\
+\vec{v}_y &= (v_{i,y} - g t) \hat{j} \\
+\vec{a} &= -g \hat{j} \\
+T_{tof} &= \frac{2 v_0\sin(\theta_0)}{g} \\
+R &= \frac{v_0^2\sin(2\theta_0)}{g} \\
+v_{x,i} &= v_0 \cos(\theta) \\
+v_{y,i} &= v_0 \sin(\theta)
+\end{align}
 \end{itemize}
-\end{enumerate}
-\section{Displacement, Velocity, and Constant Acceleration Vectors}
+
+\clearpage
+
+\section{Chapter 1: Estimations and Unit Analysis}
+
 \begin{enumerate}
-\item In the film \textit{The Hunt for Red October}, one scene depicts two Soviet officers at the helm of a submarine they are navigating through an undersea canyon.  Their current speed is 30 kilometers per hour, and the canyon turns 45 degrees to their right 1 kilometer ahead.  In how many seconds must they order the ship to turn before crashing into the side of the canyon?  After the turn, they adjust the speed to 20 kilometers per hour, and travel for 100 seconds.  What is the displacement vector from the original position?\vspace{3cm}
-\item A torpedo is dropped in the water 1 km behind the \textit{Red October} by an overflying aircraft, and it accelerates at 3 m/s$^2$, with an initial velocity of 5 m/s.  If the \textit{Red October} does not alter course, but continues at 5 m/s, when will the torpedo reach it?\vspace{3cm}
+\item Suppose you are standing at the edge of a canyon.  You clap, and here the sound of the echo off of the other side of the canyon wall about 1.5 seconds later.  You estimate the canyon wall to be about 0.5 km away.  a) What is the speed of sound in meters per second?  b) What is it in kilometers per hour? \\ \vspace{1.5cm}
+\item a) What is 0.25 m$^3$ in cm$^3$? b) What is 100 km/hour in m/s? \\ \vspace{1cm}
 \end{enumerate}
-\section{Vectors}
+
+\section{Chapter 2: Vectors}
+
 \begin{enumerate}
-\item The astromomer Clyde Tombaugh discovered the pseudo-planet Pluto in 1930.  He observed a section of the night sky and observing the same sky one week later.  He blinked back and forth between images.  A faint star moved across the image.  Knowing how far away stars are, he concluded that the object must be inside our solar system, to be moving at a reasonable velocity.  Thus, it had to be some kind of planet.
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{PlutoDrawing.pdf}
-\caption{\label{fig:1} Positions of some unknown celestial body in the solar system, circa 1930.  The vector $(-0.15^{\circ},0.3^{\circ})$ corresponds to the first observation, and the vector $(0.45^{\circ},0.4^{\circ})$ corresponds to the second observation.}
-\end{figure}
-a) Observe Fig. \ref{fig:1}.  Construct the displacement vector of this object, in units of degrees.  b) Construct the average velocity of this object, in units of degrees per day.  c) Let $s$ be the actual distance traveled, $\theta$ be the observed angle change \textit{in degrees}, and 1AU be the astronomical unit.  At the orbital radius of Pluto, $s[AU] \approx (0.02) \theta[deg]$.  How far in AU did the object move?  d) What is the average velocity from part c) in AU per day?  Does this answer make sense if the object is outside the solar system?
+\item Write the following vectors in component form: (a) $\vec{x}_1$ is a vector with a magnitude of 10 meters and that makes an angle of 15 degrees with respect to the x-axis. (b) $\vec{x}_2$ is a vector with magnitude 20 meters that makes an angle of 135.0 degrees with respect to the x-axis.  \\ \vspace{2.0cm}
+\item A person goes for a walk.  They head 0.5 km to the North, and then 0.5 km to the East.  Finally, they head North-East at an angle of 45 degrees with respect to the x-axis for 0.25 km.  a) Draw a diagram of their trajectory (East is x-axis, North is y-axis). b) What is the final location in x-y coordinates? c) What is the distance from the origin? \\ \vspace{3cm}
 \end{enumerate}
+
+\section{Chapter 3: Motion Along a Straight Line}
+
+\begin{enumerate}
+\item The position of a particle moving along the x-axis is given by $x(t) = -1.0 - 4.0t$ m. (a) What is the displacement of the particle between $t=-2.0$ seconds and $t=2.0$ seconds?  (b) What is the velocity? \\ \vspace{1.5cm}
+\item A particle moves along the x-axis according to $x(t) = -2t + 7t^2$.  (a) What is the average velocity between $t=0$ and $t=2$ seconds?  (b) Draw a graph of the \textbf{velocity}.  (c) What is the instantaneous velocity at $t=1$ second?  (d) What is the acceleration? \\ \vspace{3cm}
+\item A sprinter has a constant acceleration of $5.0$ m/s$^2$.  Suppose she starts from rest.  (a) How long does it take her to reach her top speed of 10.0 m/s? (b) What is her displacement at that time?  (c) Suppose she is running the 100 meter sprint.  If she continues at 10.0 m/s for the remainder of the race, what will be her total time? \\ \vspace{3cm}
+\end{enumerate}
+
+\section{Chapter 4: Motion in Two and Three Dimensions}
+
+\begin{enumerate}
+\item The world record highest basketball shot was made from a height of 162.5 meters above the basketball hoop.  The basketball hoop was placed 75 meters horizontally from the shooter.  a) Draw a diagram of the situation.  b) What is the horizontal velocity required to make the shot?  That is, assume the shooter shoots the ball with no vertical velocity, only horizontal. \\ \vspace{4cm}
+\item A baseball is hit at a 45 degree angle with respect to the horizontal at 40 m/s.  (a) How far away does it land? (b) How long is it in the air?
+\end{enumerate}
+
 \end{document}
