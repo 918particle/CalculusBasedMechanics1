@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{fancyvrb}
+\usepackage{url}
+
+\begin{document}
+
+\title{Lab Activity: DC Circuits, Breadboards and LEDs}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{The Breadboard and the DVM}
+
+\begin{enumerate}
+\item The basic function of the DC power supply is to control the voltage \textit{between} the positive and negative terminals, while simultaneously limiting the current with the lower knob.  The \textit{digital volt-meter}, or DVM, is a device for measuring DC and AC voltage.
+\item Set the DC power supply to 3.3 V.  Limit the current by turning the current knob all the way counter-clockwise, and then a little clockwise until the red light turns off.  Plug the \textit{leads} of the DVM into the DVM ground or common (black) and DC voltage (red) holes if they are not already inserted.  Use the DVM leads to verify the number displayed for the voltage.
+\item Use the black and red wires to connect the DC power supply to the \textit{breadboard} on the table.  Use the tiny \textit{jumper wires} to place the positive and ground voltages onto the breadboard.  Horizontal rows of five holes are connected, and the long vertical rows are also connected.
+\end{enumerate}
+
+\section{The LED and Resistor}
+
+\begin{enumerate}
+\item The positive lead of the LED is longer than the negative lead.  We can't just give 3.3 V across the LED, though, it will burn out.  Thus, we place a \textit{resistor} to block the majority of the current from flowing through the LED.  We creat an $iR$ drop across the resistor and the rest of the current goes through the LED.
+\item Complete the circuit by attaching 3.3 V to one side of the resistor, followed \textit{in series} with the positive lead of the LED, followed \textit{in series} with ground.
+\item Turn on the 3.3V to activate the LED.
+\end{enumerate}
+
+\section{Ohm's Law}
+
+\begin{enumerate}
+\item The resistor and the LED should be \textit{in series.}  Measure the resistance of the resistor, and measure the current flowing by placing the DVM \textit{in series} with the circuit.  The red lead of the DVM must be connected to the current connection, not the voltage connection (the current connection is labeled "A").  (a) Using Ohm's law, calculate the effective resistance of the LED. (b) Simulate the circuit in the PhET DC circuits construction kit.  Simulate the LED with a bulb, and the resistor with an equivalent resistor.  Model the DC power supply as a battery.  Record your measurements and simulation choices below. \\ \vspace{3cm}
+\item LED resistance:$~~~~~~~~~~~~~~~$ Modeled LED resistance:$~~~~~~~~~~~~~~~$          Current:$~~~~~~~~~~~~~~~$          Modeled current:$~~~~~~~~~~~~~~~$
+\item Does the simulation match the circuit within errors?
+\end{enumerate}
+
+\end{document}
