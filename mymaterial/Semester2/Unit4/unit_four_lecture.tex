@@ -13,7 +13,7 @@
 \section{Summary}
 
 \begin{frame}{Unit 3 Summary}
-\textbf{Reading: Chapter 11}
+\textbf{Reading: Chapter 11 and 12}
 \begin{enumerate}
 \item Magnetism and magnetic fields
 \item Motion of a charged particle in a magnetic field
@@ -21,6 +21,7 @@
 \item Current loops
 \item The Hall effect
 \item Applications
+\item Amp\`{e}re's Law
 \end{enumerate}
 \end{frame}
 
@@ -746,10 +747,173 @@ Two identical current loops are oriented with centers at $x=y=0$, but with diffe
 \end{enumerate}
 \end{frame}
 
+\section{Amp\`{e}re's Law}
+
+\begin{frame}{Amp\`{e}re's Law}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=Amp\`{e}re's Law]
+\alert{Let $I$ be the total current passing through any open surface S whose perimeter is a closed path of integration:
+\begin{equation}
+\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\rm enc}
+\label{eq:ampereslaw}
+\end{equation}}
+\end{tcolorbox}
+\begin{itemize}
+\item Compare to Gauss' Law for charge
+\item The left-hand side is always 0 for E-fields
+\item See online tutorial for derivation
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/amplaw1.jpeg}
+\caption{\label{fig:amplaw1} Directions for a right-handed B-field around a current emerging from the page.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+Which of the following is the correct formula for the B-field magnitude a distance $r$ from a long thin straight wire?
+\begin{itemize}
+\item A: $B = \frac{\mu_0 I}{2\pi r^2}$
+\item B: $B = \frac{\mu_0 I}{2\pi}$
+\item C: $B = \frac{\mu_0}{2\pi r}$
+\item D: $B = \frac{\mu_0 I}{2\pi r}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+Suppose we form an Amperian loop around a current I that flows in the $\hat{k}$ direction, and another current I that flows in the $-\hat{k}$ direction.  Which of the following is true of the integrated B-field around the loop? (Assume that $\hat{k}$ comes out of the page).
+\begin{itemize}
+\item A: There's current in the loop, so B > 0
+\item B: There's negative current i the loop, so B < 0
+\item C: The currents cancel, so B = 0
+\item D: Since the loop is a distance $r$ away from the currents, the B-field is small.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+Suppose we form an Amperian loop around a current I that flows in the $\hat{k}$ direction, and another current I that flows in the $-\hat{k}$ direction.  Which of the following is true of the integrated B-field around the loop? (Assume that $\hat{k}$ comes out of the page).
+\begin{itemize}
+\item A: There's current in the loop, so B > 0
+\item B: There's negative current i the loop, so B < 0
+\item C: The currents cancel, so B = 0
+\item D: Since the loop is a distance $r$ away from the currents, the B-field is small.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\small
+Which of the following Amperian loops causes the quantity $\oint \vec{B} \cdot d\vec{l}$ to be positive?
+\begin{itemize}
+\item A: A and B
+\item B: A and C
+\item C; B and D
+\item D: B and C
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/ampQuestion1.jpeg}
+\caption{\label{fig:ampQuestion1} A cross-section of a coil of wire with four Amperian loops.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\small
+If the currents are all I in Fig. \ref{fig:ampQuestion2}, what is the value of $\oint \vec{B} \cdot d\vec{l}$ for loop D?
+\begin{itemize}
+\item A: $\mu_0 I$
+\item B: $-\mu_0 I$
+\item C; $2\mu_0 I$
+\item D: $-2\mu_0 I$
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/ampQuestion1.jpeg}
+\caption{\label{fig:ampQuestion2} A cross-section of a coil of wire with four Amperian loops.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\small
+If the currents are all I in Fig. \ref{fig:ampQuestion3}, what is the value of $\oint \vec{B} \cdot d\vec{l}$ for loop B?
+\begin{itemize}
+\item A: $4\mu_0 I$
+\item B: $-4\mu_0 I$
+\item C; $\mu_0 I$
+\item D: $0$
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/ampQuestion1.jpeg}
+\caption{\label{fig:ampQuestion3} A cross-section of a coil of wire with four Amperian loops.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\small
+In Fig. \ref{fig:ampQuestion4}, which setup has the \textit{most negative} value for $\oint \vec{B} \cdot d\vec{l}$ ?
+\begin{itemize}
+\item A: (a)
+\item B: (b)
+\item C; (c)
+\item D: (d)
+\item E: (e)
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.55\textwidth]{figures/ampQuestion2.jpeg}
+\caption{\label{fig:ampQuestion4} Currents and Amperian loops.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+What will be the B-field within and outside of a wire if we account for the thickness of the wire?
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/amplaw2.jpeg}
+\caption{\label{fig:amplaw2} A wire with some thickness $a$, and a current $I_0$ uniformly distributed.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+What will be the B-field within and outside of a wire if we account for the thickness of the wire? \alert{Demonstration:}
+\begin{itemize}
+\item Current density: $\int \vec{J} \cdot d\vec{A} = I$
+\item Amperian loop orientation, and enclosed current
+\item Perform the integral
+\item Graph the B-field
+\end{itemize}
+\end{frame}
+
 \section{Summary}
 
 \begin{frame}{Unit 3 Summary}
-\textbf{Reading: Chapter 11}
+\textbf{Reading: Chapter 11 and 12}
 \begin{enumerate}
 \item Magnetism and magnetic fields
 \item Motion of a charged particle in a magnetic field
@@ -757,6 +921,7 @@ Two identical current loops are oriented with centers at $x=y=0$, but with diffe
 \item Current loops
 \item The Hall effect
 \item Applications
+\item Amp\`{e}re's Law
 \end{enumerate}
 \end{frame}
 
