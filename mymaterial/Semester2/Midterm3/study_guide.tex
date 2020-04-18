@@ -1,0 +1,117 @@
+\title{Study Guide for Midterm 3}
+\author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
+\date{\today}
+\documentclass[10pt]{article}
+\usepackage[a4paper, total={18cm, 27cm}]{geometry}
+\usepackage{outlines}
+\usepackage{graphicx}
+\begin{document}
+\maketitle
+
+\section{Memory Bank}
+
+\begin{enumerate}
+\item $\vec{E} = -\frac{\Delta V}{\Delta x}$ ... E-field is the slope or change in voltage with respect to distance
+\item $V(x) = -E x + V_0$ ... Voltage is linear between two charge planes
+\item $Q = CV$ ... Definition of capacitance
+\item $C = \frac{\epsilon_0 A}{d}$ ... Capacitance of a parallel plate capacitor
+\item $C_{tot}^{-1} = C_1^{-1} + C_2^{-1}$ ... Adding two capacitors \textit{in series.}
+\item $C_{tot} = C_1 + C_2$ ... Adding two capacitors \textit{in parallel.}
+\item $i(t) = dQ/dt$ ... Definition of current.
+\item $v_d = i/(nqA)$ ... Charge drift velocity in a current $i$ in a conductor with number density $n$ and area $A$.
+\item $R_{tot}^{-1} = R_1^{-1} + R_2^{-1}$ ... Adding two capacitors \textit{in parallel.}
+\item $R_{tot} = R_1 + R_2$ ... Adding two capacitors \textit{in series.}
+\item $\Delta V = I R_{\rm tot}$, $\vec{J} = \sigma \vec{E}$ ... Versions of Ohm's Law. ($\vec{J}$ is the current density with units of Amps per meter-squared).
+\item $P = I V$ ... Relationship between power, current, and voltage.
+\item $V_{\rm C}(t) = \epsilon_1 \left(1 - \exp(-t/\tau)\right)$ ... voltage across the capacitor in an RC series circuit.  The time constant $\tau = RC$.
+\item $i(t) = \frac{\epsilon_1}{R} \exp(-t/\tau)$ ... Current in an RC series circuit.
+\item $i_{\rm in} = i_{\rm out}$ ... Kirchhoff's junction rule.
+\item $\epsilon_1 + \epsilon_2 + \epsilon_3 + ... = 0$ ... Kirchhoff's loop rule.
+\item $\vec{F} = q\vec{v} \times \vec{B}$ ... The Lorentz force on a charge $q$ with velocity $\vec{v}$ in a magnetic field $\vec{B}$.
+\item $\vec{F} = I\vec{L} \times \vec{B}$ ... The Lorentz force on a conductor of length $\vec{L}$ carrying a current $I$ in a magnetic field $\vec{B}$.
+\item $\int \vec{B} \cdot d\vec{l} = \mu_0 I_{enc}$ ... Amp\`{e}re's Law.
+\item $\epsilon = -N d\phi/dt$ ... Faraday's Law.
+\item $\phi = \vec{B} \cdot \vec{A}$ ... Definition of magnetic flux.
+\item $-N d\phi/dt = \oint \vec{E} \cdot d\vec{l}$ ... Induced E-field due to changing magnetic flux.
+\item Faraday's Law using \textbf{Inductance}, M: $emf = -M \frac{dI}{dt}$.
+\item Typically, we refer to \textit{mutual inductance} between two objects as $M$, and \textit{self inductance} as $L$.  Self-inductance: $\Delta V = -L (dI/dt)$.
+\item Units of inductance: V s A$^{-1}$, which is called a Henry, or H.
+\end{enumerate}
+
+\clearpage
+
+\section{Chapter 11: Magnetic Forces and Fields}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth]{lorentzDir.jpeg} \hspace{0.5cm}
+\includegraphics[width=0.3\textwidth]{lorentzDirCurrent.jpeg}
+\caption{\label{fig:chap11_1} (Left) A charge $q$ experiences a force $F$ in a B-field. (Right) A current $I$ experiences a force $F$ in B-field.}
+\end{figure}
+
+\begin{enumerate}
+\item Consider Fig. \ref{fig:chap11_1}.  In each of the cases, determine the direction of the charge or current. \\ \vspace{1cm}
+\item Consider Fig. \ref{fig:chap11_2} (right). The cross-sectional dimensions of the copper strip shown are 2.0 cm by 2.0 mm. The strip carries a current of 100 A, and it is placed in a magnetic field of magnitude B = 1.5 T. What are the value and polarity of the Hall potential in the copper strip? \\ \vspace{2cm}
+\item Consider Fig. \ref{fig:chap11_2} (left). (a) A 200-turn circular loop of radius 50.0 cm is vertical, with its axis on an east-west line. A current of 100 A circulates clockwise in the loop when viewed from the east. Earth’s field here is due north, parallel to the ground, with a strength of $3 \times 10^{-5}$ T.  What are the direction and magnitude of the torque on the loop? (b) Does this device have any practical applications as a motor? \\ \vspace{1cm}
+\end{enumerate}
+
+\begin{figure}[hb]
+\centering
+\includegraphics[width=0.3\textwidth]{torqueLoop.jpeg} \hspace{1cm}
+\includegraphics[width=0.4\textwidth]{hallEffect1.jpeg}
+\caption{\label{fig:chap11_2} (Left) A charge $q$ experiences a force $F$ in a B-field. (Right) A current $I$ experiences a force $F$ in B-field.}
+\end{figure}
+
+\section{Chapter 12: Sources of Magnetic Fields}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.35\textwidth,trim=8.5cm 1cm 0cm 3cm,clip=true]{toroid.jpeg}
+\caption{\label{fig:chap12_1} A basic diagram of a \textit{toroid}, which is a solenoid wrapped into a circular tube.}
+\end{figure}
+
+\begin{enumerate}
+\item (a) Using Amp\`{e}re's Law, show that the B-field of a solenoid with $n$ turns per unit length carrying a current $I$ is $B = \mu_0 n I$. (b) What is the B-field inside a solenoid with 1000 turns per meter, carrying a current of 0.1 A? \\ \vspace{1cm}
+\item Consider Fig. \ref{fig:chap12_1}.  Suppose the current is 8 Amps, and the number of total turns is 20,000. If the radius of the toroid 5 meters, what is the \textit{toroidal} B-field inside of it? \\ \vspace{1cm}
+\item Suppose plasma is trapped inside the toroid, and has an effective current of 0.1 Amp. What is the \textit{poloidal} field (Fig. \ref{fig:chap12_1}) that results from this current, at a distance of 0.5 m from the center of the plasma? \\ \vspace{1cm}
+\end{enumerate}
+
+\section{Chapter 13: Electromagnetic Induction}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{magdamp.png} \hspace{0.5cm}
+\includegraphics[width=0.25\textwidth]{loopsine.png} 
+\caption{\label{fig:chap13_1} (Left) \textit{Magnetic damping} occurs when this loop moves through the uniform B-field. (Right) A voltage is induced on a loop by a changing B-field.}
+\end{figure}
+
+\begin{enumerate}
+\item A coil is moved through a magnetic field as shown in Fig. \ref{fig:chap13_1}. The field is uniform inside the rectangle and zero outside. What is the direction of the induced current (if one exists) and what is the direction of the magnetic force on the coil (if there is one) at each position shown?
+\begin{itemize}
+\item A: Current:$\rule{2cm}{0.15mm}$Force:$\rule{2cm}{0.15mm}$
+\item B: Current:$\rule{2cm}{0.15mm}$Force:$\rule{2cm}{0.15mm}$
+\item C: Current:$\rule{2cm}{0.15mm}$Force:$\rule{2cm}{0.15mm}$
+\item D: Current:$\rule{2cm}{0.15mm}$Force:$\rule{2cm}{0.15mm}$
+\item E: Current:$\rule{2cm}{0.15mm}$Force:$\rule{2cm}{0.15mm}$
+\end{itemize}
+\item The magnetic field in Fig. \ref{fig:chap13_1} flows out of the page through a single ($N=1$) loop, and is tuned to follow the form
+\begin{equation}
+B(t) = B_0 e^{-at}\sin(2\pi f t)
+\end{equation}
+The loop has a radius $r$.  (a) In terms of the given variables, what is the induced voltage in the circuit? (b) If $B_0 = 0.1$ T, $r = 0.1$ m, and $f = 10^3$ Hz, what is the induced emf at $t=0$?  (c) What is the current through the resistor at $t=0$? (c) What is the induced emf as $t \to \infty$? \\ \vspace{3cm}
+\end{enumerate}
+
+\section{Chapter 14: Inductance}
+
+\begin{enumerate}
+\item What is (a) the rate at which the current though a 0.30-H coil is changing if an emf of 0.12 V is induced across the coil?\\ \vspace{1cm}
+\item Consider Fig. \ref{fig:chap14_1}. The current shown in part (a) is increasing, whereas that shown in part (b) is decreasing. In each case, determine which end of the inductor is at the higher potential. \\ \vspace{2cm}
+\end{enumerate}
+
+\begin{figure}[hb]
+\centering
+\includegraphics[width=0.5\textwidth]{induct1.jpeg}
+\caption{\label{fig:chap14_1} Two inductors of inductance L, and currents $I$ with opposite directions.}
+\end{figure}
+
+\end{document}
