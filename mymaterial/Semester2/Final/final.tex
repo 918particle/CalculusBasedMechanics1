@@ -1,4 +1,4 @@
-\title{Final for Calculus-Based Physics: Electricity and Magnetism}
+\title{Final for Calculus-Based Physics: Electricity and Magnetism (PHYS180)}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
 \date{\today}
 \documentclass[10pt]{article}
@@ -12,90 +12,81 @@
 \section{Equations and constants}
 
 \begin{enumerate}
-\item Volume of a sphere: $V_s = \frac{4}{3}\pi r^3$.
-\item Density, mass and volume: $m = \rho V$.
-\item Charge density, charge and volume: $Q = \rho V$.
 \item Coulomb force: $\vec{F}_C = k \frac{q_1 q_2}{r^2}\hat{r}$.
+\item Centripetal force: $\vec{F} = \frac{mv^2}{r}$
 \item Definition of electric field: $\vec{F}_C = q\vec{E}$.
-\item Definition of electric flux: $\phi_E = \vec{E} \cdot \vec{A}$.
-\item Gauss' Law: $\phi_E = q_{enc}/\epsilon_0$. (Assumes field is uniform over the surface).
 \item Voltage and electric field, one dimension, uniform field: $|E| = - \frac{\Delta V}{\Delta x}$.
-\item Voltage and electric field, general case: $\vec{E} = -\nabla V$.
+\item Charge and capacitance: $Q = CV$.
+\item Definition of current: $I = \Delta Q / \Delta t$.
+\item Parallel plate capacitor: $C = \frac{\epsilon_0 A}{d}$.
 \item Ohm's Law: $V = IR$.
+\item Adding resistors \textit{in series}: $R_{tot} = R_1 + R_2$ \textit{in parallel}: $R_{tot}^{-1} = R_1^{-1} + R_2^{-1}$.
+\item Adding capacitors \textit{in parallel}: $C_{tot} = C_1 + C_2$ \textit{in series}: $C_{tot}^{-1} = C_1^{-1} + C_2^{-1}$.
 \item Electrical power: $P = IV = I^2 R = V^2/R$.
-\item Magnetic dipole moment: $\vec{\mu} = I \vec{A}$, where $\vec{A}$ is the area vector.
-\item Torque on a magnetic dipole: $\tau = \vec{\mu} \times \vec{B}$.
+\item Magnetic dipole moment: $\vec{\mu} = I \vec{A}$, where $\vec{A}$ is the area vector. $\mu = N I A$ if there are $N$ loops.
+\item Torque on a magnetic dipole: $\tau = \vec{\mu} \times \vec{B}$.  The magnitude is $\tau = \mu B \sin(\theta)$.
+\item Hall voltage: $emf = B l v$.
 \item Definition of magnetic flux: $\phi_m = \vec{B} \cdot \vec{A}$.  The units are T m$^2$, which is called a Weber, or Wb.
-\item Faraday's Law: $emf = -N \frac{d \phi}{d t}$
-\item Faraday's Law using \textbf{Inductance}, M: $emf = -M \frac{dI}{dt}$.
+\item Faraday's Law: $emf = -N \frac{\Delta \phi}{\Delta t}$.
+\item Faraday's Law using \textbf{Inductance}, M: $emf = -M \frac{\Delta I}{\Delta t}$.
 \item Typically, we refer to \textit{mutual inductance} between two objects as $M$, and \textit{self inductance} as $L$.
-\item Inductance of a solenoid: $L = \mu_0 n^2 V$
 \item Magnetic permeability: $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$
 \item Units of inductance: V s A$^{-1}$, which is called a Henry, or H.
 \item Coulomb constant: $k = 8.9876 \times 10^{9}$ N m$^2$ C$^{-2}$.
 \item Fundamental charge: $q_e = 1.602 \times 10^{-19}$ C.
+\item Speed of light: $\approx 3 \times 10^{8}$ m/s.
+\item Permittivity of free space: $\epsilon_0 = 8.85 \times 10^{-12}$ N$^{-1}$ C$^2$ m$^{-2}$.
 \end{enumerate}
 
 \clearpage
 
-\section{Exercises}
-
 \begin{enumerate}
-\item \textbf{Chapters 5-6: Electrostatics and Gauss' Law}
-\begin{enumerate}
-\item A spherical water droplet of radius $25 \times 10^{-6}$ m carries an excess of 250 electrons.  The density of water is 997 kg m$^{-3}$.  (a) Calculate the mass of the water droplet. (b) Second, work out the total excess charge of the water droplet.  (c) What is the electric field required to balance the force of gravity on the drop? (d) Write an expression for the electric field outside of the water droplet assuming it is a sphere.  \\ \vspace{3.5cm}
-%\item Two non-conducting spheres are uniformly charged with charges $Q_1$ and $Q_2$, respectively.  The geometry of the system is depicted in Fig. \ref{fig:spheres}.  (a) Using Gauss' law, write the expression for the electric field of each sphere separately, observed at $P$ for each.  (b) Sum the total electric field due to spheres 1 and 2, observed at point $P$, for $\theta = 45$ deg, $Q_1 = Q_2 = 1.0$ $\mu$C, and $r = 1.0$ m. \\ \vspace{3.5cm}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.3\textwidth]{spheres.png}
-%\caption{\label{fig:spheres} Two charged spheres with radii $R_1$ and $R_2$, separated by a distance $a$, observed at a point $P$ at a distance $r$ from the center of sphere 1, at an angle $\theta$ with respect to the line between the spheres.  Assume that $P$ is also a distance $r$ from sphere 2.}
-%\end{figure}
-\end{enumerate}
-\item \textbf{Chapters 7-8: Voltage and Capacitance}
-\begin{enumerate}
-\item The voltage across a membrane forming a cell wall is 80.0 mV and the membrane is 9.00 nm thick. What is the electric field strength? (The value is surprisingly large, but correct.) You may assume a uniform electric field. \\ \vspace{2cm}
-\item An electric potential is defined by $V(x,y,z) = a x^2 + b y^2 + c z^2$, with $a = 2.0$ V m$^{-2}$, $b = 1.0$ V m$^{-2}$, and $c = 4.0$ V m$^{-2}$.  What is the corresponding electric field at $P = (0,1,1)$? \\ \vspace{3.5cm}
-\end{enumerate}
-\item \textbf{Chapters 9-10: Current, Resistance, and DC Circuits}
-\begin{enumerate}
-\item
-\begin{figure}
+\item Consider Fig. \ref{fig:ring} below.  A ring of charge with radius $R$ is situated in the xy-plane.  The charge is positive, and it is distributed evenly across the ring.  We write $\Delta q = \lambda R \Delta\theta$, to mean that there is $\lambda$ Coulombs per unit length.  If $\Delta\theta$ were to extend to $2\pi$ (all the way around the circle), then the total charge is $Q = \lambda (2 \pi R)$.  (a) By symmetry, where should the electric field be zero?
+\begin{figure}[ht]
 \centering
-\includegraphics[width=0.12\textwidth]{OhmsTable.png}
-\caption{\label{fig:OhmsTable} A table of current (left column) and voltage (right column) data for a sample of material.}
-\end{figure} 
-Figure \ref{fig:OhmsTable} contains the measurements of a current through and the voltage across a sample of material. Plot at least three data points in a graph below, and estimate the resistance. \\ \vspace{3cm}
-\item An alternative to CFL bulbs and incandescent bulbs are light-emitting diode (LED) bulbs. A 100-W incandescent bulb can be replaced by a 16-W LED bulb.  Both produce 1600 lumens of light. Assuming the cost of electricity is \$0.10 per kilowatt-hour, how much does it cost to run the bulb for one year if it runs for four hours a day? \\ \vspace{2cm}
-\item Two AA batteries are connected \textit{in parallel} with a load resistor $R$, as shown in Fig. \ref{fig:batt1} (left).  The two internal resistances are $r_1$ and $r_2$, and the two emf's are $\mathcal{E}_1$ and $\mathcal{E}_2$. Assume $r_1 = r_2$ and $\mathcal{E}_1 = \mathcal{E}_2$.  (a) Using the junction rule once, and the loop rule twice, solve for the current through the load resistor algebraically. (b) If  $\mathcal{E}_1 = \mathcal{E}_2 = 1.5$ V, $r_1 = r_2 = 0.1 \Omega$, and $R = 100\Omega$, what is the current through $R$? \\ \vspace{4cm}
-\begin{figure}
-\centering
-\includegraphics[width=0.4\textwidth]{batt1.png}
-\includegraphics[width=0.3\textwidth]{amplaw.png}
-\caption{\label{fig:batt1} (Left) Two batteries (a) connected in parallel with internal resistances can be modelled by a circuit (b). (Right) Three configurations of currents and loops.}
+\includegraphics[width=0.22\textwidth]{ring.png}
+\caption{\label{fig:ring} A ring of charge situated in the xy-plane.}
 \end{figure}
-\end{enumerate}
-\item \textbf{Chapters 11-12: Magnetic fields and Sources of Magnetic Fields}
-\begin{enumerate}
-\item A circular loop of wire of area $10^{-2}$ m$^{2}$ carries a current of 20.0 A.  At a particular instant, the loop lies in the $xy$-plane and is subjected to a magnetic field $\vec{B} = \left( 3.0 \hat{i} + 6.0 \hat{j} + 3.0 \hat{k} \right) \times 10^{-2}$ T.  As
-viewed from above the xy-plane, the current is circulating clockwise. (a) What is the magnetic dipole moment of the current loop? (b) At this instant, what is the magnetic torque on the loop? \\ \vspace{3cm}
-\item
-Use Amp\`{e}re's Law to evaluate $\oint \vec{B} \cdot d\vec{l}$ for the current configurations and paths (a)-(c) in Fig. \ref{fig:batt1} (right). \\ \vspace{2cm}
-\end{enumerate}
-\item \textbf{Chapters 13-14: Electromagnetic Induction and Inductance}
-\begin{enumerate}
-\item 
-\begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{transformer.png}
-\caption{\label{fig:trans} The basic diagram for a \textit{transformer}...No, not Megatron the thing that gives us AC power.}
-\end{figure}
-In Fig. \ref{fig:trans} (left) a \textit{transformer} is depicted.  The gray square represents an iron core which ensures that the magnitude of the magnetic flux through the left solenoid \textbf{is identical to} the magnetic flux on the right solenoid.  Both solenoids are $L = 5$ cm long.  Suppose the left solenoid has $N_L = 500$ turns, and the right solenoid has $N_R = 1000$ turns.  Let the induced emf in the left solenoid be $v_L$, and the induced emf in the right solenoid be $v_R$.  Show that
+\item As $z \rightarrow \infty$ in Fig. \ref{fig:ring}, what happens to the field?
+\begin{itemize}
+\item A: The field-strength increases.
+\item B: The field-strength remains constant.
+\item C: The field-strength decreases.
+\item D: The field-strength is exactly zero.
+\end{itemize}
+\item Suppose the actual function for the E-field $\vec{E}(z)$ is
 \begin{equation}
-\frac{v_L}{N_L} = \frac{v_R}{N_R}
-\end{equation} \\ \vspace{3cm}
-\item The two solenoids in Fig. \ref{fig:trans} each have volume $V = 5 \times 10^{-6}$ m$^3$, and length $l = 1.0$ cm.  What is the inductance of each, in Henries? \\ \vspace{3cm}
-\item Suppose the current changes in the left solenoid of Fig. \ref{fig:trans} at a rate of 100 A s$^{-1}$.  (a) Using the inductance of the left solenoid, what is the induced emf in the left solenoid? (b) Using the result that $\frac{v_L}{N_L} = \frac{v_R}{N_R}$, calculate the induced emf in the right solenoid. \\ \vspace{4cm}
-\end{enumerate}
+\vec{E}(z) = \frac{1}{4\pi \epsilon_0} \frac{q z}{\left( z^2 + R^2 \right)^{3/2}} \hat{z} \label{eq:eq1}
+\end{equation}
+To see what happens when $z$ is much larger than $R$, try setting $R=0$.  What is the result in Eq. \ref{eq:eq1} if $R=0$? \\ \vspace{1cm}
+\item To what charge distribution does this expression correspond (the limit that $R \rightarrow 0$)? \\ \vspace{1cm}
+\item (a) What is the final kinetic energy of a proton accelerated through 1 kV? (b) Suppose protons are placed into a linear accelerator with 100 voltages that each provide 10 kV potential.  What is the final kinetic energy in eV?  (c) What is the final speed of the proton? \\ \vspace{1.5cm}
+\item Suppose two parallel plate capacitors are added in parallel.  One has an area of 1.0 mm$^2$, and a plate separation of 0.1 mm, and the other has area 0.5 mm$^2$ and separation 0.2 mm.  What is the total capacitance of the system? \\ \vspace{1cm}
+\clearpage
+\item A DC winch motor is rated at 20.00 A with a voltage of 115 V. When the motor is running at its maximum power, it can lift an object with a weight of 4900.00 N a distance of 10.00 m, in 30.00 s, at a constant speed. (a) What is the power consumed by the motor? (b) What is the power used in lifting the object? Ignore air resistance. (c) Assuming that the difference in the power consumed by the motor and the power used lifting the object are dissipated as heat by the resistance of the motor, estimate the resistance of the motor? \\ \vspace{2.5cm}
+\item Suppose a a battery is connceted in series with a resistor.  The $\epsilon$, or emf of the battery is 14 V and the resistance is 50$\Omega$.  The current is measured to be 266 mA.  What is the \textit{internal resistance} of the battery? \\ \vspace{1.5cm}
+\item Consider Fig. \ref{fig:lorentz}, in which a DC power generator is depicted inside a 0.05 T B-field.  Suppose the area of the loop is $10^{-2}$ m$^{2}$, the voltage in the circuit is 24 V, and the circuit resistance is 50 $\Omega$.  Also assume that there is just one loop of wire in the rotor.  What is the \textit{maximum torque} the system could achieve? \\ \vspace{2cm}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.55\textwidth]{commute.jpeg}
+\caption{\label{fig:lorentz} An illustration of how a power generator works.  This version uses DC current and a commutator.}
+\end{figure}
+\item What would the maximum torque be if there were $N = 100$ turns of wire? \\ \vspace{1cm}
+\item Consider Fig. \ref{fig:acgen}.  Suppose that the angle between the area vector and the magnetic field is $\theta = \omega t$.  (a) Show that
+\begin{equation}
+\phi(t) = BA\cos(\omega t) \label{eq:ac}
+\end{equation}
+(b) Given Eq. \ref{eq:ac}, it turns out that the voltage generated in the loop is proportional to $\sin(\omega t)$ and $\omega$ itself.  That is,
+\begin{equation}
+\epsilon(t) = BA\omega \sin(\omega t)
+\end{equation}
+What is the voltage at a time $t = 1/240$ seconds, $\omega = 120\pi$ Hz, $B = 0.1$ T, and $A = 0.01$ m$^2$? (c) At what time is the voltage zero? \\ \vspace{3cm}
+\begin{figure}[hb]
+\centering
+\includegraphics[width=0.35\textwidth]{acGen.jpeg}
+\caption{\label{fig:acgen} A schematic of the concept of an AC generator.}
+\end{figure}
+\item Suppose the AC generator in Fig. \ref{eq:ac} has $V_0 = 12$ V so that $\epsilon(t) = V_0 \sin(\omega t)$.  If the AC generator pushes current through a resistance $R = 50\Omega$, what is the average power generated?
 \end{enumerate}
 
 \end{document}
