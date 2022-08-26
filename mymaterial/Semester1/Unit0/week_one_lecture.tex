@@ -15,12 +15,11 @@
 \begin{enumerate}
 \item Professor Jordan Hanson
 \item Contact: jhanson2@whittier.edu, SLC 212
-\item Syllabus: Moodle (will examine shortly)
-\item Office hours: Mondays, 16:30-17:30, and Tuesdays from 13:00-16:00 in SLC 212.
+\item Syllabus: Moodle 
+\item Office hours: Discord 918particle\#5083
 \item Course pre-requisites: Calculus 1 (concurrently or previously, high-school equivalent).
-\item Text: University Physics Volume 1 (openstax.org)
-\item Homework: ExpertTA (theexpertta.com)
-\item Lab notebooks (will distribute shortly)
+\item Text: University Physics Volume 1 (see syllabus)
+\item Homework: OpenStax Tutor (see syllabus)
 \end{enumerate}
 \end{frame}
 
@@ -186,12 +185,12 @@ In science and engineering, \alert{function approximation} or \alert{expanding a
 \begin{frame}{Methods of approximation - Function approximation}
 \small
 \begin{minipage}[b]{0.45\linewidth}
-The height in meters of a surfer above some average height as he bobs in the waves is described by $h(t) = sin(t)$.  What is his height at 1.0 second?  What is his height at -1.0 second?
+The height in meters of a surfer above some average height as he bobs in the waves is described by $h(t) = sin(\pi t/2)$.  What is his height at 0.2 seconds?  What is his height at -0.2 seconds?
 \vspace{0.2cm}
 \begin{itemize}
-\item A: 1 meter, -1 meter
-\item B: $\pi$ meters, -$\pi$ meters
-\item C: -1 meter, 1 meter
+\item A: 10 meters, -10 meters
+\item B: $\pi/10$ meters, -$\pi/10$ meters
+\item C: -0.1 meters, 0.1 meters
 \item D: -$\pi$ meters, $\pi$ meters
 \end{itemize}
 \end{minipage}
@@ -256,7 +255,7 @@ Ice has a density of 0.917 grams per centimeter cubed.  What is this density in 
 Sometimes, the beauty of physics arrises from choosing the right unit. \\
 \vspace{1cm}
 \small
-\boxed{http://joshworth.com/dev/pixelspace/pixelspace\_solarsystem.html} \\
+\url{http://joshworth.com/dev/pixelspace/pixelspace\_solarsystem.html} \\
 \vspace{1cm}
 \normalsize
 The Sun in this ruler is at 0 km, and Jupiter is at about 780,000,000 km (good luck finding it).  Clearly, the kilometer is the wrong unit to choose for interplanetary distances.  What if we defined a new unit, the \alert{astronomical unit}, as the distance between the Earth and the Sun?
@@ -327,11 +326,11 @@ In other words, when subtracting vectors, we subtract them component by componen
 \end{frame}
 
 \begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
-A Java-based demonstration for adding vectors: \\
+A HTML-based demonstration for adding vectors: \\
 \vspace{0.5cm}
-\url{https://phet.colorado.edu/en/simulation/legacy/vector-addition}
+\url{https://phet.colorado.edu/en/simulations/vector-addition}
 \vspace{0.5cm} \\
-You may need to update Java.  Notice several things:
+Notice several things:
 \begin{itemize}
 \item Produce vectors that \textit{cancel} each other.
 \item What happens when vectors are parallel and orthogonal?
@@ -560,32 +559,6 @@ If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m,
 \item B: $(80\hat{i} + 100\hat{j})$ m, 10 m/s
 \item C: $(100\hat{i} + 100\hat{j})$ m, 14 m/s
 \item D: $(50\hat{i} + 150\hat{j})$ m, 10 m/s
-\end{itemize}
-\end{frame}
-
-\section{Lab Activity: Using data to derive speed from displacement}
-
-\begin{frame}{LoggerPro and Spreadsheets}
-\small
-Using LoggerPro/Spreadsheet to derive velocity.
-\begin{itemize}
-\item Estimate the velocity we produce with our hands in front of the detector.
-\item Select a region of displacement data that appears to have constant velocity.
-\item Copy this data to a spreadsheet.
-\item We want to derive the quantity $\frac{\Delta x}{\Delta t}$.
-\item To obtain the $\Delta t$ values, we take $t_{\rm i+1} - t_{\rm i}$.  This should be the same for every displacement measurement.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{LoggerPro and Spreadsheets}
-\small
-Using LoggerPro/Spreadsheet to derive velocity.
-\begin{itemize}
-\item Likewise, take $x_{\rm i+1} - x_{\rm i}$ to obtain $\Delta x$.
-\item Next, we'll need to associate a time $t$ with every $\Delta x$ and $\Delta t$.
-\item Take the average of subsequent times to do this: $t_{\rm ave} = (t_{\rm i+1} + t_{\rm i})/2$.
-\item Graph $(\Delta x)/(\Delta t)$ versus $t_{\rm ave}$.
-\item Use the spreadsheet tools to fit a trend line to this data.  Identify the meaning of the slope and intercept.  Do the answers agree with LoggerPro?
 \end{itemize}
 \end{frame}
 
