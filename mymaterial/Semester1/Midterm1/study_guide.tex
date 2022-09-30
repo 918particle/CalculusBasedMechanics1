@@ -1,4 +1,4 @@
-\title{Study Guide for Midterm 1}
+\title{Study Guide for Midterm}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
 \date{\today}
 \documentclass[10pt]{article}
@@ -26,8 +26,6 @@
 \item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
 \item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
 \item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
-\item $\vec{v}(t) = \frac{d\vec{x}}{dt}$ ... General calculus-based definition of velocity.
-\item $\vec{a}(t) = \frac{d\vec{v}}{dt}$ ... General calculus-based definition of acceleration.
 \item General set of 2D kinematic equations, assuming gravity provides constant vertical negative acceleration.
 \begin{align}
 \vec{x}(t) &= (x_i + v_{x,i} t) \hat{i} \\
@@ -35,42 +33,45 @@
 \vec{v}_y &= (v_{i,y} - g t) \hat{j} \\
 \vec{a} &= -g \hat{j} \\
 T_{tof} &= \frac{2 v_0\sin(\theta_0)}{g} \\
-R &= \frac{v_0^2\sin(\theta_0)}{g} \\
+R &= \frac{v_0^2\sin(2\theta_0)}{g} \\
 v_{x,i} &= v_0 \cos(\theta) \\
 v_{y,i} &= v_0 \sin(\theta)
 \end{align}
+\item Newton's First Law: If $\vec{F}_{\rm net} = 0$, a system will remain at rest or constant velocity.
+\item Newton's Second Law: If $\vec{F}_{\rm net} \neq 0$, $\vec{F}_{\rm net} = m\vec{a}$.
+\item Newton's Third Law: $\vec{F}_{\rm 12} = - \vec{F}_{\rm 21}$.
 \end{itemize}
 
-\section{Chapter 1: Estimations and Unit Analysis}
+\section{Unit 0: Estimations and Unit Analysis}
 
 \begin{enumerate}
-\item Nerve fibers are often observed to make nerve signals propagate at a speed of 100 m/s.  Estimate the reaction time of a person, if they touch something hot.  That is, the signal must travel from their finger touching a hot surface, to the spinal chord, and back to the finger to make it move. \\ \vspace{1.5cm}
-\item (a) The speed of sound is measured to be 342 m/s. What is this measurement in kilometers per hour?  (b) The speed of sounds in water is 5400 km/h.  What is this in m/s? \\ \vspace{1cm}
-\item A two \textit{liter} bottle of water has a volume of $2000$ cm$^3$.  What is this volume in m$^3$?  \textit{Hint: it's not 20 m$^3$.}\\ \vspace{1cm}
+\item Nerve fibers are often observed to make nerve signals propagate at a speed of 100 m/s.  Estimate the reaction time of a person, if they touch something hot.  That is, the signal must travel from their finger touching a hot surface, to the spinal chord, and back to the finger to make it move. \\ \vspace{1.0cm}
+\item (a) The speed of sound is measured to be 342 m/s. What is this measurement in kilometers per hour?  (b) The speed of sounds in water is 5400 km/h.  What is this in m/s? \\ \vspace{0.5cm}
+\item A two \textit{liter} bottle of water has a volume of $2000$ cm$^3$.  What is this volume in m$^3$?  \textit{Hint: it's not 20 m$^3$.}\\ \vspace{0.5cm}
 \end{enumerate}
 
-\section{Chapter 2: Vectors}
+\section{Unit 1: Vectors}
 
 \begin{enumerate}
 \item Write the following vectors in component form: (a) $\vec{x}_1$ is a vector with a magnitude of 5 km and that makes an angle of 60 degrees with respect to the x-axis. (b) $\vec{x}_2$ is a vector with magnitude 3 km that makes an angle of -45.0 degrees with respect to the x-axis. (c) $\vec{x}_3$ is a vector that has a magnitude of 3 km and makes an angle of 225 degrees with respect to the x-axis.  Write your answers using $\hat{i} \hat{j}$ notation.  \\ \vspace{3cm}
 \item A ship sails from harbor, which corresponds to the origin in a two-dimensional coordinate system.  At first, the ship sails West for 30 km.  Then, the ship turns 45.0 degrees to the North, and sails another 30 km.  Finally, the ship turns West again, and sails an additional 20 km.  (a) Draw the three displacement vecetors on x-y axes.  (b) What is the final position of the ship?  (c) What is the distance between the ship and the origin? \\ \vspace{3cm}
 \end{enumerate}
 
-\section{Chapter 3: Motion Along a Straight Line}
+\section{Unit 2: Motion Along a Straight Line}
 
 \begin{enumerate}
-\item The position of a particle moving along the x-axis is given by $x(t) = 4.0 - 2.0t$ m. (a) At what time is the particle at $x=0$? (b) What is the displacement of the particle between $t=3.0$ seconds and $t=6.0$ seconds? \\ \vspace{2cm}
-\item A particle moves along the x-axis according to $x(t) = 10t - 2t^2$ m . (a) What is the instantaneous velocity at $t=2.0$ seconds, and $t=3.0$ seconds? (b) What is the average velocity between these times? \\ \vspace{3cm}
-\item A particle has a constant acceleration of $6.0$ m/s$^2$.  (a) If its initial velocity is 2.0 m/s, at what time is its displacement 5.0 m? (b) What is its velocity at that time? \\ \vspace{3cm}
+\item The position of a particle moving along the x-axis is given by $x(t) = 4.0 - 2.0t$ m. (a) At what time is the particle at $x=0$? (b) What is the displacement of the particle between $t=3.0$ seconds and $t=6.0$ seconds?  (c) Draw a graph of $x(t)$.  What is the velocity? \\ \vspace{2cm}
+\item A particle moves along the x-axis according to $x(t) = 10t - 2t^2$ m . (a) What is the average velocity between $t=2.0$ seconds and $t=3.0$ seconds? (b) Draw a graph of the displacement versus time.  Is the system accelerating?  \\ \vspace{3cm}
+\item A particle has a constant acceleration of $6.0$ m/s$^2$.  (a) If its initial velocity is 2.0 m/s, at what time is its displacement 5.0 m? (b) What is its velocity at that time? \\ \vspace{2cm}
 \item A football player collides with another player while running at a velocity of 7.50 m/s and comes to a full stop after 0.350 m. (a) What is his acceleration? (b) How long does
-the collision last? \\ \vspace{4cm}
+the collision last? \\ \vspace{3cm}
 \end{enumerate}
 
-\section{Chapter 4: Motion in Two and Three Dimensions}
+\section{Unit 3: Motion in Two and Three Dimensions}
 
 \begin{enumerate}
-\item A marble rolls off a tabletop 1.0 m high and hits the floor at a point 3.0 m away from the table’s edge in the horizontal direction. (a) How long is the marble in the air? (b) What is the speed of the marble when it leaves the table’s edge? \\ \vspace{4cm}
-\item A football player can kick a football such that it moves at 15 m/s.  (a) If he kicks at the right angle, what is the largest range he can achieve for a field goal? (b) How long will the ball be in the air?
+\item A marble rolls off a tabletop 1.0 m high and hits the floor at a point 3.0 m away from the table’s edge in the horizontal direction. (a) How long is the marble in the air? (b) What is the speed of the marble when it leaves the table’s edge? \\ \vspace{1.5cm}
+\item A football player can kick a football such that it moves at 15 m/s.  (a) If he kicks at the right angle, what is the largest range he can achieve for a field goal? (b) How long will the ball be in the air? \\ \vspace{0.75cm}
 \end{enumerate}
 
 \end{document}
