@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{url}
+
+\begin{document}
+
+\title{PhET Activity: Work and Energy with the Pendulum}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Link to the PhET Simulation, and Memory Bank}
+
+\url{https://phet.colorado.edu/en/simulations/pendulum-lab}
+
+\begin{itemize}
+\item Derivative of sine: $\frac{d}{dx} \sin(kx) = k\cos(kx)$
+\item Derivative of cosine: $\frac{d}{dx} \cos(kx) = -k\sin(kx)$
+\end{itemize}
+
+\section{Introduction}
+
+Let the angle a pendulum makes with the vertical line be $\theta$.  If $\theta \ll 1$, the position of the mass at the end of pendulum is
+
+\begin{align}
+x &= L\theta \\
+y &= \frac{1}{2}L\theta^2
+\end{align}
+
+The gravitational potential energy of the pendulum is 
+
+\begin{align}
+U(y) &= mgy \\
+U(\theta) &= \frac{1}{2}mgL\theta^2 \\
+k &= mgL \\
+U(\theta) &= \frac{1}{2}k\theta^2
+\end{align}
+
+Notice that the potential energy is a quadratic function, like the potential energy of the spring ($U(x) = \frac{1}{2} k x^2$).  Since $x = L\theta$, $dx = Ld\theta$.  This makes the derivative of $-U$ become
+
+\begin{equation}
+F = -\frac{dU}{dx} = -\frac{dU}{Ld\theta} = -mg\theta
+\end{equation}
+
+Using Newton's 2nd Law,
+
+\begin{align}
+m \frac{d^2 x}{dt^2} &= -mg\theta \\
+\frac{d^2 x}{dt^2} &= -g\theta \\
+L\frac{d^2 \theta}{dt^2} &= -g\theta \\
+\frac{d^2 \theta}{dt^2} &= -\left(\frac{g}{L}\right)\theta \label{eq:1}
+\end{align}
+
+Let the \textit{angular frequency} $\omega$ be defined by $\omega^2 = g/L$.  Equation \ref{eq:1} becomes
+
+\begin{equation}
+\frac{d^2 \theta}{dt^2} = -\omega^2\theta \label{eq:2}
+\end{equation}
+
+\textbf{Show that the solution Equation \ref{eq:2}} is a sum of sines and cosines.
+
+\clearpage
+
+\section{Simulation of Pendulum Behavior}
+
+Load the PhET simulation from the link at the top.  Load the Energy tab in the middle of the page.  Learn to control the length of the pendulum and to make it swing by clicking and dragging on the mass.
+
+\begin{enumerate}
+\item Create a graph below of the \textit{period} of of the pendulum versus length, and show that the period is proportional to the square root of the length. \\ \vspace{4cm}
+\item Determine when the speed of the pendulum is the largest, and when it is zero.  (a) What does this conclusion mean for the kinetic energy?  (b) When is the potential energy maximized?  (c) Using the tools of the PhET, what can you say about the \textit{total energy} of the system?
+\end{enumerate}
+
+\end{document}

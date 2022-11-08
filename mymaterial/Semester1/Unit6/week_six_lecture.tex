@@ -438,6 +438,7 @@ Since $P = \frac{dW}{dt}$ we may show that $P = \vec{F} \cdot \vec{v}$.  (Exampl
 \section{Definition of Conservative Force}
 
 \begin{frame}{Definition of Conservative Force}
+\small
 \begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Definition of Conservative Force]
 \alert{Let $\vec{F}(x,y)$ describe some \textit{force field}.  The field is \textbf{conservative} if the line integral around a closed path is zero: \\
 \begin{equation}
@@ -446,6 +447,7 @@ Since $P = \frac{dW}{dt}$ we may show that $P = \vec{F} \cdot \vec{v}$.  (Exampl
 Returning the system to the same point implies no net work.}
 \end{tcolorbox}
 \begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Corollary 1]
+The relationship between derivatives of the components is
 \begin{equation}
 \frac{dF_y}{dx} = \frac{dF_x}{dy}
 \end{equation}
@@ -462,14 +464,23 @@ Consider the case of gravity: $\vec{F}(x,y) = 0\hat{i} -mg \hat{j}$.  So it depe
 \end{frame}
 
 \begin{frame}{Definition of Conservative Force}
-Which force is conservative?
-\begin{itemize}
-\item A: $\vec{F} = x^2\hat{i}+y^2\hat{j}$
-\item B: $\vec{F} = x\hat{i}-y^2\hat{j}$
-\item C: $\vec{F} = -\hat{i}+y\hat{j}$
-\item D: $\vec{F} = x^2\hat{i}-y\hat{j}$
-\end{itemize}
-\textit{Hint: when you picture a conservative force, picture symmetry}.
+\small
+Check if the following force is conservative:
+\begin{equation}
+\vec{F} = x^2\hat{i}+y^2\hat{j}
+\end{equation}
+\textit{Hint: when you picture a conservative force, picture symmetry}. \\ \vspace{0.5cm}
+Check if the following force is conservative:
+\begin{equation}
+\vec{F} = y^2\hat{i}+x^2\hat{j}
+\end{equation}
+\alert{\textbf{How would you draw these forces?}}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Corollary 2]
+A conservative force is a gradient of a scalar function, the potential energy.
+\begin{equation}
+\vec{F} = - \nabla U
+\end{equation}
+\end{tcolorbox}
 \end{frame}
 
 \section{Conclusion}
