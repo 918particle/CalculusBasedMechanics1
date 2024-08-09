@@ -1,0 +1,118 @@
+\title{Final Exam Review for Calculus-Based Physics-1: Mechanics (PHYS150-01)}
+\author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
+\date{December 13th, 2017}
+\documentclass[10pt]{article}
+\usepackage[a4paper, total={18cm, 27cm}]{geometry}
+\usepackage{outlines}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{graphicx}
+
+\begin{document}
+\maketitle
+
+\section{Conceptual Questions}
+\subsection{Kinematics and Angular Kinematics}
+\begin{enumerate}
+\item If an object is thrown horizontally, instead of dropped, the acceleration downward
+\begin{itemize}
+\item is less than $g$
+\item is more than $g$
+\item \textbf{remains} $g$.  \textbf{The acceleration is independent of the initial velocity.}
+\end{itemize}
+\item If an object is released from an aircraft moving at constant velocity (no air resistance), it accelerates downward, but travels along with the aircraft horizontally.  An observer from the ground observes the object
+\begin{itemize}
+\item \textbf{traveling in a curved trajectory downward.  In fact, we can show that the curve is a parabola.}
+\item traveling in a straight but diagonal trajectory forward
+\item traveling straight downward
+\item traveling in a straight but diagonal trajectory backward
+\end{itemize}
+\item An object experiences zero \textit{angular} acceleration.  The angular velocity is a $\rule{1cm}{0.15mm}$ function of time, and the net external torque is $\rule{1cm}{0.15mm}$.
+\begin{itemize}
+\item \textbf{constant, zero. This follows from Newton's 2nd Law in rotational form.}
+\item linear, zero
+\item negative, positive 
+\item constant, positive
+\end{itemize}
+\end{enumerate}
+\subsection{Forces and Torque}
+\begin{enumerate}
+\item An elevator contains a person standing on a scale.  The elevator accelerates downward, then moves at constant velocity, then comes to a stop.  The scale reads a weight that is $\rule{1cm}{0.15mm}$, then $\rule{1cm}{0.15mm}$, and then $\rule{1cm}{0.15mm}$ the person's actual weight.
+\begin{itemize}
+\item More than, equal to, less than
+\item \textbf{Less than, equal to, more than...Draw the system box around the person only, and ask what happens to the tension, which leads to the normal force on the person.}
+\item equal to, equal to, equal to
+\item More than, equal to, equal to
+\end{itemize}
+\item A man needs to pull a car that is stuck.  He ties a rope to a nearby tree and pushes in the middle of the rope orthogonally to the rope.  Why?
+\begin{itemize}
+\item Newton's second law implies that the tension in the rope will be small.
+\item \textbf{Although the man's force is relatively small, the tension in the rope is large, due to Newton's second law. This is because the tension in the rope in both directions, plus his force, must sum to zero in the static case.  Draw the free body diagram.}
+\item Newton's third law dictates that the tree will pull on the car as much as the car pulls on the tree.
+\item Newton's third law dictates that the car must accelerate since there is a net force on it.
+\end{itemize}
+\end{enumerate}
+\subsection{Work and Energy}
+\begin{enumerate}
+\item In which of the follow situations would energy \textit{not} be conserved?
+\begin{itemize}
+\item \textbf{An object is floats down through pond, at constant velocity.  The graviational potential energy is decreasing, but kinetic energy is not increasing.}
+\item An external force compresses a mass against an oscillator for a given displacement and then the mass is released.
+\item A pendelum is pulled away from equilibrium and then released.
+\item A rock slowly slides without friction across a frozen pond.
+\end{itemize}
+\item A roller coaster starts on top of a hill of height $h$, and goes through a loop of radius $R$.  The top of the loop is $2R$ above the ground.  What is the ratio of $h$ to $R$?
+\begin{itemize}
+\item $h = 3/2 R$
+\item $h = 2 R$
+\item $h = 5/2 R$ \textbf{This was the result of a laboratory exercise we did together.  Conservation of energy via turning some gravitational potential energy into kinetic energy required for centripetal acceleration.}
+\item $h = 4 R$
+\end{itemize}
+\end{enumerate}
+\subsection{Linear and Angular Momentum}
+\begin{enumerate}
+\item A mine cart has two robbers inside, and moves at constant speed.  One shouts ``we gotta lighten the load!''  He tosses the other robber out the back, who tumbles to a stop.  The speed of the mine cart 
+\begin{itemize}
+\item \textbf{increases.  Momentum conservation: the mass of the system decreases so the velocity increases.}
+\item decreases
+\item remains constant (no net forces)
+\end{itemize}
+\item A hot rod's tire grows in radius as the driver hits the gas petal. Suppose the radius increases by a factor of $2$.  By what factor does the moment of inertia increase?
+\begin{itemize}
+\item $4$ \textbf{The moment of inertia is proportional to the radius squared.}
+\item $2$
+\item remains the same
+\end{itemize}
+\item The tire cools down, and shrinks back to the original radius, while suspended in the air.  Since angular momentum is conserved, if the radius shrinks by a factor of 2, the angular velocity
+\begin{itemize}
+\item doubles
+\item quadruples \textbf{The angular momentum is conserved, and $L = I\omega$.  If $I$ drops by a factor of 4, then $\omega$ increases by this same factor.}
+\item remains the same
+\end{itemize}
+\end{enumerate}
+\section{Technical Questions}
+\subsection{Kinematics and Angular Kinematics}
+\begin{enumerate}
+\item A ball is kicked with an initial velocity of $\vec{v} = 10\hat{i}+10\hat{j}$ m/s. (a) For how long does the ball remain in the air?  (b) What is the velocity vector when the ball lands? \\ \\
+(a) The vertical component of the velocity is all that matters for the time aloft.  It's 10 m/s, and with a deceleration of $g \approx 10$ m/s$^2$, the velocity will be zero after one second: $v = 10-gt = 0$ (if $t=1$).  Thus, the ball stays aloft for 2 seconds (up, then back down). \\ \\
+(b) The ball will have the opposite velocity in the y-direction, but the same velocity in the x-direction: $\vec{v} = 10\hat{i}-10\hat{j}$ m/s.
+\end{enumerate}
+\subsection{Forces and Torque}
+\begin{enumerate}
+\item A 900 kg lunar probe hovers above the surface of the Moon.  On the Moon, $g \approx 5/3$ m/s$^2$.  An engine is pointed straight down, spraying propellant.  (a) What force does the engine produce to keep the probe from decreasing in height?  (b) If the probe tilts by 45 degrees, by what factor must the force increase to keep the probe from decreasing in height? \\ \\
+(a) Newton's 2nd Law tells us that $\vec{F}_{\rm Net} = m\vec{a}$.  There is no net force on the probe if it is hovering still, so $F_{\rm Net} = 0$, implying that $F_{\rm Jet} = mg_{\rm moon} = 900(5/3) = 1500$ N. \\ \\
+(b) A factor of $\sqrt{2}$.  Why?  Because we still need the same downward force, and now only $F_{\rm Jet}\cos\theta$ points upward to counteract gravity.
+\end{enumerate}
+\subsection{Work and Energy}
+\begin{enumerate}
+\item A 50 kg snowboarder descends a hill with a height of 100 meters (neglect friction).  (a) What is her final speed?  (b) After descending, she travels along a flat stretch of snow.  She turns the board sideways, the coefficient of friction becomes relevant: $\mu = 0.5$.  How far does she travel before stopping? \\ \\
+(a) Conservation of energy gives $mgh = \frac{1}{2}mv^2$ or $v = \sqrt{2gh} = \sqrt{2*10*100} = \sqrt{2000}$ m/s. \\ \\
+(b) The net force is friction: $f = \mu m g = m a$, so $a = \mu g$.  (In friction problems, always look for the acceleration being proportional to $g$).  The relevant kinematic equation to solve is $v_f^2 = v_i^2 + 2a\Delta x$, with $a = \mu g$, and $v_i$ from part (a).  The answer is 200 m. 
+\end{enumerate}
+\subsection{Linear and Angular Momentum}
+\begin{enumerate}
+\item An object of mass $m = 0.1$ kg rotates around the origin of a coordinate system at radius $r = 0.1$ m.  If the tangential velocity is $v = 1$ m/s ($p = mv$), (a) what is $L = rp\sin\theta$, the angular momentum?  (b) What are the values of the \textit{moment of inertia}, $I = mr^2$, and the \textit{angular speed} $\omega = v/r$?  (c) Show that $I\omega = rp$, either numerically or using algebra. \\ \\
+(a) $\theta = 90^{\circ}$ so the sine is 1.  $L = 0.1 * 0.1 * 1.0 = 0.01$ kg m$^2$/s $= 0.01$ J s. \\ \\
+(b) $I = 0.1*(0.1)^2 = 10^{-3}$ kg m$^2$, $\omega = 10$ radians per second. \\ \\
+(c) $I\omega = 10^{-3} * 10 = 10^{-2}$, where the right hand side is the result from part (a).
+\end{enumerate}
+\end{document}

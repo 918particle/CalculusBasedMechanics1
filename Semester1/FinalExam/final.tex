@@ -1,0 +1,101 @@
+\title{Final Exam for Calculus-Based Physics}
+\author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
+\date{\today}
+\documentclass[10pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{outlines}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+\maketitle
+
+\section{Memory Bank}
+
+\begin{itemize}
+\item Unit conversions: 1 km = 1000 m, 1 m = 100 cm, 1 hr = 3600 s, 1 year = $\pi \times 10^7$ s, 1 g/cm$^3$ = 1000 kg/m$^3$.
+\item $\vec{x} = a \hat{i} + b\hat{j}$ ... Component form of a two-dimensional vector.
+\item $|\vec{x}| = \sqrt{a^2+b^2}$ ... Pythagorean theorem for obtaining vector magnitude.
+\item $\theta = \tan^{-1}(b/a)$ ... Obtaining the angle between vector and x-axis.
+\item $\vec{v} = \Delta\vec{x}/\Delta t$ ... Definition of average velocity.
+\item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
+\item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
+\item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
+\item $\vec{F}_{net} = 0$ ... Newton's First Law, an object with no net force stays at constant velocity, or zero velocity.
+\item $\vec{F}_{net} = m\vec{a}$ ... Newton's Second Law.
+\item $\vec{F}_{AB} = -\vec{F}_{BA}$ ... Newton's Third Law.
+\item $f = \mu N$, $F_D = \frac{1}{2}C\rho A v^2$, $F_D = 6\pi r \eta v$ ... friction, drag in air, drag in viscous fluids.
+\item $stress = Y \times strain$, or $F/A = Y (\Delta x / L)$ ... Young's Modulus and elasticity.
+\item $s = r \theta$ ... Definition of a \textit{radian}, with arc length $s$ and angle $\theta$.
+\item $v = r\omega$, $a = r\alpha$ ... Angular velocity, angular acceleration.
+\item $a_C = v^2/r = r\omega^2$ ... Centripetal acceleration.
+\item $F_C = m a_C = mv^2/r = mr\omega^2$ ... Centripetal force.
+\item $\vec{F}_G = G m_1 m_2/r^2 ~~ \hat{r}$ ... Newton's Law of Gravity.
+\item $W = \vec{F} \cdot \vec{d}$ ... Definition of Work, energy.
+\item $KE = \frac{1}{2}mv^2$ ... Definition of kinetic energy.
+\item $W = \Delta KE$ ... Work-Energy theorem.
+\item $U = mgh$ ... Gravitational potential energy.
+\item $U = \frac{1}{2}kx^2$ ... Spring potential energy.
+\item $P = W/t$ ... Power is work divided by time.
+\item 1 kilocalorie, or kcal, is 4184 Joules.
+\item $\vec{p} = m\vec{v}$ ... Definition of momentum.
+\item $\vec{p}_{i,tot} = \vec{p}_{f,tot}$ ... Momentum conservation for $\vec{F}_{net} = 0$.  Also, $\vec{F}_{net} = \Delta \vec{p} / \Delta t$.
+\item $\vec{\tau} = \vec{r}\times \vec{F}$, $|\vec{\tau}| = I \alpha$, with $I = N m r^2$.  $N$ depends on the shape.
+\item $KE_{\rm rot} = \frac{1}{2} I \omega^2$ ... Rotational kinetic energy.
+\item $KE_{\rm tot} = KE_{\rm lin} + KE_{\rm rot}$ ... Total kinetic energy of a 3D object.
+\item $\vec{L} = \vec{r} \times \vec{p}$, and $L = I\omega$, so $\Delta L/\Delta t = \tau$.
+\end{itemize}
+
+\section{Unit 0: Unit Analysis and Estimation}
+
+\begin{enumerate}
+\item (a) Estimate the area of the page you are currently reading, in cm$^2$. (b) Convert 15 meters per second to kilometers per hour. (c) Estimate the surface area of the floor of this room (SLC 228).  (d) Convert 4 N/m$^2$ to N/cm$^2$. \\ \vspace{1cm}
+\end{enumerate}
+
+\section{Unit 1: Kinematics and Vectors}
+\begin{enumerate}
+\item Suppose we are flying a drone around the Upper Quad.  First, the drone is displaced $\vec{x}_1 = 60\hat{i} + 0\hat{j}$ m, then $\vec{x}_2 = 0\hat{i} + 20\hat{j}$ m, then $\vec{x}_3 = -60\hat{i} + 0\hat{j}$ m.  (a) Suppose the drone started at the origin.  What is the final displacement vector $\vec{x}_4$, if the drone is piloted back to the origin? (b) Suppose the duration of segment $\vec{x}_1$ is 12.0 seconds, and the duration of segment $\vec{x}_2$ is 4.0 seconds.  What is the average velocity vector after these first two segments? (c) What is the average velocity if it returns to the origin? \\ \vspace{2cm}
+\end{enumerate}
+
+\section{Unit 2: Kinematics in Two Dimensions}
+\begin{enumerate}
+\item Suppose an egg is cradled in a box filled with protective padding, and the box is attached to a parachute large enough to counterbalance the weight with drag.  The eggsperiment is dropped off of the roof of SLC, and floats down at constant vertical velocity $v_y$.  Also, there is a wind with speed $v_x$ that carries it away horizontally and perpendicularly from SLC.  The height of the SLC is $h$, and the eggsperiment lands after a time $t$.  Label the horizontal distance the eggsperiment travels before landing $x$.  (a) Write an expression for $t$ in terms of the other given variables.  (b) Write an expression for $x$ in terms of the other given variables.  (c) Let $h = 40$ m, $v_y = 1.5$ m/s, and $v_x = 3.0$ m/s.  Solve for $x$ and $t$ numerically.  (d) Suppose that the string connecting eggsperiment to the chute breaks immediately after we let go from the height $h$.  Where does it land if it still experiences the wind speed $v_x$, but accelerates due to gravity? \\ \vspace{3cm}
+\end{enumerate}
+
+\section{Unit 4: Newton's Laws of Motion}
+\begin{enumerate}
+\item Suppose you have a 120 kg wooden crate resting on a wood floor.  The static coefficient of friction is $\mu_{\rm s} = 0.5$, and the kinetic coefficient of friction is $\mu_{\rm k} = 0.3$.  (a) What maximum force can you exert horizontally on the crate \textbf{without} moving it?  (b) If you continue to exert the force from part (a) once the crate starts to slip, what will the magnitude of its acceleration then be?  (c) If the box has this acceleration for 3.0 seconds, what will be its final velocity? \\ \vspace{3cm}
+\end{enumerate}
+
+\section{Unit 5: Applications  of Newton's Laws: Friction, Drag, and Elasticity}
+\begin{enumerate}
+\item A 60 kg and a 90 kg skydiver jump from an airplane at an altitude of 6000 m, both falling in a headfirst position.  Their frontal areas are 1.25 m$^2$.  (a) Draw a free-body diagram for one skydiver, and derive an algebraic expression for their terminal velocity. (b) How long will it take for each skydiver to reach the ground (assuming the time to reach terminal velocity is small)?  Assume $C = 1.0$ for each, and that air density is 1.225 kg/m$^3$. \\ \vspace{2.75cm}
+\end{enumerate}
+
+\section{Unit 6: Uniform Circular Motion and Gravitation}
+\begin{enumerate}
+\item A vial of mass $m$ containing a solution is spun in a centrifuge with radius $r$.  The tangential velocity of the vial is $v$.  Let $v = 20$ m/s, $r = 0.05$ m, and $m = 0.05$ kg. (a) What is the angular velocity $\omega$ of the vial? (b) What is the centripetal acceleration $a_{\rm C}$?  (c) To cause some reaction in the liquid in the vial, suppose we need the centripetal force to rise to 1600 N.  To what value do we have to increase $\omega$? \\ \vspace{3cm}
+\end{enumerate}
+
+\section{Unit 7: Work, Energy, and Energy Consumption}
+\begin{enumerate}
+\item A person in good physical condition can put out 100 W of useful power for several hours at a stretch, perhaps by pedaling a mechanism that drives an electric generator.  Suppose that number is reduced by 20 percent do to generator inefficiency and physical resting time.  (a) How many people would it take to run a 4.00 kW electric clothes dryer? (b) If that 4.00 kW dryer runs for 2 hours, how many Joules of energy will be consumed?  (c) To what height would you have to lift a 50.0 kg person to get the same gravitational potential energy as the answer in Joules from part (b)? \\ \vspace{2cm}
+\end{enumerate}
+
+\section{Unit 8: Linear Momentum}
+\begin{enumerate}
+\item \textbf{Conceptual question:} Recall the laboratory activity we did with the carts on the frictionless rail.  Suppose one cart is stationary, and one cart moves towards it at constant velocity $v$.  The two carts have the same mass, and have magnets that cause them to stick together.  Which of the following is true?
+\begin{itemize}
+\item A: The final velocity of the system is $v$.
+\item B: The final velocity of the system is $2v$.
+\item C: The final velocity of the system is $v/4$.
+\item D: The final velocity of the system is $v/2$.
+\end{itemize}
+\end{enumerate}
+
+\section{Unit 9: Rotational Dynamics and Angular Momentum}
+\begin{enumerate}
+\item Suppose a woman lifts her forearm, from a position where her forearm is parallel to the ground.  The torque applied to the forearm by the muscle has a perpendicular level arm $r_1$ and force $F$, and her forearm has a moment of inertia $I$.  (a) Write an expression for the angular acceleration, $\alpha$, in terms of the other given variables.  (b) If $r_1 = 2.0$ cm, $I = 0.25$ kg m$^2$, and $F = 300$ N, what is the angular acceleration of her forearm?  (c) Suppose she holds a weight straight out to her side, so that her arm is perpendicular to her body and parallel to the ground.  The length of her arm is $r_2$, and the mass of the weight is $m$.  If the weight is motionless, and $m = 2.0$ kg, and $r_2 = 0.8$ m, what torque does she apply to hold the weight steady?  (d) \textit{In which direction is the torque that the woman applies?}  Draw a diagram indicating the direction.
+\end{enumerate}
+
+\end{document}

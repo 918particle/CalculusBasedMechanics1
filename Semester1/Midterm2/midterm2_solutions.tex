@@ -1,0 +1,107 @@
+\title{Midterm 2 for Algebra-based Physics}
+\author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
+\date{\today}
+\documentclass[10pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{outlines}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+\maketitle
+
+\section{Memory Bank}
+
+\begin{itemize}
+\item Unit conversions: 1 km = 1000 m, 1 m = 100 cm, 1 hr = 3600 s, 1 year = $\pi \times 10^7$ s, 1 g/cm$^3$ = 1000 kg/m$^3$.
+\item $\vec{x} = a \hat{i} + b\hat{j}$ ... Component form of a two-dimensional vector.
+\item $|\vec{x}| = \sqrt{a^2+b^2}$ ... Pythagorean theorem for obtaining vector magnitude.
+\item $\theta = \tan^{-1}(b/a)$ ... Obtaining the angle between vector and x-axis.
+\item $a = |\vec{x}|\cos(\theta)$ ... Obtaining the x-component with trigonometry.
+\item $b = |\vec{x}|\sin(\theta)$ ... Obtaining the y-component with trigonometry.
+\item $x(t) = x_i + v t$ ... Velocity is the slope of position versus time.
+\item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
+\item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
+\item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
+\item $\vec{F}_{net} = 0$ ... Newton's First Law, an object with no net force stays at constant velocity, or zero velocity.
+\item $\vec{F}_{net} = m\vec{a}$ ... Newton's Second Law.
+\item $\vec{F}_{AB} = -\vec{F}_{BA}$ ... Newton's Third Law.
+\item $\vec{w} = - mg \hat{j}$ ... Weight force.
+\item $\vec{N} = +mg\hat{j}$ ... Normal force, when the object is on a flat surface.
+\item $N = mg\cos\theta$, $w_x = -mg\sin\theta$, $w_y = -mg\cos\theta$ ... Incline plane forces.
+\item $f = \mu N$, $F_D = \frac{1}{2}C\rho A v^2$, $F_D = 6\pi r \eta v$ ... friction, drag in air, drag in viscous fluids.
+\item $stress = Y \times strain$, or $F/A = Y (\Delta x / L)$ ... Young's Modulus and elasticity.
+\item $s = r \theta$ ... Definition of a \textit{radian}, with arc length $s$ and angle $\theta$.
+\item $v = r\omega$, $a = r\alpha$ ... Angular velocity, angular acceleration.
+\item $a_C = v^2/r = r\omega^2$ ... Centripetal acceleration.
+\item $F_C = m a_C = mv^2/r = mr\omega^2$ ... Centripetal force.
+\item $\vec{F}_G = G m_1 m_2/r^2 ~~ \hat{r}$ ... Newton's Law of Gravity.
+\end{itemize}
+
+\section{Chapter 4: Dynamics, Force and Newton's Laws of Motion}
+
+\begin{enumerate}
+\item A $5\times 10^5$ kg rocket is accelerating straight up.  The thrusters produce an upward force of $1.25 \times 10^7$ N, and the force of air resistance is $4.5 \times 10^6$ N downward.  (a) Draw a free-body diagram including the weight of the rocket, the thrust, and air resistance.  (b) What is the rocket’s acceleration? \\ \\
+\textit{(a) The free body diagram should contain three forces: thrust upwards, weight downwards, and air resistance downwards.  The net force is $F_{\rm Net} = T - f - w$, if $f$ is the air resistance, $T$ is the thrust, and $w$ is the weight. (b) Newton's 2nd law tells us that $F_{\rm Net} = T - f - w = ma$, and solving for $a$ gives $a = T/m - f/m - g$ ($w = mg$).  The result is 6.19 m s$^{-2}$.}
+\item A football player with mass 70 kg pushes on a player with mass 90 kg.  (a) According to Newton's 3rd law, if the first player exerts a force of 700 N on the second player, what is the force the second player exerts on the first player? \\ \\ \textit{Newton's 3rd law states that $F_{12} = - F_{21}$.  Thus, if the force by the first player on the second is 700 N, the force by the second player on the first is -700 N.}
+\item A rocket sled is decelerated at a rate of 200 m/s$^2$, and it has a mass of 2000 kg.  There is a constant air resistance force of 1000 N.  What additional force is required to give the rocket the deceleration?  \\ \\\
+\textit{Let the braking force other than air resistance ($\vec{f}$) be $\vec{b}$.  Newton's 2nd law gives $F_{\rm Net} = -ma = -f - b$.  The minus signs indicate deceleration, and forces in the opposite direction of the velocity.  We find that $b = ma - f$.  However, the air resistance is smaller than $ma$ by two orders of magnitude, making it a rounding error.  We find $b = 4\times 10^{5}$ N.}
+\item A 76.0-kg person is being pulled away from a burning building as shown in Fig. \ref{fig:fire}.  (a) Draw a free-body diagram including the two tension vectors and the woman's weight.  (b) Write down an expression for $F_{net,x}$.  (c) Write down an expression for $F_{net,y}$.  (d) Assuming $\vec{F}_{net} = 0$, calculate the tension in the two ropes. \\ \\
+\textit{(a) The free body diagram should contain the vectors in Fig. \ref{fig:fire}, with proper angles defined.  (b) $F_{\rm Net,x} = -T_1 \sin\theta_1 + T_2 \cos\theta_2$. (c) $F_{\rm Net,y} = -mg + T_1 \cos\theta_1 + T_2 \sin\theta_2$.  (c) Because the two components of $F_{\rm Net}$ are both zero independently, we have two equations and two unknowns: the magnitudes of $T_1$ and $T_2$.  Solving the x-equation for $T_2$, we find $T_2 = T_1 (\sin\theta_1/\cos\theta_2)$.  Substituting $T_2$ into the y-equation, we find $T_1 = mg/(\cos\theta_1 + \sin\theta_1\tan\theta_2) \approx 737$ N.  This is almost the value of $mg$, which makes sense because $T_1$ is close to vertical.  However, substituting $T_1$ back into the x-equation gives $T_2 \approx 194$ N, which is not zero.}
+\begin{figure}[hb]
+\centering
+\includegraphics[width=0.35\textwidth]{fire.png}
+\caption{\label{fig:fire} A person is pulled from a building using tension in a rope.}
+\end{figure}
+\end{enumerate}
+
+\clearpage
+
+\section{Chapter 5: Friction, Drag, and Elasticity}
+
+\begin{enumerate}
+\item Suppose you have a 120-kg wooden crate resting on a wood floor. The coefficients of static and kinetic friction are 0.5 and 0.3, respectively.  (a) What maximum force can you exert horizontally on the crate without moving it? (b) If you continue to exert this force once the crate starts to slip, what will the magnitude of its acceleration then be? \\ \\
+\textit{(a) $f = \mu_s m g = \frac{1}{2} (120) (10) = 600$ N.  (b) $F_{\rm Net} = ma = \mu_s m g - \mu_k m g = mg (\mu_s - \mu_k)$.  Thus, $a = g(\mu_s - \mu_k) = 10 (0.5 - 0.3) = 2$ m s$^{-2}$.}
+\item 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{ski.png}
+\caption{\label{fig:ski} A skier slides down a slope.}
+\end{figure}
+Suppose a skier (Fig. \ref{fig:ski}) is sliding down a slope with an incline of 25 degrees.  If the coefficient of kinetic friction is 0.1, what is the skier's acceleration? \\ \\
+\textit{The free body diagram, with the components of the weight vector defined as in Fig. \ref{fig:ski}, we find that $a = g(\sin\theta - \mu\cos\theta)$.  See textbook for details.  The result is 3.26 m s$^{-2}$.}
+\item \textbf{Drag Force}.  Suppose the skier reaches a top speed of 40 m/s.  If his area is 0.75 m$^2$, the density of air is 1.225 kg m$^{-3}$, and $C = 0.75$, what is the magnitude of the drag force in Newtons?  \\ \\
+\textit{ $F_{\rm D} = \frac{1}{2}C \rho A v^2$.  Plugging in values, we find $F_D = 551.25 \approx 550$ N.}
+\item A mass of 2300 kg is place on top of a 10.0 m long wooden beam with radius of 4 cm. If the length of the beam decreases by 3 mm, what is the Young's modulus of the wood? \textit{Pay attention to the units}.  \\ \\
+\begin{align}
+stress &= Y \times strain \\
+\frac{F}{A} &= Y \frac{\Delta L}{L} \\
+Y &= \frac{L}{\Delta L}\frac{mg}{\pi r^2} \\
+Y &\approx 15 \times 10^9 ~~ N/m^2 ~ (Pascals)
+\end{align}
+\end{enumerate}
+
+\section{Chapter 6: Uniform Circular Motion and Gravitation}
+
+\begin{enumerate}
+\item  A pitcher in baseball pitches a ball at 144 km per hour, and the ball rotates around his arm at a radius of 0.5 meters.  What is the angular velocity of the ball as he throws it, in radians per second? \\ \\
+\textit{Using $v = r\omega$, or $\omega = v/r$, we find $\omega = 80$ rad/sec.}
+\item What is the ideal banking angle for a gentle turn of 0.9 km radius on a highway with a 120 km per hour speed limit, assuming everyone travels at the limit? \\ \\
+\textit{Using the derivation in the text from the free-body diagram of a banked race car, we find $\tan\theta = v^2/(rg)$.  Solving for $\theta$ gives $\theta = \tan^{-1}(v^2/(rg))$, or 7 degrees.}
+\item Two race car drivers routinely navigate a turn as shown in Fig. \ref{fig:race}.  (a) Which path may be taken at a higher speed, if both paths correspond to the same force of friction and centripetal force? (b) Suppose path 1 has a radius of curvature of 400 m, and path 2 has a radius of curvature of 800 m.  The coefficient of friction is 1.0.  If the force of friction balances the centripetal force, what are the tangential velocities of each race car? \\ \\
+\textit{(a) Path 2.  This path has a larger value of $r$, the radius of curvature.  This means that the velocity can be higher, while the centripetal force is the same as Path 1.  Both paths must correspond to a centripetal force provided by friction. (b) Setting the centripetal force equal to the frictional force, with $\mu = 1$, we find $v = \sqrt{r g}$.  Path 1 has $v = 228$ km per hour, and Path 2 has 322 km per hour.}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.25\textwidth]{race.png}
+\caption{\label{fig:race} Two race cars take a turn at different radii of curvature.}
+\end{figure}
+\item \textbf{Two bonus points:} The existence of the dwarf planet Pluto was proposed based on irregularities in Neptune’s orbit. Pluto was subsequently discovered near its predicted position. But it now appears that the discovery was fortuitous, because Pluto is small and the irregularities in Neptune’s orbit were not well known. To illustrate that Pluto has a minor effect on the orbit of Neptune compared with the closest planet to Neptune, (a) calculate the acceleration due to gravity at Neptune due to Pluto when they are $4.5 \times 10^{12}$ m apart, as they are now.  The mass of Pluto is $1.4 \times 10^{22}$ kg.  (b) Now calculate the acceleration due to gravity at Neptune due to Uranus, presently about $2.5 \times 10^{12}$ m apart, and compare it with that due to Pluto.  The mass of Uranus is $8.62 \times 10^{25}$ kg. \\ \\
+\textit{(a) The key here is to attribute the net force contribution acceleration on the surface of one planet to the pull of gravity from the other.  We do the same thing with the Moon and Earth.}
+\begin{align}
+m_1 a &= G \frac{m_1 m_2}{r^2} \\
+a &= G \frac{m_2}{r^2}
+\end{align}
+\textit{If we plug in the values for the separation between Neptune and Pluto, along with the mass of Pluto, we find $a \approx 4.8 \times 10^{-14}$ m s$^{-2}$. (b) Using the values of the Neptune and Uranus system, we find $a \approx 1 \times 10^{-9}$ m s$^{-2}$.  This means that the effect on the acceleration of Neptune due to Pluto is between 4 and 5 orders of magnitude smaller than the effect Uranus has on Neptune.}
+\end{enumerate}
+
+\end{document}

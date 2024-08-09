@@ -1,0 +1,551 @@
+\documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\title{Calculus-Based Physics-1: Mechanics (PHYS150-02): Unit 4}
+\date{\today}
+\author{Jordan Hanson}
+\institute{Whittier College Department of Physics and Astronomy}
+
+\begin{document}
+\maketitle
+
+\section{Unit 4 Summary}
+
+\begin{frame}{Unit 3 Summary}
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth]{figures/newton.png} \\
+\includegraphics[width=0.7\textwidth]{figures/forcesA.png}
+\caption{\label{fig:newton} (Top) A portrait of Sir Isaac Newton. (Bottom) His original idea: separate the system from the forces acting on it.}
+\end{figure}
+\url{http://www.smbc-comics.com/comic/2013-06-16}
+\end{frame}
+
+\section{Review}
+
+\begin{frame}{Unit conversions}
+Convert the following quantities to the specified new units:
+\begin{enumerate}
+\item 1000 kg/m$^3$ to grams/cm$^3$
+\item 2500 m/s to km/s
+\item 250 m/s to km/min
+\item 9.81 m/s$^2$ to km/min$^2$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Unit 4 Summary}
+\begin{enumerate}
+\item Deep statements about physics: \textit{dynamics} and \textit{kinematics}
+\begin{itemize}
+\item \textbf{Demonstration}: mass and stretching springs
+\end{itemize}
+\item Newton's \alert{First Law}
+\begin{itemize}
+\item \textbf{Lab activity}: force tables
+\end{itemize}
+\item Newton's \alert{Second Law}
+\item Newton's \alert{Third Law}
+\item Applications
+\begin{itemize}
+\item Free-body diagrams
+\item Tension
+\item Inclined surfaces
+\item Restoring forces
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Deep statements about physics: dynamics and kinematics}
+\small
+\textit{Kinematics} - A \alert{description} of the motion of particles and systems \\
+\textit{Dynamics} - An \alert{explanation} of the motion of particles and systems \\
+\vspace{0.25cm}
+What causes an object to move?  \textbf{Forces}.  Forces exist as a result of the \alert{\textbf{interactions}} of objects or systems.\\
+\vspace{0.25cm}
+\rule{10cm}{0.4pt} \\
+\vspace{0.25cm}
+\textit{Evolution} - A \alert{description} of the change of biological species \\
+\textit{Natural Selection} - An \alert{explanation} of change in biological species \\
+\vspace{0.25cm}
+What causes species to evolve?  \textbf{Natural selection}.  Natural selection exists because of \alert{election pressures}, \alert{numerous offspring}, and \alert{variation} among offspring.
+\end{frame}
+
+\begin{frame}{What is a force, in practice?}
+A force has units of \textit{Newtons}, just like distance has units of \textit{meters}.  \textbf{One Newton is the force required to make an object of mass 1 kilogram accelerate by 1 m/s$^2$.} \\
+\vspace{1cm}
+A force must also be a \textit{vector}: if a force acts on a system in a certain direction, the object will accelerate in that direction. \\
+\vspace{1cm}
+Force has to be related to mass in some way.
+\end{frame}
+
+\begin{frame}{What is a force, in practice?}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/force1.png}
+\caption{\label{fig:force1} (a) No interaction is stretching the spring.  (b) An interaction stretches the spring a distance $\Delta x$, and the spring pulls back.  (c) A device that can compare forces by comparing $\Delta x$ for different interactions (connecting to different weights, for example).}
+\end{figure}
+\end{frame}
+
+\begin{frame}{What is a force, in practice?}
+\textbf{Demonstration}: Force, mass, and stretched springs.
+\begin{enumerate}
+\item Tools: a set of weights, a force-meter (spring), and a ruler.
+\item Hang a weight from the spring, and measure the extra distance the spring stretches.
+\item Repeat with different weights, recording the stretched distances alongside the weights.
+\item Compute the ratio of the mass of the weight to the stretched distance in each case.  What is the result?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Week 4 Summary}
+\small
+Do you agree that the system will accelerate?  Think about the definition of acceleration.  An object is not moving, and then it moves.
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/forcesA.png}
+\caption{\label{fig:forces1} Force diagrams are also called \textit{free-body diagrams.}}
+\end{figure}
+Thus, if a force causes \textit{a system with some mass} to accelerate, the force must be \textit{proportional to that mass}.  \alert{``If it is heavier, we mush push it harder, to obtain the same acceleration.''}
+\end{frame}
+
+\section{Newton's First Law}
+
+\begin{frame}{Newton's First Law}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Newton's First Law]
+\alert{A body at rest remains at rest or, if in motion, remains in motion at constant velocity unless acted on by a net external force.}
+\end{tcolorbox}
+Newton's first law implies something interesting about our \textit{frame of reference.}  Suppose an object is moving at constant velocity.  Are forces acting upon it?  What if it's really stationary and \textit{we} are the ones moving?  \textbf{Professor: work several examples.}
+\end{frame}
+
+\begin{frame}{Newton's First Law}
+Which of the following is not located in an \textit{inertial reference frame}?
+\begin{itemize}
+\item A: An elevator in free fall
+\item B: An elevator being pulled upward at constant velocity
+\item C: A capsule floating in space
+\item D: A person on a climbing rope
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's First Law}
+Consider three forces acting on a system: $\vec{F}_1 = 5\hat{i}+5\sqrt{3}\hat{j}$ N, $\vec{F}_2 = -10\hat{i}$ N, and $\vec{F}_3 = 5\hat{i}-5\sqrt{3}\hat{j}$.  Will the system accelerate?
+\begin{itemize}
+\item A: Yes, because the net force is not zero.
+\item B: Yes, because the net force is zero.
+\item C: No, because the net force is zero.
+\item D: No, because the net force is not zero.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's First Law}
+Consider a system at rest in some inertial reference frame.  The system is observed by us as we move with displacement $\vec{x}(t) = (2.7t - 1)\hat{i}$ (m).  From our perspective, does the object appear to have a net force acting on it?
+\begin{itemize}
+\item A: Yes, because the velocity is not zero.
+\item B: Yes, because the velocity is zero.
+\item C: No, because the velocity is constant.
+\item D: No, because the velocity is not zero.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's First Law}
+Newton's First Law may be thought of in terms of the following equation:
+\begin{equation}
+\boxed{F_{\rm net} = \sum_{\rm i} \vec{F}_{\rm i} = 0}
+\label{eq:firstlaw}
+\end{equation}
+In the case of the force table ring, $\vec{F}_{\rm i} \neq 0$ but $\vec{F}_{\rm net} = 0$, so we observe no velocity.  We can also have a situation with constant velocity and $\vec{F}_{\rm net} = 0$  but $\vec{F}_{\rm i} \neq 0$.
+\end{frame}
+
+\begin{frame}{Newton's First Law}
+A man slides a palette crate across a concrete floor of his shop.  He exerts a force of 60.0 N, and the box has a constant velocity of 0.5 m/s.  What is the value of the force (in Newtons) that opposes his force?
+\begin{itemize}
+\item A: 60.0 N
+\item B: -60.0 N
+\item C: 120.0 N
+\item D: -120.0 N
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's First Law}
+\small
+Consider the same problem as the prior slide, in which a man pushes a palette crate at 0.5 m/s using 60.0 N of force, with friction applying -60.0 N.  A second man is walking in the opposite direction as the palette crate at a speed of 1 m/s.  What is the speed of the palette crate from his perspective?  What is the first man's force on the palette crate from his perspective?
+\begin{itemize}
+\item A: 1.5 m/s, 60.0 N
+\item B: 1.5 m/s, -60.0 N
+\item C: 0.5 m/s, 0.0 N 
+\item D: -1.5 m/s, -60.0 N
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's First Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/Table.pdf}
+\caption{\label{fig:table} The force table setup includes a wheel with angles, strings and pulleys, and a central ring.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Newton's First Law}
+\small
+\textbf{Lab activity}: Force tables
+\begin{enumerate}
+\item Obtain a set of weights, and a force-table, with ring and pulley system.
+\item Using knowledge of vectors, arrange weights on the pulleys such that the ring remains stationary in the center.
+\item Double one of the weights, and find the angles the strings must make to keep the ring stationary in the center.
+\item Define the force vectors as vectors with magnitudes equal to the masses of the weights, in the directions of the strings.  Do the vectors add to zero?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Newton's First Law}
+\small
+\textbf{Lab activity}: Force tables
+\begin{enumerate}
+\item Now remove the weights from the three strings.  Make the angle between two of the strings 60 degrees.  Choose three different weights, and determine which weights will go on the strings that are 60 degrees apart.  Knowing the third weight, calculate the angle the third string must make with one of the other two strings such that the net force will be equal to zero.
+\item Test your hypothesis by hanging the weights and observing if the ring moves.
+\end{enumerate}
+\end{frame}
+
+\section{Newton's Second Law}
+
+\begin{frame}{Newton's Second Law}
+From the prior problem, we see that \alert{Newton's First Law} holds even under relativity, for inertial reference frames.  Let's assume we observe a system from an intertial reference frame. \\
+\vspace{0.5cm}
+Let us also ignore any \textit{internal forces}: forces components of the system apply to each other.  Focusing on the external forces only, we make the following two observations: \\
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/NewtonsSecond.png}
+\caption{\label{fig:newton1} A force produces greater acceleration for less massive objects.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/NewtonsSecond2.png}
+\caption{\label{fig:newton2} A larger force produces greater acceleration for a given mass.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Newton's Second Law]
+\alert{The net force on a system is equal to the mass of the system multiplied by the acceleration of the system: $\vec{F}_{\rm net} = m \vec{a}$}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+A man slides a palette crate across a concrete floor of his shop.  He exerts a force of 60.0 N, and friction pushes against the crate with a force of 40.0 N.  What is the acceleration of the crate, if the crate is loaded with 50.0 kg of material?
+\begin{itemize}
+\item A: 0.1 m/s$^2$
+\item B: 1.0 m/s$^2$
+\item C: 0.5 m/s$^2$
+\item D: 0.4 m/s$^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+A man slides a palette crate across a concrete floor of his shop.  He exerts a net force of 30.0 N, and the crate accelerates at 0.5 m/s$^2$.  What mass is loaded onto the crate?
+\begin{itemize}
+\item A: 40.0 kg
+\item B: 50.0 kg
+\item C: 60.0 kg
+\item D: 70.0 kg
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/NewtonsSecond3.png}
+\caption{\label{fig:newton3} An example of a \textit{free body diagram}, which summarizes all external forces on a system.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,trim=0.75cm 0.5cm 0.75cm 0.5cm,clip=true]{figures/NetForce.pdf}
+\caption{\label{fig:fbd} The \textit{free-body diagram} is just a vector summation problem.  The \textit{normal force}, \textbf{N}, acts against the force of gravity, \textbf{w}, according to Netwon's Third Law.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+Indiana Jones is running through the rainforest, and he wades into a pit of quicksand.  He has a mass of 70 kg, however the normal force is only 400.0 N.  He pushes forward with a force of 250.0 N, and the quicksand sucks him backwards with a force of 50.0 N.  What is the net force on Indiana?  The force of gravity is his mass times $g$, in the downward direction.
+\begin{itemize}
+\item A: (200.0, -290) N
+\item B: (50.0, -690) N
+\item C: (200.0, 290) N
+\item D: (150.0, 690) N
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+What is the magnitude of the net acceleration on Indiana, from the previous example?
+\begin{itemize}
+\item A: 1.0 m/s$^2$
+\item B: 3.0 m/s$^2$
+\item C: 4.0 m/s$^2$
+\item D: 5.0 m/s$^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+Notice that if we define $\vec{p} = m\vec{v}$, we may write \\
+\vspace{0.5cm}
+\begin{equation}
+\vec{F}_{\rm net} = \frac{d\vec{p}_{\rm net}}{dt} = m \frac{d\vec{v}}{dt} = m \vec{a}_{\rm net}
+\end{equation} \\
+\vspace{0.5cm}
+In words: the force is the derivative of the \textit{momentum}, $\vec{p}$.
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+A particle of mass $m$ is falling under the influence of gravity, but experiences a thrust force upwards: $\vec{F}_{\rm t} = kt$, making the net force $\vec{F}_{\rm net} = kt - mg$.  Express the velocity as a function of time, assuming the velocity is $v_{\rm 0}$ at $t=0$.
+\begin{itemize}
+\item A: $v(t) = \frac{1}{2} \frac{k}{m} t^2+v_{\rm 0}$
+\item B:  $v(t) = \frac{k}{m} t - gt$
+\item C:  $v(t) = \frac{k}{m} t - gt +v_{\rm 0}$
+\item D: $v(t) = \frac{1}{2} \frac{k}{m} t^2 - gt +v_{\rm 0}$
+\end{itemize}
+\vspace{0.5cm}
+We will return to the concept of \textit{momentum} in the next few chapters...
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+There is a difference between \alert{\textit{mass}}, and \alert{\textit{weight}}.  \textit{Mass} is proportional to the number of atoms in an object.  \textit{Weight} is a force derived from Newton's second law (mass times acceleration), assuming the acceleration due to gravity is constant.  If an object has a mass of 1 kilogram, and the Earth's gravitational acceleration is $\approx 10$ m/s$^2$, then it \textit{weighs} $\approx 10.0$ N (10.0 kg m/s$^2$).
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+Astronauts are walking on the moon, and lifting moon rocks into cannisters.  On Earth, the cannisters weighed 40.0 N each, and each astronaut is expected to carry two of them, loaded each with 65.0 kg of moon rock.  The acceleration due to gravity on the Moon is about 17\% of that on Earth.  What weight are these astronauts expected to carry?
+\begin{itemize}
+\item A: 230 N
+\item B: 200 N
+\item C: 1000 N
+\item D: 170 N
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+Speaking of the Moon... \\
+\vspace{1cm}
+\url{https://phet.colorado.edu/en/simulation/legacy/lunar-lander} \\
+\vspace{1cm}
+For this demonstration, you may need to update Java.  Write down observations regarding:
+\begin{itemize}
+\item Difference between weight and mass
+\item Balance of gravity and thrust
+\item Changing mass of the system
+\item Independence of vertical and horizontal motion
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+Orbits...We will come back to this topic in Chapter 13. \\
+\vspace{1 cm}
+\url{https://phet.colorado.edu/en/simulation/gravity-and-orbits} \\
+\vspace{1 cm}
+For this demonstration, you may need to update Java.  Write down observations regarding:
+\begin{itemize}
+\item The effect of removing gravity on the orbits: what happens to velocities?
+\item The effect of increasing the force of gravity (higher masses): what happens to orbits?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Second Law}
+A 20,000 kg jet fighter lands on an aircraft carrier, moving at 108 km/hr.  A tow cable grabs the aircraft and pulls it to a stop in 100 meters.  What is the average acceleration?  What force does the tow cable extert to stop the jet?
+\begin{itemize}
+\item A: 9.0 m/s$^2$, 90,000 N
+\item B: 4.5 m/s$^2$, 90,000 N
+\item C: 1.5 m/s$^2$, 45,000 N
+\item D: 9.0 m/s$^2$, 45,000 N
+\end{itemize}
+\end{frame}
+
+\section{Newton's Third Law}
+
+\begin{frame}{Newton's Third Law}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Newton's Third Law]
+\alert{Whenever one system, A, exerts a force on a second system, B, the first body experiences a force that is equal in magnitude and opposite in direction to the force that it exerts.
+\begin{equation}
+\vec{F}_{\rm AB} = -\vec{F}_{\rm BA}
+\end{equation}}
+\end{tcolorbox}
+For every action, there is an equal and opposite reaction.
+\end{frame}
+
+\begin{frame}{Newton's Third Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/newtonsthird1.png}
+\caption{\label{fig:newtons3} Defining the system properly is key to understanding Newton's Third Law.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Newton's Third Law}
+As mentioned before, the \textit{weight} of an object is $\vec{w} = -mg\hat{y}$, where $g$ is the acceleration due to gravity, pointing in the $-\hat{y}$ direction.  A stack of three books rests on a table.  Each book weighs 12.0 N.  If the books are not moving, what force is the table exerting on the books, from Newton's third law?
+\begin{itemize}
+\item A: 24.0 N
+\item B: -24.0 N
+\item C: -36.0 N
+\item D: 36.0 N
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton's Third Law}
+When Newton's third law indicates that the weight of an object is couterbalanced by a surface, we call the counterbalancing force the \alert{normal force}: $\vec{N} = mg\hat{y}$.  What is the normal force exterted by the middle book in the stack?  What is the normal force extered by the bottom book?
+\begin{itemize}
+\item A: 12.0 N, 24.0 N
+\item B: 12.0 N, 12.0 N
+\item C: 36.0 N, 24.0 N
+\item D: 24.0 N, 12.0 N
+\end{itemize}
+\end{frame}
+
+\section{Free Body Diagrams and Common Forces}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth,trim=0cm 0.1cm 0cm 0cm,clip=true]{figures/incline.png}
+\caption{\label{fig:incline} In this example, the normal force counterbalances the weight of the system normal to the surface, but the weight is not along $\hat{y}$ exclusively.  The weight is must be broken into components, and Newton's third law provides the opposite of each.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/incline2.png}
+\caption{\label{fig:incline2} A general description of forces on an incline.  Notice two things: 1) take the limit of $\theta = 0^{\circ}$ and $\theta = 90^{\circ}$, and 2) calculate $(w_x^2+w_y^2)^{1/2}$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+Using the previous diagram, calculate the force and acceleration of a 10 gram marble down the incline, if the incline is 45 degrees (assume $g \approx 10$ m/s$^2$).
+\begin{itemize}
+\item A: $\frac{0.5}{\sqrt{2}}$ N, $-\frac{50}{\sqrt{2}}$ m/s$^2$
+\item B: $\frac{10}{\sqrt{2}}$ N, $-\frac{10}{\sqrt{2}}$ m/s$^2$
+\item C: $\frac{0.1}{\sqrt{2}}$ N, $\frac{10}{\sqrt{2}}$ m/s$^2$
+\item D: $-\frac{0.1}{\sqrt{2}}$ N, $-\frac{10}{\sqrt{2}}$ m/s$^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+Same system: what is the normal force exerted on the marble by the incline?
+\begin{itemize}
+\item A: $0.1/\sqrt{2}$ N
+\item B: $1/\sqrt{2}$ N
+\item C: $0.01/\sqrt{2}$ N
+\item D: $0.1$ N
+\end{itemize}
+\textit{Why is the answer not just the value of $mg$?}
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+\small
+Two more example forces: \textbf{\alert{tension}}, and the \textbf{\alert{spring force}}.  Tension is the force found in pulling an object.
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/pend.pdf}
+\caption{\label{fig:pend}  Consider a stationary pendelum of weight -2.0 N, hanging by a string.  The tension in the string must be 2.0 N, by Newton's third law.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/tightrope.png}
+\caption{\label{fig:tightrope} Tension in the tightrope balances the weight of the system, but there is additional tension.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+Using the previous figure, with the two angles being $15^{\circ}$, and the weight of the man being 700.0 N, calculate the \textit{horizontal component} of the tension in the tightrope (left and right).
+\begin{itemize}
+\item A: Left = -100 N, Right = 100 N
+\item B: Left = -130 N, Right = 130 N
+\item C: Left = -1300 N, Right = 1300 N
+\item D: Left = -13 N, Right = 13 N
+\end{itemize}
+\textit{Why do the horizontal tensions (left and right) have to sum to zero?}
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+The spring force has a simple expression (Hooke's Law):
+\begin{equation}
+\vec{F} = -k\vec{x}
+\label{eq:spring}
+\end{equation}
+In Eq. \ref{eq:spring}, $\vec{x}$ is the displacement from the equilibrium position of the spring.  So if a spring (or any other system with this property) has a rest length of $L$, the force is $-k\Delta x$ if the system is stretched to a length $L+\Delta x$. \\
+\vspace{0.5cm}
+The restoring force is interesting for many reasons, including the fact that it leads to \textit{simple harmonic motion} (address this in the future).
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+A mass of 2.0 kg hangs from a spring with $k = 40.0$ N/m.  The unstretched length of the spring is 10 cm.  What is the length of the spring?
+\begin{itemize}
+\item A: 20 cm
+\item B: 40 cm
+\item C: 60 cm
+\item D: 80 cm
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+Many things may be \textit{treated} like springs in physics.  Suppose an archer draws a bow back a distance of 0.15 m, and the bow is like a spring with $k = 500.0$ N/m.  If the arrow weighs 0.1 kg, what will be its acceleration at the moment the archer releases?
+\begin{itemize}
+\item A: 150 m/s$^2$
+\item B: 300 m/s$^2$
+\item C: 450 m/s$^2$
+\item D: 750 m/s$^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+A helicopter carries a load of cargo in a sling load: \\
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/helo.png}
+\caption{\label{fig:helo} A helicopter carries a sling load while flying horizontally.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Free Body Diagrams and Common Forces}
+How many forces act on the helicopter system?  Draw a free-body diagram for the helicopter.  How many forces act on the sling load?  Draw a free-body diagram for the load.  (These should include \textit{drag}, or the effect of air-resistance).
+\begin{itemize}
+\item A: 5, 3
+\item B: 4, 3
+\item C: 4, 2
+\item D: 5, 2
+\end{itemize}
+\end{frame}
+
+\section{Unit 3 Conclusion}
+
+\begin{frame}{Week 4 Summary}
+\begin{enumerate}
+\item Deep statements about physics: \textit{dynamics} and \textit{kinematics}
+\begin{itemize}
+\item \textbf{Demonstration}: mass and stretching springs
+\end{itemize}
+\item Newton's \alert{First Law}
+\begin{itemize}
+\item \textbf{Lab activity}: force tables
+\end{itemize}
+\item Newton's \alert{Second Law}
+\item Newton's \alert{Third Law}
+\item Applications
+\begin{itemize}
+\item Free-body diagrams
+\item Tension
+\item Inclined surfaces
+\item Restoring forces
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\end{document}
