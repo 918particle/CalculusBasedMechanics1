@@ -11,20 +11,19 @@
 \maketitle
 
 \begin{abstract}
-The purpose of this group activity is to practice problem-solving with vectors.  \textit{Displacement} is a vector that represents translational motion.  This is distinct from \textit{distance}, which is a scalar quantity representing the total amount of length an object has traversed.  \textit{Velocity} is displacement divided by time duration.  In this activity, we will attempt to navigate a submarine such that it is not eliminated by either a torpedo or an undersea wall of rock.
+The purpose of this group activity is to practice problem-solving with vectors.  \textit{Displacement} is a vector that represents translational motion.  This is distinct from \textit{distance}, which is a scalar quantity representing the total amount of length an object has traversed.  \textit{Velocity} is displacement divided by time duration.  In this activity, we will attempt to navigate a dogfight between F-18 aircraft in the movie Top Gun: Maverick.
 \end{abstract}
 
-\section{The Problem Statement - The Hunt for Red October}
+\section{The Problem Statement - Maverick}
 
-\textit{The Red October} is the name of a Russian nuclear submarine (from the novel by Tom Clancy, 1984), captained by Cpt. Marco Rameus.  Red October is being pursued by a torpedo in a large undersea canyon.  The torpedo has a higher speed than the submarine.  Both are traveling in a straight line initially, meaning at some time the torpedo will hit the submarine.
+\textit{Top Gun: Maverick} is a film detailing a complex mission given to 5th generation fighter pilots who must revert to older F18 aircraft for technical reasons.  They undergo training with a reknowned and infamous Navy pilot nicknamed Maverick (Tom Cruise).  In one scene, Maverick is attacking two pairs of his students by first flying at an altitude low enough to be within radar clutter.  Maverick ascends beneath them, and passes right between the pair of craft, blowing their minds and engines.
 
-Let a two-dimensional \textit{x-y} coordinate system describe the area.  The appropriate unit of distance for the area is the kilometer, or 1000.0 m.  The initial position of the submarine is $\vec{x}_{i,s} = (-1.0, 0.0)$ km.  The initial position of the torpedo is $\vec{x}_{i,t} = (-2.0, 0.0)$ km.  The initial velocity of the submarine is $\vec{v}_{i,s} = (v_x,0.0)$ km/h.  The initial velocity of the torpedo is $\vec{v}_{i,t} = (50.0,0.0)$ km/h.  The situation is depicted in Fig. \ref{fig:hunt1}.
+Let a two-dimensional \textit{x-z} coordinate system describe the space in which the aircraft maneuver.  The appropriate unit of distance for the area is the kilometer, or 1000.0 m.  The initial position of the pilots in training is $\vec{x}_{i,t} = (0.0, 2.1)$ km.  The initial position for Maverick is $\vec{x}_{i,m} = (0.0, 0.1)$ km.  The initial velocity of all craft is $\vec{v}_{i,s} = (v_x,0.0)$ km/hr.  The situation is depicted in Fig. \ref{fig:hunt1}.
 
 \begin{figure}[hb]
 \centering
-\includegraphics[width=0.3\textwidth]{TheHuntForRedOctober1.pdf}
-\includegraphics[width=0.3\textwidth]{TheHuntForRedOctober2.pdf}
-\caption{\label{fig:hunt1}  (Left) The submarine prepares for a right turn at an angle of 45 degrees.  The lane (fine-dashed lines) is 1.0 km wide, or 0.5 km on either side of the submarine. (Right) The submarine captain sails up to the canyon wall, then turns South (downward in the diagram) at an angle of -45.0 degrees.}
+\includegraphics[width=0.5\textwidth,trim=0cm 6cm 0cm 0cm,clip=true]{TheHuntForRedOctober1.pdf}
+\caption{\label{fig:hunt1}  In the first stage of the exercise, Maverick flies parallel to his targets, but below them.  In the second stage, he ascends in a way that allows him to blow by them at a point he must calculate in his head.}
 \end{figure}
 
 \section{Initial Displacements}
@@ -35,49 +34,34 @@ Let a two-dimensional \textit{x-y} coordinate system describe the area.  The app
 \Delta \vec{x} = \vec{x}_f - \vec{x}_i
 \end{equation}
 
-What is the displacement of the submarine from the initial position $\vec{x}_{i,s}$ as it reaches the canyon wall?  What is the displacement of the torpedo as it reaches the canyon wall? \\ \vspace{1cm}
+If $v_x = 500$ km/hr, give the displacement vectors of the craft after 30 seconds: \\ \vspace{1cm}
 
-$\Delta \vec{x}_s = (?,?) ~~~~~~~~~~~~~~~~~~~~ \Delta \vec{x}_t = (?,?)$
+$\Delta \vec{x}_t = (?,?)~~~~~~~~~~\Delta \vec{x}_m = (?,?)$
 
-\section{Initial Velocities}
+\section{Final Displacement of the Pilots in Training}
 
-Average \textit{velocity} is formally defined as the ratio between displacement and some time duration $\Delta t = t_f - t_i$.
+If the velocity $\vec{v}_t = (v_x,0)$ km/hr of the pilots in training remains constant, calculate their location after another 10 seconds passes.  \\ \vspace{1cm}
+
+$\vec{x}_t = (?,?)$
+
+\section{Vector Velocity}
+
+In that same 10 seconds, Maverick changes course and meets the other pilots at their location.  We will now calculate the displacement required to get his craft to the location of the other craft.  Use final location minus initial location to obtain displacement:
 
 \begin{equation}
-\vec{v} = \frac{\Delta \vec{x}}{\Delta t}
+\Delta \vec{x}_m = \vec{x}_{m,f} - \vec{x}_{m,i}
 \end{equation}
 
-Multiplying both sides by $\Delta t$ yields
+The \textbf{vector velocity} of Maverick is given by 
 
 \begin{equation}
-\vec{v}\Delta t = \Delta \vec{x} \label{eq:Eq1}
+\vec{v}_m = \frac{\Delta \vec{x}_m}{\Delta t}
 \end{equation}
 
-Taking the \textbf{absolute value} or \textbf{magnitude} of a vector is the same as using the Pythagorean theorem to determine the length of the vector.  Taking the magnitude of both sides of Eq. \ref{eq:Eq1} is written like
+Let $\Delta t = 10$ seconds.  What velocity does Maverick need to reach his targets in 10 seconds? \\ \vspace{2cm}
 
-\begin{align}
-|\vec{v}\Delta t| &= |\Delta \vec{x}| \\
-v\Delta t &= \Delta x \label{eq:Eq2}
-\end{align}
+$\vec{v}_m = (?,?)$ \\ \vspace{2cm}
 
-Assume the situation begins with $t_i = 0$.  Using Eq. \ref{eq:Eq2}, determine when the torpedo hits the canyon wall, if the velocity remains constant. \\ \vspace{1cm}
-
-$t_f = ?$ \\
-
-What speed ($v_x$) must Captain Rameus choose, if he is to turn at the moment the torpedo hits the canyon wall? \\ \vspace{3cm}
-
-$v_x = ?$ \\
-
-Note that he \textbf{deliberately chooses a lower speed} to allow the torpedo to reach the wall at the same time as the submarine!
-
-\section{Final Displacement and Average Velocity}
-
-Captain Rameus continues at the same speed, but the boat turns at an angle of -45 degrees with respect to the x-axis.  After 3 minutes, what is the final location of the submarine? \\ \vspace{2cm}
-
-$\vec{x}_{f,s} = (?,?)$ \\
-
-What is the final \textit{displacement} of the submarine?  What is the average velocity of the submarine ? \\ \vspace{2cm}
-
-$\Delta \vec{x}_s = \vec{x}_{f,s} - \vec{x}_{i,s} = (?,?) ~~~~~~~~~~~~~~~~~~~~ \vec{v}_s = \frac{\Delta \vec{x}_s}{\Delta t} = (?,?)$ \\
+Let's compute the percent increase in the \textit{speed} of Maverick.  The speed is the magnitude of the velocity.  Using Pythagorean theorem, compute the magnitude of $\vec{v}_m$, and compare it to the magnitude of his velocity in the beginning of the exercise.  What is the percent increase?
 
 \end{document}

@@ -1,8 +1,9 @@
 \documentclass{beamer}
 \usetheme{metropolis}
 \usepackage{graphicx}
+\usepackage{tcolorbox}
 \usepackage{subfig}
-\title{Calculus-Based Physics-1: Mechanics (PHYS150-02): Unit 0}
+\title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Unit 0}
 \date{\today}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
@@ -10,27 +11,15 @@
 \begin{document}
 \maketitle
 
-\begin{frame}{Course Introduction}
-\small
-\begin{enumerate}
-\item Professor Jordan Hanson
-\item Contact: jhanson2@whittier.edu, SLC 212
-\item Syllabus: Moodle 
-\item Office hours: Discord 918particle\#5083
-\item Course pre-requisites: Calculus 1 (concurrently or previously, high-school equivalent).
-\item Text: University Physics Volume 1 (see syllabus)
-\item Homework: OpenStax Tutor (see syllabus)
-\end{enumerate}
-\end{frame}
-
 \section{Opening Remarks - Welcome!}
 
 \begin{frame}{Opening Remarks - Welcome!}
 \small
 \begin{figure}
 \centering
-\includegraphics[width=0.4\textwidth]{../../../watowl.jpeg}
-\caption{\label{fig:wat1} The usual look from a student taking physics for the first time.}
+\includegraphics[width=0.27\textwidth]{../../watowl.jpeg}
+\includegraphics[width=0.5\textwidth]{../../watTheDuck.png}
+\caption{\label{fig:wat1} Taking physics for the first time.}
 \end{figure}
 \end{frame}
 
@@ -40,13 +29,12 @@
 \textit{Physics} - $\phi\upsilon\sigma\iota\kappa\acute{\eta}$ - "phusik\'e": \textit{knowledge of nature} \\
 from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature}
 \begin{enumerate}
-\item Methods of approximation
+\item Estimation/Unit Analysis - Chapters 1.1 - 1.4
 \begin{itemize}
 \item \alert{Estimating} the correct order of magnitude
-\item \alert{Function} approximation
-\item \alert{Unit analysis}
+\item \alert{Unit analysis} - dealing with the units of numbers
 \end{itemize}
-\item Coordinates and vectors
+\item Coordinates and vectors - Chapters 2.1 - 2.4
 \begin{itemize}
 \item \alert{Scalars} and \alert{vectors}
 \item \alert{Cartesian} (rectangular) coordinates, displacement
@@ -54,238 +42,170 @@ from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature}
 \end{itemize}
 \item Review of Calculus Techniques
 \begin{itemize}
-\item Differentiation of power series.
-\item Integration of power series.
+\item The derivative, derivatives of elementary functions
+\item \alert{Function} approximation
+\item Anti-derivatives and integration
 \end{itemize}
 \end{enumerate}
 \end{frame}
 
-\section{Methods of approximation}
+\section{Estimation/Unit Analysis - Chapters 1.1 - 1.4}
 
-\begin{frame}{Methods of approximation - Estimation: Chapter 1}
+\begin{frame}{Estimation/Unit Analysis}
 In science and engineering, \alert{estimation} is to obtain a quantity in the absence of precision, informed by rational constraints.
 \begin{enumerate}
-\item Define relevant \alert{scales}
-\begin{itemize}
-\item 1 \textit{AU} for the solar system (distance from Sun to Earth)
-\item 1 \textit{angstrom} ($10^{-10}$ meters) for cell membranes
-\end{itemize}
-\item Obtain \alert{complex quantities} from simple ones
+\item \textbf{Define relevant \alert{unit scales}}: (mg, g, or kg), (m/s or km/hr)
+\item \textbf{Obtain \alert{complex quantities}} from simple ones
 \begin{itemize}
 \item Obtain \textit{areas} and \textit{volumes} from \textit{lengths}
 \item Obtain \textit{rates} from \textit{numerators} and \textit{denominators}
 \end{itemize}
-\item Constrain the unknown with \alert{upper} and \alert{lower} limits
+\item \textbf{Taking advantage of \alert{scaling problems}}
 \begin{itemize}
-\item The solar system is \textit{less than one light-year across}
-\item An insect is \textit{at least one millimeter} long
+\item Knowing \textit{relationship} between variables
+\item Using that \textit{relationship} to obtain new information
 \end{itemize}
-\end{enumerate}
-\textbf{Professor: work several examples.}
-\end{frame}
-
-\begin{frame}{Methods of approximation - Estimation: Chapter 1}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-Estimate the mass of ants in an ant colony.  Assume that the colony is a species known to have $10^5$ ants (roughly) per colony.
-\begin{itemize}
-\item A: 0.01 kg
-\item B: 0.1 kg
-\item C: 1 kg
-\item D: 10 kg
-\end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-An adult blue whale is about 30 meters long.  What is the mass of a blue whale calf? (1 tonne = 1000 kg).
-\vspace{0.55cm}
-\begin{itemize}
-\item A: 300 kg
-\item B: 0.3 tonnes
-\item C: 3 tonnes
-\item D: 50 tonnes
-\end{itemize}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{Methods of approximation - Estimation: Chapter 1}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-How long does it take an airliner to fly across the Atlantic ocean?  Assume the velocity is 500 mph, and the radius of the Earth is 7000 km.
-\vspace{0.6cm}
-\begin{itemize}
-\item A: 10 hours
-\item B: 15 hours
-\item C: 2 hours
-\item D: 4 hours
-\end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-A person has 150 kg of mass and is about 1.5 meters tall.  What is his density (mass divided by volume)?
-\vspace{0.1cm}
-\begin{itemize}
-\item A: $100$ kg/m$^3$
-\item B: $400$ kg/m$^3$
-\item C: $1000$ kg/m$^3$
-\item D: $10^4$ kg/m$^3$
-\end{itemize}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{Methods of approximation - Estimation: Chapter 1}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-A jar of coffee beans sits on a counter at a cafe.  If the jar is about 10 cm tall, and has a radius of about 5 cm, estimate the number of beans inside.
-\begin{itemize}
-\item A: 300 beans
-\item B: 3000 beans
-\item C: 30,000 beans
-\item D: 30 beans
-\end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-What is the volume of a basketball?
-\vspace{0.55cm}
-\begin{itemize}
-\item A: 700 cm$^3$
-\item B: 7000 cm$^3$
-\item C: 700 cm$^2$
-\item D: 7000 cm$^2$
-\end{itemize}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{Methods of approximation - Function approximation}
-In science and engineering, \alert{function approximation} or \alert{expanding a function} is a technique in which a simple function is used obtain the value of a more complicated function near a point where they are approximately equal. 
-\begin{enumerate}
-\item Memorizing \alert{special cases}
-\begin{itemize}
-\item $\sin(x) \approx x$, when $|x| < 1$
-\item $\tan(x) \approx x$, when $|x| < 1$
-\item $(1+x)^{1/2} \approx 1+ \frac{1}{2}x$, when $|x| < 1$
-\item $\exp(x) \approx 1 + x$, when $|x| < 1$
-\end{itemize}
-\item Utilizing the \textbf{Taylor Series} (more on this later)
-\begin{itemize}
-\item $f(x) \approx f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + ...$
-\end{itemize}
+\item \textbf{Constrain the unknown with \alert{upper} and \alert{lower} limits}
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Function approximation}
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figures/taylor_series.png}
-\caption{\label{fig:approx} Certain functions may be approximated by simpler ones.  In this case, $\sin(x)$ is approximated by $x$ near $x=0$, and $(1+x)^{1/2}$ is approximated by $1+\frac{1}{2}x$ near $x=0$.}
-\end{figure}
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Units}: Which of the following represents a \textit{volume}?
+\begin{itemize}
+\item A: 10 gm
+\item B: 10 cm$^2$
+\item C: 1 cm$^3$
+\item D: 1 cm s$^{-1}$
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Function approximation}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-The height in meters of a surfer above some average height as he bobs in the waves is described by $h(t) = sin(\pi t/2)$.  What is his height at 0.2 seconds?  What is his height at -0.2 seconds?
-\vspace{0.2cm}
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Units}: If a grain of sand within a fluid sinks 15 cm in 5 seconds, what is the speed of the grain?
 \begin{itemize}
-\item A: 10 meters, -10 meters
-\item B: $\pi/10$ meters, -$\pi/10$ meters
-\item C: -0.1 meters, 0.1 meters
-\item D: -$\pi$ meters, $\pi$ meters
+\item A: 3 cm
+\item B: 3 s
+\item C: 3 s/cm
+\item D: 3 cm/s
 \end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-The value of an investment in dollars, $v$, versus time in years, $t$, follows the form $v(t) = P\exp(rt)$, where $P$ is the value at $t=0$, and $r=1/3$.  What is $v(1)$, the value after one year?
-\vspace{0.6cm}
-\begin{itemize}
-\item A: $\approx 1/3 P$
-\item B: $\approx 2/3 P$
-\item C: $\approx 3/2 P$
-\item D: $\approx 4/3 P$
-\end{itemize}
-\end{minipage}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units: Chapter 1}
-Physics requires \alert{units} to relate ideas to the real world, and \alert{unit analysis} is a powerful tool to eliminate incorrect results and to facilitate estimation.
-\begin{enumerate}
-\item SI units, and kilogram-meter-second unit set
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Unit conversion}: If a person weights 120 lbs, what is their weight in kilograms?\footnote{One kilogram is 2.2 lbs.}
 \begin{itemize}
-\item mass: \alert{kilogram} (gram = $10^{-3}$ kg, milligram = $10^{-6}$ kg)
-\item length: \alert{meter} (millimeter = $10^{-3}$ m, kilometer = $10^{3}$ m)
-\item time: \alert{second} (1 year $\approx \pi \times 10^{7}$ sec, 1 hour = 3600 sec)
+\item A: 54.5 kg
+\item B: 264 kg
+\item C: 54.5 lbs
+\item D: 264 lbs
 \end{itemize}
-\item Unit analysis
-\begin{itemize}
-\item If we are calculating a density, the units should work out to be kg/m$^3$
-\item Identifying the fundamental unit in a complex calculation often simplifies it (when done properly, this reveals the beauty of physics)
-\end{itemize}
-\end{enumerate}
-\textbf{Professor: work several examples.}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units: Chapter 1}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-A millenium is 1000 years.  If a glacier retreats at a pace of 10 cm per year, what is this rate in meters per millenium?
-\vspace{0.2cm}
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Unit conversion}: A \alert{density} is a mass divided by a volume.  For example, water has a density of 1 gm cm$^{-3}$.  What is the density of water in kg m$^{-3}$?
 \begin{itemize}
-\item A: 0.1 meter per millenium
-\item B: 1 meter per millenium
-\item C: 10 meters per millenium
-\item D: 100 meters per millenium
+\item A: 1 kg m$^{-3}$
+\item B: 10 kg m$^{-3}$
+\item C: 100 kg m$^{-3}$
+\item D: 1000 kg m$^{-3}$
 \end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-Ice has a density of 0.917 grams per centimeter cubed.  What is this density in kilograms per meter cubed?
-\vspace{1.1cm}
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Group exercise on complex units}: A \textit{vitrolero} is a classic container for serving \textit{agua fresca.}  It has a diameter of 20 cm, and a height of 30 cm.  How many cups can we serve from the vitrolero if we put 0.5 liters of agua fresca in each cup?
 \begin{itemize}
-\item A: 91.7 kg/m$^3$
-\item B: 917 kg/m$^3$
-\item C: 9170 kg/m$^3$
-\item D: 9.17 kg/m$^3$
+\item \textit{Hint:} 1 liter is 1000 mL
+\item \textit{Hint:} 1 mL is 1 cm$^3$
+\item \textbf{Volume:} The volume of a cylinder is $\pi$ times the radius of the base, squared, , times the height: $\pi r^2 h$.
 \end{itemize}
-\end{minipage}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units: Chapter 1}
-\centering
-Sometimes, the beauty of physics arrises from choosing the right unit. \\
-\vspace{1cm}
-\small
-\url{http://joshworth.com/dev/pixelspace/pixelspace\_solarsystem.html} \\
-\vspace{1cm}
-\normalsize
-The Sun in this ruler is at 0 km, and Jupiter is at about 780,000,000 km (good luck finding it).  Clearly, the kilometer is the wrong unit to choose for interplanetary distances.  What if we defined a new unit, the \alert{astronomical unit}, as the distance between the Earth and the Sun?
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Unit scale}: A generation is about one-third of a lifetime. Determine how many generations have passed since the year 0 AD\footnote{What is the appropriate scale here?}.
+\begin{itemize}
+\item A: $10$
+\item B: $20$
+\item C: $60$
+\item D: $100$
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units: Chapter 1}
-Planetary orbital radii in \alert{AU} (geometric means):
-\begin{figure}
-\begin{tabular}{| c | c |}
-\hline
-Mercury & 0.379 \\
-Venus & 0.722 \\
-Earth & 1.00 \\
-Mars & 1.52 \\
-Jupiter & 5.20 \\
-Saturn & 9.54 \\
-Uranus & 19.2 \\
-Neptune & 30.1 \\
-\hline
-\end{tabular}
-\caption{\label{tab:planets} Why such simple numbers?  There is a set of simple relationships between the \textit{orbital period} and the \textit{orbital radius} of planets called Kepler's Laws, which led to the discovery of \alert{Newton's Law of Gravity.}}
-\end{figure}
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Unit scale}: (a) What fraction of Earth’s diameter\footnote{The diameter of the Earth is 12,800 km.} is the greatest ocean depth (11 km below sea level)? (b) The greatest mountain height (8.8 km above sea level)?
+\begin{itemize}
+\item A: $8.6 \times 10^{-2}$, $6.9 \times 10^{-2}$
+\item B: $8.6 \times 10^{-3}$, $6.9 \times 10^{-3}$
+\item C: $8.6 \times 10^{-4}$, $6.9 \times 10^{-4}$
+\item D: $8.6 \times 10^{-5}$, $6.9 \times 10^{-3}$
+\end{itemize}
 \end{frame}
 
-\section{Coordinates and Vectors}
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Complex quantities}: If a Whittier College athlete ran the 5k race at a track meet in 35 minutes, what was her average speed?
+\begin{itemize}
+\item A: 0.3 meters per second
+\item B: 3 meters per second
+\item C: 30 meters per second
+\item D: 300 meters per second
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Complex quantities}: Suppose you won the lottery and received \$1 billion USD.  Because your life is dope, you stack that paper over the Whittier College soccer field.  Each stack contains 100 bills, and each bill is worth \$100.  If you evenly cover the field, how high is the money level?
+\begin{itemize}
+\item A: 0.5 inch
+\item B: 1 inch
+\item C: 2 inches
+\item D: 1 foot
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Scaling problem}: Supposed you have an ideal gas in a cylinder of fixed volume.  If the pressure begins as 100 kPa, and you \textit{double} the temperature of the gas, what is the new pressure?
+\begin{itemize}
+\item A: 100 kPa
+\item B: 50 kPa
+\item C: 10 kPa
+\item D: 200 kPa
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Scaling problem}: Supposed you have an ideal gas in a cylinder of fixed volume.  If the pressure begins as 100 kPa, and you \textit{halve} the temperature of the gas, what is the new pressure?
+\begin{itemize}
+\item A: 100 kPa
+\item B: 50 kPa
+\item C: 10 kPa
+\item D: 200 kPa
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Upper/lower limits}: How many undergraduate students are there at Whittier College\footnote{What is the absolute lower limit, and what is the upper limit?}?
+\begin{itemize}
+\item A: 5,000
+\item B: 1,000
+\item C: 1,250
+\item D: 500
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Upper/lower limits}: What is the average yearly college tuition in the United States (before subtracting grants and scholarships)?
+\begin{itemize}
+\item A: \$5,000
+\item B: \$10,000
+\item C: \$25,000
+\item D: \$40,000
+\end{itemize}
+What information affects the \alert{upper} and \alert{lower} limits here?
+\end{frame}
+
+\section{Coordinates and Vectors - Chapters 2.1 - 2.4}
 
 \begin{frame}{Coordinates and Vectors - Applications: displacement}
-Introduction of the problem, and group activity: \\
-\textit{Navigation in the film The Hunt for Red October.}
-\url{https://youtu.be/4unk6siO-tI}
+\begin{tcolorbox}[colback=white,colframe=gray,title=Activity Link]
+\textit{Who understands coordinates and vectors better than anyone else?} \\ \\
+\url{https://youtu.be/0B7WL7nhIF4?si=_dl4t_GwL98aXWFa}
+\end{tcolorbox}
 \end{frame}
 
 \begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
@@ -524,10 +444,6 @@ Suppose a jet fighter travelling at 800 km per hour banks such that it flies in 
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Conclusion of Chapter 2}
-For a list of helpful equations and mathematical definitions, see \alert{\textbf{Key Equations}} section of Chapter 2.
-\end{frame}
-
 \begin{frame}{Coordinates and Vectors - Average Velocity  (Chapter 3.1)}
 \alert{Average velocity} is the ratio of the \alert{displacement} to the elapsed time.\\
 \begin{equation}
@@ -563,6 +479,56 @@ If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m,
 \end{frame}
 
 \section{Review of Calculus Techniques}
+
+\begin{frame}{Methods of approximation - Function approximation}
+In science and engineering, \alert{function approximation} or \alert{expanding a function} is a technique in which a simple function is used obtain the value of a more complicated function near a point where they are approximately equal. 
+\begin{enumerate}
+\item Memorizing \alert{special cases}
+\begin{itemize}
+\item $\sin(x) \approx x$, when $|x| < 1$
+\item $\tan(x) \approx x$, when $|x| < 1$
+\item $(1+x)^{1/2} \approx 1+ \frac{1}{2}x$, when $|x| < 1$
+\item $\exp(x) \approx 1 + x$, when $|x| < 1$
+\end{itemize}
+\item Utilizing the \textbf{Taylor Series} (more on this later)
+\begin{itemize}
+\item $f(x) \approx f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + ...$
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Methods of approximation - Function approximation}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/taylor_series.png}
+\caption{\label{fig:approx} Certain functions may be approximated by simpler ones.  In this case, $\sin(x)$ is approximated by $x$ near $x=0$, and $(1+x)^{1/2}$ is approximated by $1+\frac{1}{2}x$ near $x=0$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Methods of approximation - Function approximation}
+\small
+\begin{minipage}[b]{0.45\linewidth}
+The height in meters of a surfer above some average height as he bobs in the waves is described by $h(t) = sin(\pi t/2)$.  What is his height at 0.2 seconds?  What is his height at -0.2 seconds?
+\vspace{0.2cm}
+\begin{itemize}
+\item A: 10 meters, -10 meters
+\item B: $\pi/10$ meters, -$\pi/10$ meters
+\item C: -0.1 meters, 0.1 meters
+\item D: -$\pi$ meters, $\pi$ meters
+\end{itemize}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+The value of an investment in dollars, $v$, versus time in years, $t$, follows the form $v(t) = P\exp(rt)$, where $P$ is the value at $t=0$, and $r=1/3$.  What is $v(1)$, the value after one year?
+\vspace{0.6cm}
+\begin{itemize}
+\item A: $\approx 1/3 P$
+\item B: $\approx 2/3 P$
+\item C: $\approx 3/2 P$
+\item D: $\approx 4/3 P$
+\end{itemize}
+\end{minipage}
+\end{frame}
 
 \begin{frame}{Review of Calculus - Skill 1: Taking Limits}
 Taking a limit has a variety of uses in physics.  Consider the following example:\\
