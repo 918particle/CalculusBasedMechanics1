@@ -6,33 +6,37 @@
 
 \begin{document}
 
-\title{PhET Activity and Laboratory Measurements}
+\title{Combining Theoretical, Simulated, and Experimental Physics}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
 
-\section{Theoretical Calculutions}
+\section{Theoretical Prediction: Pendulum}
 
 \begin{enumerate}
-\item (With professor): We will show that, according to Newton's 2nd Law, that the motion of a \textit{pendulum} (Fig. \ref{fig:pendulum} obeys the following equation:
+\item A \textit{pendulum} is a device we can use to measure the effect of gravity, and to study forces in general.
+\item Let the horizontal displacement of a pendulum be $x(t)$, with a maximum displacement $x_0$, in units of cm.  Further, let $\omega$ and $\phi$ have units of radians/s and radians, respectively. The motion of a pendulum (Fig. \ref{fig:pendulum}) theoretically follows Eq. \ref{eq:1}:
 \begin{equation}
-x(t) = a\cos(\omega t + \phi) \label{eq:1}
+x(t) = x_0\cos(\omega t + \phi) \label{eq:1}
 \end{equation} 
-In Eq. \ref{eq:1}, $a$ is the amplitude in units of distance, $\omega$ is the angular frequency in units of radians per second, and $\phi$ is the phase in units of radians.
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.2\textwidth]{pendulum.png}
-\caption{\label{fig:pendulum} A pendulum is a mass $m$ that swings on a chord of length $L$ with angular frequency $\omega = \sqrt{g/L}$, where $g$ is the gravitational constant.}
+\caption{\label{fig:pendulum} A pendulum is a mass $m$ that swings on a chord of length $L$ with angular frequency $\omega = \sqrt{g/L}$, where $g$ is the acceleration due to gravity.}
 \end{figure}
-\item Point your browser to the following link: \url{https://phet.colorado.edu/en/simulations/pendulum-lab}.  Using the Intro tab of this PhET, create a data table of the \textit{period} of the pendulum in seconds, versus the \textit{length} in centimeters.  Create a graph of your data.  Do you recognize a pattern?
+\item Suppose $\phi = 0$, $\omega = 2\pi/3$ rad/s, and $x_0 = 4$ cm.  (a) What is the displacement at $t=3/2$ seconds? (b) When is $x(t) = 0$? (c) What is the maximum positive displacement? \\ \vspace{2cm}
+\item The \textit{period} of the pendulum is the time duration required to observe the pendulum return to the same state.  Point your browser to the following link: \url{https://phet.colorado.edu/en/simulations/pendulum-lab}.  Using the Intro tab of this PhET, and a spreadsheet program, create a table of the \textit{period} of the pendulum in seconds, versus the \textit{length} of the pendulum in centimeters.  Sketch a graph of the data below. \\ \vspace{2cm}
 \end{enumerate}
 
 \section{Lab Measurement}
 
 \begin{enumerate}
-\item Using the communal pendulum set up for the class, we \textit{collect the same data we collected with the simulation.}
-\item Create the same graph of the data from the real system alongside your graph of the simulated data.
-\item Finally, graph the simulated period versus the square root of the length.  Do you notice a pattern?  Repeat this with the real data, and determine if the pattern holds in reality.
+\item Using the pendulum at your lab table, \textit{collect the same data points as your simulation.}
+\item Graph the simulated and observed period ($T$) on the same graph.  Add the following theoretical expectation, using $g = 9.81$ m s$^{-2}$, and lettiong $L$ be the pendulum length in \textit{meters}.
+\begin{equation}
+T = 2\pi \sqrt{L/g}
+\end{equation}
+\item Discuss how well your lab data, simulation data, and theoretical expectation match.
 \end{enumerate}
 
 \end{document}
