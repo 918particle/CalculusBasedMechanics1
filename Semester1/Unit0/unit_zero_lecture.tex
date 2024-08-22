@@ -480,231 +480,102 @@ If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m,
 
 \section{Review of Calculus Techniques}
 
-\begin{frame}{Methods of approximation - Function approximation}
-In science and engineering, \alert{function approximation} or \alert{expanding a function} is a technique in which a simple function is used obtain the value of a more complicated function near a point where they are approximately equal. 
+\begin{frame}{Review of Calculus Techniques}
 \begin{enumerate}
-\item Memorizing \alert{special cases}
+\item \textbf{Computing limits}
 \begin{itemize}
-\item $\sin(x) \approx x$, when $|x| < 1$
-\item $\tan(x) \approx x$, when $|x| < 1$
-\item $(1+x)^{1/2} \approx 1+ \frac{1}{2}x$, when $|x| < 1$
-\item $\exp(x) \approx 1 + x$, when $|x| < 1$
+\item Examples in mathematics
+\item Examples in physics
 \end{itemize}
-\item Utilizing the \textbf{Taylor Series} (more on this later)
+\item \textbf{Differentiation}
 \begin{itemize}
-\item $f(x) \approx f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + ...$
+\item Definition of the derivative
+\item Examples of derivatives
+\end{itemize}
+\item \textbf{Integration}
+\begin{itemize}
+\item Definition of the integral
+\item Examples of integrals
 \end{itemize}
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Function approximation}
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figures/taylor_series.png}
-\caption{\label{fig:approx} Certain functions may be approximated by simpler ones.  In this case, $\sin(x)$ is approximated by $x$ near $x=0$, and $(1+x)^{1/2}$ is approximated by $1+\frac{1}{2}x$ near $x=0$.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Methods of approximation - Function approximation}
+\begin{frame}{Review of Calculus Techniques - Computing Limits}
 \small
-\begin{minipage}[b]{0.45\linewidth}
-The height in meters of a surfer above some average height as he bobs in the waves is described by $h(t) = sin(\pi t/2)$.  What is his height at 0.2 seconds?  What is his height at -0.2 seconds?
-\vspace{0.2cm}
+Consider the function $f(x)$, defined below:
+\begin{equation}
+f(x) = \frac{1}{1+x^2}
+\end{equation}
+\textbf{Evaluate} the function at the following points:
 \begin{itemize}
-\item A: 10 meters, -10 meters
-\item B: $\pi/10$ meters, -$\pi/10$ meters
-\item C: -0.1 meters, 0.1 meters
-\item D: -$\pi$ meters, $\pi$ meters
+\item $x = 0$
+\item $x = 10$
+\item $x = 100$
+\item $x = 1000$
 \end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-The value of an investment in dollars, $v$, versus time in years, $t$, follows the form $v(t) = P\exp(rt)$, where $P$ is the value at $t=0$, and $r=1/3$.  What is $v(1)$, the value after one year?
-\vspace{0.6cm}
-\begin{itemize}
-\item A: $\approx 1/3 P$
-\item B: $\approx 2/3 P$
-\item C: $\approx 3/2 P$
-\item D: $\approx 4/3 P$
-\end{itemize}
-\end{minipage}
+What is the \textit{limiting value} of the function as $x \to \infty$?  What is the \textit{limiting value} of the function as $x \to -\infty$?
 \end{frame}
 
-\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
-Taking a limit has a variety of uses in physics.  Consider the following example:\\
-\vspace{0.5cm}
+\begin{frame}{Review of Calculus Techniques - Computing Limits}
 \small
-The weight of an object sitting on the Earth's surface is given by the following equation, which we will encounter later in physics: \\
+Consider the function $f(x)$, defined below:
 \begin{equation}
-w = G \frac{m M}{r^2}
+f(x) = \exp(x) = e^x
 \end{equation}
+\textbf{Evaluate} the function at the following points:
 \begin{itemize}
-\item w: weight
-\item G: a constant of nature
-\item m: the object's mass
-\item M: the mass of the Earth
-\item r: the distance between the center of the Earth and the object
+\item $x = 0$
+\item $x = 10$
+\item $x = 100$
+\item $x = 1000$
 \end{itemize}
+What is the \textit{limiting value} of the function as $x \to \infty$?  What is the \textit{limiting value} of the function as $x \to -\infty$?
 \end{frame}
 
-\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
-The weight of an object sitting on the Earth's surface is given by the following equation, which we will encounter later in physics: \\
-\begin{equation}
-w = G \frac{m M}{r^2}
-\end{equation}
-Let $R$ be the radius of the Earth, $r_0$ be the object's height above the Earth's surface, and $\epsilon = r_0/R \ll 1$.  Also, let $g = GM/R^2$.  Rearranging the equation for weight:\\
-\begin{equation}
-w = mg (1+\epsilon)^{-2}
-\end{equation}
-Since $\epsilon \ll 1$, take the limit:
-\begin{equation}
-\lim_{\epsilon \to 0} w = \lim_{\epsilon \to 0} mg (1+\epsilon)^{-2} = mg
-\end{equation}
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
-Thus, for practical calculations where the object is not far from the Earth's surface, the weight is $w = mg$, or the mass times some measurable constant, $g$. \\
-\vspace{0.5cm}
-Often in other branches of physics, we often encounter the \textit{sinc function}:\\
-\begin{equation}
-s(t) = \frac{sin(t)}{t}
-\end{equation}
-What is $\lim_{t \to 0} s(t)$?  It looks like 0/0, but that is not definited mathematically.
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
-We can use \alert{L'H\^{o}pital's Rule}: take the \textit{derivative} of the numerator and the denominator, then take the limit: \\
-\begin{equation}
-\lim_{t\to 0} s(t)  = \lim_{t\to 0} \left| \frac{\frac{d}{dt}\sin(t)}{\frac{d}{dt}t}\right| = \lim_{t\to 0} \cos(t) = 1
-\end{equation} \\
-This approach is valid for cases like $0/0$ or $\infty/\infty$.  But what is the \alert{derivative}?  How do we know that the derivative of $\sin(t)$ is $\cos(t)$, and the derivative of $t$ is one? The definition of the derivative:
-\begin{equation}
-f'(t) = \dot{f} = \frac{df}{dt} \equiv \lim_{h \to 0} \frac{f(t+h) - f(t)}{h}
-\end{equation}
-''The change in y over the change in x at h.''
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 2: Taking Derivatives}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $f(t) = t^n$
-\item $f(t) = \exp(t)$
-\item $f(t) = \ln(t)$
-\item $f(t) = \sin(t)$
-\item $f(t) = \cos(t)$
-\item $f(t) = \tan(t)$
-\item $f(t) = a$
-\end{enumerate}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $f' = nt^{n-1}$
-\item $f' = \exp(t)$
-\item $f' = 1/t$
-\item $f' = \cos(t)$
-\item $f' = -\sin(t)$
-\item $f' = \sec^2(x)$
-\item $f' = 0$
-\end{enumerate}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 2: Derivative Properties}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $g(t) = af(t)$
-\item $g(t) = a(t) + b(t)$
-\item $g(t) = a(t)b(t)$
-\item $g(t) = a(t)/b(t)$
-\item $g(t) = a(b(t))$
-\end{enumerate}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $g' = af'$
-\item $g' = a'+b'$
-\item $g' = ab'+a'b$
-\item $g' = \frac{ba'-ab'}{b^2}$
-\item $g' = a'(b)b'$
-\end{enumerate}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 3: Anti-derivatives and integrals}
-An \textit{anti-derivative} just reverses the action of the derivative.  Also called an indefinite integral.  For example:
-\begin{align}
-x(t) &= at^{n} \\
-x' &= nat^{n-1} \label{eq:derivative} \\
-\int nat^{n-1} dt &= at^{n} + C \label{eq:antiderivative}
-\end{align}
-In Eq. \ref{eq:antiderivative}, the $\int$ symbol represents integration (a big $S$ for ''summation'').  There is a constant $C$ because, technically, if we take the derivative of Eq. \ref{eq:antiderivative}, the result is Eq. \ref{eq:derivative} (derivative of a constant $C$ is zero). 
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 3: Anti-derivatives and integrals}
-An integral is the difference in the value of the anti-derivative evaluated at two points:
-\begin{equation}
-\int_{c}^{d} nat^{n-1} dt = a(d)^n - a(c)^n
-\end{equation}
-''Raise the power by one, and divide the whole thing by that number.'' - Just like derivatives, there are many simple cases to memorize.
-\begin{equation}
-\int_{a}^{b} \cos(t) dt = \sin(b) - \sin(a)
-\end{equation}
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 3:  Anti-derivatives and integrals}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $f(t) = t^n$
-\item $f(t) = \exp(t)$
-\item $f(t) = 1/t$
-\item $f(t) = \sin(t)$
-\item $f(t) = \cos(t)$
-\item $f(t) = a$
-\item ...
-\end{enumerate}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $\int f(t) dt = (n+1)^{-1}t^{n+1} + C$
-\item $\int f(t) dt = \exp(t) + C$
-\item $\int f(t) dt = \ln(t) + C$
-\item $\int \sin(t) dt = -\cos(t) + C$
-\item $\int \cos(t) dt = \sin(t) + C$
-\item $\int f(t) = at + C$
-\item ...
-\end{enumerate}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{A Few Calculus Problems}
+\begin{frame}{Review of Calculus Techniques - Computing Limits}
 \small
-\begin{minipage}[b]{0.45\linewidth}
-Let $x(t) = 5t^2-2t+7$ in the $\hat{x}$-direction, where $x$ is in meters and $t$ is in seconds.  What is the velocity (take the derivative) at $t=1$ second?
-\vspace{0.2cm}
+Consider the function $f(x)$, defined below:
+\begin{equation}
+f(x) = \sin(x)
+\end{equation}
+\textbf{Evaluate} the function at the following points:
 \begin{itemize}
-\item A: 8 m/s in the $\hat{y}$-direction
-\item B: 6 m/s in the $\hat{x}$-direction
-\item C: 8 m/s in the $\hat{x}$-direction
-\item D: 6 m/s in the $\hat{y}$-direction
+\item $x = \pi$
+\item $x = -\pi$
+\item $x = 0.1$
+\item $x = 0.01$
 \end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-Let $v(t) = 2t+2$ in the $\hat{x}$-direction.  What is the position versus time (take the integral)?
-\vspace{0.7cm}
-\begin{itemize}
-\item A: $t^2+2t + C$
-\item B: $t^2 +2t$
-\item C: $t+2 + C$
-\item D: $t^3 2t^2 + C$
-\end{itemize}
-\end{minipage}
+What is the \textit{limiting value} of the function as $x \to 0$?  The procedure is straightforward if the function is \textit{continuous} and \textit{differentiable}.
+\end{frame}
+
+\begin{frame}{Review of Calculus Techniques - Differentiation}
+\small
+\begin{tcolorbox}[colback=white,colframe=gray,title=Derivative of a Function]
+Let $f(t)$ be a continuous function on an interval $[a,b]$, and $a<t<b$.  The derivative of $f(t)$ is
+\begin{equation}
+f'(t) = \frac{df}{dt} = lim_{\Delta t \to 0} ~ \frac{f(t+\Delta t) - f(t)}{\Delta t}
+\end{equation}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=gray,title=List of Common Derivatives]
+Here is a link to lists of common derivatives:
+\url{https://en.wikipedia.org/wiki/Derivative} \\
+\url{https://en.wikipedia.org/wiki/Differentiation_rules}
+\end{tcolorbox}
+\textbf{Professor:} work some examples.
+\end{frame}
+
+\begin{frame}{Review of Calculus Techniques - Integration}
+\begin{tcolorbox}[colback=white,colframe=gray,title=Integral of a Function]
+Let $f(t)$ be a continuous function on an interval $[a,b]$, and $a<t_i<b$, where $t_i$ are regular points within the integral.  The Riemann integral is
+\begin{equation}
+I = \sum_i f(t_i) \Delta t_i \to \int_a^b f(t) dt
+\end{equation}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=gray,title=List of Common Derivatives]
+Here is a link to a list of common integrals:
+\url{https://en.wikipedia.org/wiki/Lists_of_integrals}
+\end{tcolorbox}
+\textbf{Professor:} work some examples.
 \end{frame}
 
 \section{Conclusion}
