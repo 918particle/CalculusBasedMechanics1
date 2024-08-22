@@ -4,36 +4,79 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Warm-Up 0: units, vectors, and introductory calculus}
+\title{Friday warm-up: units, vectors, and introductory calculus}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
 
-\section{Chapter 1 - Units and Measurement}
+\section{Chapter 1 - Unit analysis, \\ Estimation}
 
 \begin{enumerate}
-\item In your own words, what is a physics theory, and what determines the validity of a theory? \\ \vspace{0.5cm}
-\item Which of the following is not correct?
+\item Which of the following are correct?
 \begin{itemize}
-\item A: The quantity meters per second$^2$ is a unit of acceleration.
-\item B: A kilometer is a unit of speed.
-\item C: A kilometer per hour is a unit of speed.
-\item D: The quantity kg per meter$^3$ is a unit of density.
+\item A: The quantity m s$^{-1}$ is a unit of acceleration.
+\item B: The quantity m s$^{-1}$ is a unit of speed.
+\item C: The quantity m s$^{-2}$ is a unit of speed.
+\item D: The quantity m s$^{-2}$ is a unit of acceleration.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item Which of the following represents the density of lead?
+\begin{itemize}
+\item A: 0.11 g cm$^{-3}$
+\item B: 1.1 g cm$^{-3}$
+\item C: 11 g cm$^{-3}$
+\item D: 111 g cm$^{-3}$
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item If there are 2.2 lbs/kg, which of the following is equivalent to 100 lbs in kg?
+\begin{itemize}
+\item A: 220 kg
+\item B: 100 kg
+\item C: 45.5 kg
+\item D: 10.5 kg
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item A train leaves Los Angeles Union Station for the Bay Area (Evansville) at 60 km/hr.  If the Bay Area (Evansville) is 600 km to the North, how long before the train reaches the destination?
+\begin{itemize}
+\item A: 1 hour
+\item B: 10 hours
+\item C: 15 hours
+\item D: 24 hours
 \end{itemize}
 \end{enumerate}
 
 \section{Chapter 2 - Vectors}
 
 \begin{enumerate}
-\item Which of the following is should be considered a vector quantity (i.e. having a magnitude and direction)?
+\item Let $(v_x,v_y)$ represent the x and y-components of a vector $\vec{v}$.  The wind velocity is 10 km/hr, Southwest.  North and East vector components are positive, while South and West are negative.  Find $\vec{v}$ below.
 \begin{itemize}
-\item A: wind velocity
-\item B: air temperature
-\item C: the mass of an object
-\item D: the brightness of a light source
+\item A: (7.1,7.1) km/hr
+\item B: (-7.1,7.1) km/hr
+\item C: (7.1,-7.1) km/hr
+\item D: (-7.1,-7.1) km/hr
 \end{itemize}
-\item Explain in your own words (or draw a diagram): why can't a vector have a component greater than its own magnitude?
+\item In the previous problem, the \textit{magnitude} of $\vec{v}$ is 10 km/hr.  This is because
+\begin{itemize}
+\item A: $\sqrt{7.1} = 10$
+\item B: $\sqrt{7.1^2} = 10$
+\item C: $\sqrt{7.1^2 + 7.1^2} = 10$
+\item D: $2\sqrt{7.1^2} = 10$
+\end{itemize}
+\item Suppose $\vec{x}_1 = (2,3)$ km and $\vec{x}_2 = (-2,3)$ km.  What is $\vec{x}_1 + \vec{x}_2$?
+\begin{itemize}
+\item A: (6,0) km
+\item B: (0,6) km
+\item C: (4,0) km
+\item D: (0,4) km
+\end{itemize}
 \end{enumerate}
 
 \section{Calculus Topic - The Derivative}
@@ -41,11 +84,12 @@
 \begin{enumerate}
 \item The \textit{derivative}, or slope of a function $f(t)$ is defined as 
 \begin{equation}
-f'(t) = \lim_{dt \to 0} \frac{f(t+dt) - f(t)}{dt}
+f'(t) = \lim_{dt \to 0} \frac{f(t+dt) - f(t)}{dt} \label{eq:1}
 \end{equation}
-What do you think the \textit{limit} means, in your own words?  Evaluate the limit: $\lim_{x \to \infty} \left(\frac{x}{1+x}\right)$. \vspace{1cm}
-\item Find the derivative of the following function: $f(t) = 4t - 2$. \vspace{1cm}
-\item (With professor): determine a procedure for taking the derivative of $f(t) = a t^n + b$.
+Suppose $f(t) = a t^2$.  Given Eq. \ref{eq:1}, show that 
+\begin{equation}
+f'(t) = 2 a t
+\end{equation}
 \end{enumerate}
 
 \end{document}
