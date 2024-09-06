@@ -47,4 +47,18 @@ T = 2\pi \sqrt{L/g} \label{eq:3}
 
 Solve Eq. \ref{eq:3} for $g$, and repeat the above procedure to obtain $g_{ave}$ and the percent error using the pendulum.  Compare the results for $g_{ave}$ from each technique.
 
+\section{The Acceleration of Gravity, Third Measurement}
+
+Using your pendulum data, we will measure $g$ more precisely now.  Use the following procedure to extract the $g$ measurement from the data.
+\begin{enumerate}
+\item Estimate the error on your $T$ measurements.  Assume, for example, that your precision on measuring $T$ is 5\%, fractionally.  Thus, if you measure $T$ to be 1.8 seconds, then a 50\% error is $\pm 0.9$ seconds, and 5\% error is $\pm 0.09$ seconds.
+\item Create a spreadsheet with five columns.  Name them ``Length (m),'' ``Period (sec),'' ``Error (sec),'' ``Theory (sec),'' and ``chi squared.''  In the first column, enter your length data, converting to meters.  In the second column, enter your raw, measured period data in seconds.  In the third column, enter your estimate of the error on the period measurements, in seconds.
+\item In the fourth column, enter the following: \verb+=2*3.14*SQRT(A2/9.81)+.  This assumes your first length measurement is in cell A2.  Click and drag the formula down to repeat the calculation for each length measurement.  Note the formula assumes $g = 9.81$ m s$^{-2}$.
+\item In the fifth column, enter the following: \verb+=(B2-D2)^2/C2^2+.  This assumes your first period measurement is in cell B2, the associated error is in C2, and that the theoretical prediction is in D2.
+\item In the cell below the ``chi-squared'' data, enter the following: \verb+=SUM(E2:E12)/N+.  Trade ``N'' for the number of measurements minus one.  \textbf{Does your sum result in a number close to one?}  Why should this occur if the theoretical prediction is a \textit{good fit} to the measured data?
+\item The summed quantity is known as the \textit{reduced $\chi^2$ value.}  Summing the fractional squared difference between theory and measurement in this way results in a number that follows the $\chi^2$ distribution, a well-known probability distribution in the subject of probability and statistics.  \textbf{If your chi-squared value is not near 1.0, try tuning your $g$ value within the Theory column.  Tune $g$ until $\chi^2$ is minimized.}
+\item Create a graph of your data, including errors and theoretical prediction, below.
+\item To explore $\chi^2$ in more depth, follow this link: \url{https://phet.colorado.edu/en/simulations/curve-fitting}.
+\end{enumerate}
+
 \end{document}
