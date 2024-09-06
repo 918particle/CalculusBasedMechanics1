@@ -6,61 +6,45 @@
 
 \begin{document}
 
-\title{PhET and Lab Activity: Unit 1, Acceleration and Kinematics}
+\title{Laboratory Activity: Unit 1, Measuring $g$}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
 
-\section{Position, Velocity, and Acceleration}
+\section{The Acceleration of Gravity, First Measurement}
 
-\begin{enumerate}
-\item Open the following link and scroll to the bottom of the page: \url{https://openstax.org/books/college-physics/pages/2-4-acceleration}.  
-\item Open the PhET simulation.  Click on the link for the Moving Man Simulation, entitled \textbf{Click to View Content.}
-\item The introduction tab at the top left will help you learn the controls.  Using the mouse, you can drag the man left and right in one dimension.  His position, velocity, and acceleration will be indicated by the blue, red, and green markers, respectively.
-\item Now click on the tab at the top left entitled \textbf{Charts.}
-\item Slowly drag the man to the right \textit{at a steady pace.}  Do you observe the following?
-\begin{itemize}
-\item A linearly increasing position?
-\item A (roughly) constant velocity?
-\item An acceleration that is basically zero?
-\end{itemize}
-\item Hit reset at the bottom right, and redo the experiment.  This time, move the man all the way to the right, then move him all the way to the left.  As accurately as you can, with labeled axes and units, draw his position below: \\ \vspace{2.0cm}
-\item From the position versus time graph you've created, identify the region of positive velocity by looking at the slope.  Calculate the average velocity from the slope of your graph.  Repeat this exercise for the region of negative velocity.  When does acceleration deviate from zero?
-\end{enumerate}
-
-\begin{figure}[hb]
-\centering
-\includegraphics[width=0.4\textwidth]{figures/man.png}
-\caption{Example of the PhET simulation.}
-\end{figure}
-
-\section{The Acceleration of Gravity, Statistical Mean and Standard Deviation}
-
-This is a simple lab exercise repeating what we did in class with falling marbles.  You will need the stopwatch on your mobile, a small object like a marble, and a ruler or tape measure.  Let's assume we are rolling a marble off the edge of a table.  According to observations of other systems accelerating constantly, when the marble leaves the table the vertical position versus time will be 
+The goal of this laboratory activity is to measure $g$, the acceleration due to gravity.  Let $g$ be the acceleration downward, and assume it is constant.  Let $v_{i,y}$ be the initial velocity in the y-axis, and assume the y-axis is vertical.  Let $y_i$ be the initial vertical position.  The position of a vertically accelerating object, in general, is given by
 \begin{equation}
 y(t) = -\frac{1}{2}gt^2 + v_{i,y} t + y_i \label{eq:1}
 \end{equation}
-In Eq. \ref{eq:1}, $-g$ is the acceleration.  The vector form of acceleration points down, so we give $g$ a minus sign.  The time $t=0$ is when the marble begins to fall, and $v_{i,y}$ is the vertical component of the velocity at $t=0$.  The initial position is $y_i$.  We know that $v_{i,y} = 0$ because we do not \textit{push the marble downwards}, but instead let it fall.  Let the change in height be $h = y(t) - y_i$.  Show that
+In Eq. \ref{eq:1}, $-g$ is the acceleration.  The vector form of acceleration points down, so we give $g$ a minus sign.  We begin to observe the system at time $t=0$.  If a stationary marble is dropped and Eq. \ref{eq:1} is used to predict the position $y(t)$, then $v_{i,y} = 0$.  Let the change in height be $h = y(t) - y_i$.  Show that
 \begin{equation}
 h = -\frac{1}{2}g t^2
 \end{equation}
-\textbf{This time}, let's solve this equation to solve for $g$.  The result should be
+Use this equation to solve for $g$.  The result should be
 \begin{equation}
-g = -\frac{2 h}{t^2}
+g = \frac{-2h}{t^2} \label{eq:2}
 \end{equation}
+Use the following procedure to measure $g$:
 \begin{enumerate}
-\item Measure $h$ with the ruler, and roll the marble off the table 16 times.  Record 16 measurements of $t$ using a stopwatch.  Use the 16 time values to obtain 16 values for $g$.
-\item Let $g_1$ through $g_{16}$ represent your data ($g_i$), and $N = 16$.  Compute the \textit{mean value} of $g$ using the following sum:
+\item Use the ruler to measure the vertical displacement of the marble.
+\item Use a stopwatch to time the descent of the marble.
+\item Insert the measured values of $h$ and $t$ into Eq. \ref{eq:2} to calculate $g$.
+\item Repeat 10 times and compute the average for $g = g_{ave}$.
+\item Calculate the \textit{percent error} of $g$, using the $g = 9.81$ m s$^{-2}$.
 \begin{equation}
-\bar{g} = \frac{1}{N} \sum_{i=1}^{N} g_i
+\Delta g ~ (\%) = \frac{g_{ave} - g}{g} \times 100
 \end{equation}
-Record your results below.
-\item Compute the \textit{standard deviation} from the mean value, using the following sum:
-\begin{equation}
-\sigma_g = \sqrt{\frac{1}{N-1}\sum_{i=1}^{N} (g_i - \bar{g})^2}
-\end{equation}
-Record your results below.
-\item Quote your results like this: $\bar{g} \pm \sigma_g$ in m s$^{-2}$.  Does the accepted average value of 9.81 m s$^{-2}$ fall within the range $[\bar{g} - \sigma_g, \bar{g} + \sigma_g]$?
 \end{enumerate}
+
+\section{The Acceleration of Gravity, Second Measurement}
+
+Now measure $g$ using a pendulum, constructed in the same fashion as the previous lab activity.  Let $T$ be the period of the pendulum, and $L$ be the length.  The relationship between $T$, $L$, and $g$ is
+
+\begin{equation}
+T = 2\pi \sqrt{L/g} \label{eq:3}
+\end{equation}
+
+Solve Eq. \ref{eq:3} for $g$, and repeat the above procedure to obtain $g_{ave}$ and the percent error using the pendulum.  Compare the results for $g_{ave}$ from each technique.
 
 \end{document}
