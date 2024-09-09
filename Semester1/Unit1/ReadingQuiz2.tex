@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Warm Up: Graphical Analysis of Kinematics}
+\title{Monday warm-up: Kinematics, II}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -14,25 +15,40 @@
 
 \begin{enumerate}
 \item $v = \frac{\Delta x}{\Delta t}$ ... Average velocity.
-\item $x(t) = v t + x_i$ ... Position versus time with constant velocity.
-\item $a = \frac{\Delta v}{\Delta t}$ ... Acceleration is the change in velocity.
-\item $v_f^2 = v_i^2 + 2 a \Delta x$ ... Kinematic equation without time.
+\item $v = \frac{dx}{dt}$ ... Instantaneous velocity.
+\item $a = \frac{\Delta v}{\Delta t}$ ... Average acceleration.
+\item $a = \frac{dv}{dt}$ ... Average acceleration.
+\item $x(t) = \frac{1}{2}at^2 + v_i t + x_i$ ... Position versus time, given constant acceleration
+\item $v(t) = at + v_i$ ... Speed versus time, given constant acceleration
+\item $v_f^2 = v_i^2 + 2a\Delta x$ ... Initial and final speeds, given constant acceleration and displacement
 \end{enumerate}
 
-\section{Graphical Analysis of Kinematics}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.25\textwidth]{figures/x_vs_t.png} \hspace{0.5cm}
-\includegraphics[width=0.25\textwidth]{figures/run.jpeg}
-\caption{\label{fig:graph} (Left) A graph of the displacement versus time of a system, in meters versus seconds. (Right) A graph of displacement versus time of a runner, in meters versus seconds.}
-\end{figure}
+\section{Chapter 3 - Kinematics, II}
 
 \begin{enumerate}
-\item Consider Fig. \ref{fig:graph} (Left).  (a) What is the velocity of the system between 0 and 0.5 seconds? (b) What is the velocity between 0.5 and 1.0 seconds? (c) What is the velocity between 1.0 and 2.0 seconds? \\ \vspace{0.5cm}
-\item Write the formula $x(t)$ that describes the motion between 1.0 and 2.0 seconds. \\ \vspace{0.5cm}
-\item Consider the motion of the runner depicted in Fig. \ref{fig:graph} (Right).  (a) What is the speed of the system after $t = 4$ seconds? (b) What is the acceleration between $t=0$ and $t=4$ seconds? (c) What is the speed of the runner between $t=0$ and $t=4$ seconds? \\ \vspace{1cm}
-\item Now change the y-axis units in Fig. \ref{fig:graph} to velocity, in meters per second.  Answer parts (a)-(c) from the previous question again.  For part (c), write your answer as a function of time.  \textit{Where} does the runner reach top speed? \\ \vspace{1cm}
+\item Suppose a running accelerates at 3 m s$^{-2}$, starting from rest.  (a) \textit{Where} will the runner reach a top speed of 10 m s$^{-1}$? (b) \textit{When} does the runner reach top speed ? \\ \vspace{3cm}
+\item Consider Fig. \ref{fig:graph}.  The formula that describes the speed of the system between 0 and 20 seconds is
+\begin{itemize}
+\item A: $v(t) = 3 t$
+\item B: $v(t) = 0.3 t$
+\item C: $v(t) = 20 t$
+\item D: $v(t) = 0.2 t$
+\end{itemize}
+\item Using your formula for $v(t)$ from the previous exercise, what is the speed at $t = 10$ seconds? \\ \vspace{2cm}
+\item Consider Fig. \ref{fig:graph}.  Between 50 and 70 seconds, the system is
+\begin{itemize}
+\item A: has positive acceleration
+\item B: has negative acceleration
+\item C: has no acceleration
+\item D: is not moving
+\end{itemize}
+\item Examine Fig. \ref{fig:graph}, and determine the regions with the largest positive acceleration and the largest negative acceleration.  Estimate them based on the graph. \\ \vspace{2cm}
 \end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{figures/v_vs_t.jpeg}
+\caption{\label{fig:graph} things}
+\end{figure}
 
 \end{document}
