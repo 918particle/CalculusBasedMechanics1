@@ -1,4 +1,4 @@
-\title{Calculus-Based Physics-1: Mechanics (PHYS150): Midterm 1}
+\title{Calculus-Based Physics-1: Midterm 1}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
 \date{\today}
 \documentclass[10pt]{article}
@@ -6,83 +6,129 @@
 \usepackage{outlines}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{hyperref}
 
 \begin{document}
+\twocolumn
+
 \maketitle
 
-\section{Memory Bank}
+\section{Unit 0: Estimation, Unit \\ Analysis, Vectors, and \\ Kinematics I}
 
+\begin{enumerate}
+\item Which of the following represents the density of lead?
 \begin{itemize}
-\item Unit conversions: 1 km = 1000 m, 1 m = 100 cm, 1 hr = 3600 s, 1 year = $\pi \times 10^7$ s, 1 g/cm$^3$ = 1000 kg/m$^3$.
-\item $\vec{x} = a \hat{i} + b\hat{j}$ ... Component form of a two-dimensional vector.
-\item $|\vec{x}| = \sqrt{a^2+b^2}$ ... Pythagorean theorem for obtaining vector magnitude.
-\item $\theta = \tan^{-1}(b/a)$ ... Obtaining the angle between vector and x-axis.
-\item $a = |\vec{x}|\cos(\theta)$ ... Obtaining the x-component with trigonometry.
-\item $b = |\vec{x}|\sin(\theta)$ ... Obtaining the y-component with trigonometry.
-\item $\Delta x = \vec{x}_f - \vec{x}_i$ ... Definition of displacement.
-\item $\vec{v} = \frac{\Delta \vec{x}}{\Delta t} = \frac{\vec{x}_f - \vec{x}_i}{t_f-t_i}$ ... Definition of velocity.
-\item $\vec{a} = \frac{\Delta \vec{v}}{\Delta t} = \frac{\vec{v}_f - \vec{v}_i}{t_f-t_i}$ ... Definition of acceleration.
-\item $x(t) = x_i + v t$ ... Velocity is the slope of position versus time.
-\item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
-\item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
-\item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
-\item General set of 2D kinematic equations, assuming gravity provides constant vertical negative acceleration.
-\begin{align}
-\vec{x}(t) &= (x_i + v_{x,i} t) \hat{i} \\
-\vec{y}(t) &= (-\frac{1}{2}g t^2 + v_{i,y} t + y_i) \hat{j} \\
-\vec{v}_y &= (v_{i,y} - g t) \hat{j} \\
-\vec{a} &= -g \hat{j} \\
-T_{tof} &= \frac{2 v_0\sin(\theta_0)}{g} \\
-R &= \frac{v_0^2\sin(2\theta_0)}{g} \\
-v_{x,i} &= v_0 \cos(\theta) \\
-v_{y,i} &= v_0 \sin(\theta)
-\end{align}
-\item Newton's First Law: If $\vec{F}_{\rm net} = 0$, a system will remain at rest or constant velocity.
-\item Newton's Second Law: If $\vec{F}_{\rm net} \neq 0$, $\vec{F}_{\rm net} = m\vec{a}$.
-\item Newton's Third Law: $\vec{F}_{\rm 12} = - \vec{F}_{\rm 21}$.
+\item A: 0.11 g cm$^{-3}$
+\item B: 1.10 g cm$^{-3}$
+\item C: 11.0 g cm$^{-3}$
+\item D: 111 g cm$^{-3}$
 \end{itemize}
-
-\clearpage
-
-\section{Estimations and Unit Analysis}
-
-\begin{enumerate}
-\item Suppose you are standing at the edge of a canyon.  You clap, and here the sound of the echo off of the other side of the canyon wall about 1.5 seconds later.  You estimate the canyon wall to be about 0.5 km away.  a) What is the speed of sound in meters per second?  b) What is it in kilometers per hour? \\ \vspace{1.5cm}
-\item a) What is 0.25 m$^3$ in cm$^3$? b) What is 100 km/hour in m/s? c) What is 2 kg m s$^{-2}$ in gm cm ms$^{-2}$? \\ \vspace{1cm}
+\item A train leaves Los Angeles Union Station for the Bay Area (Emoryville) at 60 km/hr.  If the destination is 600 km to the North, how long before the train reaches the destination?
+\begin{itemize}
+\item A: 0.50 hours
+\item B: 5.00 hours
+\item C: 10.0 hours
+\item D: 24.0 hours
+\end{itemize}
+\item What is 25 m s$^{-1}$ in km hr$^{-1}$?
+\begin{itemize}
+\item A: 15 km hr$^{-1}$
+\item B: 25 km hr$^{-1}$
+\item C: 60 km hr$^{-1}$
+\item D: 90 km hr$^{-1}$
+\end{itemize}
+\item Suppose a ship accelerates from 0 km hr$^{-1}$ to 10 km hr$^{-1}$ in 60 seconds.  What is the acceleration?
+\begin{itemize}
+\item A: 60 km hr$^{-1}$ s$^{-1}$
+\item B: 6 km hr$^{-1}$ s$^{-1}$
+\item C: 1/6 km hr$^{-1}$ s$^{-1}$
+\item D: 1/60 km hr$^{-1}$ s$^{-1}$
+\end{itemize}
+\item Estimate the area of the North Quad of Whittier College (the open space outside the SLC):
+\begin{itemize}
+\item A: 5000 m$^2$
+\item B: 5000 cm$^2$
+\item C: 500 m$^2$
+\item D: 500 cm$^2$
+\end{itemize} \vspace{1cm}
+\item A coffee bean is about 0.5 cm$^3$ in volume.  How many could fit in a 2 liter bottle?
+\begin{itemize}
+\item A: $4\times 10^{1}$
+\item B: $4\times 10^{2}$
+\item C: $4\times 10^{3}$
+\item D: $4\times 10^{4}$
+\end{itemize}
+\item Let $\vec{v} = v_x \hat{i} + v_y \hat{j}$ represent a velocity vector.  The wind velocity is 10 km/hr, Southwest.  North and East vector components are positive, while South and West are negative.  What are $v_x$ and $v_y$?
+\begin{itemize}
+\item A: 7.1 and 7.1 km/hr
+\item B: -7.1 and 7.1 km/hr
+\item C: 7.1 and -7.1 km/hr
+\item D: -7.1 and -7.1 km/hr
+\end{itemize}
+\item What is the angle the velocity makes with the x-axis, in the previous exercise?
+\begin{itemize}
+\item A: 225 degrees
+\item B: 180 degrees
+\item C: 135 degrees
+\item D: 90 degrees
+\end{itemize}
+\item (a) Let $\vec{v} = -2\hat{i} + 2\hat{j}$, and $\vec{w} = 2\hat{i} - 2\hat{j}$.  Draw each in a 2D coordinate system below. (b) What is $\vec{v} + \vec{w}$?  (c) What is $\vec{v} - \vec{w}$? (d) Add $\vec{v} + \vec{w}$ and $\vec{v} - \vec{w}$ to your coordinate system. (e) What is $\vec{v} \cdot \vec{w}$? \\ \vspace{2.5cm}
 \end{enumerate}
 
-\section{Vectors}
+\section{Unit 1: Kinematics II and III}
 
 \begin{enumerate}
-\item Write the following vectors in component form: (a) $\vec{x}_1$ is a vector with a magnitude of 10 meters and that makes an angle of 15 degrees with respect to the x-axis. (b) $\vec{x}_2$ is a vector with magnitude 20 meters that makes an angle of 135.0 degrees with respect to the x-axis.  \\ \vspace{2.0cm}
-\item A person goes for a walk.  They head 0.5 km to the North, and then 0.5 km to the East.  Finally, they head North-East at an angle of 45 degrees with respect to the x-axis for 0.25 km.  a) Draw a diagram of their trajectory (East is x-axis, North is y-axis). b) What is the final location in x-y coordinates? c) What is the distance from the origin? \\ \vspace{3cm}
+\item Suppose a cyclist has a velocity of $15$ m s$^{-1}$ at $t=0$.  If the acceleration is 3 m s$^{-2}$, (a) what is the velocity at $t = 4$ seconds? (b) What is the displacement of the cyclist at $t = 4$ seconds? (c) Are the average and instantaneous velocities different at $t=0$ or $t=4$ seconds?  \\ \vspace{3cm}
+\item Consider the motion of the sytem depicted in Fig. \ref{fig:1}.  (a) From the given data, calculate the speed of the system at points P and Q. (b) Is the acceleration of the sytem positive or negative?  Estimate the acceleration. \\ \vspace{3cm}
+\item A system moves according to $x(t) = 10t - 2t^2$ m. (a) What is the instantaneous velocity at $t = 2$ and $t = 3$ seconds? (b) What is the average velocity between these times? (c) What is the acceleration? \\ \vspace{3cm}
+\item \textbf{Design problem}.  Design an experiment in which a baseball is thrown, and the range must be 60 meters.  Choose the launch angle and initial velocity, and show that the range is 60 meters.  Provide the time of flight as well.  Finally, verify your results with the appropriate PhET simulation. \\ \vspace{3cm}
+\item \textbf{Design problem.}  In our lab, we used a pendulum to measure $g$, the gravitational constant.  Use the following simulation to repeat that process: \url{https://phet.colorado.edu/en/simulations/pendulum-lab}. Recall that the formula relating period $T$ to $g$ is $T = 2\pi\sqrt{L/g}$, where $L$ is the pendulum length. Show your work in the form of a (handwritten) graph and relevant calculuations. \\ \vspace{4cm}
 \end{enumerate}
 
-\section{Motion Along a Straight Line}
-
-\begin{enumerate}
-\item The position of a particle moving along the x-axis is given by $x(t) = -1.0 - 4.0t$ m. (a) What is the displacement of the particle between $t=-2.0$ seconds and $t=2.0$ seconds?  (b) What is the velocity? \\ \vspace{1.5cm}
-\item A particle moves along the x-axis according to $x(t) = -2t + 7t^2$.  (a) What is the average velocity between $t=0$ and $t=2$ seconds?  (b) Draw a graph of the \textbf{velocity}.  (c) What is the instantaneous velocity at $t=1$ second?  (d) What is the acceleration? \\ \vspace{3cm}
-\item A sprinter has a constant acceleration of $5.0$ m/s$^2$.  Suppose she starts from rest.  (a) How long does it take her to reach her top speed of 10.0 m/s? (b) What is her displacement at that time?  (c) Suppose she is running the 100 meter sprint.  If she continues at 10.0 m/s for the remainder of the race, what will be her total time? \\ \vspace{3cm}
-\end{enumerate}
-
-\section{Motion in Two and Three Dimensions}
-
-\begin{enumerate}
-\item The world record highest basketball shot was made from a height of 162.5 meters above the basketball hoop.  The basketball hoop was placed 75 meters horizontally from the shooter.  a) Draw a diagram of the situation.  b) What is the horizontal velocity required to make the shot?  That is, assume the shooter shoots the ball with no vertical velocity, only horizontal. \\ \vspace{4cm}
-\item A baseball is hit at a 45 degree angle with respect to the horizontal at 40 m/s.  (a) How far away does it land? (b) How long is it in the air? \\ \vspace{1cm}
-\end{enumerate}
-
-\section{Forces}
-
-\begin{enumerate}
-\item Two children pull a third child on a snow saucer sled exerting forces $\vec{F}_1$ and $\vec{F}_2$ as shown from above in Fig. \ref{fig:1}.  Find the acceleration of the system if the mass of the child and sled together is 49.0 kg. Note that the direction of the frictional force is unspecified; it will be in the opposite direction of the sum of $\vec{F}_1$ and $\vec{F}_2$.
-
-\begin{figure}[hb]
+\begin{figure}
 \centering
-\includegraphics[width=0.4\textwidth]{child.jpeg}
-\caption{\label{fig:1} A child is pulled by two other children on a sled atop some ice.}
+\includegraphics[width=0.4\textwidth]{slope2.jpeg}
+\caption{\label{fig:1} A system moves with non-constant velocity.}
 \end{figure}
+
+\section{Unit 2: Forces I and II}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{rope.jpeg}
+\caption{\label{fig:2} The net force is zero, just as the vehicle begins to move.}
+\end{figure}
+
+\begin{enumerate}
+\item Consider the effort to pull a vehicle from a ditch in Fig. \ref{fig:2}. (a) If we can pull with $F_{\perp} = 1000$ N, and observe that the rope makes a 7 degree angle with respect to the line between the vehicle and the tree, what is the tension in the rope? (b) If the vehicle has 900 kg, and the coefficient of kinetic friction is 0.05, what is the acceleration of the vehicle as it starts to move? \\ \vspace{3.5cm}
+\item A 20,000 kg jet fighter lands on an aircraft carrier, moving at 120 km/hr. A tow cable grabs the aircraft and pulls it to a stop in 100 meters. (a) What is the average acceleration? (b) What force does the tow cable extert to stop the jet? \\ \vspace{3.5cm}
+\item Two children pull a third child on a snow saucer sled exerting forces $\vec{F}_1$ and $\vec{F}_2$ as shown from above in Fig. \ref{fig:3}. Find the acceleration of the 50 kg sled and child system. Note that the direction of friction will be in the opposite direction of the sum of $\vec{F}_1$ and $\vec{F}_2$. \\ \vspace{2cm}
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.33\textwidth]{sled.jpeg}
+\caption{\label{fig:3} Two people pull on a third person on a sled, on an icy surface.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{plane.jpeg}
+\caption{\label{fig:4} A plane banks into a circular turn.}
+\end{figure}
+
+\begin{enumerate}
+\item (a) Show that the acceleration of any object down an incline with friction is $a=g(\sin\theta - \mu\cos\theta)$. (b) What expression do you get as $\mu \to 0$? \\ \vspace{2cm}
+\item (a) Use the expression derived in the previous exercise to calculate the acceleration of a snowboarder traveling down a 10 degree incline.  Use the standard values of $g$ and coefficient of kinetic friction between waxed wood and snow. (b) How far down the slope will the person travel after 30 seconds, and what is their speed? \\ \vspace{3cm}
+\item Consider Fig \ref{fig:4}, in which a plane flies in a circular trajectory. Suppose the total mass is 6000 kg, $\theta = 30$ degrees, and magnitude of the lift force in Fig. \ref{fig:4} is 80,000 N. (a) What is the centripetal force? (b) If the speed is 600 km hr$^{-1}$, what is the turn radius?  (c) What time will pass before the plane has gone halfway around the circle (to turn around)? \\ \vspace{3cm}
+\item Consider three springs connected \textit{in parallel} to an object of mass $m$.  Each spring has a spring constant $k$, and each spring is attached to the floor and the object. (a) Draw a free-body diagram. (b) Derive an expression for the displacement of the springs. (c) Show that, in the limit that $k \to \infty$, the displacement goes to zero.  This is a basic model for vehicle suspension. \\ \vspace{3cm}
+\item What is the terminal velocity of a 60 kg skydiver with area $A = 0.25$ m$^2$, and drag coefficient $C = 0.5$?  Use the standard density of air: $\rho = 1.2$ kg m$^{-3}$. (b) What is the terminal velocity if she opens the parachute, increasing the cross-sectional area by a factor of 100? \\ \vspace{3cm}
+\end{enumerate}
+
+\section{Unit 3: Work and Energy}
+
+\begin{enumerate}
+\item A system in the x-y plane is subject to a force $\vec{F}(x,y) = -2\hat{i} - 1\hat{j}$ N.  (a) Calculate the work done on the system, as it moves from $\vec{x}_i = 2\hat{i} + 2\hat{j}$ to $\vec{x}_f = -2\hat{i} - 2\hat{j}$. (b) What is the final kinetic energy if the system started from rest?  (c) If the mass is 0.5 kg, what is the final velocity? \\ \vspace{2.5cm}
 \end{enumerate}
 
 \end{document}
