@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\begin{document}
+\twocolumn
+
+\title{PhET Activity: Work and Energy with the Pendulum}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Memory Bank}
+
+\begin{itemize}
+\item Derivative of sine: $\frac{d}{dx} \sin(kx) = k\cos(kx)$
+\item Derivative of cosine: $\frac{d}{dx} \cos(kx) = -k\sin(kx)$
+\end{itemize}
+
+\section{Introduction}
+
+Let the angle a pendulum makes with the vertical line be $\theta$.  If $\theta \ll 1$, the position of the mass at the end of pendulum is
+
+\begin{align}
+x &= L\theta \\
+y &= \frac{1}{2}L\theta^2
+\end{align}
+
+The gravitational potential energy of the pendulum is 
+
+\begin{align}
+U(y) &= mgy \\
+U(\theta) &= \frac{1}{2}mgL\theta^2 \\
+k &= mgL \\
+U(\theta) &= \frac{1}{2}k\theta^2
+\end{align}
+
+Notice that the potential energy is a quadratic function, like the potential energy of the spring ($U(x) = \frac{1}{2} k x^2$).  Since $x = L\theta$, $dx = Ld\theta$.  This makes the derivative of $-U$ become
+
+\begin{equation}
+F = -\frac{dU}{dx} = -\frac{dU}{Ld\theta} = -mg\theta
+\end{equation}
+
+Using Newton's 2nd Law,
+
+\begin{align}
+m \frac{d^2 x}{dt^2} &= -mg\theta \\
+\frac{d^2 x}{dt^2} &= -g\theta \\
+L\frac{d^2 \theta}{dt^2} &= -g\theta \\
+\frac{d^2 \theta}{dt^2} &= -\left(\frac{g}{L}\right)\theta \label{eq:1}
+\end{align}
+
+Let the \textit{angular frequency} $\omega$ be defined by $\omega^2 = g/L$.  Equation \ref{eq:1} becomes
+
+\begin{equation}
+\frac{d^2 \theta}{dt^2} = -\omega^2\theta \label{eq:2}
+\end{equation}
+
+\textbf{Equation \ref{eq:2} produces a sum of sines and cosines.}
+
+\section{Physical Pendulum Behavior}
+
+Notice the form of the physical pendulum constructed in the lab.  A ruler is suspended with a string, clamps, and rods.  The ruler has a mass of 87 grams.  We can tape the 50 gram weight to various locations along the ruler.
+
+\begin{enumerate}
+\item Create a graph below of the \textit{period} of the pendulum versus the location of the 50 gram weight. \\ \vspace{5cm}
+\item Save a table of the \textit{period} of the pendulum versus the location of the 50 gram weight below. \\ \vspace{5cm}
+\item How can you explain the trend in the data using torque, moment of inertia, and Eq. \ref{eq:2}?
+\end{enumerate}
+
+\end{document}
