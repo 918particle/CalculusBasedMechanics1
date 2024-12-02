@@ -1,4 +1,4 @@
-\title{Midterm 2 for Algebra-based Physics}
+\title{Calculus-Based Physics-1: Midterm 2}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
 \date{\today}
 \documentclass[10pt]{article}
@@ -6,81 +6,92 @@
 \usepackage{outlines}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{hyperref}
 
 \begin{document}
+\twocolumn
+
 \maketitle
 
-\section{Memory Bank}
+\section{Unit 4: Potential Energy, Conservative Forces, and Energy Conservation}
 
+\begin{enumerate}
+\item  Suppose a potential energy function for a system is $U(x) = k(x^4-x^2)$. Assume that $k$ has units of Joules, and that $x$ is a unit-less measure of distance. 
+ (a)  Where is the force zero? (b) Suppose a system is at rest at the origin.  If it is perturbed to the right by a small push, what is the largest displacement the system achieves from the origin? \\ \vspace{3.0cm}
+ \item Suppose a 1 kg system is pushed along a surface with a coefficient of kinetic friction 0.5.  (a) If a force $F = 5\hat{i}$ N displaces the system $\Delta x = 1\hat{i}$ m from the origin, what is the work done by this force? (b) At the moment the system reaches $\vec{x} = 1\hat{i} + 0\hat{j}$, the force becomes $\vec{F} = 5\hat{j}$ N, displacing the system to $\vec{x} = 1\hat{i} + 1\hat{j}$.  What is the work done by $\vec{F}$?  (c) Next, $\vec{F} = -5 \hat{i}$ N, taking the system to $\vec{x} = 0\hat{i} + 1\hat{j}$.  What is the work? (d) Finally, $\vec{F} = -5 \hat{j}$ N, and the system returns to the origin.  What is the work?  (e) What is the total work for the four paths?  (f) What should the total be if the force of friction were conservative? \\ \vspace{4cm}
+\end{enumerate}
+
+\section{Unit 5: Linear Momentum}
+
+\begin{enumerate}
+\item Two molecules collide and stick together, forming one larger molecule. Each molecule weighs $20 \times 10^{-25}$ kg.  One has a velocity of 350 m/s, and the other has a velocity of -350 m s$^{-1}$.  What is the final speed of the big new molecule?
 \begin{itemize}
-\item Unit conversions: 1 km = 1000 m, 1 m = 100 cm, 1 hr = 3600 s, 1 year = $\pi \times 10^7$ s, 1 g/cm$^3$ = 1000 kg/m$^3$.
-\item $\vec{x} = a \hat{i} + b\hat{j}$ ... Component form of a two-dimensional vector.
-\item $|\vec{x}| = \sqrt{a^2+b^2}$ ... Pythagorean theorem for obtaining vector magnitude.
-\item $\theta = \tan^{-1}(b/a)$ ... Obtaining the angle between vector and x-axis.
-\item $a = |\vec{x}|\cos(\theta)$ ... Obtaining the x-component with trigonometry.
-\item $b = |\vec{x}|\sin(\theta)$ ... Obtaining the y-component with trigonometry.
-\item $x(t) = x_i + v t$ ... Velocity is the slope of position versus time.
-\item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
-\item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
-\item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
-\item $\vec{F}_{net} = 0$ ... Newton's First Law, an object with no net force stays at constant velocity, or zero velocity.
-\item $\vec{F}_{net} = m\vec{a}$ ... Newton's Second Law.
-\item $\vec{F}_{AB} = -\vec{F}_{BA}$ ... Newton's Third Law.
-\item $\vec{w} = - mg \hat{j}$ ... Weight force.
-\item $\vec{N} = +mg\hat{j}$ ... Normal force, when the object is on a flat surface.
-\item $N = mg\cos\theta$, $w_x = -mg\sin\theta$, $w_y = -mg\cos\theta$ ... Incline plane forces.
-\item $f = \mu N$, $F_D = \frac{1}{2}C\rho A v^2$, $F_D = 6\pi r \eta v$ ... friction, drag in air, drag in viscous fluids.
-\item $stress = Y \times strain$, or $F/A = Y (\Delta x / L)$ ... Young's Modulus and elasticity.
-\item $s = r \theta$ ... Definition of a \textit{radian}, with arc length $s$ and angle $\theta$.
-\item $v = r\omega$, $a = r\alpha$ ... Angular velocity, angular acceleration.
-\item $a_C = v^2/r = r\omega^2$ ... Centripetal acceleration.
-\item $F_C = m a_C = mv^2/r = mr\omega^2$ ... Centripetal force.
-\item $\vec{F}_G = G m_1 m_2/r^2 ~~ \hat{r}$ ... Newton's Law of Gravity.
+\item A: 350 m s$^{-1}$
+\item B: -350 m s$^{-1}$
+\item C: 0 m s$^{-1}$
+\item D: 700 m s$^{-1}$
 \end{itemize}
-
-\section{Chapter 4: Dynamics, Force and Newton's Laws of Motion}
-
-\begin{enumerate}
-\item A $5\times 10^5$ kg rocket is accelerating straight up.  The thrusters produce an upward force of $1.25 \times 10^7$ N, and the force of air resistance is $4.5 \times 10^6$ N downward.  (a) Draw a free-body diagram including the weight of the rocket, the thrust, and air resistance.  (b) What is the rocket’s acceleration? \\ \vspace{2cm}
-\item A football player with mass 70 kg pushes on a player with mass 90 kg.  (a) According to Newton's 3rd law, if the first player exerts a force of 700 N on the second player, what is the force the second player exerts on the first player? \\ \vspace{1cm}
-\item A rocket sled is decelerated at a rate of 200 m/s$^2$, and it has a mass of 2000 kg.  There is a constant air resistance force of 1000 N.  What additional force is required to give the rocket the deceleration?  \\ \vspace{2cm}
-\item A 76.0-kg person is being pulled away from a burning building as shown in Fig. \ref{fig:fire}.  (a) Draw a free-body diagram including the two tension vectors and the woman's weight.  (b) Write down an expression for $F_{net,x}$.  (c) Write down an expression for $F_{net,y}$.  (d) Assuming $\vec{F}_{net} = 0$, calculate the tension in the two ropes. \\ \vspace{2.5cm}
-\begin{figure}[hb]
-\centering
-\includegraphics[width=0.35\textwidth]{fire.png}
-\caption{\label{fig:fire} A person is pulled from a building using tension in a rope.}
-\end{figure}
+\item Assume the same two molecules approach each other with momentum vectors that are 45 degrees apart.  What is the final velocity after they stick together? \\ \vspace{3.0cm}
+\item Suppose a child drives a bumper car head on into the side rail, which exerts a force of 4000 N on the car for 0.200 s. (a) What impulse is imparted by this force? (b) Find the final velocity of the bumper car if its initial velocity was 2.80 m/s and the car plus driver have a mass of 200 kg. You may neglect friction between the car and floor. \\ \vspace{3.0cm}
+\item  Two identical billiard balls have a one-dimensional collision in which one is initially motionless. After the collision, the struck ball moves with the same velocity as the ball that was originally moving, while the ball that was originally moving stops.  This interaction is
+\begin{itemize}
+\item A: Totally inelastic
+\item B: Inelastic
+\item C: Elastic
+\item D: Totally elastic
+\end{itemize}
+\item A 30,000-kg freight car is coasting at 0.850 m/s with negligible friction under a hopper that dumps 110,000 kg of scrap metal into it. (a) What is the final velocity of the loaded freight car? (b) How much kinetic energy is lost? \\ \vspace{3.0cm}
+\item Two objects, one with mass $m$ and the other with mass $2m$ approach each other with equal speed $v$. The objects interact inelastically.  Determine the location of the center of mass versus time, before and after the collision. \\ \vspace{3.0cm}
 \end{enumerate}
 
-\clearpage
-
-\section{Chapter 5: Friction, Drag, and Elasticity}
+\section{Unit 6: Fixed-axis rotation and Angular Momentum}
 
 \begin{enumerate}
-\item Suppose you have a 120-kg wooden crate resting on a wood floor. The coefficients of static and kinetic friction are 0.5 and 0.3, respectively.  (a) What maximum force can you exert horizontally on the crate without moving it? (b) If you continue to exert this force once the crate starts to slip, what will the magnitude of its acceleration then be? \\ \vspace{2.0cm}
-\item 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.5\textwidth]{ski.png}
-\caption{\label{fig:ski} A skier slides down a slope.}
-\end{figure}
-Suppose a skier (Fig. \ref{fig:ski}) is sliding down a slope with an incline of 25 degrees.  If the coefficient of kinetic friction is 0.1, what is the skier's acceleration? \\ \vspace{2.0cm}
-\item \textbf{Drag Force}.  Suppose the skier reaches a top speed of 40 m/s.  If his area is 0.75 m$^2$, the density of air is 1.225 kg m$^{-3}$, and $C = 0.75$, what is the magnitude of the drag force in Newtons?  \\ \vspace{2cm}
-\item A mass of 2300 kg is place on top of a 10.0 m long wooden beam with radius of 4 cm. If the length of the beam decreases by 3 mm, what is the Young's modulus of the wood? \textit{Pay attention to the units}.  \\ \vspace{2cm}
+\item Suppose a music record spins once every 1.33 seconds.  What are the rotations per minute (rpm) of the record?  What is the angular velocity, in radians per second?
+\begin{itemize}
+\item A: 30 rpm, 0.75 radians sec$^{-1}$
+\item B: 45 rpm, 4.7 radians sec$^{-1}$
+\item C: 60 rpm, 0.75 radians sec$^{-1}$
+\item D: 120 rpm, 4.7 radians sec$^{-1}$
+\end{itemize}
+\item What is the centripetal acceleration of a coin at the edge of the record?
+\begin{itemize}
+\item A: 1.1 m s$^{-1}$
+\item B: 1.1 m s$^{-2}$
+\item C: 2.2 m s$^{-1}$
+\item D: 2.2 m s$^{-2}$
+\end{itemize}
+\item Suppose a centrifuge is spinning with angular velocity of $\omega$.  Which of the following will increase the centripetal acceleration by a factor of 100?
+\begin{itemize}
+\item A: $\omega \rightarrow 2\omega$
+\item B: $\omega \rightarrow 3\omega$
+\item C: $\omega \rightarrow 5\omega$
+\item D: $\omega \rightarrow 10\omega$
+\end{itemize}
+\item Assume the angular velocity of the centrifuge is 200 rpm, and the radius is 12 cm.  If the solid contents of the vial in the centrifuge have a mass of 10 grams, what is the centripetal force?
+\begin{itemize}
+\item A: 0.13 N
+\item B: 0.53 N
+\item C: 0.83 N
+\item D: 1.23 N
+\end{itemize}
+\item Consider \textit{las bolas} we covered in class: two balls of mass $m$, attached by a chord, thrown such that the balls spin around the center of mass (COM) while the COM goes forward.  If the balls have a mass 0.5 kg, rotate around the COM 4 times per second, and the COM moves forward at 8 m s$^{-1}$, (a) What is the total kinetic energy of \textit{las bolas}? (b) What is the angular momentum of \textit{las bolas}? (c) If \textit{las bolas} are thrown straight upward at 8 m s$^{-1}$, how high will they go? \\ \vspace{4cm}
+\item  Suppose a bolt needs to be unstuck from a flat bulkhead. Assume the bolt is at the origin. We must twist it counterclockwise to loosen it. (a) Suppose we have a wrench with length $\vec{r} = 5\hat{i} + 5\hat{j}$ cm attached to the bolt. If we push on the end of the wrench with
+$\vec{F} = -10\hat{i} + 10\hat{j}$ N of force, what is the torque on the bolt? (b)  If $\vec{r} \rightarrow 2\vec{r}$, what would the torque be? (c) For the same wrench, find an example of the force if the torque is $\vec{\tau} = 30$ N cm. \\ \vspace{3cm}
+\item Recall that the moment of inertia of a disc of mass $M$ and radius $R$ is $I = \frac{1}{2} MR^2$. (a) Suppose a bicycle chain is turning a gear that has a disc-like mass distribution.  If the angular speed is described by $\omega(t) = 10t + 60$ rpm, what torque (in N m) is provided by the chain? \\ \vspace{3cm}
+\item Suppose a a playground has a wheel that spins horizontally, allowing the children to spin around in a circle.  The mass of the wheel is 100 kg, and the radius is 1.5 meters.  (a) If the object is spinning at 30 rpm, what is the angular momentum? (b) If a 40 kg child lands on the edge, what is the new rpm? \\ \vspace{4cm}
 \end{enumerate}
 
-\section{Chapter 6: Uniform Circular Motion and Gravitation}
+\section{Unit 7: Statics}
 
 \begin{enumerate}
-\item  A pitcher in baseball pitches a ball at 144 km per hour, and the ball rotates around his arm at a radius of 0.5 meters.  What is the angular velocity of the ball as he throws it, in radians per second? \\ \vspace{1cm}
-\item What is the ideal banking angle for a gentle turn of 0.9 km radius on a highway with a 120 km per hour speed limit, assuming everyone travels at the limit? \\ \vspace{2cm}
-\item Two race car drivers routinely navigate a turn as shown in Fig. \ref{fig:race}.  (a) Which path may be taken at a higher speed, if both paths correspond to the same force of friction and centripetal force? (b) Suppose path 1 has a radius of curvature of 400 m, and path 2 has a radius of curvature of 800 m.  The coefficient of friction is 1.0.  If the force of friction balances the centripetal force, what are the tangential velocities of each race car? \\ \vspace{1cm}
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.25\textwidth]{race.png}
-\caption{\label{fig:race} Two race cars take a turn at different radii of curvature.}
-\end{figure}
-\item \textbf{Two bonus points:} The existence of the dwarf planet Pluto was proposed based on irregularities in Neptune’s orbit. Pluto was subsequently discovered near its predicted position. But it now appears that the discovery was fortuitous, because Pluto is small and the irregularities in Neptune’s orbit were not well known. To illustrate that Pluto has a minor effect on the orbit of Neptune compared with the closest planet to Neptune, (a) calculate the acceleration due to gravity at Neptune due to Pluto when they are $4.5 \times 10^{12}$ m apart, as they are now.  The mass of Pluto is $1.4 \times 10^{22}$ kg.  (b) Now calculate the acceleration due to gravity at Neptune due to Uranus, presently about $2.5 \times 10^{12}$ m apart, and compare it with that due to Pluto.  The mass of Uranus is $8.62 \times 10^{25}$ kg. \\ \vspace{1cm}
+\item A steel beam is left balancing on one support in the middle. A 40 kg pile of bricks rests 3 m from the origin, and a 60 kg sack of concrete lies 2 m from the origin.  The beam will:
+\begin{itemize}
+\item A: Remain motionless
+\item B: Rotate towards the bricks
+\item C: Rotate towards the concrete
+\end{itemize}
+\item A person carries a plank of wood 2.00 m long with one hand pushing down on it at one end with a force $\vec{F}_1$ and the other hand holding it up at 0.500 m from the end of the plank with force $\vec{F}_2$.  If the plank has a mass of 20.0 kg and its center of gravity is at the middle of the plank, what are the magnitudes of the forces $\vec{F}_1$ and $\vec{F}_2$? \textit{Hint: the net force and the net torque should both be zero (the two stability criteria).}\\ \vspace{3cm}
 \end{enumerate}
 
 \end{document}
