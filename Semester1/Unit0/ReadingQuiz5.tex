@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Warm Up: Unit analysis and vectors}
+\title{Friday Warm Up: Vectors and Kinematics I, II}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,30 +14,40 @@
 \section{Memory Bank}
 
 \begin{enumerate}
-\item $\vec{v} = v_x \hat{i} + v_y \hat{j}$ ... Definition of a vector in terms of $\hat{i}$ and $\hat{j}$ components (representing the x-direction and y-direction).
-\item $\vec{v} + \vec{w} = (v_x + w_x) \hat{i} + (v_y + w_y) \hat{j}$ ... Vector addition: the $\hat{i}$-components add with each other, and the $\hat{j}$-components add with each other.\
+\item $\vec{v} = v_x \hat{i} + v_y \hat{j}$ ... The $\hat{i}$ and $\hat{j}$ components of a vector
 \item $|\vec{v}| = \sqrt{v_x^2 + v_y^2}$ ... The magnitude of the vector
 \item $v_x = |\vec{v}| \cos\phi$, $v_y = |\vec{v}| \sin\phi$ ... The x and y-components of the vector
+\item $\vec{v} = d\vec{x}/dt$ ... Definition of velocity.
+\item $\vec{a} = d\vec{v}/dt$ ... Definition of acceleration.
 \end{enumerate}
 
-\section{Chapter 2 - Algebra of Vectors}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{figures/vector1.jpeg}
+\includegraphics[width=0.24\textwidth]{figures/vector2.jpeg}
+\includegraphics[width=0.24\textwidth]{figures/projection_2.png}
+\includegraphics[width=0.24\textwidth]{figures/projection_1.png}
+\caption{\label{fig:1} (Top left) A vector broken into $\hat{i}$ and $\hat{j}$ components. (Top right) Adding those components produces the vector. (Bottom left) The dot-product $\vec{A} \cdot \vec{B}$ gives the projection of $\vec{A}$ along $\vec{B}$, or (Bottom right) $\vec{B}$ along $\vec{A}$.}
+\end{figure}
+
+\section{Chapter 2 - Kinematics I}
 
 \begin{enumerate}
-\item Imagine a molecule in an ideal gas is ionized and trapped in an area using a magnetic field.  It moves randomly in two dimensions, beginning at the origin.  Determine the final location, if it follows the displacements below:
+\item Suppose a microbe is trapped in a 2D microscope slide and is observed to move randomly, beginning at the origin.  Determine the final location, if it has the following displacements:
 \begin{itemize}
-\item $\Delta\vec{x}_1 = 3\hat{i}+3\hat{j} ~~ \mu$m
-\item $\Delta\vec{x}_1 = -1\hat{i}-1\hat{j} ~~ \mu$m
-\item $\Delta\vec{x}_1 = 2\hat{i}-2\hat{j} ~~ \mu$m
-\item $\Delta\vec{x}_1 = -4\hat{i}+4\hat{j} ~~ \mu$m
+\item $\Delta\vec{x}_1 = 3\hat{i}+3\hat{j} ~~$mm
+\item $\Delta\vec{x}_1 = -1\hat{i}-1\hat{j} ~~$mm
+\item $\Delta\vec{x}_1 = 2\hat{i}-2\hat{j} ~~$mm
+\item $\Delta\vec{x}_1 = -4\hat{i}+4\hat{j} ~~$mm
 \end{itemize}
-\item Draw the complete trajectory of the molecule in a two-dimensional coordinate system.  What is the magnitude of the displacement from the origin? \\ \vspace{2cm}
-\item Let $A = |\vec{A}| = 1$, and let $\theta_A = 60$ degrees.  What are $A_x$ and $A_y$?  \textit{Hint: use Fig. \ref{fig:1} to recall the comparison between a vector and a triangle}.
-\begin{figure}[hb]
-\centering
-\includegraphics[width=0.33\textwidth]{vector1.jpeg} \hspace{0.5cm}
-\includegraphics[width=0.33\textwidth]{vector2.jpeg}
-\caption{\label{fig:1} A vector $\vec{A}$ can be expressed with components $A_x$ and $A_y$, or the magnitude $A = |\vec{A}|$ and the angle $\theta_A$.}
-\end{figure}
+\item (a) Draw the trajectory of the microne in a 2D coordinate system.  (b) If the time duration for this trajectory is 50 ns, what is the average velocity? \\ \vspace{3cm}
+\item For the microbe in Exercises 1 and 2, give the magnitude and angle of the final displacement. \\ \vspace{2cm}
+\item Let $t$ represent time (seconds), and $\vec{x}$ represent displacement (meters).  Suppose the path of a system is
+\begin{equation}
+\vec{x} = -2.0 t^2 \hat{j} + 4.0 t \hat{i} + 80.0 \hat{j}~~(m)
+\end{equation}
+(a) Where is the system at $t=0$? (b) What is the velocity vector of the system? (c) What is the velocity at $t=2$ seconds? (d) What is the acceleration? \\ \vspace{2.5cm}
+\item Suppose sunshine is coming straight down and a palm tree casts a shadow on the beach.  If the shadow of the palm is 12 meters long, and the angle of the palm is 60 degrees with respect to the beach, how long is the palm?
 \end{enumerate}
 
 \end{document}
