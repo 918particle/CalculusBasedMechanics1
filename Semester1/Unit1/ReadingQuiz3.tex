@@ -11,22 +11,40 @@
 
 \maketitle
 
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/tennis.png}
+\caption{\label{fig:1} A tennis player hits a ball into the stands.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{figures/circular.png}
+\caption{\label{fig:2} A diagram for uniform circular motion.}
+\end{figure}
+
 \section{Memory Bank}
 
 \begin{enumerate}
-\item Assume that acceleration is constant: $a = 3.0$ (m/s$^2$), and that $\Delta x = x_f - x_i$
-\item $v_f(t) = at + v_{i}$ (m/s)
-\item $x(t) = \frac{1}{2}at^2 + v_{i} t + x_{i}$ (m)
-\item $v_f^2 = v_i^2 + 2a\Delta x$ (m/s)$^2$.
-\item $R = v_i^2 \sin(2\theta)/g$ ... Range formula for projectile motion.
+\item $g = 9.81$ m s$^{-2}$
+\item $v_x(t) = a_x t + v_{i,x}$
+\item $v_y(t) = a_y t + v_{i,y}$
+\item $x(t) = \frac{1}{2}a_x t^2 + v_{i,x} t + x_{i}$
+\item $y(t) = \frac{1}{2}a_y t^2 + v_{i,y} t + x_{i}$
+\item $v_f^2 = v_i^2 + 2a\Delta y$
+\item $\vec{r}(t) = r \cos(\omega t) \hat{i} + r \sin(\omega t) \hat{j}$
 \end{enumerate}
 
-\section{Chapter 3 - Constant Acceleration}
+\section{Kinematics II}
 
 \begin{enumerate}
-\item A particle moves in a straight line with an initial velocity of 30 m s$^{-1}$ and constant acceleration 30 m s$^{-2}$. (a) What is its displacement at $t = 5$ s? (b) What is its velocity at this same time? \\ \vspace{3cm}
-\item A swan on a lake gets airborne by flapping its wings and running on top of the water. (a) If the swan must reach a velocity of 6.00 m s$^{-1}$ to take off and it accelerates from rest at an average rate of 0.35 m s$^{-2}$, how far will it travel before becoming airborne? (b) How long does this take? \\ \vspace{3cm}
-\item Notice the final formula in the Memory Bank.  Let $R$ represent the \textit{range} of a ball thrown at an angle $\theta$ with respect to the horizontal plane at an initial speed of $v_i$.  (a) Cook up a reasonable set of numbers for a thrown baseball, and calculate the range. (b) What happens to the range if $v_i$ is doubled?  (c) What happens to the range if $v_i$ is decreased by a factor of 2?
+\item After winning a match, a tennis player hits the ball into the stands at 30 m/s and at an angle 45 degrees above the horizontal (Fig. \ref{fig:1}).  The ball is caught by a spectator 10 m above the point where the ball was hit. (a) What is the horizontal component of the initial velocity?  (b) What is the vertical component of the initial velocity? \\ \vspace{1cm}
+\item (a) Calculate the time it takes the tennis ball to reach the spectator. (b) What are the magnitude and direction of the ball's velocity at impact? \\ \vspace{4cm}
+\item Consider Fig. \ref{fig:2}.  The angle $\theta(t) = \omega t$ describes the position of a system circling the origin at constant speed\footnote{The factor $\omega$ is the \textit{angular velocity}, in radians per second.}.  Show that
+\begin{equation}
+\vec{r}(t) = r \cos(\omega t) \hat{i} + r \sin(\omega t) \hat{j}
+\end{equation} \vspace{2cm}
+\item Show that the acceleration is $\vec{a} = -\omega^2 \vec{r}$.  Is the magnitude of the acceleration constant, or does it depend on time?
 \end{enumerate}
 
 \end{document}
