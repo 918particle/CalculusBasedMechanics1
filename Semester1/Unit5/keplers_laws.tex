@@ -8,31 +8,33 @@
 \usepackage{amsmath}
 \usepackage{subcaption}
 \begin{document}
+\twocolumn
 \maketitle
 
-\small
-
-\begin{figure}[ht]
+\begin{figure}
 \centering
-\includegraphics[width=0.33\textwidth]{figures/kepler3.png}
-\includegraphics[width=0.34\textwidth]{figures/kepler2.png}
-\caption{\label{fig:1b} A PhET simulation exploring Kepler's Laws}
+\includegraphics[width=0.45\textwidth]{figures/kepler3.png}
+\caption{\label{fig:1b} PhET simulation for Kepler's Laws.}
 \end{figure}
 
 \section{Introduction}
 
-When reading \textit{Science in Latin America}, we encounter references to the debate between a heliocentric universe and a geocentric universe.  To understand this debate within Latin American scientific circles, we will explore Kepler's Laws using the following simulation: \url{https://phet.colorado.edu/en/simulations/keplers-laws}.
+In this simulation activity, we will explore Kepler's laws.  We will derive Kepler's 3rd law using centripetal force and the force of gravity, explore the orbital parameter space, and graph orbital period versus orbital radius.
 
-\section{Kepler's First Law}
+\section{Kepler's First and Second \\ Laws}
 
-\textit{The orbit of a planet is an ellipse with the Sun at one of the two foci.}  (a) Open the First Law tab in the simulation.  Using the controls, set the target orbit to Venus.  (b) Arrange the velocity and position of the planet so that the orbit matches that of Venus. Click the play button.  (c) Now set the target orbit to that of the Earth.  (d) Why are we (rarely) able to observe Venus transit across the face of the Sun, from our perspective? \\ \vspace{0.25cm}
-
-\section{Kepler's Second Law}
-
-\textit{A line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time.} (a) Open the Second Law tab in the simulation.  Using the controls at the upper left, set the period divisions to 6, and check the area and time boxes.  (b) Activate the orbit and note that the ratio of area to time is constant.  (c) Change the orbital parameters and repeat the measurement.
+Kepler's First and Second Laws: \textit{The orbit of a planet is an ellipse with the Sun at one of the two foci,} and \textit{a line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time}.  (a) Open the First Law tab in the simulation, and set the target orbit to Venus.  (b) Arrange the velocity and position of the planet so that the orbit matches that of Venus. Click play.  (c) Now set the target orbit to that of the Earth.  (d) Why are we (rarely) able to observe Venus transit across the face of the Sun, from our perspective? (e) Open the Second Law tab in the simulation, and set the period divisions to 6.  Check the area and time boxes and click play.  (f) Is swept area per unit time constant? \\ \vspace{2cm}
 
 \section{Kepler's Third Law}
 
-\textit{The square of a planet's orbital period is proportional to the cube of the length of the semi-major axis of its orbit.} (a) \textit{Observe the proof of Kepler's Third Law on the board.}  (a) Now that we have predicted the relationship between \textit{T} and \textit{a}, activate the orbit to obtain \textit{T} and \textit{a} data in the graph of \textit{T} vs. \textit{a} on the left side.  (b) Change the orbit to add more data.  (c) Change the graph to different powers of \textit{T} and \textit{a} until the graph is a straight line with a slope of 1.
-
+Kepler's 3rd law states that \textit{the square of a planet's orbital period is proportional to the cube of the length of the semi-major axis of its orbit.}
+\begin{itemize}
+\item To orbit a star, a planet must experience a force that provides centripetal acceleration.  The force of gravity between Sun and planet provides this, and we will work with a circular orbit approximation to prove Kepler's 3rd law.  Let $G = 6.67\times 10^{-11}$ N m$^2$ kg$^{-2}$.  Further, let $M$ be the mass of the Sun, $m$ be the mass of the planet, $r$ be the orbital radius, $\omega$ be the angular velocity, and $T$ be the orbital period.  The force of gravity and centripetal force are
+\begin{align}
+\vec{F}_{\rm G} &= G\frac{Mm}{r^2}\hat{r} \label{eq:1} \\
+\vec{F}_{\rm C} &= -m\vec{r}\omega^2 \label{eq:2} 
+\end{align}
+If the force of gravity does not equal the centripetal force, the orbital radius will change until they are equal.  (a) Set Eq. \ref{eq:1} and \ref{eq:2} equal, and solve for $r^3$. (b) Note that $\omega$ is the angular velocity, so for one period, $\omega = 2\pi/T$.  Substitute this idea into your equation, and obtain a formula involving $r^3$ and $T^2$.
+\item Using a variety of orbital radii, velocities, and periods, collect enough data to plot $T^2$ vs. $r^3$.  Fit your formula relating $T^2$ and $r^3$ to the simulation data.  Note that the fit works even for elliptical (non-circular) orbits.  We will address the proof of this in Chapter 13.
+\end{itemize}
 \end{document}

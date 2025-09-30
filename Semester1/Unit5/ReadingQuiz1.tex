@@ -14,44 +14,33 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $\vec{v} = \Delta \vec{x} / \Delta t$, the definition of velocity.
-\item Newton's Second Law: $\vec{F}_{net} = m\vec{a}$. (The net external force on an object is equal to the mass of the object times the acceleration of the object).
-\item $s = r\theta$ ... Let $s$ be the \textit{arc length} around a curve, with $r$ being the radius of curvature, and $\theta$ being angle between the initial and final position vectors.
-\item $a_{\rm C} = v^2/r$ ... The centripetal acceleration given the speed $v$ around a circular path $r$.s
+\item $\vec{r} = r\cos(\omega t)\hat{i} + r\sin(\omega t)\hat{j}$ ... Position for uniform circular motion, with angular velocity $\omega$.
+\item $\vec{F}_{\rm C} = -m\vec{r}\omega^2$ ... The centripetal acceleration given the speed $v$ around a circular path $r$.
+\item $\vec{f} = -\mu N \hat{i}$ ... Force of friction in the horizontal direction, given a normal force $N$.
 \end{itemize}
 
 \section{Forces, II}
 
 \begin{enumerate}
-\item In Fig. \ref{fig:1}, a man with mass $m$ and weight $w$ stands on a scale in an elevator.  Which of the followinng is true, if the elevator is accelerating upwards?
-\begin{itemize}
-\item A: $w = mg$
-\item B: $w < mg$
-\item C: $w > mg$
-\item D: $w = 0$
-\end{itemize}
-\item Suppose the man's mass is $60$ kg.  He is standing on a scale in an elevator that is \textit{accelerating upwards} at $0.2$ m/s$^{2}$.  What is the weight on the scale? \\ \vspace{1cm}
-\item (a) Suppose a circular path as a radius of $10$ m.  If we travel 10 degrees around the circle, how far have we walked? (b) If we walk $200$ meters along a circular path, and determine that our direction changed by 90 degrees, what was the radius of curvature? \\ \vspace{1cm}
-\item In Fig. \ref{fig:2}, a system moves in a circle with speed $v$.  The velocity changes direction by an angle $\Delta\theta$, as does the position.  It may be shown that this leads to \textit{centripetal acceleration}, $a_{\rm C}$.  (a) If a system is moving at 4 m/s around a curve with radius 0.25 m, what is $a_{\rm C}$? (b) What is $a_{\rm C}$ if $r = 1$ m? \\
-\item Assume there is a force of friction $-f$ on $m_1$ in Fig. \ref{fig:3}.  Derive an expression for the acceleration of $m_2$.
+\item Consider the banking plane in Fig. \ref{fig:1}.  Suppose the mass of the plane is $10^4$ kg.  (a) If the lift force $\vec{L}$ has a magnitude of $1.02 \times 10^5$ N, what is the bank angle such that the plane flies level? (b) What is the centripetal force? (c) Note that the \textit{period} $T$ of circular motion is $T = 2\pi/\omega$.  If $T$ for the motion of the plane is 2 minutes, what is the radius $r$ of the path? \\ \vspace{4cm}
+\item Consider the parallel springs in Fig. \ref{fig:2}.  (a) If $k_1 = 15$ N m$^{-1}$, and $k_2 = 30$ N m$^{-1}$, what applied force will squeeze the springs by 5cm? (b) If instead the springs were connected \textit{in series} (back to back), convince yourself that 
+\begin{equation}
+k_1 \Delta x_1 = k_2 \Delta x_2 = k_{\rm total} \Delta x_{\rm total}
+\end{equation}
+Since $\Delta x_{\rm total} = \Delta x_1 + \Delta x_2$, solve for $k_{\rm total}$.  What is the equivalent formula for $k_{\rm total}$ for the parallel springs? \\ \vspace{4cm}
+\item The force of friction is proportional to the normal force balancing the weight of a system. (a) Suppose the coefficient of kinetic friction $mu$ between rubber and concrete is 0.7, and 0.35 if the pavement is wet.  If the friction of sliding tires across pavement slows a vehicle from initial speed $v_i$ to a final speed $v_f = 0$, what is the ratio of stopping distances?  Assume the mass of the vehicle is $m$. (b) What is the stopping distance of a 2000 kg minivan on wet pavement, if $v_i = 100$ km per hour?
 \end{enumerate}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.2\textwidth,trim=13cm 0cm 0cm 0cm,clip=true]{elevator.png}
-\caption{\label{fig:1} A person on a scale in an elevator.}
+\includegraphics[width=0.4\textwidth]{figures/plane.jpeg}
+\caption{\label{fig:1} A plane banks during flight, with the forces of lift and weight resulting in a centripetal force.}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.3\textwidth]{figures/circle.png}
-\caption{\label{fig:2} Uniform circular motion.}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.3\textwidth]{figures/blocks.jpg}
-\caption{\label{fig:3} Friction acts on block $m_1$ and gravity acts on $m_2$.}
+\includegraphics[width=0.33\textwidth]{figures/parallel_springs.png}
+\caption{\label{fig:2} Two springs with $k_1$ and $k_2$, connected in parallel.}
 \end{figure}
 
 \end{document}
