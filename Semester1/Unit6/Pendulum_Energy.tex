@@ -6,6 +6,7 @@
 
 \begin{document}
 \twocolumn
+\small
 
 \title{PhET Activity: Work and Energy with the Pendulum}
 \author{Prof. Jordan C. Hanson}
@@ -24,8 +25,8 @@
 Let the angle a pendulum makes with the vertical line be $\theta$.  If $\theta \ll 1$, the position of the mass at the end of pendulum is
 
 \begin{align}
-x &= L\theta \\
-y &= \frac{1}{2}L\theta^2
+x &= L\sin\theta \approx L\theta \\
+y &= L-L\cos\theta \approx \frac{1}{2}L\theta^2
 \end{align}
 
 The gravitational potential energy of the pendulum is 
@@ -58,15 +59,22 @@ Let the \textit{angular frequency} $\omega$ be defined by $\omega^2 = g/L$.  Equ
 \frac{d^2 \theta}{dt^2} = -\omega^2\theta \label{eq:2}
 \end{equation}
 
-\textbf{Show that the solution Equation \ref{eq:2}} is a sum of sines and cosines.
+\vspace{2cm}
+
+\section{Period vs. Length}
+
+\begin{enumerate}
+\item Show that the units of $\omega$ are radians per second, or simply $s^{-1}$. What are the units of $\omega^2$? \\ \vspace{1.5cm}
+\item (a) Show that the solution to Eq. \ref{eq:2} is $\theta(t) = A\cos(\omega t) + B\sin(\omega t)$. (b) If $\theta(0) = 0$, which coefficient ($A$ or $B$) is zero? (c) Let $\omega = 2\pi f$, where $f$ is the frequency in Hz, and the period is $T=1/f$ in seconds.  If we measure $T=0.8$ seconds, what are $f$ and $\omega$? \\ \vspace{3cm}
+\end{enumerate}
 
 \section{Simulation of Pendulum Behavior}
 
 Load the following PhET simulation: \url{https://phet.colorado.edu/en/simulations/pendulum-lab}.  Load the Energy tab in the middle of the page.  Learn to control the length of the pendulum and to make it swing by clicking and dragging on the mass.
 
 \begin{enumerate}
-\item Create a graph below of the \textit{period} of of the pendulum versus length, and show that the period is proportional to the square root of the length. \\ \vspace{4cm}
-\item Determine when the speed of the pendulum is the largest, and when it is zero.  (a) What does this conclusion mean for the kinetic energy?  (b) When is the potential energy maximized?  (c) Using the tools of the PhET, what can you say about the \textit{total energy} of the system?
+\item Graph the \textit{period} of of the pendulum versus length, and show that the period is proportional to the square root of the length. Explain the dependence based on the relationship between $g$, $L$, $\omega$, and $T$. \\ \vspace{3cm}
+\item (a) When is the speed of the pendulum is the largest?  When is it zero?  (b) What does this mean for the kinetic energy?  (b) When is the potential energy maximized?  (c) What can you say about the \textit{total energy} of the system?
 \end{enumerate}
 
 \end{document}
