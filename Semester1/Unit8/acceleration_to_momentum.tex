@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{hyperref}
+
+\begin{document}
+\twocolumn
+\small
+
+\title{Lab Activity: Smashing Things Together (Momentum)}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Introduction}
+
+To measure \textit{momentum}, we need to measure \textit{velocity} and \textit{mass.}  To measure the mass of our frictionless cart systems, we will use a digital scale.  To measure the velocity, however, we will use our ... mobile devices!
+
+\section{Download Physics Toolbox \\ (Android and iOS)}
+
+Using a mobile device, go to the app store and search for \\ \verb+Physics Toolbox Sensor Suite.+  Once downloaded, use the linear accelerometer to measure acceleration.
+
+\section{Carts and Tracks}
+
+Arrange the frictionless carts along the tracks, and place a weight on one cart.  Place the mobile device on the other cart.  Use the \verb+Start Recording+ button to record the accelerometer data.  With the springs on the carts facing each other, push the heavy cart towards the motionless cart holding the mobile device.  The collision should register on the accelerometer.  Use the ruler on the track and a stop watch to measure the speed of the heavy cart as it approaches the cart with the accelerometer.
+
+\section{Extracting the Data}
+
+Save the accelerometer data from your mobile device to your Google Drive, and download it to the device of your choice, or one of the PCs in our lab.  Open the CSV file, and note the definitions of the variables in the columns.  The \textit{sampling rate} is the frequency with which the accelerometer readings are recorded.  Note that the target sampling rate might not be equal to the sampling rate achievable on the mobile device, and also that the sampling rate is not constant. The time data (seconds) is stored in the first column, followed by the three components of accleration, $a_x$, $a_y$, and $a_z$ (all in m s$^{-2}$), and the magnitude of acceleration (in m s$^{-2}$).  Graph the acceleration components $a_x$, $a_y$, and $a_z$ versus time.  Determine which component contains the collision data, and which ones are just noise.
+
+To compute the velocity from the acceleration, we are going to use the kinematic formula:
+
+\begin{align}
+v_{i} &= a_i \Delta t + v_{i-1} \label{eq:1} \\
+\Delta t &= t_{i} - t_{i-1} \label{eq:2}
+\end{align}
+
+The time, acceleration components, and acceleration magnitude should be in columns A-E.  Copy the time data to column F.  Now, in cell \verb+G4+, type \verb+velocity (m/s)+, and in cell \verb+G5+, type \verb+=0.0+.  This assumes the initial velocity of the cart with the mobile device is zero.  Assuming the collision took place along the \textit{y-axis}, we must use the $a_y$ data to compute velocity.  In cell \verb+G6+, implement Eqs. \ref{eq:1}-\ref{eq:2}:
+\begin{verbatim}
+=G5+C5*(A6-A5)
+\end{verbatim}
+In the above formula, \verb+(A6-A5)+ corresponds to $\Delta t$, \verb+C5+ corresponds to $a_y$, and \verb+G5+ corresponds to $v_{i-1}$.  Now click and drag the handle in the lower right side of cell \verb+C6+ all the way to the final accelerometer data point.  Note that we are building a cumulative sum:
+\begin{equation}
+v_n = \sum_{i=1}^n a_{i-1}(t_{i} - t_{i-1}) + v_i
+\end{equation}
+If the sampling rate were large compared to the time of the collision event, then \verb+(A6-A5)+ would approach $dt$, and we could treat the sum like an integral:
+\begin{equation}
+v(t) = \int_0^t a(t') dt' + C
+\end{equation}
+
+\section{Correcting for Systematic Error}
+
+Plot the time data versus velocity data (\verb+G+ vs. \verb+F+ columns).  The graph does not make sense at first.  The cart velocity may be changing linearly, when we know it was stationary.  The trouble is that our sum includes noise, in addition to signal.  Let's create a \textit{filter} that cleans the data of this noise.  Create a new data column, \verb+H+, for the cleaned data.  Type the following in cell \verb+H5+:
+
+\begin{verbatim}
+=IF(abs(C5)>$H$1,C5,0)
+\end{verbatim}
+
+In cell \verb+H1+, type \verb+=0.5+.  Cell \verb+H5+ contains a \textit{conditional statement}.  If the magnitude of the $a_y$-value in \verb+C5+ is less than 0.5 m s$^{-2}$, then the code will replace it with 0.0.  Apply the conditional formula to all the data by dragging the lower right handle of cell \verb+H5+ to the final row.  Create a graph of the modified velocity data versus time.  The result should be no motion, then after the collision time, the velocity should be constant.
+
+\section{Momentum Conservation}
+
+Using the digital scale, determine the mass of the first cart with the weight.  Multiply this to obtain the initial momentum, and record the result: \\ \\ \\ Compare this to the measured velocity of the second cart, multiplied by its mass: \\ \\ \\ Do the results agree?  Why or why not?
+
+\end{document}

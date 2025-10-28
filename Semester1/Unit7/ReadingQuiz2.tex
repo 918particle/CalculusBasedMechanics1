@@ -4,22 +4,64 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
+\small
 
-\title{Wednesday Reading Assessment: Unit 7, Power and Conservation of Energy}
+\title{Friday Reading Assessment: Unit 4, Power and Conservation of Energy}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
 
-\section{Conservation of Energy}
+\section{Memory Bank}
+
+\begin{itemize}
+\item \textbf{Conservative force:}
+\begin{equation}
+\vec{F} = -\nabla U(x,y,z) = -\frac{\partial U}{\partial x}\hat{i}-\frac{\partial U}{\partial y}\hat{j}-\frac{\partial U}{\partial z}\hat{k}
+\end{equation}
+\item The \textit{curl} of a vector field:
+\begin{multline}
+\nabla \times \vec{F} = \\ \left(\frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z}\right) \hat{i} - \left(\frac{\partial F_z}{\partial x}-\frac{\partial F_x}{\partial z}\right) \hat{j} + \left(\frac{\partial F_y}{\partial x}-\frac{\partial F_x}{\partial y}\right) \hat{k}
+\end{multline}
+\item \textbf{Conservative force:}
+\begin{equation}
+\nabla \times \vec{F} = 0
+\end{equation}
+\item \textbf{Gravitational force:}
+\begin{equation}
+\vec{F}_{\rm G} = G \frac{m_1 m_2}{r^2}\hat{r}
+\end{equation}
+\item \textbf{Gravitational potential energy:}
+\begin{equation}
+U(r) = - G \frac{m_1 m_2}{r} \label{eq:pot}
+\end{equation}
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{figures/orbit_phet.png}
+\caption{\label{fig:work} Gravity and orbits PhET.}
+\end{figure}
+
+\section{Conservative Forces and Gravity}
 
 \begin{enumerate}
-\item A particle of mass m is hung from the ceiling by a massless string of length 1.0 m, as shown in Figure \ref{fig:pend}. The particle is released from rest, when the angle between the string and the downward vertical direction is 30 degrees.  What is its speed when it reaches the lowest point of its arc?
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.4\textwidth]{pend.png}
-\caption{\label{fig:pend} A particle hung from a string constitutes a simple pendulum. It is shown when released from rest, along with some distances used in analyzing the motion.}
-\end{figure}
-\item What is the gravitational potential energy as a function of the angle $\theta$? \\ \vspace{2cm}
-\item Approximate the result in the prior question as some polynomial.
+\item The \textit{partial derivative} $\partial U/\partial x$ is the derivative with respect to one variable while holding the others constant. (a) Suppose $U(x,y) = \frac{1}{2}k(x^2+y^2)$.  What is $-\nabla U$?  (b) Suppose $U(x) = -k x^{-1}$.  What is $-dU/dx$? \\ \vspace{3cm}
+\item A \textit{conservative force} obeys the following rule:
+\begin{equation}
+\nabla \times \vec{F} = 0
+\end{equation}
+This is called the \textit{curl} of the force.  Suppose the force $\vec{F}$ is restricted to the xy-plane, meaning neither the x-component nor the y-component depends on $z$, and there is no $z$ component.  Suppose $\nabla \times \vec{F} = 0$.  Using the definition of the curl, show that
+\begin{equation}
+\frac{dF_x}{dy} = \frac{dF_y}{dx}
+\end{equation}
+Suppose $\vec{F} = -k(x\hat{i} + y\hat{j})$.  Does this force conserve energy?  What type of system is described by such a force? \\ \vspace{2.5cm}
+\item The force of gravity between objects of masses $m_1$ and $m_2$, separated by $r$, is given by
+\begin{equation}
+\vec{F}_{\rm G} = G \frac{m_1 m_2}{r^2}\hat{r}
+\end{equation}
+The force is interpreted as \textit{attractive} if it is positive, and $G = 6.674 \times 10^{-11}$ N kg$^{-2}$ m$^{2}$. (a) What is the force of gravity between the Earth and Moon?  Look up the masses in kg, and let $r=384400$ km. (b) Let $F_{\rm C} = F_{\rm G}$.  Show that $r^3 \propto T^2$. (c) Work out the period of the Moon around the Earth. \\ \vspace{4cm}
+\item (a) Show that, if $F = -dU(r)/dr$, that the potential energy of the gravitational force is given by Eq. \ref{eq:pot}.  (b) What is the change in potential energy if an object goes from orbital radius $r_A$ to $r_B$? (c) For a circular orbit, prove that total energy is constant.
 \end{enumerate}
+
 \end{document}
