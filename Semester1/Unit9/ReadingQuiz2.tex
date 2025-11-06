@@ -6,7 +6,7 @@
 \begin{document}
 \twocolumn
 
-\title{Monday Warm Up: Unit 6: Rotational Motion I}
+\title{Wednesday Warm Up: Unit 6: Fixed-Axis Rotational Motion}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -14,26 +14,37 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $s = r \theta$ ... Definition of the radian.
 \item $\vec{s} = \vec{\theta} \times \vec{r}$ ... Vector relationship between angular displacement, arc length, and radius.
 \item $v = r \omega$ ... Relationship between tangential velocity, angular velocity, and radius.
 \item $\vec{v} = \vec{\omega} \times \vec{r}$ ... Vector relationship between tangential velocity, angular velocity, and radius.
+\item $\vec{\tau} = \vec{r} \times \vec{F}$ ... Torque is the cross-product of the moment-arm $\vec{r}$ with the tangential force $\vec{F}$.
+\item $\tau = I \alpha$ ... The magnitude of the torque is the product of the \textit{moment of inertia}, $I$, and the angular acceleration, $\alpha$.
+\item $I = \sum_i m_i r_i^2$ ... The moment of inertia for a collection of point masses.
 \end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{figures/angle4.png}
+\caption{\label{fig:angle5} From the definition of a radian we may derive angular velocity and acceleration.}
+\end{figure}
 
 \section{Rotational Variables and Rotational Motion}
 
 \begin{enumerate}
-\item Suppose the displacement of an aircraft along a curved trajectory is $\vec{s} = 0.1 \hat{j}$ km, and the radius from our origin is $\vec{r} = 10 \hat{i}$ km. What is $\vec{\theta}$? \\ \vspace{1cm}
-\item Suppose the displacement of an aircraft along a curved trajectory is $\vec{s} = -0.1 \hat{i}$ km, and the radius from our origin is $\vec{r} = 1 \hat{j}$ km. What is $\vec{\theta}$? \\ \vspace{1cm}
-\item Suppose the angular velocity of our aircraft is $\vec{\omega} = + \pi/2 \hat{k}$ radians/minute, and the radius of curvature of our trajectory is $\vec{r} = -10\hat{i}$ km.  What is our velocity vector? \\ \vspace{1cm}
-\item Perform the following unit conversions:
-\begin{itemize}
-\item 45 rpm to radians per second.
-\item 100 radians per second to rpm.
-\item 6000 rpm to rotations per millisecond.
-\end{itemize} \vspace{2cm}
-\item A particle moves 3.0 m along a circle of radius 1.5 m. (a) Through what angle does it rotate? (b) If the particle makes this trip in 1.0 s at a constant speed, what is its angular velocity? (c) What is its acceleration? \\ \vspace{2cm} 
-\item  On takeoff, the propellers on a UAV (unmanned aerial vehicle) increase their angular velocity for 3.0 s from rest at a rate of $\omega=(25.0t)$ rad/s where $t$ is measured in seconds. (a) What is the instantaneous angular velocity of the propellers at t=2.0s? (b) What is the angular acceleration?
+\item On takeoff, the propellers on a UAV (unmanned aerial vehicle) increase their angular velocity for 3.0 s from rest at a rate of $\omega=(25.0t)$ rad s$^{-1}$ where $t$ is measured in seconds. (a) What is the instantaneous angular velocity of the propellers at $t=2.0$ seconds? (b) What is the angular acceleration? \\ \vspace{2cm}
+\item Consider Fig. \ref{fig:angle5}.  Suppose we are fishing off the pier into the Pacific ocean.  (a) We are hauling up a 10 kg fish, but the reel breaks and the fish falls freely.  If the radius of the reel is 4.5 cm, what is the angular acceleration of the reel? (b) How long before the reel has spun 100 times? (c) What is the final angular velocity? \\ \vspace{3.0cm}
+\end{enumerate}
+
+\section{Rotational Kinetic Energy}
+
+\begin{enumerate}
+\item In the previous exercise, treat the reel as a spinning cylinder with moment of inertia $I = \frac{1}{2} M R^2$, and $M = 400$ grams.  What is the final kinetic energy of the reel? \\ \vspace{2cm}
+\end{enumerate}
+
+\section{Torque, and Moments of Inertia}
+
+\begin{enumerate}
+\item (a) Knowing the moment of inertia is $I = \frac{1}{2} M R^2$, and the net force from the fish is $w = mg$, obtain an expression for the angular acceleration of the reel, $\alpha$. (b) Without changing the \textit{mass} of the reel, how can we change the design to reduce $\alpha$, the angular acceleration?
 \end{enumerate}
 
 \end{document}
