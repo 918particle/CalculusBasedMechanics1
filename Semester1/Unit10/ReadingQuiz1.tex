@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+\twocolumn
+
+\title{Friday Warm Up: Unit 7, Statics}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Memory Bank}
+
+\begin{itemize}
+\item $\vec{\tau}_{\rm Net} = \sum_i \vec{r}_i \times \vec{F}_i$ ... The net torque.
+\item $\vec{F}_{\rm Net} = \sum_i \vec{F}_i$ ... The net force.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth]{figures/coordinates.png}
+\caption{\label{fig:1} Two coordinate systems, $S$ and $S'$, separated by a displacement $\vec{r}_{\rm S'S}$.}
+\end{figure}
+
+\section{Statics, I}
+
+\begin{enumerate}
+\item Suppose the net force on a system is zero, in coordinates systems $S$ and $S'$ (Fig. \ref{fig:1}).  (a) Show that, if $\vec{r}_{\rm S'S}$ is the vector between the coodinate systems, $\vec{r}_{\rm PS} = \vec{r}_{\rm S'S} + \vec{r}_{\rm PS'}$, or 
+\begin{equation}
+\vec{r}_{\rm PS'} = \vec{r}_{\rm PS} - \vec{r}_{\rm S'S}
+\end{equation}
+(b) Write down an equation for the net torque in $S'$.  Note that forces do not depend on the coordinate system; they are the same in both. (c) Substitute $\vec{r}_{\rm PS} - \vec{r}_{\rm S'S}$ for $\vec{r}_{\rm PS'}$ and simplify. (d) Show that if the net torque and net force are zero in $S$, then that must be the case in $S'$ as well. \\ \vspace{4cm}
+\item Which of the following is true for the torque vectors in Fig. \ref{fig:2}?
+\begin{itemize}
+\item A: Both are positive.
+\item B: Both are negative.
+\item C: The left is positive, the right is negative.
+\item D: The left is negative, the right is positive.
+\end{itemize}
+\item \textbf{Group exercise}.  Consider Fig. \ref{fig:3}.  Assuming that the tension in the biceps acts along the vertical direction given by gravity, what tension must the muscle exert to hold the forearm at the position shown? What is the force on the elbow joint? Assume that the forearm’s weight is negligible.
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{figures/coordinates2.png}
+\includegraphics[width=0.24\textwidth]{figures/coordinates3.png}
+\caption{\label{fig:2} Two torques, one positive and one negative.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/bicep.png}
+\caption{\label{fig:3} A balanced system.}
+\end{figure}
+
+\end{document}

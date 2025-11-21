@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+\twocolumn
+
+\title{Monday warm-up: Statics, II}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Memory Bank}
+
+\begin{itemize}
+\item Young's Modulus, $Y$, has units of N m$^{-2}$, and it relates the change in length $\Delta L$ of a system of original length $L_0$ and cross-sectional area $A$ subject to a force $F$:
+\begin{equation}
+\frac{\Delta L}{L_0} = \frac{1}{Y} \frac{F}{A}
+\end{equation}
+Summarized as \textit{stress}$= Y\times$\textit{strain}.
+\item Shear Modulus, $S$, has units of N m$^{-2}$, and it relates the sideways change in length $\Delta x$ of a system of length $L_0$ and cross-sectional area $A$ subject to a force $F$:
+\begin{equation}
+\frac{\Delta x}{L_0} = \frac{1}{S} \frac{F}{A}
+\end{equation}
+Summarized as \textit{stress}$= S\times$\textit{sheer}.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth,trim=0cm 1cm 0cm 0cm,clip=true]{figures/strain.jpeg}
+\caption{\label{fig:1} Stress is $F/A$, and strain is $\Delta L/L_0$.}
+\end{figure}
+
+\section{Stress, Strain, and \\ Elastic Modulus}
+
+\begin{enumerate}
+\item By how much does a 65.0-kg mountain climber stretch his 0.800-cm diameter nylon rope when he hangs 35.0 m below a rock outcropping? (For nylon, $Y=1.35×\times 10^9$ Pa.) \\ \vspace{3.5cm}
+\item A copper wire is 1.0 m long and its diameter is 1.0 mm. If the wire hangs vertically, how much weight must be added to its free end in order to stretch it 3.0 mm? (For copper, $Y=110\times 10^9$ Pa.) \\ \vspace{3.5cm}
+\item Consider Fig. \ref{fig:2}.  A shelf has a height of 1.5 m, with top dimensions 0.2 m x 1.0 m.  (a) If a force of 1000 N is applied as shown in Fig. \ref{fig:2}, the shelf experiences a shear strain of $\Delta x = 5$ cm.  What is the observed shear modulus? (b) If the textbook value for the shear modulus of wood is $10 \times 10^{9}$ Pa, is the observed value due to the wood or the connectors between parts? \\ \vspace{3.5cm}
+\item \textbf{Scaling problem.}  Consider the copper wire in exercise 2.  If the diameter of the wire were instead 2.0 mm, what would be the strain (fractional change in length)?
+\end{enumerate}
+
+\begin{figure}[hb]
+\centering
+\includegraphics[width=0.3\textwidth]{figures/shelf.jpeg}
+\caption{\label{fig:2} A shelf experiences shear.}
+\end{figure}
+
+\end{document}
