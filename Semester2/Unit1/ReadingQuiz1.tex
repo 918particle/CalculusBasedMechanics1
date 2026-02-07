@@ -4,37 +4,51 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Wednesday Reading Assessment: Unit 1, Electric Fields}
+\title{Monday Warm Up: Unit 1, Capacitors, Current and DC circuits}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
 
-\section{Electric Fields}
+\section{Memory Bank}
+
+\begin{itemize}
+\item $\Delta U = q\Delta V$ ... Relationship between change in potential energy, charge, and voltage.
+\item $V(x) = E x + V_0$ ... Linear relationship between voltage, electric field, and distance between two charge plates to form a capacitor.
+\item $Q = C\Delta V$ ... Relationship between stored charge, capacitance ($C$), and voltage.  Capacitance has the unit of 1 Farad, or 1 C V$^{-1}$.
+\item $I = \Delta Q / \Delta t$ ... The relationship between current ($I$), charge, and time.  The unit of current is 1 Amp (A), or 1 C s$^{-1}$.  
+\item $\Delta U = \frac{1}{2}C \Delta V^2$ ... The energy stored in a capacitor.
+\item $C = \epsilon_0 A/d$ ... The capacitance of a parallel-plate capacitor with area $A$ and plate separation $d$.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,trim=0.1cm 0cm 0cm 0.1cm,clip=true]{figures/caps.png}
+\caption{\label{fig:1} Two capacitors \textit{in parallel} (top), that are \textit{in series} with a third (bottom).}
+\end{figure}
+
+\section{Capacitors and Current}
 
 \begin{enumerate}
-\item Consider Fig. \ref{fig:ring} below.  A ring of charge with radius $R$ is situated in the xy-plane.  The charge is positive, and it is distributed evenly across the ring.  We write $dq = \lambda R d\theta$, to mean that there is $\lambda$ Coulombs per unit length.  If $d\theta$ were to extend to $2\pi$ (all the way around the circle), then the total charge is $Q = \lambda (2 \pi R)$.  (a) By symmetry, where should the electric field be zero?  (b) Where would the electric field be infinite?
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.22\textwidth]{ring.png}
-\caption{\label{fig:ring} THings.}
-\end{figure}
-\item Consider again Fig. \ref{fig:ring}.  As $z \rightarrow \infty$, what happens to the field?
-\begin{itemize}
-\item A: The field-strength increases.
-\item B: The field-strength remains constant.
-\item C: The field-strength decreases.
-\item D: The field-strength is exactly zero.
-\end{itemize}
-\item Suppose the actual function for the E-field $\vec{E}(z)$ is
+\item (a) Suppose we allow 5 mA of current to flow onto a capacitor for 5 seconds.  How much charge is stored in the capacitor? (b) After 5 seconds, the capacitor voltage is measured to be 5.0 V.  What is the capacitance? \\ \vspace{3cm}
+\item What capacitance is needed to store 3.00 $\mu$C of charge at a voltage of 120 V? \\ \vspace{1cm}
+\item (a) Find the capacitance of a parallel plate capacitor having plates of area 4.00 cm$^2$ that are separated by 0.100 mm. (b) Filling the space between the plates with Teflon increases the value of $\epsilon_0$ by a factor of 2.1.  If the capacitor in part (a) was filled with Teflon, what would the new capacitance be? \\ \vspace{2cm}
+\item Consider Fig. \ref{fig:1}.  Suppose a battery is connected to the top and bottom of the circuit.  The first two capacitors are \textit{in parallel}, because they would split the current, but share the voltage. Their total capacitance is
 \begin{equation}
-\vec{E}(z) = \frac{1}{4\pi \epsilon_0} \frac{q z}{\left( z^2 + R^2 \right)^{3/2}} \hat{z}
+C_{\rm pair} = C_1 + C_2
 \end{equation}
-Evaluate the following limit:
+(a) What is the total capcitance of the top two capacitors? (b) The top pair of capacitors are \textit{in series} with the lower one, because they share the current but split the voltage.  The total capacitance is
 \begin{equation}
-\lim_{z \to \infty} \vec{E}(z) = \lim_{z \to \infty} \frac{1}{4\pi \epsilon_0} \frac{q z}{\left( z^2 + R^2 \right)^{3/2}} \hat{z}
+C_{\rm tot}^{-1} = C_{\rm pair}^{-1} + C_{\rm 3}^{-1}
 \end{equation}
-\textit{(Hint: it's not just zero.  Think about what the field should be if we observe it from far away).}
+(b) What is $C_{\rm tot}$? \\ \vspace{2cm}
+\end{enumerate}
+
+\section{Bonus Problem}
+
+\begin{enumerate}
+\item A battery-operated car utilizes a 12.0 V system. Find the charge the batteries must be able to move in order to accelerate the 750 kg car from rest to 25.0 m s$^{-1}$, make it climb a 200 m high hill and then cause it to travel at a constant 25.0 m s$^{-1}$ by exerting a 500 N force for an hour.  \textit{Hint: the power to move an object at constant velocity $\vec{v}$ when requiring a force $\vec{F}$ is $P = \vec{F} \cdot \vec{v}$.  Can you prove this?}
 \end{enumerate}
 
 \end{document}

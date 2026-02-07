@@ -4,36 +4,37 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Monday Reading Assessment: Unit 1, Gauss' Law}
+\title{Wednesday Warm Up: Unit 1, Capacitors, current and DC circuits}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
 
-\section{Gauss' Law}
+\section{Memory Bank}
+
+\begin{itemize}
+\item $\Delta U = q\Delta V$ ... Relationship between change in potential energy, charge, and voltage.
+\item $V(r) = k q / r$ ... Potential (voltage) of a point charge.
+\item $V(x) = E x + V_0$ ... Linear relationship between voltage, electric field, and distance between two charge plates to form a capacitor.
+\item $Q = C\Delta V$ ... Relationship between stored charge, capacitance, and voltage.
+\item $I = \Delta Q / \Delta t$ ... The relationship between current, $I$, and charge.
+\item $C_{\rm tot}^{-1} = C_1^{-1} + C_2^{-1}$ ... Two capacitors \textit{in series}.
+\item $C_{\rm tot} = C_1 + C_2$ ... Two capacitors \textit{in parallel}.
+\item $V_{\rm C}(t) = \mathcal{E}\left(1 - \exp(-t/\tau)\right)$ ... The capacitor \textbf{charging} voltage in an RC circuit, with $\tau = RC$.
+\item $V_{\rm C}(t) = V_{\rm C,i}\exp(-t/\tau)$ ... The capacitor \textbf{discharging} voltage in an RC circuit, with $\tau = RC$.
+\item $\Delta U = Q^2/(2C) = \frac{1}{2}CV^2$ ... Energy stored in a capacitor.
+\end{itemize}
+
+\section{Capacitors and Current}
 
 \begin{enumerate}
-\item Observe Fig. \ref{fig:spheres1}.  This question is about objects with spherical symmetry.
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.35\textwidth]{spheres.png}
-\caption{\label{fig:spheres1} Charge distributions with (a) spherical symmetry (b) no spherical symmetry (c) spherical symmetry.}
-\end{figure}
-Which of the following charge distributions has \textit{spherical} symmetry?
-\begin{itemize}
-\item A: A long line of charge, uniformly spread in one dimension
-\item B: A disk of charge, evenly spread in two-dimensions
-\item C: A point charge
-\item D: A shell of charge with radius $R$, evenly spread over the shell
-\end{itemize}
-Which of the following charge distributions has \textit{spherical} symmetry?
-\begin{itemize}
-\item A: A sphere of charge, with positive charge out to a radius $r$, then negative charge out to a radius $R$
-\item B: A sphere of charge, with positive charge on one hemisphere, and negative charge on the other hemisphere
-\item C: A sphere of charge, with positive charge from $0 \leq \phi < \pi/2$, negative charge from $\pi/2 \leq \phi < \pi$, positive charge from $\pi \leq \phi < 3\pi/2$, and negative charge from $3\pi/2 \leq \phi < 2\pi$
-\item D: A shell of charge with radius $R$, with random charge density
-\end{itemize}
-\item Use Gauss' law to show that (a) the E-field a distance $r$ from a point charge $Q$ is $E = Q/\left(4\pi \epsilon_0 r^2\right)$.  (b) Show that the E-field a distance $r$ from the origin inside a uniformly charged sphere with charge density $\rho$ and radius $R$ that is centered at the origin is a linear function of $r$.  \textit{Hint: draw the sphere, and then draw a shell of radius $r$ with $r<R$.  How much charge is enclosed?} (c) Far outside the sphere, how does the E-field depend on $r$?  \textit{Hint: this is true for anything, if you are far enough away.}
+\item (a) Two 1 $\mu$F capacitors are connected \textit{in parallel}.  What is the total capacitance? (b) If we charge the capacitors with 12 V, how much charge is stored on the capacitors? (c) How much energy is stored in the circuit? \\ \vspace{3cm}
+\item Repeat the above exercise, but assume the capacitors are \textit{in series}. \\ \vspace{2cm}
+\item Suppose we connect a headlight to a car battery with charge 80 Amp hr.  (a) If the headlight draws 0.5 Amp of current, how long will the battery last? (b) How much charge flowed through the headlight? \\ \vspace{2cm}
+\item The timing device in an automobile's intermittent wiper system is based on an RC time constant and utilizes a 0.500 microfarad capacitor and a variable resistor. Over what range must R be made to vary to achieve time constants from 2.00 to 15.0 s? \\ \vspace{2cm}
+\item A heart defibrillator being used on a patient has an RC time constant of 10.0 ms due to the resistance of the patient and the capacitance of the defibrillator. (a) If the defibrillator has an 8.00 microfarad capacitance, what is the resistance R of the path through the patient? (b) If the initial voltage is 12.0 kV, how long does it take to decline to 600 V? \\ \vspace{3cm}
+\item In the previous exercise, how much energy is delivered to the patient's heart?
 \end{enumerate}
 
 \end{document}
