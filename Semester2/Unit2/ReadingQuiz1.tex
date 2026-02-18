@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Wednesday Reading Assessment: Unit 1, Electric Potential}
+\title{Wednesday Warm Up: DC circuits, and Kirchhoff's Rules}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,28 +14,29 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $PE = q V$ ... Relationship between potential energy, charge, and voltage.
-\item $PE = m g h$ ... Gravitational potential energy.
-\item $KE = \frac{1}{2}m v^2$ ... Definition of kinetic energy.
+\item $V = I R$ ... Ohm's Law.
+\item $P = IV = I^2 R = V^2/R$ ... Power consumption.
+\item Kirchhoff's Rule \#1: Total current into a junction equals total current out of a junction.
+\item Kirchhoff's Rule \#2: The total change in voltage around a loop is zero.
 \end{itemize}
 
-\section{Electric Potential and Potential Energy}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/bulbs.png}
+\caption{\label{fig:1} Two light bulbs connected to an EMF $V_0$.}
+\end{figure}
+
+\section{Resistors in Series and Parallel, \\ Kirchhoff's Rules}
 
 \begin{enumerate}
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.22\textwidth]{hill2.png}
-\caption{\label{fig:hill} The relationship between potential energy and voltage.}
-\end{figure}
-\item Consider Fig. \ref{fig:hill}.  Suppose the mass $m$ rolls down a hill from a height of 30 meters.  Neglecting the effects of friction, what will be the final velocity?  \textit{Hint: you do not need to know the mass.} \\ \vspace{1cm}
-\item Consider Fig. \ref{fig:hill}.  Suppose the charge is $q = 1 \mu$C, and the voltage is 12 V.  (a) What is the potential energy before the charge is released? (b) If the charge has a mass of $10^{-6}$ kg, what is the final speed of the charge? \\ \vspace{1.5cm}
-\item What is the minimum voltage barrier required to \textit{stop} the charge from moving?
-\begin{itemize}
-\item A: 6 V
-\item B: 10 V
-\item C: 12 V
-\item D: 15 V
-\end{itemize}
+\item Consider Fig. \ref{fig:1}.  (a) If $V_0 = 12$ V, and the resistances of bulbs A and B are $5$ $\Omega$, what current flows if the switch in the middle is open? (b) What current flows if the switch is closed, and through which bulb? \textit{Hint: be careful, because the the total current into a junction equals the total output current.} \\ \vspace{5cm}
+\item For the system in Fig. \ref{fig:1}, what is the power consumption if the switch is (a) open, (b) closed? \\ \vspace{3cm}
+\item Consider Fig. \ref{fig:2}.  Let $V_1 = 12$ V, $V_2 = 1.2$ V, and all resistors have a value of $2$ $\Omega$.  Solve for the currents through all resistors.
 \end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.225\textwidth,trim=0cm 0cm 0.1cm 0.0cm,clip=true]{figures/kirchhoff_3.png}\caption{\label{fig:2} A circuit with two batteries and five resistors.}
+\end{figure}
 
 \end{document}
