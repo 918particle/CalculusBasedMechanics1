@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Wednesday Reading Assessment: Unit 1, Electric Potential}
+\title{Friday Warm Up: DC circuits, and Kirchhoff's Rules}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,22 +14,32 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $\vec{E} = -\frac{dV}{dx} \hat{x}$ ... One dimensional case
-\item $\vec{E} = -\nabla V$ ... General case
+\item $V_{\rm C} (t) = \epsilon\left(1-\exp(-t/\tau)\right)$ ... Voltage on a charging capacitor with time constant $\tau$.
+\item $\tau = RC$ ... The time-constant of an RC circuit.
 \end{itemize}
 
-\section{Electric Potential and Potential Energy}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth,trim=0.1cm 0.1cm 0cm 0.1cm,clip=true]{figures/RC_lamp.png}
+\caption{\label{fig:1} An RC circuit to charge and flash a neon lamp.}
+\end{figure}
+
+\section{RC Circuits}
 
 \begin{enumerate}
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.15\textwidth]{plates.png}
-\caption{\label{fig:hill} Voltage is a linear function of distance from the positive plate to the negative plate.}
-\end{figure}
-\item Consider Fig. \ref{fig:hill}.  Suppose the voltage is 100V at the positive plate.  What is the voltage half-way between the plates, if the E-field is constant and the voltage at the negative plate is 0V? \\ \vspace{1cm}
-\item Consider Fig. \ref{fig:hill}.  Suppose the voltage is 100V at the positive plate.  What is the voltage \textit{two-thirds} of the way across, towards the negative plate? \\ \vspace{1cm}
-\item If the distance between the plates is 5 mm, what is the E-field value?  (Remember, it is a constant in this case). \\ \vspace{1cm}
-\item Draw a graph of the voltage versus position for Fig. \ref{fig:hill}. \\ \vspace{1cm}
+\item One application of an RC circuit is the relaxation oscillator (Fig. \ref{fig:1}). The relaxation oscillator consists of a voltage source, a resistor, a capacitor, and a neon lamp. The neon lamp acts like an open circuit (infinite resistance) until the potential difference across the neon lamp reaches a specific voltage. At that voltage, the lamp acts like a short circuit (zero resistance), and the capacitor discharges through the neon lamp and produces light. In the relaxation oscillator in Fig. \ref{fig:1}, the voltage source charges the capacitor until the voltage across the capacitor is 80 V. When this happens, the neon in the lamp breaks down and allows the capacitor to discharge through the lamp, producing a bright flash. It begins to charge again, and the process repeats. Assuming that the discharge time is negligible.  What is the time interval between flashes? \\ \vspace{5cm}
 \end{enumerate}
+
+\section{Measurement Devices}
+
+\begin{enumerate}
+\item Consider Fig. \ref{fig:2} (left).  An ammeter \textbf{A} is in series with a battery and two resistance loads.  Let $\mathcal{E} = 5$ V, $r=1$ $\Omega$, and $R_1 = R_2 = 50$ $\Omega$.  (a) What current is registered by \textbf{A}? \\ \vspace{3cm}
+\item Consider Fig. \ref{fig:2} (right).  Repeat the previous exercises, but for the parallel case. Give the current in each \textbf{A}. \\ \vspace{3cm}
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.49\textwidth,trim=0cm 0cm 0.1cm 0.0cm,clip=true]{figures/ammeters_1.png}\caption{\label{fig:2} Ammeters measuring current in a (left) series circuit, and a (right) parallel circuit.}
+\end{figure}
 
 \end{document}
