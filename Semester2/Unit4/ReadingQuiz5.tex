@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Monday Reading Assessment: Unit 4, Sources of Magnetic Fields}
+\title{Monday Warm Up: Unit 4, Self-inductance, and RL circuits}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,21 +14,33 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $d\vec{B} = \frac{\mu_0 I}{4\pi} \frac{d\vec{l}\times\hat{r}}{r^2}$ ... Biot-Savart Law
-\item $\vec{B} = (\mu_0 I) / (2 \pi r) \hat{z}$ ... B-field of a current I a distance $r$ away from the conductor carrying the current.  The direction $\hat{z}$ is given by the right-hand rule \#2 (RHR-2).
+\item $\epsilon = -N \Delta \phi_m /\Delta t$ ... Faraday's Law
+\item $\epsilon = -L \Delta I /\Delta t$ ... Faraday's Law
+\item $\phi_m = \vec{B} \cdot \vec{A} = BA \cos(\theta)$ ... Definition of magnetic flux
+\item $\vec{B} = \mu_0 n I \hat{k}$ ... Magnetic field in a solenoid of length $L$, turns $N$, current $I$, and $n = N/L$.
+\item 1 H = 1 $\Omega$ s ... The \textit{Henry} is a unit of inductance, often represented by $L$.
+\item $\mu_0 = 4\pi \times 10^{-7}$ ... T m$^{-1}$ A$^{-1}$.
+\item $I(t) = I_0\left(1 - \exp(-t/\tau)\right)$ ... Current when RL circuits turn on ($\tau = L/R$).
+\item $I(t) = I_0\exp(-t/\tau)$ ... Current when RL circuits turn off ($\tau = L/R$).
 \end{itemize}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.75\textwidth]{wireBfield.jpeg}
-\caption{\label{fig:fields} The B-field of a wire surrounding a current-carrying wire.}
-\end{figure}
-
-\section{Magnetic Forces on a Wire}
+\section{Self-Inductance}
 
 \begin{enumerate}
-\item Consider Fig. \ref{fig:fields}.  (a) Define a coordinate system that describes the three directions in the problem: the vector pointing some distance away from the wire, the direction of the current, and the direction of the B-field some distance away from the wire.  All three directions should be mutually perpendicular. (b) What is the B-field vector 1 cm below the wire, if the current is 10 A? \\ \vspace{2cm}
-\item Suppose a row of charges was motionless a distance $y$ \textit{above} the wire.  What would happen to the charges if the wire moved \textit{towards} them?
+\item Suppose a current $I(t)$ is passed to an inductor.  At $t=0$ seconds, $I=0$.  The current increases linearly to 100 mA in 0.5 seconds, then remains constant for 2 seconds.  At that point, it decreases to 0 mA in 0.5 seconds. (a) Sketch the current below.  (b) Sketch the back emf across the inductor below.  What are the values of the back emf during this process? \\ \vspace{5cm}
+\item Derive the general relationship between inductance, $L$, and current, by equating the induced emf in the two versions of Faraday's Law. \\ \vspace{2cm}
+\item Using the result from the previous problem, (a) show that the inductance of a solenoid with length $l$, area $A$, and turns $N$ is
+\begin{equation}
+L = \mu_0 A N^2/l
+\end{equation}
+(b) What is the inductance of a solenoid with area $A=0.1$ cm$^{2}$, $l = 2$ cm, and turns $N = 100$? \\ \vspace{4cm}
+\end{enumerate}
+
+\section{RL Circuits}
+
+\begin{enumerate}
+\item (a) What is the characteristic time constant for a 9.0 mH inductor in series with a 3.00 $\Omega$ resistor? (b) Find the current 6.00 ms after the circuit is closed. (c) If the circuit is powered by 5.0 V, what is the current as $t\to\infty$? \\ \vspace{3cm}
+\item Suppose that the 5.0 V emf in the previous circuit is deactivated, and the RL are left in series.  How long before the current falls to 1\% of the initial value?
 \end{enumerate}
 
 \end{document}

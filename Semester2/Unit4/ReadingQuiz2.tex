@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Friday Reading Assessment: Unit 3, Magnetic Forces and Fields}
+\title{Monday Warm Up: Unit 4, Magnetic Induction}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,23 +14,38 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $\vec{F} = q\vec{v} \times \vec{B}$ ... The Lorentz force, one version.
-\item $\vec{F} = i\vec{L} \times \vec{B}$ ... The Lorentz force, another version.
-\item $\vec{\tau} = \vec{r} \times \vec{F}$ ... Definition of torque.
-\item $\vec{\tau} = \vec{\mu} \times \vec{B}$ ... Torque on a current carrying loop in a uniform B-field.
-\item $\vec{\mu} = Ni\vec{A}$ ... Definition of the magnetic moment.
+\item $\epsilon = -N \Delta \phi_m /\Delta t$ ... Faraday's Law
+\item $\phi_m = \vec{B} \cdot \vec{A}$ ... Definition of magnetic flux
+\item 1 T = 1 N A$^{-1}$ m$^{-1}$ ... Definition of 1 Tesla
+\item $\epsilon = N A B \omega$ ... Peak emf of electric generator
 \end{itemize}
 
-\section{The Power Generator}
+\section{Faraday's Law}
 
 \begin{enumerate}
-\item Consider Fig. \ref{fig:lorentz}, in which a DC power generator is depicted inside a 0.05 T B-field.  Suppose the area of the loop is $10^{-2}$ m$^{2}$, the voltage in the circuit is 24 V, and the circuit resistance is 50 $\Omega$.  Also assume that there is just one loop of wire in the rotor.  What is the \textit{maximum torque} the system could achieve? \\ \vspace{2cm}
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.55\textwidth]{commute.jpeg}
-\caption{\label{fig:lorentz} An illustration of how a power generator works.  This version uses DC current and a commutator.}
-\end{figure}
-\item What would the maximum torque be if there were $N = 100$ turns of wire?
+\item Suppose a uniform B-field of 0.1 T passes through a wire loop with an area of 0.05 m$^2$.  Calculate $\phi_m$, the magnetic flux, if the angle between the B-field and loop area is (a) 0 degrees, (b) 45 degrees, and (c) 90 degrees.  (d) Suppose the B-field drops to 0 T in 1 ms.  What is the induced emf? \\ \vspace{2cm}
+\item Verify that the units of $\Delta \phi_m/\Delta t$ are volts. \\ \vspace{2cm}
+\item A coil is moved through a magnetic field as shown in Fig. \ref{fig:1}. The field is uniform inside the rectangle and zero outside. What is the direction of the induced current and what is the direction of the magnetic force on the coil at each position shown? \\ \vspace{2cm}
 \end{enumerate}
+
+\section{Electric Generators}
+
+\begin{enumerate}
+\item (a) A bicycle generator rotates at 1875 rad/s, producing an 18.0 V peak emf. It has a 1.00 by 3.00 cm rectangular coil in a 0.640 T field. How many turns are in the coil? (b) Is this number of turns of wire practical for a 1.00 by 3.00 cm coil? \\ \vspace{4cm}
+\item Design a generator that uses just 25 turns of wire in the coil, but still produces 18 V. \\ \vspace{2cm}
+\item The magnetic field through a circular loop of radius 10.0 cm varies with time as shown in Fig. \ref{fig:2}.  The field is perpendicular to the loop.  Plot the magnitude of the induced emf in the loop as a function of time.
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth,trim=0cm 0.1cm 0cm 0.05cm,clip=true]{figures/motional.png}
+\caption{\label{fig:1} A loop passes through a B-field.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.33\textwidth]{figures/b-time.png}
+\caption{\label{fig:2} A time-varying B-field.}
+\end{figure}
 
 \end{document}

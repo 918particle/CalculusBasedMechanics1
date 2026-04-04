@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Monday Reading Assessment: Unit 4, Sources of Magnetic Fields}
+\title{Wednesday Warm Up: Unit 4, Inductors in Series and Parallel, and RL circuits}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,23 +14,37 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\rm enc}$ ... Amp\`{e}re's Law
-\item $\vec{B} = \mu_0 (N/L) I_{\rm enc} \hat{z}$ ... \textit{Solenoid B-field.}
-\item $\vec{B} = \mu_0 I / (2\pi r)$ ... B-field of a wire a distance $r$ away from it.
+\item $\epsilon = -N \Delta \phi_m /\Delta t$ ... Faraday's Law
+\item $\epsilon = -L \Delta I /\Delta t$ ... Faraday's Law
+\item 1 H = 1 $\Omega$ s ... The \textit{Henry} is a unit of inductance, often represented by $L$.
+\item $\mu_0 = 4\pi \times 10^{-7}$ ... T m$^{-1}$ A$^{-1}$.
+\item $L = \mu_0 A N^2/l$ ... Inductance of a solenoid.
+\item $X_{\rm C} = 1/(2\pi fC)$ ... Reactance of a capacitor.
+\item $X_{\rm L} = 2\pi fL$ ... Reactance of an inductor.
 \end{itemize}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.35\textwidth,trim=8.5cm 1cm 0cm 3cm,clip=true]{toroid.jpeg}
-\caption{\label{fig:fields} A basic diagram of a \textit{toroid}, which is a solenoid wrapped into a circular tube.}
-\end{figure}
-
-\section{Solenoids and Toroids}
+\section{Inductors in Series and Parallel}
 
 \begin{enumerate}
-\item What is the B-field inside a solenoid with 1000 turns per meter, carrying a current of 10 A? \\ \vspace{1cm}
-\item Consider Fig. \ref{fig:fields}.  Suppose the current is 10 Amps, and the number of total turns is 4000.  If the radius of the toroid in Fig. \ref{fig:fields} is 2 meters, what is the toroidal B-field inside of it? \\ \vspace{2cm}
-\item Suppose plasma is trapped inside the toroid, and has an effective current of 0.1 Amp.  What is the \textit{poloidal} field that results from this current, at a distance of 0.5 m from the center of the plasma, corresponding to the radius of the pipe?
+\item \textbf{Inductors in Series.} Show that the total inductance $L_{\rm tot}$ of two inductors with inductances $L_1$ and $L_2$ in \textit{series} is
+\begin{equation}
+L_{\rm tot} = L_1 + L_2 \label{eq:1}
+\end{equation} 
+(a) Draw a diagram below. (b) Is the current the same through both $L_1$ and $L_2$? (c) Write a formula relating the voltage across each inductor and the voltage across both inductors. (d) Substitute Faraday's law to prove Eq. \ref{eq:1}.  \\ \vspace{2.5cm}
+\item \textbf{Inductors in Parallel.} Show that the total inductance $L_{\rm tot}$ of two inductors with inductances $L_1$ and $L_2$ in \textit{parallel} is
+\begin{equation}
+L_{\rm tot}^{-1} = L_1^{-1} + L_2^{-1} \label{eq:2}
+\end{equation} 
+(a) Draw a diagram below. (b) Write a formula relating the current through each inductor and the total current, and then take the derivative of both sides ($\Delta I/\Delta t$).  (c) Is the voltage the same across both $L_1$ and $L_2$? (d) Substitute Faraday's law to prove Eq. \ref{eq:2}.  \\ \vspace{2.5cm}
+\item What rate of current increase will give a back emf of 20 mV for two 100 $\mu$H inductors in series? \\ \vspace{2cm}
+\item Camera flashes charge a capacitor to high voltage by switching the current through an inductor on and off rapidly. In what time must the 0.100 A current through a 2.00 mH inductor be switched on or off to induce a 500 V emf? \\ \vspace{1cm}
+\end{enumerate}
+
+\section{LC Circuits}
+
+\begin{enumerate}
+\item Recall that a charged LC circuit oscillates with frequency $f = 1/(2\pi\sqrt{LC})$. (a) If $L = 100$ $\mu$H, and $C = 100$ $\mu$F, what is the angular resonance frequency? (b) What is the regular frequency, in Hz? (c) Sketch the AC signal below, if it has an amplitude of 5 V. \\ \vspace{3cm}
+\item The reactance of a capacitor is $X_{\rm C} = 1/(2\pi fC)$, and the reactance of an inductor is $X_{\rm L} = 2\pi fL$.  Set these equal, and solve for the frequency.  What do you find?
 \end{enumerate}
 
 \end{document}

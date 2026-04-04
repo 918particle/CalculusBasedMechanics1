@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Wednesday Reading Assessment: Unit 3, Magnetic Forces and Fields}
+\title{Wednesday Warm Up: Units 3 and 4, Magnetic Forces and Fields, Induction}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,32 +14,40 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $\vec{F} = q\vec{v} \times \vec{B}$ ... The Lorentz force
-\item $\vec{x}(t) = v_{||}t \hat{i}$ ... The x-position.
-\item $\vec{y}(t) = (v_{\perp}/\omega_B) \cos(\omega_B t)\hat{j}$ ... The y-position.
-\item $\vec{z}(t) = (v_{\perp}/\omega_B) \sin(\omega_B t)\hat{k}$ ... The z-position.
-\item $\omega_B = (q B)/m$ ... The \textit{cyclotron} frequency.
-\item $\omega = 2 \pi f = 2\pi /T$ ... Relationship between angular frequency, frequency, and period.
+\item $V_{\rm H} = B l v$ ... The Hall voltage, given external B-field, height of conductor, $l$, and the drift velocity $v$.
+\item $\vec{F} = I\vec{L} \times \vec{B}$ ... The Lorentz force on a current.
+\item $\vec{F} = I \vec{L} \times \vec{B}$ ... Lorentz Force on a Current
+\item $\vec{F} = q \vec{v} \times \vec{B}$ ... Lorentz Force on a Charge
+\item $\vec{B} = (\mu_0 I)/(2\pi r)\hat{\phi}$ ... The magnetic field $B$ \textit{caused} by the current $I$ a distance $r$ away.  The field \textit{circles} the wire, so the direction of $\vec{B}$ is $\hat{\phi}$.
+\item $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$.
+\item $\vec{B} = \mu_0 n I \hat{z}$ ... The B-field inside a solenoid.  $n=N/L$, the turns per unit length.
+\item $\epsilon = -N \Delta \phi_m /\Delta t$ ... Faraday's Law
+\item $\phi_m = \vec{B} \cdot \vec{A}$ ... Definition of magnetic flux
 \end{itemize}
 
-\section{Motion of a Charged Particle in a Uniform Magnetic Field}
+\section{The Hall Effect}
+
+\begin{figure}[ht]
+\includegraphics[width=0.4\textwidth]{hall2.jpeg}
+\caption{\label{fig:hall} Measuring the Hall voltage.}
+\end{figure}
 
 \begin{enumerate}
-\item Consider Fig. \ref{fig:lorentz}, in which a charged particle is spiralling around a B-field. In the online video tutorial we showed that the 3D motion follows the equations in the memory bank.  (a) Where is the particle at time $t=0$?
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.25\textwidth]{lorentzSpiral.jpeg}
-\caption{\label{fig:lorentz} A graph of charge passing through a certain circuit versus time.}
-\end{figure}
-\item If the particle starts at $(0,v_{\perp}/\omega_B,0)$, and returns there, which of the following is true of $v_{||}$?
-\begin{itemize}
-\item A: $v_{||} < 0$
-\item B: $v_{||} > 0$
-\item C: $v_{||} = 0$
-\item D: $v_{||}$ is undefined.
-\end{itemize}
-\item Suppose the cyclotron frequency is $\omega_B = 40$ MHz, and $v_{\perp} = 10^{6}$ m/s.  What is the period of the motion around the circle? \\ \vspace{2cm}
-\item What would have happened to the motion if $q < 0$?  That is, if we switch the sign of the charge, what happens to the spiral?
+\item A Hall probe is used to measure fluid flow (Fig. \ref{fig:hall}).  Suppose a tube with diameter 1 cm carries a positively charged fluid moving at velocity $v$, in a 0.8 T B-field.  The Hall voltage is measured to be $0.5 \times 10^{-6}$ V.  What is the fluid velocity? \\ \vspace{2cm}
+\item What would happen to the Hall voltage if the charge carriers in the fluid were \textit{negative} instead of \textit{positive}? \\ \vspace{2cm}
+\end{enumerate}
+
+\section{Amp\`{e}re's Law}
+
+\begin{enumerate}
+\item Inside a solenoid, the B-field is constant, $\mu_0 n I$, where $n$ is the number of wire coils per unit length.  (a) If we measure B to be 1200 $\mu$T inside a solenoid running 0.5 A of current, what will the B-field be at 1 A? (b) If we cut the solenoid in half, what will the B-field be at 1 A? \\ \vspace{2cm}
+\end{enumerate}
+
+\section{Magnetic Induction: Faraday's Law}
+
+\begin{enumerate}
+\item Suppose a uniform B-field of 0.01 T made an angle of 45 degrees with an wire loop with an area of 0.1 m$^2$.  (a) Calculate $\phi_m$, the magnetic flux. (b) Suppose the B-field drops to 0 T in 10 ms.  What is $\Delta \phi_m / \Delta t$? \\ \vspace{2cm}
+\item (a) An MRI technician moves her hand from a region of very low magnetic field strength into an MRI scanner’s 2.00 T field with her fingers pointing in the direction of the field. Find the average emf induced in her wedding ring, given a diameter of 2.20 cm and assuming it takes 0.250 s to move it into the field. Would the current significantly raise the temperature of the ring? \\ \vspace{4cm}
 \end{enumerate}
 
 \end{document}
