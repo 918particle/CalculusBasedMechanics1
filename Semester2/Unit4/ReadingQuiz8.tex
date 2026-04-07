@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+\twocolumn
+
+\title{Monday Tutorial: Unit 4, Complex Impedance}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Memory Bank}
+
+\begin{itemize}
+\item $V_{\rm rms} = I_{\rm rms} Z_{\rm tot}$ ... Ohm's Law for AC circuits.
+\item $P_{\rm ave} = I_{\rm ave} V_{\rm ave}\cos\phi$ ... Average power in series RLC circuit.
+\item $X_{\rm C} = 1/(2\pi f C)$ ... Reactance of a capacitor.
+\item $X_{\rm L} = 2\pi f L$ ... Reactance of an inductor.
+\item $Z_{\rm tot} = \sqrt{R^2 + (X_{\rm L} - X_{\rm C})^2}$ ... The total impedance of an RLC series circuit.
+\item $\cos\phi = R/Z_{\rm tot}$ ... Power factor of an RLC series circuit.
+\end{itemize}
+
+\section{Complex Numbers}
+
+\begin{enumerate}
+\item Suppose that $j = \sqrt{-1}$, and that $z_1 = 2 + 4j$, and $z_1 = 2 - 2j$.  The parts of these numbers not proportional to $j$ are the \textit{real parts}, and the \textit{imaginary parts} are proportional to $j$.  Numbers like $z_1$ and $z_2$ are called \textit{complex numbers.}  Calculate the following: (a)$z_1+z_2$ (b) $z_1-z_2$ (c) $z_1 * z_2$. \\ \vspace{1.5cm}
+\item Suppose that $z_1 = 2 + 4j$, and $z_1^{*} = 2 - 4j$.  That is, multiply the \textit{imaginary part} by -1.  (a) Calculate $z_1 * z_1^{*}$. (b) Let $z = x+jy$.  Calculate $|z|^2 = zz^{*}$.  What do you notice? (c) Graph a generic complex number, and note the hypoteneuse and phase angle between the real and imaginary axes. \\ \vspace{1.5cm}
+\end{enumerate}
+
+\section{Reactance and Impedance}
+
+\begin{enumerate}
+\item The impedance of a capacitor is $Z_{\rm C} = 1/(j\omega C)$.  Show that the reactance is just the magnitude (hypoteneuse) of $Z_{\rm C}$. \\ \vspace{2cm}
+\item The impedance of an inductor is $Z_{\rm L} = j\omega L$.  Show that the reactance is just the magnitude (hypoteneuse) of $Z_{\rm L}$. \\ \vspace{2cm}
+\item Consider the total impedance of an RLC circuit: $Z_{\rm tot} = Z_R + Z_L + Z_C$.  Show that the magnitude (hypoteneuse) of $Z_{\rm tot}$ is the formula given in the memory bank. \\ \vspace{3cm}
+\item For an RLC series circuit having a 40.0 $\Omega$ resistance, a 3.00 mH inductance, a 5.00 $\mu$F capacitance, and a voltage source with a $V_{\rm rms}$ of 120 V: (a) calculate the \textit{phase angle}, $\phi$, and \textit{power factor}, $\cos\phi$, for $f = 60$ Hz. (b) What is the average power at 60.0 Hz? (c) Find the average power at the resonance frequency. \\ \vspace{3cm}
+\item Considering what we know about complex numbers, and the solution to the previous exercise, prove that
+\begin{equation}
+P_{\rm ave} = I_{\rm ave} V_{\rm ave} \cos\phi
+\end{equation}
+\end{enumerate}
+\end{document}
