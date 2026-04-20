@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Monday Reading Assessment: Unit 5, Field Induction and Inductance}
+\title{Wednesday Warm Up: Unit 5, Electromagnetism and Optics}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,22 +14,35 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $\epsilon = -N d\phi_m /dt$ ... Faraday's Law
-\item $\phi_m = \vec{B} \cdot \vec{A} = BA \cos(\theta)$ ... Definition of magnetic flux
-\item $\epsilon(t) = V_{max} \sin(\omega t)$ ... AC voltage signal.
-\item $\omega = 2\pi f$ ... Angular frequency vs. frequency.
+\item $c/n = f \lambda$ ... Relationship between the speed of light, $c$, the index of refraction, $n$, the frequency of an electromagnetic wave, $f$, and its wavelength, $\lambda$.
+\item $c = 3.0 \times 10^8$ m s$^{-1}$ ... The speed of light in a vacuum, within 1 percent error.
+\item $\Delta x = v \Delta t$ ... The relationship between displacement, constant velocity, and time duration.
+\item \textbf{Optics:} Snell's Law states that, for an interface between two media with \textit{indices of refraction} $n_1$ and $n_2$, light leaves one medium with an angle $\theta_1$ and enters the second medium with an angle $\theta_2$ as follows:
+\begin{equation}
+n_1 \sin\theta_1 = n_2\sin\theta_2
+\end{equation}
+\noindent The two angles are defined with respect to vertical.
+\item \textbf{Optics:} Fresnel's equations give the fraction of power (in light) that is reflected ($R$) or transmitted ($T$) by an interface between media with indices of refraction $n_1$ and $n_2$:
+\begin{equation}
+R = \left| \frac{n_1 - n_2}{n_1 + n_2} \right|^2 \label{eq:2}
+\end{equation}
+\noindent Note that, to conserve power, $T = 1 - R$.
 \end{itemize}
 
-\section{Electric guitar pickup coils}
+\section{Electromagnetic Waves}
 
 \begin{enumerate}
-\item Consider a \textit{pickup coil} for an electric guitar that has $N = 1000$ turns of wire around a permanent magnet with $\vec{B} = 0.03\hat{k}$ T. The area of the pickup coil is $\vec{A} = 10^{-4}\hat{k}$ cm$^{-2}$. The permanent magnet \textit{magnetizes} the guitar string above it (gives it a magnetic dipole moment).  If the string oscillates with a frequency $\omega$, then we can model the B-field of string as
-\begin{equation}
-\vec{b} = -b_0\sin(\omega t)\hat{k}
-\end{equation}
-(a) If $b_0 = 0.01$ T, and $\omega = 1350$ Hz, what is the total magnetic field function?  (b) Graph the magnetic field as a function of time. \\ \vspace{2cm}
-\item What is the induced voltage in the pickup coil by the metal string as it vibrates? (Use the given variables from the previous problem). \\ \vspace{2cm}
-\item What is the frequency $f$ of the pickup coil voltage? \\ \vspace{1cm}
-\item From the pickup coil, the induced voltage is passed to an analog \textit{amplifier}, which grows the signal by a factor of 200.  What is the $V_{max}$ of the signal after it has been amplified by a factor of 200?
+\item The frequency of a stream of monochromatic optical photons is $4.3 \times 10^{14}$ Hz.  (a) What is the wavelength of this light in air ($n \approx 1$)?  (b) What is the wavelength in glass, with $n = 1.5$? \\ \vspace{2cm}
+\item Suppose we send an RF signal down a coaxial cable that is 900 meters long.  (a) If we observe the signal at the other end of the cable after 4 $\mu$s, what is the speed of the RF pulse in the cable? (b) What is the index of refraction of the cable? \\ \vspace{2cm}
+\item A 60-kW radio transmitter on Earth sends its signal to a satellite 100 km away.  At what distance in the same direction would the signal have the same maximum field strength if the transmitter’s output power were increased to 90 kW? \\ \vspace{2cm}
 \end{enumerate}
+
+\section{Light Can Refract and Reflect}
+
+\begin{enumerate}
+\item Suppose a ray of sunlight hits a portion of the ocean that is momentarily still and flat.  If the sun is 45 degrees away from vertical, at what angle (from vertical) do the rays enter the water?  Assume the index of refraction of air is $n_1 = 1.0$, and that of the water is $n_2 = 1.336$. \\ \vspace{3cm}
+\item Suppose a ray of sunlight hits a portion of the ocean that is momentarily still and flat.  (a) If the sun is 0 degrees away from vertical, what fraction of power is reflected?  Assume the index of refraction of air is $n_1 = 1.0$, and that of the water is $n_2 = 1.336$. (b) What fraction of power is transmitted into the ocean? \\ \vspace{3cm}
+\item Think about the last time you were at the beach.  Does the image of the Sun on the water look brighter when the sun is \textit{lower} or \textit{higher} in the sky?  How should Eq. \ref{eq:2} be modified (qualitatively) to account for this? \\ \vspace{2cm}
+\end{enumerate}
+
 \end{document}
